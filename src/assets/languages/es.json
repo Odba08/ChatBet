@@ -1,0 +1,72 @@
+{
+    
+    "hola": "Hola",
+    "title": "Reinventamos las apuestas deportivas",
+    "subtitle": "Canal Interactivo con IA para Operadores iGaming",
+    "text": "Nuestro canal interactivo, impulsado por inteligencia artificial, proporciona una comunicación bidireccional eficiente entre usuarios y operadores iGaming.",
+    "secondtext": " Esta solución permite a sus jugadores realizar apuestas deportivas de manera rápida y sencilla, a través de su canal de mensajería preferido, omitiendo la necesidad de acceder a la interfaz de usuario de su sportsbook.",
+    "thankstoia": "Gracias a la IA",
+    "thankstoiatwo": "simula una conversación entre seres humanos y le habla a sus jugadores de forma natural, proporcionando una comunicación inteligente, tal como lo hacen las personas, lo que brinda una experiencia única, directa y sin fricciones.",
+    
+    "Features":"+ Funciones",
+    "Potencie":"Potencie su Operación con ChatBet ",
+    "Generación":"Generación de Noticias:",
+    "Mantenga":"Mantenga sus usuarios informados con las últimas noticias, eventos del momento, actualizaciones relevantes, recomendaciones y sugerencias que permitan apuestas inteligentes.",
+    "Pronósticos":"Pronósticos, Tips y Estadísticas:",
+    "Proporcione":"Proporcione pronósticos detallados, consejos expertos y estadísticas actualizadas para mejorar la experiencia de apuestas de sus usuarios.",
+    "Bonos":"Bonos y Promociones:",
+    "Incentive":"Incentive la participación y fidelidad de sus jugadores con ofertas atractivas.",
+
+    "Beneficios":" Beneficios",
+    "Reducción":"Reducción de la Fricción: ",
+    "Minimiza":" Minimiza barreras de entrada al eliminar la necesidad de apostar en interfaces complicadas.",
+    "Machine":" Machine Learning:",
+    "Utiliza":"Utiliza algoritmos IA para el procesamiento del lenguaje natural (NLP) y el aprendizaje automático, los cuales mejoran continuamente su capacidad de comprensión y respuesta a la intención detrás de las solicitudes de los usuarios. ",
+    "IA":"IA Entrenada al iGaming: ",
+    "Responde":"Responde de forma intuitiva  y simple, en el idioma configurado, a términos usados frecuentemente en apuestas deportivas y reconoce modismos locales, cyberlenguaje y otros idiomas. ",
+
+    "CómoFunciona": "¿Cómo Funciona ChatBet?",
+    "integramos": "Nos integramos con su proveedor de PAM o agregador para activar",
+    "sitio": "en su sitio de web de apuestas. Desde ahí, podrá personalizar a su gusto, la información que quiere compartir; disponibilizar sus ofertas de apuestas deportivas, conectar sus usuarios y transformar la forma de realizar apuestas deportivas.",
+
+    "Hablacon" : "Habla con la IA de forma natural y recibe respuesta.",
+    "Buscacon" : "Busca con facilidad deportes y equipos.",
+    "Conuna" : "Con una Interfaz sencilla, encuentra partidos en tu Canal preferido.",
+    "Seleccionacuánto" : "Selecciona cuánto apostar.",
+    "LaIA" : "La IA ofrece opciones y ganancias, la jugada final la decide el usuario.",
+
+    "Sencilla" : "Sencilla Integración",
+    "Personalice" : "Personalice",
+    "yhaga" : "y haga que coincida con la personalidad de su marca | Agregue un widget con un código simple.",
+
+
+    "Listopara" : "¿Listo para la Acción?",
+    "Únase" : "¡Únase a la emoción!",
+    "Agendemos" : "Agendemos demostración y descubra cómo la IA de ChatBet transforma la experiencia del usuario.",
+
+    
+    "Doyou": "¿Algún mensaje o duda por resolver? (Opcional)",
+    "Sumbit" : "Enviar formulario",
+    "Feel": "Consulte aquí cualquier duda que tenga.",
+
+    "NombreT": "Nombre",
+    "Nombre": "Ingrese su nombre",
+    "NúmeroT": "Número de contacto",
+    "Número": "Número de Contacto",
+    "CorreoT": "Correo Corporativo",
+    "Correo": "Ingrese su email",
+    "EmpresaT": "Empresa",
+    "Empresa": "Ingrese el nombre de su empresa",
+    "CargoT": "Cargo",
+    "Cargo": "Ingrese el nombre de su cargo (Opcional)",
+    "PaisT": "Pais",
+    "Pais": "Ingrese su ciudad y/o país de donde nos contactas",
+
+    "Get": "¡Obtenga una demostracion!",
+
+    "headerone":"+Funciones",
+    "headertwo":"Beneficios",
+    "headertree":"¿Cómo Funciona?",
+    "headerfour":"Integración",
+    "headerfive":"Contáctanos"
+}   

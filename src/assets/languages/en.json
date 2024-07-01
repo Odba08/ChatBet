@@ -1,0 +1,68 @@
+{
+    "hola" : "Hello",
+    "title" : "We reinvent sports betting",
+    "subtitle" : "Interactive AI Channel for iGaming Operators",
+    "text": "Our interactive channel, powered by artificial intelligence, provides efficient two-way communication between users and iGaming operators.",
+    "secondtext": "This solution allows your players to place sports bets quickly and easily through their preferred messaging channel, eliminating the need to access the sportsbook user interface.",
+    "thankstoia": "Thanks to AI",
+    "thankstoiatwo": "simulates a conversation between humans and speaks to your players naturally, providing intelligent communication just like people do, offering a unique, direct, and frictionless experience",
+
+    "Features":"+ Features",
+    "Potencie":"Enhance Your Operation with ChatBet",
+    "Generación":"News Generation:",
+    "Mantenga":"Keep your users informed with the latest news, current events, relevant updates, recommendations, and suggestions that enable smart betting.",
+    "Pronósticos":"Forecasts, Tips, and Statistics:",
+    "Proporcione":"Provide detailed forecasts, expert tips, and up-to-date statistics to enhance your users' betting experience.",
+    "Bonos":"Bonuses and Promotions:",
+    "Incentive":"Encourage participation and loyalty from your players with attractive offers.",
+
+    "Beneficios":"Benefits",
+    "Reducción":"Friction Reduction:",
+    "Minimiza":"Minimize entry barriers by eliminating the need to bet on complicated interfaces.",
+    "Machine":"Machine Learning:",
+    "Utiliza":"Utilizes AI algorithms for natural language processing (NLP) and machine learning, which continuously improve its ability to understand and respond to the intent behind user requests.",
+    "IA":"iGaming-Trained AI:",
+    "Responde":"Responds intuitively and simply, in the configured language, to terms frequently used in sports betting and recognizes local idioms, cyber language, and other languages. ",
+
+    "CómoFunciona": "How does ChatBet work?",
+    "integramos": "We integrate with your PAM provider or aggregator to activate",
+    "sitio": "on your betting website. From there, you can customize the information you want to share, make your sports betting offers available, connect your users, and transform the way sports betting is done.",
+
+    "Hablacon" : "Talk to the AI naturally and receive a response.",
+    "Buscacon" : "Easily search for sports and teams.",
+    "Conuna" : "With a simple interface, find matches on your preferred channel.",
+    "Seleccionacuánto" : "Select how much to bet.",
+    "LaIA" : "The AI suggests options, but the user makes the final decision.",
+
+    "Sencilla" : "Simple Integration",
+    "Personalice" : "Customize",
+    "yhaga" : " to match your brand's personality | Add a widget with a simple code.",
+
+    "Listopara" : "Ready for Action?",
+    "Únase" : "Join the excitement!",
+    "Agendemos" : "Let's schedule a demonstration and discover how ChatBet's AI transforms the user experience.",
+
+    "Doyou": "Do you have any message or question to resolve? (Optional)",
+    "Sumbit" : "Submit form",
+    "Feel": "Feel free to ask any questions you may have here",
+
+    "NombreT": "First name and last name",
+    "Nombre": "Enter your name",
+    "NúmeroT": "Contact number",
+    "Número": "Enter your contact number",
+    "CorreoT": "Corporate email",
+    "Correo": "Enter your email",
+    "EmpresaT": "Company",
+    "Empresa": "Enter the name of your company",
+    "CargoT": "Position",
+    "Cargo": "Enter the name of your position (Optional)",
+    "PaisT": "Country",
+    "Pais": "Enter the country and/or city from where you are contacting us",
+    "Get": "Get a demonstration!",
+
+    "headerone":"+ Features",
+    "headertwo":"Benefits",
+    "headertree":"How does it work?",
+    "headerfour":"Integration",
+    "headerfive":"Contact Us"
+}
