@@ -64,5 +64,48 @@
     "headertwo":"Benefits",
     "headertree":"How does it work?",
     "headerfour":"Integration",
-    "headerfive":"Contact Us"
+    "headerfive":"Contact Us",
+
+    "slideone": "Withdrawals and Deposits:",
+    "slidetwo": "Allows managing withdrawals and deposits in a secure and convenient manner, optimizing financial transactions for your users.",
+    "slidethree": "Betting on Other Verticals:",
+    "slidefour": "Present the option to play in other verticals of your operation and encourage cross-selling.",
+    "slidefive": "Affiliate Engine:",
+    "slidesix": "Affiliate players by making it available",
+    "slideseven": "in groups and communities, while providing an attractive and differentiating experience, without paying commissions for affiliation.",
+
+    "slidetwoone": "Speed:",
+    "slidetwotwo": "Generates accurate responses in 1 second, so your users can bet without having to wait.",
+    "slidetwothree": "Privacy and Security:",
+    "slidetwofour": "Your data and your users' data will always be hosted on your servers, guaranteeing security in transactions.",
+    "slidetwofive": "Hours:",
+    "slidetwosix": "Make it available",
+    "slidetwoseven": "24 hours a day, 7 days a week, and provide an always accessible experience.",
+
+    "sliderthreeone": "Multiplatform:",
+    "sliderthreetwo": "Add",
+    "sliderthreethree": "to your website, mobile app, or any other platform with a simple embed code or with our API.",
+    "sliderthreefour": "And Much More:",
+    "sliderthreefive": "Discover in a demo the full range of functionalities of",
+    "sliderthreesix": "designed to maximize user satisfaction and retention.",
+    "sliderthreeseven": "Betting has never been so exciting and smart at the same time!",
+
+    "slidefourone": "Instant Betting:",
+    "slidefourtwo": "In an easy-to-use interface that responds in a personal and contextual manner, the AI processes and executes betting requests intelligently and instantly.",
+    "slidefourthree": "Activation on Multiple Channels:",
+    "slidefourfour": "Connect most messaging channels such as your website, mobile apps, Apple Business Chat, Line, Facebook Messenger, WhatsApp, Telegram, Slack, Zapier, and more, and offer your users flexibility and convenience by allowing them to choose their preferred channel to bet.",
+
+    "slidefiveone": "Simplified Experience:",
+    "slidefivetwo": "The entire process is designed to be intuitive, allowing users to focus on their bets, which increases their satisfaction and loyalty.",
+    "slidefivethree": "Multilanguage:",
+    "slidefivefour": "Set your preferred language. This ensures that operators from different parts of the world can enjoy our services in their native language.",
+    "slidefivefive": "Backoffice:",
+    "slidefivesix": "Manage the user interface, messaging channels, and available features; parameterize messages, links to redirect, minimum and maximum bet amounts, among others.",
+
+    "slidefiveoneone": "Reports:",
+    "slidefivetwotwo": "Receive transaction reports, bets placed with their respective ID, amounts bet, events they played in, statistics, performance indicators, and analyze metrics, etc.",
+    "slidefivethreeone": "ChatBet's AI is continuously trained with its performance."
+
+
+
 }

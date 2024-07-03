@@ -1,5 +1,4 @@
 <div class="section">
-        
     <div class="background">
     <img src="./assets/Background/Seccion1.svg" alt="">
     </div>
@@ -38,11 +37,10 @@
 
         <div class="text">
             <div class="texto">
-
                 <img src="../../../../assets/img/divisor.png" alt="">
                 <p>
                    {{'text' | translate}} <br><br>
-                    {{'secondtext' | translate}} <br><br>
+                    {{'secondtext' | translate}}<br><br>
                     {{'thankstoia' | translate}}, <span>ChatBet</span>, {{'thankstoiatwo' | translate}}.
                 </p>
             </div>
@@ -67,27 +65,53 @@
 <div class="second-section">
     <h1> {{'Features' | translate}} </h1>
     <div class="second-flex">
-    <div class="text">
-        <h3>{{'Potencie' | translate}} </h3>
-        <div class="texto">
-            <img src="../../../../assets/img/divisor.png" alt="">
-            <p>
-                <span>{{'Generación' | translate}}</span> {{'Mantenga' | translate}}<br><br>
-                <span>{{'Pronósticos' | translate}}</span> {{'Proporcione' | translate}}<br><br>
-                <span>{{'Bonos' | translate}}</span> {{'Incentive' | translate}}
-            </p>
-
-        </div>
+        <div class="text">
+            <h3>{{ 'Potencie' | translate }}</h3>
+            <div class="texto">
+                <img src="../../../../assets/img/divisor.png" alt="">
+                
+                <p *ngIf="currentIndex === 0" >
+                    <span>{{ 'Generación' | translate }}</span> {{ 'Mantenga' | translate }}<br><br>
+                    <span>{{ 'Pronósticos' | translate }}</span> {{ 'Proporcione' | translate }}<br><br>
+                    <span>{{ 'Bonos' | translate }}</span> {{ 'Incentive' | translate }}
+                </p>
         
-    </div>
+                <p *ngIf="currentIndex === 1">
+                    <span>{{ 'slideone' | translate }}</span> {{ 'slidetwo' | translate }}<br><br>
+                    <span>{{ 'slidethree' | translate }}</span> {{ 'slidefour' | translate }}<br><br>
+                    <span>{{ 'slidefive' | translate }}</span> {{ 'slidesix' | translate }}<span> ChatBet </span>{{ 'slideseven' | translate }}
+                </p>
+        
+                <p *ngIf="currentIndex === 2">
+                    <span>{{'slidetwoone' | translate}}</span> <span> ChatBet </span>{{ 'slidetwotwo' | translate }}<br><br>
+                    <span>{{ 'slidetwothre' | translate }}</span> {{ 'slidetwofour' | translate }}<br><br>
+                    <span>{{ 'slidetwofive' | translate }}</span> {{ 'slidetwosix' | translate }} <span>ChatBet</span> {{ 'slidetwoseven' | translate }}
+                </p>
 
-    <div class="image-section" style="margin-top: 7%;">
+                <p *ngIf="currentIndex === 3">
+                    <span>{{ 'sliderthreeone' | translate }}</span> {{ 'sliderthreetwo' | translate }} <span> ChatBet </span> {{'sliderthreethree' | translate}}<br><br>
+                    <span>{{ 'sliderthreefour' | translate }}</span> {{ 'sliderthreefive' | translate }} <span> ChatBet </span> {{'sliderthreesix' | translate}}<br><br>
+                    <span>{{ 'sliderthreeseven' | translate }}</span>
+                </p>
+        
+            </div>
+            <div class="navigation-buttons">
+                <button [class.hidden]="currentIndex === 0" (click)="prevParagraph()"> < </button>
+                <button [class.hidden]="currentIndex === 3" (click)="nextParagraph()"> > </button>
+            </div>
+        </div>
+
+    <div class="image-section" style="margin-top: 6%;">
         <img src="./assets/img/second-phone.png" alt="">
     </div>
 
 </div>
+
+
 </div>
 </div>
+
+    
 
 <div id="beneficios" class="section">
 <div class="background">
@@ -102,13 +126,28 @@
     <div class="text">
         <div class="texto">
             <img src="../../../../assets/img/divisor.png" alt="">
-            <p>
-                <span>{{'Reducción' | translate}}</span>  {{'Minimiza' | translate}}<br><br>
-                <span>{{'Machine' | translate}}</span>{{'Utiliza' | translate}}<br><br>
-                <span>{{'IA' | translate}}</span> {{'Responde' | translate}}
+            <p *ngIf="currentIndextwo === 0">
+                <span>{{'slidefourone' | translate}}</span>  {{'slidefourtwo' | translate}}<br><br>
+                <span>{{'slidefourthree' | translate}}</span>{{'slidefourfour' | translate}}
+            </p>
+
+            <p *ngIf="currentIndextwo === 1">
+                <span>{{ 'slidefiveone' | translate }}</span> {{ 'slidefivetwo' | translate }}<br><br>
+                <span>{{ 'slidefivethree' | translate }}</span> {{ 'slidefivefour' | translate }}<br><br>
+                <span>{{ 'slidefivefive' | translate }}</span> {{ 'slidefivesix' | translate }}
+            </p>
+    
+            <p *ngIf="currentIndextwo === 2">
+                <span>{{ 'slidefiveoneone' | translate }}</span> {{ 'slidefivetwotwo' | translate }}<br><br>
+                <span>{{ 'slidefivethreeone' | translate }}</span> 
             </p>
 
         </div>
+        <div class="navigation-buttons">
+            <button [class.hidden]="currentIndextwo === 0"  (click)="prevParagraphtwo()"> < </button>
+            <button [class.hidden]="currentIndextwo === 2" (click)="nextParagraptwo()"> > </button>
+        </div>
+        
     </div>
     <div class="image-section" style="display: flex;">
         <img src="./assets/img/third-phone.png" alt="">
@@ -209,7 +248,7 @@
             <input type="text" placeholder="{{'Cargo' | translate}}">
             </div>
             <div class="form-section">
-                <label >{{'PaisT' | translate}}</label>
+                <label style="margin-right: 10px;">{{'PaisT' | translate}}</label>
             <input type="text" placeholder="{{'Pais' | translate}}">
             </div>
         </form>

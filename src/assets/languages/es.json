@@ -68,5 +68,46 @@
     "headertwo":"Beneficios",
     "headertree":"¿Cómo Funciona?",
     "headerfour":"Integración",
-    "headerfive":"Contáctanos"
+    "headerfive":"Contáctanos",
+
+    "slideone": "Retiros y Depósitos:",
+    "slidetwo": "Permita gestionar retiros y depósitos de manera segura y conveniente, optimizando las transacciones financieras de sus usuarios.",
+    "slidethree": "Apuestas en Otras Verticales:",
+    "slidefour": "Presente la opción de jugar en otras verticales de su operación e incentive la venta cruzada.",
+    "slidefive": "Motor de Afiliación:",
+    "slidesix": "Afilie jugadores disponibilizando",
+    "slideseven": "en grupos y comunidades, mientras brinda una experiencia atractiva y diferenciadora, sin pagar comisiones por afiliación.",
+
+    "slidetwoone":"Rapidez:",
+    "slidetwotwo":"Genera respuestas acertadas en 1 segundo, por lo que sus usuarios podrán apostar, sin necesidad de esperar.",
+    "slidetwothre":"Privacidad y Seguridad:",
+    "slidetwofour":"Sus datos y el de sus usuarios, siempre estarán alojados en sus servidores, garantizando seguridad en las transacciones.",
+    "slidetwofive":"Horarios:",
+    "slidetwosix":"Disponibilice",
+    "slidetwoseven":"las 24 horas del día, los 7 días de la semana y brinde una experiencia siempre asequible.",
+    
+    "sliderthreeone":"Multiplataforma:",
+    "sliderthreetwo":"Agregue",
+    "sliderthreethree":"a su sitio web, aplicación móvil o cualquier otra plataforma con un simple código de inserción o con nuestra API.",
+    "sliderthreefour":"Y Mucho Más:",
+    "sliderthreefive":"Descubre en una demostración, la gama completa de funcionalidades de",
+    "sliderthreesix":"diseñadas para maximizar satisfacción y retención de sus usuarios.",
+    "sliderthreeseven":"¡Apostar nunca fue tan emocionante e inteligente a la vez!",
+
+    "slidefourone": "Apuestas Inmediatas:",
+    "slidefourtwo": "En una interfaz fácil de usar, que responde de manera personal y contextual, la IA procesa y ejecuta las solicitudes de apuestas de manera inteligente e instantánea.",
+    "slidefourthree": "Activación en Múltiples Canales:",
+    "slidefourfour": "Conecte la mayoría de canales de mensajería como su sitio web, aplicaciones móviles, Apple Business Chat, Line, Facebook Messenger, WhatsApp, Telegram, Slack, Zapier y más, y ofrézcales flexibilidad y comodidad a sus usuarios, al poder elegir su canal preferido para apostar.",
+
+    "slidefiveone": "Experiencia Simplificada:",
+    "slidefivetwo": "Todo el proceso está diseñado para ser intuitivo, permitiendo a los usuarios centrarse en sus apuestas, lo que aumenta su satisfacción y fidelidad.",
+    "slidefivethree": "Multilenguaje:",
+    "slidefivefour": "Configure su idioma de preferencia. Esto garantiza que operadores de diversas partes del mundo puedan disfrutar de nuestros servicios en su lengua nativa.",
+    "slidefivefive": "Backoffice:",
+    "slidefivesix": "Gestione la interfaz de usuario, canales de mensajería  y funciones disponibles; parametrice mensajes, links a los que redirecciona, montos de apuestas mínimos y máximos; entre otros.",
+    
+
+    "slidefiveoneone": "Informes:",
+    "slidefivetwotwo": "Reciba reportes de transacciones, apuestas realizadas con su respectivo ID, montos apostados, eventos en los que jugaron, estadísticas, indicadores de rendimiento y analice métricas, etc",
+    "slidefivethreeone": "La IA de ChatBet, se entrena permanentemente con su performance."
 }   
