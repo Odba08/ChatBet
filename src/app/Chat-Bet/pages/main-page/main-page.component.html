@@ -37,7 +37,6 @@
 
         <div class="text">
             <div class="texto">
-                <img src="../../../../assets/img/divisor.png" alt="">
                 <p>
                    {{'text' | translate}} <br><br>
                     {{'secondtext' | translate}}<br><br>
@@ -68,8 +67,8 @@
         <div class="text">
             <h3>{{ 'Potencie' | translate }}</h3>
             <div class="texto">
-                <img src="../../../../assets/img/divisor.png" alt="">
                 
+
                 <p *ngIf="currentIndex === 0" >
                     <span>{{ 'Generación' | translate }}</span> {{ 'Mantenga' | translate }}<br><br>
                     <span>{{ 'Pronósticos' | translate }}</span> {{ 'Proporcione' | translate }}<br><br>
@@ -102,7 +101,7 @@
         </div>
 
     <div class="image-section" style="margin-top: 6%;">
-        <img src="./assets/img/second-phone.png" alt="">
+        <img [src]="currentImages['second']"   alt="">
     </div>
 
 </div>
@@ -125,7 +124,7 @@
     
     <div class="text">
         <div class="texto">
-            <img src="../../../../assets/img/divisor.png" alt="">
+
             <p *ngIf="currentIndextwo === 0">
                 <span>{{'slidefourone' | translate}}</span>  {{'slidefourtwo' | translate}}<br><br>
                 <span>{{'slidefourthree' | translate}}</span>{{'slidefourfour' | translate}}
@@ -150,7 +149,7 @@
         
     </div>
     <div class="image-section" style="display: flex;">
-        <img src="./assets/img/third-phone.png" alt="">
+        <img  [src]="currentImages['third']"   alt="">
     </div>
 </div>
 
@@ -166,7 +165,6 @@
     <div class="text">
         <h1> {{'CómoFunciona' | translate}}</h1>
         <div class="texto">
-            <img src="../../../../assets/img/divisor.png" alt="">
             <p>
                 {{'integramos' | translate}} <span>ChatBet</span> {{'sitio' | translate}}
             </p>
@@ -175,23 +173,24 @@
 
     <div class="image-carousel">
         <div class="carousel-item">
-            <img src="./assets/img/1.png" alt="">
+            <img [src]="currentImages['img1']" alt="">
             <p>{{'Hablacon' | translate}}</p>
         </div>
         
         <div class="carousel-item"> 
-            <img src="./assets/img/2.png" alt=""> 
+            <img [src]="currentImages['img2']" alt=""> 
             <p>{{'Buscacon' | translate}}</p>
         </div>
         <div class="carousel-item"> 
-            <img src="./assets/img/3.png" alt="">
+            <img [src]="currentImages['img3']" alt="">
             <p>{{'Conuna' | translate}}</p>
          </div>
-        <div class="carousel-item"> <img src="./assets/img/4.png" alt="">
+        <div class="carousel-item">
+             <img [src]="currentImages['img4']" alt="">
             <p>{{'Seleccionacuánto' | translate}}</p>
         </div>
         <div class="carousel-item"> 
-            <img src="./assets/img/5.png" alt="">
+            <img [src]="currentImages['img5']"alt="">
             <p>{{'LaIA' | translate}}</p>
         </div>
     </div>

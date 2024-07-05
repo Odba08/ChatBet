@@ -12,7 +12,30 @@ export class MainPageComponent {
 
  
   constructor(private translate: TranslateService) {}
+
+  imagePaths: { [key: string]: { [key: string]: string } } = {
+    es: {
+      img1: './assets/img/1.png',
+      img2: './assets/img/2.png',
+      img3: './assets/img/3.png',
+      img4: './assets/img/4.png',
+      img5: './assets/img/5.png',
+      third: './assets/img/third-phone.png',
+      second: './assets/img/second-phone.png',
+
+    },
+    en: {
+      img1: './assets/img/guardar/1.png',
+      img2: './assets/img/guardar/2.png',
+      img3: './assets/img/guardar/3.png',
+      img4: './assets/img/guardar/4.png',
+      img5: './assets/img/guardar/5.png',
+      third: './assets/img/guardar/third-phone.png',
+      second: './assets/img/guardar/second-phone.png',
+    }
+  };
   currentLanguage: string = 'es';
+  currentImages = this.imagePaths[this.currentLanguage];
 
   currentIndex: number = 0;
   currentIndextwo: number = 0;
@@ -22,7 +45,6 @@ export class MainPageComponent {
     this.currentIndex++;
     console.log('Next paragraph:', this.currentIndex);
   }
-
  
 }
 
@@ -51,6 +73,7 @@ prevParagraphtwo() {
   switchLanguage(language: string) {
     this.translate.use(language);
     this.currentLanguage = language;
+    this.currentImages = this.imagePaths[this.currentLanguage];
   }
 
 }

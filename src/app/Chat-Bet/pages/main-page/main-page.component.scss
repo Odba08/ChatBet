@@ -7,6 +7,7 @@ span{
 }
 
 p{
+
     text-align: justify;
 }
 
@@ -15,6 +16,7 @@ h1{
     font-size: 3rem;
     font-weight: bold;
     font-family: "Poppins-Bold", sans-serif;
+    margin-top: 24px;
     margin-bottom: 0;
     @media (max-width: 900px){
         font-size: 2rem;
@@ -25,6 +27,7 @@ h3{
     font-weight: bold;
     font-family: "Poppins-Medium", sans-serif;
     margin: 0;
+    margin-top: 16px;
    
 }
 
@@ -34,6 +37,7 @@ h3{
         margin: 0 auto;
         padding-left: 7%;
         padding-right: 7%;
+        margin-bottom: 64px;
         .background{
             position: absolute;
             left: 0;
@@ -51,8 +55,9 @@ h3{
     .section-header{
         display: flex;
         justify-content: space-between;
-        padding: 3%;
+        padding: 10px;
         align-items: center;
+
         @media screen and (max-width: 900px){
             align-items: center;
             justify-content: center;
@@ -71,7 +76,13 @@ h3{
             &:hover{
                 color: #9595ff;
             }
-            @media screen and (max-width: 900px){
+
+            
+        @media(min-width: 1050px) and (max-width: 1100px){
+            margin-right: 8px;
+        }
+  
+            @media screen and (max-width: 1049px){
                 display: none;  
             }
         }
@@ -81,7 +92,7 @@ h3{
             font-family: "Poppins", sans-serif;
             font-weight: bold;
 
-            @media screen and (max-width: 900px){
+            @media screen and (max-width: 1049px){
                 display: none;  
             }
         }
@@ -117,6 +128,7 @@ h3{
     .first-section{
         display: flex;
         flex-direction: column;
+
     
         @media screen and (max-width: 900px){
             .gif{
@@ -142,12 +154,12 @@ h3{
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
        
         @media (max-width: 900px){
             display: flex;
             flex-direction: column;
 
-           
         }
 
         .text{
@@ -167,6 +179,11 @@ h3{
             }
             p{
                 margin: 0;
+                transition: opacity 0.5s;
+                border-left: 4px solid  #9595ff;
+                padding-left: 1rem;
+                margin-top: 24px;
+                
             }
         }
 
@@ -180,7 +197,7 @@ h3{
             /* color: #9595ff; */
             color: white;
             font-family: 'Poppins', sans-serif;
-            margin-top: 35px;
+            margin-top: 32px;
             font-size: medium;
 
             @media (max-width: 900px){
@@ -194,11 +211,14 @@ h3{
             cursor: pointer;
         }
        
-        img{
-                width: 100%;
+        
+            img{
+                width: 85%;
                 height: auto;
-                 object-fit: cover;       
-        }
+                object-fit: cover;       
+            }
+       
+        
     }
 
 }
@@ -231,18 +251,21 @@ h3{
 
         .texto{
             display: flex;
-            align-items: stretch;
+            align-items: center;
             margin-top: 15px;
 
             img{
                 width: 5px;
-                object-fit: cover;
+                height: 100%;
                 margin-right: 3%;
             }
 
             p{
                 margin: 0;
                 transition: opacity 0.5s;
+                border-left: 4px solid  #9595ff;
+                padding-left: 1rem;
+                margin-top: 24px;
             }
 
             p.active {
@@ -253,9 +276,9 @@ h3{
             display: flex;
             width: 100%;
             justify-content: space-between;
+            margin-top: 32px;
             button{
                 background-color: rgba(100, 100, 255, 0.5);
-
                 border: solid 1px;
                 border-color: #9595ff;
                 color: #9595ff;
@@ -284,13 +307,6 @@ h3{
             
         }
 
-        .navigation-buttons button:active {
-            transform: scale(0.95);
-        }
-        
-        .navigation-buttons button.hidden {
-            visibility: hidden;
-        }
         .image-section{
             width: 40%;
             @media screen and (max-width: 900px){
@@ -345,6 +361,10 @@ h3{
            
             p{
                 margin: 0;
+                transition: opacity 0.5s;
+                border-left: 4px solid  #9595ff;
+                padding-left: 1rem;
+                margin-top: 24px;
             }
         }
 
@@ -352,6 +372,7 @@ h3{
             display: flex;
             width: 100%;
             justify-content: space-between;
+            margin-top: 32px;
             button{
                 background-color: rgba(100, 100, 255, 0.5);
 
@@ -440,6 +461,15 @@ h3{
                 }
                
             }
+
+            p{
+                margin: 0;
+                transition: opacity 0.5s;
+                border-left: 4px solid  #9595ff;
+                padding-left: 1rem;
+                margin-top: 24px;
+            }
+            
         }
     
     }
@@ -461,6 +491,7 @@ h3{
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+                margin-top: 24px;
             }
     
             p {
@@ -505,6 +536,10 @@ h3{
               width: 100%;
               height: 100%;
               object-fit: cover;
+              margin-top: 24px;
+       }
+       p{
+        margin-top: 24px;
        }
     
     }
