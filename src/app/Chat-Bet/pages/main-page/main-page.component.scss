@@ -277,6 +277,11 @@ h3{
             width: 100%;
             justify-content: space-between;
             margin-top: 32px;
+            @media (max-width: 900px){
+                margin-bottom: 32px;
+                
+            }
+            
             button{
                 background-color: rgba(100, 100, 255, 0.5);
                 border: solid 1px;
@@ -316,14 +321,11 @@ h3{
         img{
             width: 80%;
             height: auto;
-            object-fit: cover;      
+            object-fit: cover; 
+            
+    
         }
 }
-
-
-
-       
-    
 
     /* Third Section */
     .third-flex{
@@ -373,6 +375,11 @@ h3{
             width: 100%;
             justify-content: space-between;
             margin-top: 32px;
+
+            @media (max-width: 900px){
+                margin-bottom: 32px;
+                
+            }
             button{
                 background-color: rgba(100, 100, 255, 0.5);
 
