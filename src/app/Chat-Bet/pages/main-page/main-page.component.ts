@@ -90,10 +90,8 @@ prevParagraphtwo() {
  
 
   async send(){
-        /*  emailjs.init('OGARtyjIOA2WPHZfL')
-      let response = await emailjs.send ("service_c895d9m","template_worpfzp",{ */
-      emailjs.init('XRmSLdGaZmvIiOkOI')
-      let response = await emailjs.send("service_h0xb9ua","template_bukdjk6",{
+      emailjs.init('OGARtyjIOA2WPHZfL')
+      let response = await emailjs.send ("service_c895d9m","template_worpfzp",{
       from_name: this.form.value.name,
       from_email: this.form.value.email,
       from_contact: this.form.value.contact,
