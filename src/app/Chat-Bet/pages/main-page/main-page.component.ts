@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
+import emailjs from '@emailjs/browser';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -9,9 +10,19 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
+  form: FormGroup = this.fb.group({
+    name: '',
+    tname: 'ChatBet',
+    email: '',
+    contact: '',
+    empresa: '',
+    argo: '',
+    country: '',
+    message: '',
 
+  })
  
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private fb: FormBuilder) {}
 
   imagePaths: { [key: string]: { [key: string]: string } } = {
     es: {
@@ -57,7 +68,7 @@ prevParagraph() {
 }
 
 nextParagraptwo() {
-  if (this.currentIndextwo < 2) {
+  if (this.currentIndextwo < 3) {
     this.currentIndextwo++;
     console.log('Next paragraph:', this.currentIndextwo);
   }
@@ -75,5 +86,25 @@ prevParagraphtwo() {
     this.currentLanguage = language;
     this.currentImages = this.imagePaths[this.currentLanguage];
   }
+
+ 
+
+  async send(){
+        /*  emailjs.init('OGARtyjIOA2WPHZfL')
+      let response = await emailjs.send ("service_c895d9m","template_worpfzp",{ */
+      emailjs.init('XRmSLdGaZmvIiOkOI')
+      let response = await emailjs.send("service_h0xb9ua","template_bukdjk6",{
+      from_name: this.form.value.name,
+      from_email: this.form.value.email,
+      from_contact: this.form.value.contact,
+      from_empresa: this.form.value.empresa,
+      from_cargo: this.form.value.cargo,
+      from_country: this.form.value.country,
+      message: this.form.value.message,
+      });
+
+      this.form.reset();
+  }
+
 
 }

@@ -40,7 +40,7 @@
                 <p>
                    {{'text' | translate}} <br><br>
                     {{'secondtext' | translate}}<br><br>
-                    {{'thankstoia' | translate}}, <span>ChatBet</span>, {{'thankstoiatwo' | translate}}.
+                    {{'thankstoia' | translate}}, <span>ChatBet</span>, {{'thankstoiatwo' | translate}}
                 </p>
             </div>
             <button>{{'Get' | translate}}</button>
@@ -126,17 +126,22 @@
         <div class="texto">
 
             <p *ngIf="currentIndextwo === 0">
+                <span>{{'Reducción' | translate}}</span>  {{'Minimiza' | translate}}<br><br>
+                <span>{{'Machine' | translate}}</span>{{'Utiliza' | translate}}<br><br>
+                <span>{{'IA' | translate}}</span>{{'Responde' | translate}}
+
+            <p *ngIf="currentIndextwo === 1">
                 <span>{{'slidefourone' | translate}}</span>  {{'slidefourtwo' | translate}}<br><br>
                 <span>{{'slidefourthree' | translate}}</span>{{'slidefourfour' | translate}}
             </p>
 
-            <p *ngIf="currentIndextwo === 1">
+            <p *ngIf="currentIndextwo === 2">
                 <span>{{ 'slidefiveone' | translate }}</span> {{ 'slidefivetwo' | translate }}<br><br>
                 <span>{{ 'slidefivethree' | translate }}</span> {{ 'slidefivefour' | translate }}<br><br>
                 <span>{{ 'slidefivefive' | translate }}</span> {{ 'slidefivesix' | translate }}
             </p>
     
-            <p *ngIf="currentIndextwo === 2">
+            <p *ngIf="currentIndextwo === 3">
                 <span>{{ 'slidefiveoneone' | translate }}</span> {{ 'slidefivetwotwo' | translate }}<br><br>
                 <span>{{ 'slidefivethreeone' | translate }}</span> 
             </p>
@@ -144,7 +149,7 @@
         </div>
         <div class="navigation-buttons">
             <button [class.hidden]="currentIndextwo === 0"  (click)="prevParagraphtwo()"> < </button>
-            <button [class.hidden]="currentIndextwo === 2" (click)="nextParagraptwo()"> > </button>
+            <button [class.hidden]="currentIndextwo === 3" (click)="nextParagraptwo()"> > </button>
         </div>
         
     </div>
@@ -224,42 +229,46 @@
         <h3><span>{{'Únase' | translate}} </span> {{'Agendemos' | translate}}</h3>
     </div>
 
-    <div class="form">
-        <form action="" class="form-input">
-            <div class="form-section">
+    <div class="form" [formGroup]="form">
+        <form action="javascript:void(0)" (submit)="send()">
+
+            <div class="form-input">
+        
+            <div class="form-section" >
                 <label >{{'NombreT' | translate}}</label>
-            <input type="text" placeholder="{{'Nombre' | translate}}">
+            <input formControlName="name" type="text" placeholder="{{'Nombre' | translate}}">
             </div>
-            <div class="form-section">
+            <div class="form-section" >
                 <label >{{'NúmeroT' | translate}}</label>
-            <input type="text" placeholder="{{'Número' | translate}}">
+            <input formControlName="contact" type="text" placeholder="{{'Número' | translate}}">
             </div>
-            <div class="form-section">
+            <div class="form-section" >
                 <label >{{'CorreoT' | translate}}</label>
-            <input type="text" placeholder="{{'Correo' | translate}}">
+            <input formControlName="email" type="text" placeholder="{{'Correo' | translate}}">
             </div>
-            <div class="form-section">
+            <div class="form-section" >
                 <label >{{'EmpresaT' | translate}}</label>
-            <input type="text" placeholder="{{'Empresa' | translate}}">
+            <input formControlName="empresa" type="text" placeholder="{{'Empresa' | translate}}">
             </div>
-            <div class="form-section">
+            <div class="form-section" >
                 <label >{{'CargoT' | translate}}</label>
-            <input type="text" placeholder="{{'Cargo' | translate}}">
+            <input formControlName="cargo" type="text" placeholder="{{'Cargo' | translate}}">
             </div>
-            <div class="form-section">
+            <div class="form-section" >
                 <label style="margin-right: 10px;">{{'PaisT' | translate}}</label>
-            <input type="text" placeholder="{{'Pais' | translate}}">
+            <input  formControlName="country" type="text" placeholder="{{'Pais' | translate}}">
+            </div>
+        </div>
+            <div class="form-send">
+            
+                <label for=""> {{'Doyou' | translate}}</label>
+                <input formControlName="message" type="text" placeholder="{{'Feel' | translate}}">
+        
+        
+                <button type="submit" >{{'Sumbit' | translate}}</button>
             </div>
         </form>
     </div>
     
-    <div class="form-send">
-    
-        <label for=""> {{'Doyou' | translate}}</label>
-        <input type="text" placeholder="{{'Feel' | translate}}">
-
-
-        <button>{{'Sumbit' | translate}}</button>
-    </div>
 </div>
 </div>
