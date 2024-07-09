@@ -26,6 +26,12 @@
 
         <div class="gif2">
             <img src="./assets/img/VIdeoGreenRun_Mobile_MatGif_05_02.gif" alt="" style="margin-top: 0;">
+            <div class="video" id="gifImageMobile" (click)="playVideoMobile()"></div>
+            <video #videoElementMobile width="100%" height="100%" style="display: none;" controls>
+                <source [src]="currentImages['video']" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+                </video>
+           
         </div>
 
         <h1>
@@ -48,7 +54,14 @@
 
         <div class="gif">
             <img src="./assets/img/VIdeoGreenRun_Mobile_MatGif_05_02.gif" alt="" style="margin-top: 0;">
+            <div class="video-play" id="gifImage" (click)="playVideo()"></div>
+            <video #videoElement width="100%" height="100%" style="display: none;" controls>
+                <source [src]="currentImages['video']" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+                </video>
         </div>
+       
+  
     </div>
 
 
@@ -106,11 +119,8 @@
 
 </div>
 
-
 </div>
 </div>
-
-    
 
 <div id="beneficios" class="section">
 <div class="background">
@@ -127,12 +137,12 @@
 
             <p *ngIf="currentIndextwo === 0">
                 <span>{{'Reducción' | translate}}</span>  {{'Minimiza' | translate}}<br><br>
-                <span>{{'Machine' | translate}}</span>{{'Utiliza' | translate}}<br><br>
+                <span>{{'Machine' | translate}} </span>{{'Utiliza' | translate}}<br><br>
                 <span>{{'IA' | translate}}</span>{{'Responde' | translate}}
 
             <p *ngIf="currentIndextwo === 1">
                 <span>{{'slidefourone' | translate}}</span>  {{'slidefourtwo' | translate}}<br><br>
-                <span>{{'slidefourthree' | translate}}</span>{{'slidefourfour' | translate}}
+                <span>{{'slidefourthree' | translate}}</span> {{'slidefourfour' | translate}}
             </p>
 
             <p *ngIf="currentIndextwo === 2">
@@ -157,7 +167,6 @@
         <img  [src]="currentImages['third']"   alt="">
     </div>
 </div>
-
 </div>
 </div>
 
@@ -231,9 +240,7 @@
 
     <div class="form" [formGroup]="form">
         <form action="javascript:void(0)" (submit)="send()">
-
             <div class="form-input">
-        
             <div class="form-section" >
                 <label >{{'NombreT' | translate}}</label>
             <input formControlName="name" type="text" placeholder="{{'Nombre' | translate}}">

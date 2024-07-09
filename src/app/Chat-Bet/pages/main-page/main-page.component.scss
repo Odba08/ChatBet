@@ -135,10 +135,28 @@ h3{
                 display: none;
             }
             .gif2{
+                position: relative;
                 img{
                     width: 100%;
                     height: auto;
                      object-fit: cover;       
+                }
+
+                .video{
+                    position: absolute;
+                    width: 150px; 
+                    height: 150px; 
+                    background-image: url('../../../../assets/img/play1.svg'); 
+                    background-size: cover; 
+                    transition: background-image 0.5s ease-in-out;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+                }
+                .video:hover{
+                    background-image: url('../../../../assets/img/play2.svg'); 
+        
                 }
 
             }
@@ -154,7 +172,6 @@ h3{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
        
         @media (max-width: 900px){
             display: flex;
@@ -162,6 +179,35 @@ h3{
 
         }
 
+        .gif{
+        position: relative;
+         }
+        .video-play{
+            position: absolute;
+            width: 100px; 
+            height: 100px; 
+            background-image: url('../../../../assets/img/play1.svg'); 
+            background-size: cover; 
+            transition: background-image 0.5s ease-in-out;
+            top: 45%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+        .video-play:hover{
+            background-image: url('../../../../assets/img/play2.svg'); 
+
+        }
+
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+          }
+        
         .text{
             font-family: 'Poppins', sans-serif;
             color: #fff;

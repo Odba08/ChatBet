@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -10,6 +10,9 @@ import { ToastrService } from 'ngx-toastr';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
+  @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
+  @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
+
   form: FormGroup = this.fb.group({
     name: '',
     tname: 'ChatBet',
@@ -33,6 +36,7 @@ export class MainPageComponent {
       img5: './assets/img/5.png',
       third: './assets/img/third-phone.png',
       second: './assets/img/second-phone.png',
+      video: './assets/video/vid-esp.mp4'
 
     },
     en: {
@@ -43,8 +47,10 @@ export class MainPageComponent {
       img5: './assets/img/guardar/5.png',
       third: './assets/img/guardar/third-phone.png',
       second: './assets/img/guardar/second-phone.png',
+      video: './assets/video/vid-en.mp4'
     }
   };
+  
   currentLanguage: string = 'es';
   currentImages = this.imagePaths[this.currentLanguage];
 
@@ -64,9 +70,7 @@ prevParagraph() {
     this.currentIndex--;
     console.log('Previous paragraph:', this.currentIndex);
   }
-  
 }
-
 nextParagraptwo() {
   if (this.currentIndextwo < 3) {
     this.currentIndextwo++;
@@ -85,18 +89,28 @@ prevParagraphtwo() {
     this.translate.use(language);
     this.currentLanguage = language;
     this.currentImages = this.imagePaths[this.currentLanguage];
+    this.updateVideoSource();
   }
 
+  updateVideoSource() {
+    const video: HTMLVideoElement = this.videoElement.nativeElement;
+    const videoMobile: HTMLVideoElement = this.videoElementMobile.nativeElement;
+    const sourceMobile = videoMobile.querySelector('source');
+    const source = video.querySelector('source');
+    if (source) {
+      source.src = this.currentImages['video'];
+      video.load(); // Recargar el video con la nueva fuente
+    }
+    if (sourceMobile) {
+      sourceMobile.src = this.currentImages['video'];
+      videoMobile.load(); 
+    }
+  }
  
-
   async send(){
-
     try {
-      
-      /*  emailjs.init('OGARtyjIOA2WPHZfL')
-    let response = await emailjs.send ("service_c895d9m","template_worpfzp",{ */
-    emailjs.init('XRmSLdGaZmvIiOkOI')
-    let response = await emailjs.send("service_h0xb9ua","template_bukdjk6",{
+    emailjs.init('OGARtyjIOA2WPHZfL')
+    let response = await emailjs.send ("service_c895d9m","template_worpfzp",{
     from_name: this.form.value.name,
     from_email: this.form.value.email,
     from_contact: this.form.value.contact,
@@ -120,5 +134,60 @@ prevParagraphtwo() {
       }
     }
   }
+
+
+  playVideo() {
+    const gifImage = document.getElementById('gifImage');
+    const video: HTMLVideoElement = this.videoElement.nativeElement;
+  
+    if (gifImage) {
+      gifImage.style.display = 'none'; // Oculta el GIF
+    }
+    video.style.display = 'block';
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } 
+    video.play();
+
+    document.addEventListener('fullscreenchange', () => {
+      if (!document.fullscreenElement) {
+        video.style.display = 'none';
+        video.pause();
+        video.currentTime = 0;
+        if (gifImage) {
+          gifImage.style.display = 'block'; // Muestra el GIF nuevamente
+        }
+      }
+    });
+
+  }
+
+  playVideoMobile() {
+    const gifImageMobile = document.getElementById('gifImageMobile');
+    const video: HTMLVideoElement = this.videoElementMobile.nativeElement;
+  
+    if (gifImageMobile) {
+      gifImageMobile.style.display = 'none'; // Oculta el GIF
+    }
+    video.style.display = 'block';
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } 
+    video.play();
+
+    document.addEventListener('fullscreenchange', () => {
+      if (!document.fullscreenElement) {
+        video.style.display = 'none';
+        video.pause();
+        video.currentTime = 0;
+        if (gifImageMobile) {
+          gifImageMobile.style.display = 'block'; // Muestra el GIF nuevamente
+        }
+      }
+    });
+
+  }
+
+  
 
 }
