@@ -62,9 +62,7 @@ export class MainPageComponent {
     this.currentIndex++;
     console.log('Next paragraph:', this.currentIndex);
   }
- 
 }
-
 prevParagraph() {
   if (this.currentIndex > 0) {
     this.currentIndex--;
