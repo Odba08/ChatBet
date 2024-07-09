@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { FormBuilder, FormGroup } from '@angular/forms';
-
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-chatbet-main-page',
@@ -16,13 +16,13 @@ export class MainPageComponent {
     email: '',
     contact: '',
     empresa: '',
-    argo: '',
+    cargo: '',
     country: '',
     message: '',
 
   })
  
-  constructor(private translate: TranslateService, private fb: FormBuilder) {}
+  constructor(private translate: TranslateService, private fb: FormBuilder, private toastr: ToastrService) {}
 
   imagePaths: { [key: string]: { [key: string]: string } } = {
     es: {
@@ -90,19 +90,35 @@ prevParagraphtwo() {
  
 
   async send(){
-      emailjs.init('OGARtyjIOA2WPHZfL')
-      let response = await emailjs.send ("service_c895d9m","template_worpfzp",{
-      from_name: this.form.value.name,
-      from_email: this.form.value.email,
-      from_contact: this.form.value.contact,
-      from_empresa: this.form.value.empresa,
-      from_cargo: this.form.value.cargo,
-      from_country: this.form.value.country,
-      message: this.form.value.message,
-      });
 
-      this.form.reset();
+    try {
+      
+      /*  emailjs.init('OGARtyjIOA2WPHZfL')
+    let response = await emailjs.send ("service_c895d9m","template_worpfzp",{ */
+    emailjs.init('XRmSLdGaZmvIiOkOI')
+    let response = await emailjs.send("service_h0xb9ua","template_bukdjk6",{
+    from_name: this.form.value.name,
+    from_email: this.form.value.email,
+    from_contact: this.form.value.contact,
+    from_empresa: this.form.value.empresa,
+    from_cargo: this.form.value.cargo,
+    from_country: this.form.value.country,
+    message: this.form.value.message,
+    });
+    if(this.currentLanguage === 'es'){
+      this.toastr.success('Mensaje enviado con exito');
+    } else {
+      this.toastr.success('Message sent successfully');
+    }
+
+    this.form.reset();
+    } catch (error) {
+      if (this.currentLanguage === 'es'){
+        this.toastr.error('Error al enviar el mensaje');
+      } else {
+        this.toastr.error('Error sending message');
+      }
+    }
   }
-
 
 }
