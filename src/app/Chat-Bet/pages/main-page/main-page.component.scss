@@ -124,6 +124,12 @@ h3{
     .TitleBold{
         font-family: "Poppins-Bold", sans-serif;
     }
+    .TitleBoldMobile{
+        font-family: "Poppins-Bold", sans-serif;
+        @media screen and (max-width: 900px){
+            font-size: 1.5rem;
+        }
+    }
 
 
     /* First Section */
