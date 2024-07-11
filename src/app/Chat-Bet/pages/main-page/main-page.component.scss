@@ -267,11 +267,24 @@ h3{
         }
        
         
+        .es-size{
+
             img{
                 width: 85%;
                 height: auto;
                 object-fit: cover;       
             }
+        }
+
+        .en-size{
+
+            img{
+                width: 65%;
+                height: auto;
+                object-fit: cover;    
+                margin-left: 10%;   
+            }
+        }
        
         
     }
