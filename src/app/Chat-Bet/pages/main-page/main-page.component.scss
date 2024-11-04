@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6{
-    color: #fff;
+    color: black;
     font-family: "Poppins", sans-serif;
 }           
 span{
@@ -11,7 +11,13 @@ p{
     text-align: justify;
 }
 
-
+.backgroundline{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 h1{
     font-size: 3rem;
     font-weight: bold;
@@ -69,7 +75,7 @@ h3{
     .navbar{
         display: flex;
         a{
-            color: #fff;
+            color: white;
             text-decoration: none;
             margin-right: 20px;
             font-family: "Poppins", sans-serif;
@@ -219,7 +225,7 @@ h3{
         
         .text{
             font-family: 'Poppins', sans-serif;
-            color: #fff;
+            color: black;
         }
 
         .texto{
@@ -235,8 +241,6 @@ h3{
             p{
                 margin: 0;
                 transition: opacity 0.5s;
-                border-left: 4px solid  #9595ff;
-                padding-left: 1rem;
                 margin-top: 24px;
                 
             }
@@ -248,7 +252,7 @@ h3{
             border: solid 1px;
             border-color: #9595ff;
             border-radius: 50px;
-            background-color: rgba(100, 100, 255, 0.5);
+            background-color: #5554F3;
             /* color: #9595ff; */
             color: white;
             font-family: 'Poppins', sans-serif;
@@ -307,7 +311,7 @@ h3{
         }
         .text{
             font-family: 'Poppins', sans-serif;
-            color: #fff;
+            color: black;
             width: 60%;
             @media screen and (max-width: 900px){
                 width: 100%;
@@ -409,7 +413,7 @@ h3{
 
         .text{
             font-family: 'Poppins', sans-serif;
-            color: #fff;
+            color: black;
             width: 60%;
             @media screen and (max-width: 900px){
                 width: 100%;
@@ -514,7 +518,7 @@ h3{
     
         .text {
             font-family: 'Poppins', sans-serif;
-            color: #fff;
+            color: black;
     
             span {
                 color: #9595ff;
@@ -570,7 +574,7 @@ h3{
             }
     
             p {
-                color: #fff;
+                color: black;
                 font-family: 'Poppins', sans-serif;
                 font-size: 1rem;
                 margin-top: 10px;
@@ -637,18 +641,18 @@ h3{
         background-color: transparent;
         border: solid 1px;
         border-color: #9595ff;
-        color: #fff;
+        color: black;
         font-family: 'Poppins', sans-serif; 
         margin-top: 15px;
     }
 
     input::placeholder{
-        color: #fff;
+        color: black;
         font-family: 'Poppins', sans-serif;    
     }
 
     label{
-        color: #fff;
+        color: black;
         font-family: 'Poppins', sans-serif;
         margin: 0;
     }
@@ -661,7 +665,7 @@ h3{
 .form-send{
     margin-top: 4%;
     label{
-        color: #fff;
+        color: black;
         font-family: 'Poppins', sans-serif;
     }
     input{
@@ -674,7 +678,7 @@ h3{
         font-family: 'Poppins', sans-serif;
         margin-top: 15px;
         align-items: center;
-        color: #fff;
+        color: black;
         
         @media (max-width: 900px){
             width: 78%;
@@ -683,7 +687,7 @@ h3{
     }
 
     input::placeholder{
-        color: #fff;
+        color: black;
         font-family: 'Poppins', sans-serif;    
     }
 
