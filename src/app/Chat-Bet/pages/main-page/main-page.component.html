@@ -123,12 +123,10 @@
 </div>
 
 <div id="funciones" class="section">
-  <!-- <div class="background">
-    <img src="./assets/Background/Seccion2.svg" alt="" />
-  </div> -->
   <div class="second-section">
-    <h1>{{ "Features" | translate }}</h1>
+   
     <div class="second-flex">
+      <h1>{{ "Features" | translate }}</h1>
       <div class="text">
         <h3>{{ "Potencie" | translate }}</h3>
         <div class="texto">
@@ -184,21 +182,43 @@
           </button>
         </div>
       </div>
-
-      <div class="image-section" style="margin-top: 6%">
-        <img [src]="currentImages['second']" alt="" />
-      </div>
     </div>
   </div>
 </div>
 
+<div id="comofunciona" class="section">
+  <div class="fourth-section">
+
+    <div class="image-carousel">
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon1.png" alt="" />
+        <h2>Hola</h2>
+        <p>{{ "Hablacon" | translate }}</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon2.png" alt="" />
+        <h2>Hola</h2>
+        <p>{{ "Buscacon" | translate }}</p>
+      </div>
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon3.png" alt="" />
+        <h2>Hola</h2>
+        <p>{{ "Conuna" | translate }}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <div id="beneficios" class="section">
-  <!-- <div class="background">
-    <img src="./assets/Background/Seccion3.svg" alt="" />
-  </div> -->
+ 
   <div class="third-section">
-    <h1>{{ "Beneficios" | translate }}</h1>
     <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame2.png" alt="" />
+      </div>
       <div class="text">
         <div class="texto">
           <p *ngIf="currentIndextwo === 0">
@@ -209,112 +229,142 @@
             <span class="TitleBold">{{ "IA" | translate }}</span>
             {{ "Responde" | translate }}
           </p>
-
-          <p *ngIf="currentIndextwo === 1">
-            <span class="TitleBold">{{ "slidefourone" | translate }}</span>
-            {{ "slidefourtwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefourthree" | translate }}</span>
-            {{ "slidefourfour" | translate }}
-          </p>
-
-          <p *ngIf="currentIndextwo === 2">
-            <span class="TitleBold">{{ "slidefiveone" | translate }}</span>
-            {{ "slidefivetwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefivethree" | translate }}</span>
-            {{ "slidefivefour" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefivefive" | translate }}</span>
-            {{ "slidefivesix" | translate }}
-          </p>
-
-          <p *ngIf="currentIndextwo === 3">
-            <span class="TitleBold">{{ "slidefiveoneone" | translate }}</span>
-            {{ "slidefivetwotwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefivethreeone" | translate }}</span>
-          </p>
         </div>
-        <div class="navigation-buttons">
-          <button
-            [class.hidden]="currentIndextwo === 0"
-            (click)="prevParagraphtwo()"
-          >
-            <
-          </button>
-          <button
-            [class.hidden]="currentIndextwo === 3"
-            (click)="nextParagraptwo()"
-          >
-            >
-          </button>
+  
+        <button>{{ "Get" | translate }}</button>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="beneficios" class="section">
+ 
+  <div class="third-section">
+<!--     <h1>{{ "Beneficios" | translate }}</h1> -->
+    <div class="third-flex">
+    
+      <div class="text">
+        <p><span class="TitleBold">Más de 150,000 jugadores</span> activos y jugando </p>
+        <h1>¿Por que Deberias integrar Chat Bet?</h1>
+        <div class="texto">
+          <p >
+            <span class="TitleBold">{{ "Reducción" | translate }}</span>
+            {{ "Minimiza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "Machine" | translate }} </span
+            >{{ "Utiliza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "IA" | translate }}</span>
+            {{ "Responde" | translate }}
+          </p>
+
         </div>
       </div>
       <div class="image-section" style="display: flex">
-        <img [src]="currentImages['third']" alt="" />
+        <img src="../../../../assets/img/Frame3.png" alt="" />
       </div>
     </div>
   </div>
 </div>
 
-<div id="comofunciona" class="section">
-  <!-- <div class="background">
-    <img src="./assets/Background/Seccion4.svg" alt="" />
-  </div> -->
-  <div class="fourth-section">
-    <div class="text">
-      <h1>{{ "CómoFunciona" | translate }}</h1>
-      <div class="texto">
-        <p>
-          {{ "integramos" | translate }} <span class="TitleBold">ChatBet</span>
-          {{ "sitio" | translate }}
-        </p>
-      </div>
-    </div>
+<div class="backgroundline">
+  <img src="../../../../assets/Background/end-sect-one.png " alt="" />
+</div>
 
-    <div class="image-carousel">
-      <div class="carousel-item">
-        <img [src]="currentImages['img1']" alt="" />
-        <p>{{ "Hablacon" | translate }}</p>
-      </div>
+<div id="beneficios" class="section">
+ 
+  <div class="third-section">
+    <div class="third-flex">
+    
+      <div class="text">
+        <p><span class="TitleBold">Entiende, guia y mejora</span> la experiencia de apuestas </p>
+        <h1>¿Por que Deberias integrar Chat Bet?</h1>
+        <div class="texto">
+          <p *ngIf="currentIndextwo === 0">
+            <span class="TitleBold">{{ "Reducción" | translate }}</span>
+            {{ "Minimiza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "Machine" | translate }} </span
+            >{{ "Utiliza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "IA" | translate }}</span>
+            {{ "Responde" | translate }}
+          </p>
 
-      <div class="carousel-item">
-        <img [src]="currentImages['img2']" alt="" />
-        <p>{{ "Buscacon" | translate }}</p>
+        </div>
+
       </div>
-      <div class="carousel-item">
-        <img [src]="currentImages['img3']" alt="" />
-        <p>{{ "Conuna" | translate }}</p>
-      </div>
-      <div class="carousel-item">
-        <img [src]="currentImages['img4']" alt="" />
-        <p>{{ "Seleccionacuánto" | translate }}</p>
-      </div>
-      <div class="carousel-item">
-        <img [src]="currentImages['img5']" alt="" />
-        <p>{{ "LaIA" | translate }}</p>
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame4.png" alt="" />
       </div>
     </div>
   </div>
 </div>
 
-<div id="integracion" class="section">
-  <div class="fifth-section">
-    <div class="text">
-      <h1>{{ "Sencilla" | translate }}</h1>
-      <h3>
-        {{ "Personalice" | translate }}<span class="TitleBold"> ChatBet</span>
-        {{ "yhaga" | translate }}
-      </h3>
-    </div>
 
-    <div class="image-section">
-      <img src="./assets/img/scheme.png" alt="" />
+<div id="beneficios" class="section">
+ 
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame5.png" alt="" />
+      </div>
+      <div class="text">
+      <h1>{{ "Beneficios" | translate }}</h1>
+        <div class="texto"> 
+          <p *ngIf="currentIndextwo === 0">
+            <span class="TitleBold">{{ "Reducción" | translate }}</span>
+            {{ "Minimiza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "Machine" | translate }} </span
+            >{{ "Utiliza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "IA" | translate }}</span>
+            {{ "Responde" | translate }}
+          </p>
+
+        
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="backgroundline">
+  <img src="../../../../assets/Background/reviews.png" alt="" />
+</div>
+
+
+<div id="beneficios" class="section">
+ 
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame6.png" alt="" />
+      </div>
+      <div class="text">
+    <h1>{{ "Beneficios" | translate }}</h1>
+
+        <div class="texto">
+          <p *ngIf="currentIndextwo === 0">
+            <span class="TitleBold">{{ "Reducción" | translate }}</span>
+            {{ "Minimiza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "Machine" | translate }} </span
+            >{{ "Utiliza" | translate }}<br /><br />
+            <span class="TitleBold">{{ "IA" | translate }}</span>
+            {{ "Responde" | translate }}
+          </p>
+
+     
+        </div>
+
+      </div>
+      
     </div>
   </div>
 </div>
 
 <div id="contactanos" class="section">
- <!--  <div class="background">
-    <img src="./assets/Background/Seccion5.svg" alt="" />
-  </div> -->
+
   <div class="sixth-section">
     <div class="text">
       <h1>{{ "Listopara" | translate }}</h1>
@@ -389,4 +439,8 @@
       </form>
     </div>
   </div>
+</div>
+
+<div class="backgroundline">
+  <img src="../../../../assets/Background/footer.png " alt="" />
 </div>
