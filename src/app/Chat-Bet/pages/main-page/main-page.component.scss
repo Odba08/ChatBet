@@ -51,23 +51,30 @@ p{
             display: none;    
         }
     }
-
-    .iconline{
+    .iconline {
         position: relative;
-
-        .line{
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            top: 0;
-
-            transform: scaleY(-50%);
-            transform: scaleX(50%);
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100%; 
+        @media (max-width:900px){
+            height: 80px;
             
         }
+      
+    }
+    
+    .line {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        @media (max-width:900px){
+            height: 80%;
+            width: 80%;
+            
+        }
+        transform: scale(1); 
+        object-fit: contain; 
     }
 }
 h1{
@@ -507,6 +514,7 @@ h3{
 
             @media screen and (max-width: 900px){
                 width: 100%;
+                margin-left: 0;
             }
             
         }
@@ -566,7 +574,7 @@ h3{
 
         .texto{
             display: flex;
-            align-items: stretch;
+           
             
             img{
                 width: 5px;
