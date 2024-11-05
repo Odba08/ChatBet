@@ -37,9 +37,8 @@
         </div>
       </div>
     </div>
-
   </header>
-  
+
   <div class="first-section">
     <div class="gif2">
       <img
@@ -60,22 +59,13 @@
       </video>
     </div>
 
-    <h1>
-      {{ "title" | translate }}
-    </h1>
-    <h3>{{ "subtitle" | translate }}</h3>
-
+    
+    <h1>{{ "subtitle" | translate }}</h1>
     <div class="first-section-container">
       <div class="text">
         <div class="texto">
           <ng-container *ngIf="currentLanguage === 'es'">
-            <p>
-              {{ "text" | translate }} <br /><br />
-              {{ "secondtext" | translate }}<br /><br />
-              {{ "thankstoia" | translate }},
-              <span class="TitleBold">ChatBet</span>,
-              {{ "thankstoiatwo" | translate }}
-            </p>
+            <p>{{ "text" | translate }} <br /><br /></p>
           </ng-container>
 
           <ng-container *ngIf="currentLanguage === 'en'">
@@ -88,6 +78,11 @@
         </div>
         <button>{{ "Get" | translate }}</button>
       </div>
+      <img
+      src="../../../../assets/img/Frame1.png "
+      alt=""
+      style="margin-top: 0"
+    />
 
       <div
         class="gif"
@@ -96,11 +91,7 @@
           'en-size': currentLanguage === 'en'
         }"
       >
-        <img
-          src="../../../../assets/img/Frame1.png "
-          alt=""
-          style="margin-top: 0"
-        />
+       
         <!-- <div class="video-play" id="gifImage" (click)="playVideo()"></div> -->
         <video
           #videoElement
@@ -115,7 +106,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <div class="backgroundline">
@@ -124,62 +114,12 @@
 
 <div id="funciones" class="section">
   <div class="second-section">
-   
     <div class="second-flex">
       <h1>{{ "Features" | translate }}</h1>
       <div class="text">
         <h3>{{ "Potencie" | translate }}</h3>
         <div class="texto">
-          <p *ngIf="currentIndex === 0">
-            <span class="TitleBold">{{ "Generación" | translate }}</span>
-            {{ "Mantenga" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Pronósticos" | translate }}</span>
-            {{ "Proporcione" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Bonos" | translate }}</span>
-            {{ "Incentive" | translate }}
-          </p>
-
-          <p *ngIf="currentIndex === 1">
-            <span class="TitleBold">{{ "slideone" | translate }}</span>
-            {{ "slidetwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidethree" | translate }}</span>
-            {{ "slidefour" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefive" | translate }}</span>
-            {{ "slidesix" | translate }}<span class="TitleBold"> ChatBet </span
-            >{{ "slideseven" | translate }}
-          </p>
-
-          <p *ngIf="currentIndex === 2">
-            <span class="TitleBold">{{ "slidetwoone" | translate }}</span>
-            <span class="TitleBold"> ChatBet </span
-            >{{ "slidetwotwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidetwothre" | translate }}</span>
-            {{ "slidetwofour" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidetwofive" | translate }}</span>
-            {{ "slidetwosix" | translate }}
-            <span class="TitleBold">ChatBet</span>
-            {{ "slidetwoseven" | translate }}
-          </p>
-
-          <p *ngIf="currentIndex === 3">
-            <span class="TitleBold">{{ "sliderthreeone" | translate }}</span>
-            {{ "sliderthreetwo" | translate }}
-            <span class="TitleBold"> ChatBet </span>
-            {{ "sliderthreethree" | translate }}<br /><br />
-            <span class="TitleBold">{{ "sliderthreefour" | translate }}</span>
-            {{ "sliderthreefive" | translate }}
-            <span class="TitleBold"> ChatBet </span>
-            {{ "sliderthreesix" | translate }}<br /><br />
-            <span class="TitleBold">{{ "sliderthreeseven" | translate }}</span>
-          </p>
-        </div>
-        <div class="navigation-buttons">
-          <button [class.hidden]="currentIndex === 0" (click)="prevParagraph()">
-            <
-          </button>
-          <button [class.hidden]="currentIndex === 3" (click)="nextParagraph()">
-            >
-          </button>
+          <p>{{ "Mantenga" | translate }}<br /><br /></p>
         </div>
       </div>
     </div>
@@ -188,40 +128,38 @@
 
 <div id="comofunciona" class="section">
   <div class="fourth-section">
-
     <div class="image-carousel">
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon1.png" alt="" />
-        <h2>Hola</h2>
+        <h2>{{ "title1" | translate }}</h2>
+
         <p>{{ "Hablacon" | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon2.png" alt="" />
-        <h2>Hola</h2>
+        <h2>{{ "title2" | translate }}</h2>
         <p>{{ "Buscacon" | translate }}</p>
       </div>
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>Hola</h2>
+        <h2>{{ "title3" | translate }}</h2>
         <p>{{ "Conuna" | translate }}</p>
       </div>
-
     </div>
   </div>
 </div>
 
-
 <div id="beneficios" class="section">
- 
   <div class="third-section">
     <div class="third-flex">
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/img/Frame2.png" alt="" />
       </div>
       <div class="text">
+        <h1>{{ "Beneficios" | translate }}</h1>
         <div class="texto">
-          <p *ngIf="currentIndextwo === 0">
+          <p>
             <span class="TitleBold">{{ "Reducción" | translate }}</span>
             {{ "Minimiza" | translate }}<br /><br />
             <span class="TitleBold">{{ "Machine" | translate }} </span
@@ -230,34 +168,33 @@
             {{ "Responde" | translate }}
           </p>
         </div>
-  
-        <button>{{ "Get" | translate }}</button>
 
+        <button>{{ "Get" | translate }}</button>
       </div>
-      
     </div>
   </div>
 </div>
 
 <div id="beneficios" class="section">
- 
   <div class="third-section">
-<!--     <h1>{{ "Beneficios" | translate }}</h1> -->
     <div class="third-flex">
-    
       <div class="text">
-        <p><span class="TitleBold">Más de 150,000 jugadores</span> activos y jugando </p>
+        <p>
+          <span class="TitleBold">Más de 150,000 jugadores</span> activos y
+          jugando
+        </p>
         <h1>¿Por que Deberias integrar Chat Bet?</h1>
         <div class="texto">
-          <p >
-            <span class="TitleBold">{{ "Reducción" | translate }}</span>
-            {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Machine" | translate }} </span
-            >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "IA" | translate }}</span>
-            {{ "Responde" | translate }}
-          </p>
+          <p>
+            Con ChatBet, retener jugadores nunca ha sido tan fácil. Nuestra IA
+            personaliza cada apuesta, creando experiencias únicas que mantienen
+            a los usuarios comprometidos y aumentan tu crecimiento.<br /><br />
 
+            Optimiza el turnover, atrae nuevos apostadores y mejora la
+            retención, todo mientras maximizas el valor de cada apuesta. Además,
+            gestiona operaciones en múltiples canales de manera ágil y segura,
+            adaptada a cada jugador.<br /><br />
+          </p>
         </div>
       </div>
       <div class="image-section" style="display: flex">
@@ -272,25 +209,33 @@
 </div>
 
 <div id="beneficios" class="section">
- 
   <div class="third-section">
     <div class="third-flex">
-    
       <div class="text">
-        <p><span class="TitleBold">Entiende, guia y mejora</span> la experiencia de apuestas </p>
-        <h1>¿Por que Deberias integrar Chat Bet?</h1>
+        <p>
+          <span class="TitleBold">Entiende, guia y mejora</span> la experiencia
+          de apuestas
+        </p>
+        <h1>Depósitos y Retiros Seguros en Fiat o Cripto.</h1>
         <div class="texto">
-          <p *ngIf="currentIndextwo === 0">
-            <span class="TitleBold">{{ "Reducción" | translate }}</span>
-            {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Machine" | translate }} </span
-            >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "IA" | translate }}</span>
-            {{ "Responde" | translate }}
+          <p>
+            Con ChatBet, tus usuarios pueden realizar depósitos y retiros de
+            forma segura en monedas locales o criptomonedas a través de
+            cualquier canal instalado, como WhatsApp o Telegram. Todas las
+            transacciones se procesan de manera segura y sin necesidad de salir
+            del chat, garantizando una experiencia fluida y sin
+            complicaciones.<br /><br />
           </p>
-
         </div>
-
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
+        <button>{{ "Get" | translate }}</button>
       </div>
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/img/Frame4.png" alt="" />
@@ -299,74 +244,74 @@
   </div>
 </div>
 
-
 <div id="beneficios" class="section">
- 
   <div class="third-section">
     <div class="third-flex">
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/img/Frame5.png" alt="" />
       </div>
       <div class="text">
-      <h1>{{ "Beneficios" | translate }}</h1>
-        <div class="texto"> 
-          <p *ngIf="currentIndextwo === 0">
-            <span class="TitleBold">{{ "Reducción" | translate }}</span>
-            {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Machine" | translate }} </span
-            >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "IA" | translate }}</span>
-            {{ "Responde" | translate }}
+        <h1>Apuestas Sin Complicaciones para tus Usuarios—Todo en un Chat</h1>
+        <div class="texto">
+          <p>
+            Con ChatBet, tus usuarios apuestan tan fácil como enviar un mensaje.
+            Sin navegar sitios ni registros largos, todo ocurre en una sola
+            conversación.<br /><br />
+            <span class="TitleBold"
+              >Tus usuarios hacen sus apuestas en segundos</span
+            ><br />
+            En lugar de buscar, simplemente escriben en el chat la apuesta que
+            desean hacer.<br /><br />
+            <span class="TitleBold">Ingresan el monto a apostar</span><br />
+            Tus usuarios solo indican cuánto quieren apostar y están listos.<br /><br />
+            <span class="TitleBold"
+              >Confirman y la apuesta se realiza al instante 🤑</span
+            ><br />
+            Un mensaje rápido de confirmación, y la apuesta está activa—sin
+            retrasos ni complicaciones.
+            <br /><br />
+            Este proceso fluido mantiene a los usuarios comprometidos,
+            ofreciendo una experiencia rápida y sin fricciones en su plataforma
+            de mensajería favorita.
           </p>
-
-        
         </div>
 
+        <button>{{ "Get" | translate }}</button>
       </div>
-      
     </div>
   </div>
 </div>
-
 
 <div class="backgroundline">
   <img src="../../../../assets/Background/reviews.png" alt="" />
 </div>
 
-
 <div id="beneficios" class="section">
- 
   <div class="third-section">
     <div class="third-flex">
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/img/Frame6.png" alt="" />
       </div>
       <div class="text">
-    <h1>{{ "Beneficios" | translate }}</h1>
+        <span class="TitleBold">Protección de primer nivel</span>
+        <h1>La plataforma segura que tu negocio necesita.</h1>
 
         <div class="texto">
-          <p *ngIf="currentIndextwo === 0">
-            <span class="TitleBold">{{ "Reducción" | translate }}</span>
-            {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Machine" | translate }} </span
-            >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "IA" | translate }}</span>
-            {{ "Responde" | translate }}
+          <p>
+            La seguridad es esencial en nuestra plataforma. Con AWS, PCI DSS,
+            y ISO 27001, garantizamos operaciones protegidas y datos seguros,
+            cumpliendo con los más altos estándares de la industria.
           </p>
-
-     
         </div>
-
       </div>
-      
     </div>
   </div>
 </div>
 
 <div id="contactanos" class="section">
-
   <div class="sixth-section">
     <div class="text">
+      <span class="TitleBold2">¡Únase a la emoción! </span>
       <h1>{{ "Listopara" | translate }}</h1>
       <h3>
         <span class="TitleBoldMobile">{{ "Únase" | translate }} </span>
@@ -378,7 +323,6 @@
       <form action="javascript:void(0)" (submit)="send()">
         <div class="form-input">
           <div class="form-section">
-            <label>{{ "NombreT" | translate }}</label>
             <input
               formControlName="name"
               type="text"
@@ -386,7 +330,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "NúmeroT" | translate }}</label>
             <input
               formControlName="contact"
               type="text"
@@ -394,7 +337,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "CorreoT" | translate }}</label>
             <input
               formControlName="email"
               type="text"
@@ -402,7 +344,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "EmpresaT" | translate }}</label>
             <input
               formControlName="empresa"
               type="text"
@@ -410,7 +351,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "CargoT" | translate }}</label>
             <input
               formControlName="cargo"
               type="text"
@@ -418,7 +358,6 @@
             />
           </div>
           <div class="form-section">
-            <label style="margin-right: 10px">{{ "PaisT" | translate }}</label>
             <input
               formControlName="country"
               type="text"
@@ -427,7 +366,6 @@
           </div>
         </div>
         <div class="form-send">
-          <label for=""> {{ "Doyou" | translate }}</label>
           <input
             formControlName="message"
             type="text"
