@@ -60,9 +60,9 @@
     </div>
 
     
-    <h1>{{ "subtitle" | translate }}</h1>
     <div class="first-section-container">
       <div class="text">
+        <h1>{{ "subtitle" | translate }}</h1>
         <div class="texto">
           <ng-container *ngIf="currentLanguage === 'es'">
             <p>{{ "text" | translate }} <br /><br /></p>
@@ -78,11 +78,16 @@
         </div>
         <button>{{ "Get" | translate }}</button>
       </div>
-      <img
-      src="../../../../assets/img/Frame1.png "
-      alt=""
-      style="margin-top: 0"
-    />
+
+      <div class="image-first-container">
+        <img
+        src="../../../../assets/img/Frame1.png "
+        alt=""
+        style="margin-top: 0"
+      />
+      
+
+      </div>
 
       <div
         class="gif"
@@ -105,8 +110,10 @@
         </video>
       </div>
     </div>
+  
   </div>
-</div>
+  </div>
+
 
 <div class="backgroundline">
   <img src="../../../../assets/Background/end-sect-one.png " alt="" />
@@ -117,7 +124,6 @@
     <div class="second-flex">
       <h1>{{ "Features" | translate }}</h1>
       <div class="text">
-        <h3>{{ "Potencie" | translate }}</h3>
         <div class="texto">
           <p>{{ "Mantenga" | translate }}<br /><br /></p>
         </div>
@@ -160,16 +166,17 @@
         <h1>{{ "Beneficios" | translate }}</h1>
         <div class="texto">
           <p>
-            <span class="TitleBold">{{ "Reducción" | translate }}</span>
+            <span class="TitleBold3">{{ "Reducción" | translate }}</span>
             {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Machine" | translate }} </span
+            <span class="TitleBold3">{{ "Machine" | translate }} </span
             >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "IA" | translate }}</span>
+            <span class="TitleBold3">{{ "IA" | translate }}</span>
             {{ "Responde" | translate }}
           </p>
         </div>
-
+        <div class="completebutton"> 
         <button>{{ "Get" | translate }}</button>
+      </div>
       </div>
     </div>
   </div>
@@ -227,19 +234,25 @@
             complicaciones.<br /><br />
           </p>
         </div>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
-        <button>{{ "Get" | translate }}</button>
+        <div class="botones">
+          <button ><span class="TitleBold3">Casino: Jugadas inteligentes</span></button>
+          <button ><span class="TitleBold3">Soporte: Respuestas instantáneas.</span></button>
+          <button ><span class="TitleBold3">Sugerencias de Juego: Recomendaciones basadas en datos.</span></button><br>
+          <button ><span class="TitleBold3">Soporte: Respuestas instantáneas.</span></button><br>
+          <div class="division">
+            <button ><span class="TitleBold3">Open AI</span></button>
+            <button><span class="TitleBold3">CloudFlrare</span></button>
+            <button><span class="TitleBold3">Promociones</span></button>
+          </div>
+          <button ><span class="TitleBold3">Ofertas personalizadas</span></button><br>
+          <button ><span class="TitleBold3">Noticias: Eventos clave en tiempo real</span></button>
+        </div>
       </div>
-      <div class="image-section" style="display: flex">
-        <img src="../../../../assets/img/Frame4.png" alt="" />
+
+      <div class="frame4" style="display: flex">
+        <img  src="../../../../assets/img/Frame4.png" alt="" />
       </div>
+
     </div>
   </div>
 </div>
@@ -257,14 +270,14 @@
             Con ChatBet, tus usuarios apuestan tan fácil como enviar un mensaje.
             Sin navegar sitios ni registros largos, todo ocurre en una sola
             conversación.<br /><br />
-            <span class="TitleBold"
+            <span class="TitleBold3"
               >Tus usuarios hacen sus apuestas en segundos</span
             ><br />
             En lugar de buscar, simplemente escriben en el chat la apuesta que
             desean hacer.<br /><br />
-            <span class="TitleBold">Ingresan el monto a apostar</span><br />
+            <span class="TitleBold3">Ingresan el monto a apostar</span><br />
             Tus usuarios solo indican cuánto quieren apostar y están listos.<br /><br />
-            <span class="TitleBold"
+            <span class="TitleBold3"
               >Confirman y la apuesta se realiza al instante 🤑</span
             ><br />
             Un mensaje rápido de confirmación, y la apuesta está activa—sin
@@ -276,7 +289,11 @@
           </p>
         </div>
 
-        <button>{{ "Get" | translate }}</button>
+        <div class="completebutton">
+
+          <button>{{ "Get" | translate }}</button>
+        </div>
+
       </div>
     </div>
   </div>
@@ -293,7 +310,7 @@
         <img src="../../../../assets/img/Frame6.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleBold">Protección de primer nivel</span>
+        <span class="TitleBold2">Protección de primer nivel</span>
         <h1>La plataforma segura que tu negocio necesita.</h1>
 
         <div class="texto">
