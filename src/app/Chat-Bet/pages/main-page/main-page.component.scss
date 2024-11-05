@@ -19,11 +19,55 @@ p{
     text-align: justify;
 }
 
+
 .backgroundline{
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
+    }
+
+    .fotter1{
+        @media (max-width: 900px){
+            display: none;   
+        }
+    }
+    
+    .fotter2{
+        @media (min-width: 900px){
+            display: none;    
+        }
+    }
+
+    .review{
+        @media (max-width: 900px){
+            display: none;   
+        }
+    }
+
+    .reviewphone{
+        @media (min-width: 900px){
+            display: none;    
+        }
+    }
+
+    .iconline{
+        position: relative;
+
+        .line{
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            top: 0;
+
+            transform: scaleY(-50%);
+            transform: scaleX(50%);
+            
+        }
     }
 }
 h1{
@@ -224,18 +268,20 @@ h3{
             position: absolute;
             width: 100px; 
             height: 100px; 
-            background-image: url('../../../../assets/img/play1.svg'); 
+            background-image: url('../../../../assets/Icon/video.png'); 
             background-size: cover; 
-            transition: background-image 0.5s ease-in-out;
+            /* transition: background-image 0.5s ease-in-out; */
             top: 45%;
             left: 42%;
             transform: translate(-50%, -50%);
             cursor: pointer;
         }
-        .video-play:hover{
+
+       
+      /*   .video-play:hover{
             background-image: url('../../../../assets/img/play2.svg'); 
 
-        }
+        } */
 
         video{
             position: absolute;
@@ -318,6 +364,21 @@ h3{
             }
         }
        
+        .video{
+            display: flex;
+            width: 100%;
+            button{
+                width: 50%;
+            }
+            img{
+                width: 30%;
+                height: auto;
+                object-fit: contain;
+                margin-left: 15px;
+                cursor: pointer;
+                margin-top: 27px;
+            }
+        }
         
     }
 
@@ -808,4 +869,7 @@ button:hover{
     opacity: 0.5;
     cursor: pointer;
 }
+
+
+
 }

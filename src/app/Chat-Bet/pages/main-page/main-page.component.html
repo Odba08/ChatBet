@@ -76,7 +76,12 @@
             </p>
           </ng-container>
         </div>
-        <button>{{ "Get" | translate }}</button>
+        <div class="video">
+          <button>{{ "Get" | translate }}</button>
+          <img src="../../../../assets/Icon/video.png" alt="" (click)="playVideo()">
+         <!--  <div class="video-play" id="gifImage" (click)="playVideo()"></div> -->
+
+        </div>
       </div>
 
       <div class="image-first-container">
@@ -97,7 +102,7 @@
         }"
       >
        
-        <!-- <div class="video-play" id="gifImage" (click)="playVideo()"></div> -->
+      
         <video
           #videoElement
           width="100%"
@@ -116,7 +121,11 @@
 
 
 <div class="backgroundline">
-  <img src="../../../../assets/Background/end-sect-one.png " alt="" />
+  <div class="iconline">
+    <img src="../../../../assets/Background/end-sect-one.png " alt="" />
+    <img  class="line"src="../../../../assets/Icon/icons.png" alt="">
+  </div>
+
 </div>
 
 <div id="funciones" class="section">
@@ -300,7 +309,14 @@
 </div>
 
 <div class="backgroundline">
+  <div class="review">
   <img src="../../../../assets/Background/reviews.png" alt="" />
+  </div>
+
+  <div class="reviewphone">
+    <img src="../../../../assets/Background/carrusel.png" alt="" />
+
+  </div>
 </div>
 
 <div id="beneficios" class="section">
@@ -397,5 +413,14 @@
 </div>
 
 <div class="backgroundline">
-  <img src="../../../../assets/Background/footer.png " alt="" />
+
+  <div class="fotter1">
+
+    <img src="../../../../assets/Background/footer.png " alt="" />
+  </div>
+
+  <div class="fotter2">
+    <img src="../../../../assets/Background/2footer.png " alt="" />
+
+  </div>
 </div>
