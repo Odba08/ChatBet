@@ -25,7 +25,7 @@ export class MainPageComponent {
     };
 
     secondoptions: AnimationOptions = {
-      path: '../../../../assets/animation/Animation_En.json',
+      path: '../../../../assets/animation/Idle _En.json',
       renderer: 'svg',
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
@@ -204,6 +204,7 @@ export class MainPageComponent {
       this.options = {
         path: '../../../../assets/animation/Idle.json' 
       };
+    
     }
   
     playVideoMobile() {

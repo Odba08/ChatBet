@@ -47,24 +47,11 @@
         alt=""
         style="margin-top: 0"
       />
-      <!-- <div class="video" id="gifImageMobile" (click)="playVideoMobile()"></div> -->
-      <video
-        #videoElementMobile
-        width="100%"
-        height="100%"
-        style="display: none"
-        controls
-      >
-        <source [src]="currentImages['video']" type="video/mp4" />
-        Tu navegador no soporta la etiqueta de video.
-      </video>
     </div>
 
     <div class="first-section-container">
       <div class="text">
         <img src="../../../../assets/img/Frame8.png" alt="" />
-        <!-- <h1>{{ "subtitle" | translate }}</h1> -->
-
         <div class="animation-container">
           <ng-lottie
             *ngIf="currentLanguage === 'es'; else otherOptions"
@@ -93,7 +80,6 @@
             alt=""
             (click)="playVideo()"
           />
-          <!--  <div class="video-play" id="gifImage" (click)="playVideo()"></div> -->
         </div>
       </div>
 
