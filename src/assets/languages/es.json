@@ -63,8 +63,8 @@
     "PaisT": "Pais",
     "Pais": "Ingrese su ciudad y/o país de donde nos contactas",
 
-    "Get": "¡Obtenga una demo!",
-
+    "Get": "¡Obtenga una demostración!",
+    
     "headerone":"+Funciones",
     "headertwo":"Beneficios",
     "headertree":"¿Cómo Funciona?",
@@ -110,5 +110,41 @@
 
     "slidefiveoneone": "Informes:",
     "slidefivetwotwo": "Reciba reportes de transacciones, apuestas realizadas con su respectivo ID, montos apostados, eventos en los que jugaron, estadísticas, indicadores de rendimiento y analice métricas, etc",
-    "slidefivethreeone": "La IA de ChatBet, se entrena permanentemente con su performance."
+    "slidefivethreeone": "La IA de ChatBet, se entrena permanentemente con su performance.",
+
+    "mascientocincuenta": "Más de 150,000 jugadores",
+    "activos": "activos y jugando:",
+    "porquedeberias": "¿Por que Deberias integrar Chat Bet?",
+    "conchatbet": "Con ChatBet, retener jugadores nunca ha sido tan fácil. Nuestra IA personaliza cada apuesta, creando experiencias únicas que mantienen los usuarios comprometidos y aumentan tu crecimiento.",
+    "optimiza": "Optimiza el turnover, atrae nuevos apostadores y mejora la retención, todo mientras maximizas el valor de cada apuesta. Además, gestiona operaciones en múltiples canales de manera ágil y segura, adaptada a cada jugador.",
+
+    "entiendeyguia": "Entiende, guia y mejora",
+    "laexperiencia": "la experiencia de apuestas",
+    "depositos": "Depósitos y Retiros Seguros en Fiat o Cripto.",
+    "tususuarios": "Con ChatBet, tus usuarios pueden realizar depósitos y retiros de forma segura en monedas locales o criptomonedas a través de cualquier canal instalado, como WhatsApp o Telegram. Todas las transacciones se procesan de manera segura y sin necesidad de salir del chat, garantizando una experiencia fluida y sin complicaciones.",
+    "casinos": "Casino: Jugadas inteligentes",
+    "soporte": "Soporte: Respuestas instantáneas.",
+    "sugerencias": "Sugerencias de Juego: Recomendaciones basadas en datos.",
+    "soporterespuestas": "Soporte: Respuestas instantáneas.",
+    "promociones": "Promociones",
+    "ofertas": "Ofertas personalizadas",
+    "noticias": "Noticias: Eventos clave en tiempo real",
+
+
+    "sincomplicaciones": "Apuestas Sin Complicaciones para tus Usuarios—Todo en un Chat",
+    "tususuariosapuestan": "Con ChatBet, tus usuarios apuestan tan fácil como enviar un mensaje. Sin navegar sitios ni registros largos, todo ocurre en una sola conversación.:",
+    "tususuarioshacen": "Tus usuarios hacen sus apuestas en segundos",
+    "enlugar": "En lugar de buscar, simplemente escriben en el chat la apuesta que desean hacer.",
+    "ingresan": "Ingresan el monto a apostar",
+    "soloindican": "Tus usuarios solo indican cuánto quieren apostar y están listos.",
+    "confirman": "Confirman y la apuesta se realiza al instante 🤑",
+    "unmensajerapido": "Un mensaje rápido de confirmación, y la apuesta está activa—sin retrasos ni complicaciones.",
+    "esteproceso": "Este proceso fluido mantiene a los usuarios comprometidos, ofreciendo una experiencia rápida y sin fricciones en su plataforma de mensajería favorita.",
+
+    "proteccion": "Protección de primer nivel",
+    "laplataforma": "La plataforma segura que tu negocio necesita.",
+    "segura": "La seguridad es esencial en nuestra plataforma. Con AWS, PCI DSS, y ISO 27001, garantizamos operaciones protegidas y datos seguros, cumpliendo con los más altos estándares de la industria.",
+    "unanse": "¡Únase a la emoción!"
+
+
 }   
