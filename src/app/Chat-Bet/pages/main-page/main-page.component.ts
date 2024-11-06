@@ -35,7 +35,7 @@ export class MainPageComponent {
         img5: './assets/img/5.png',
         third: './assets/img/third-phone.png',
         second: './assets/img/second-phone.png',
-        video: './assets/video/vid-esp.mp4'
+        video: './assets/video/vid-es.mp4'
       },
       en: {
         img1: './assets/img/guardar/1.png',
@@ -45,7 +45,7 @@ export class MainPageComponent {
         img5: './assets/img/guardar/5.png',
         third: './assets/img/guardar/third-phone.png',
         second: './assets/img/guardar/second-phone.png',
-        video: './assets/video/vid-en.mp4'
+        video: './assets/video/vid-es.mp4'
       }
     };
   
@@ -103,7 +103,7 @@ export class MainPageComponent {
       const source = video.querySelector('source');
       if (source) {
         source.src = this.currentImages['video'];
-        video.load(); // Recargar el video con la nueva fuente
+        video.load(); 
       }
       if (sourceMobile) {
         sourceMobile.src = this.currentImages['video'];
