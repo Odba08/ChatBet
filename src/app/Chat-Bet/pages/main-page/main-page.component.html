@@ -60,40 +60,50 @@
       </video>
     </div>
 
-    
     <div class="first-section-container">
       <div class="text">
-        <img src="../../../../assets/img/Frame8.png" alt="">
-        <h1>{{ "subtitle" | translate }}</h1>
+        <img src="../../../../assets/img/Frame8.png" alt="" />
+        <!-- <h1>{{ "subtitle" | translate }}</h1> -->
+
+        <div class="animation-container">
+          <ng-lottie
+            *ngIf="currentLanguage === 'es'; else otherOptions"
+            [options]="options"
+            class="lottie-animation"
+          >
+          </ng-lottie>
+          <ng-template #otherOptions>
+            <ng-lottie [options]="secondoptions" class="lottie-animation">
+            </ng-lottie>
+          </ng-template>
+        </div>
         <div class="texto">
           <ng-container *ngIf="currentLanguage === 'es'">
             <p>{{ "text" | translate }} <br /><br /></p>
           </ng-container>
 
           <ng-container *ngIf="currentLanguage === 'en'">
-            <p>
-              {{ "text" | translate }} <br /><br />
-            </p>
+            <p>{{ "text" | translate }} <br /><br /></p>
           </ng-container>
         </div>
         <div class="video">
           <button>{{ "Get" | translate }}</button>
-          <img src="../../../../assets/Icon/video.png" alt="" (click)="playVideo()">
-         <!--  <div class="video-play" id="gifImage" (click)="playVideo()"></div> -->
-
+          <img
+            src="../../../../assets/Icon/video.png"
+            alt=""
+            (click)="playVideo()"
+          />
+          <!--  <div class="video-play" id="gifImage" (click)="playVideo()"></div> -->
         </div>
       </div>
 
       <div class="image-first-container">
-        <img 
-        src="../../../../assets/img/Frame1.png "
-        alt=""
-        style="margin-top: 0"
-      />
-      <img class="lastimage" src="../../../../assets/img/Frame7.png" alt="">
-      
-      
-
+        <img
+          src="../../../../assets/img/Frame1.png "
+          alt=""
+          style="margin-top: 0"
+        />
+        <img class="lastimage" src="../../../../assets/img/Frame7.png" alt="" />
       </div>
 
       <div
@@ -103,8 +113,6 @@
           'en-size': currentLanguage === 'en'
         }"
       >
-       
-      
         <video
           #videoElement
           width="100%"
@@ -117,17 +125,14 @@
         </video>
       </div>
     </div>
-  
   </div>
-  </div>
-
+</div>
 
 <div class="backgroundline">
   <div class="iconline">
     <img src="../../../../assets/Background/end-sect-one.png " alt="" />
-    <img  class="line"src="../../../../assets/Icon/icons.png" alt="">
+    <img class="line" src="../../../../assets/Icon/icons.png" alt="" />
   </div>
-
 </div>
 
 <div id="funciones" class="section">
@@ -185,9 +190,9 @@
             {{ "Responde" | translate }}
           </p>
         </div>
-        <div class="completebutton"> 
-        <button>{{ "Get" | translate }}</button>
-      </div>
+        <div class="completebutton">
+          <button>{{ "Get" | translate }}</button>
+        </div>
       </div>
     </div>
   </div>
@@ -198,14 +203,15 @@
     <div class="third-flex">
       <div class="text">
         <p>
-          <span class="TitleBold">{{"mascientocincuenta" | translate}}</span> {{"activos" | translate}}
+          <span class="TitleBold">{{ "mascientocincuenta" | translate }}</span>
+          {{ "activos" | translate }}
         </p>
-        <h1>{{"porquedeberias" | translate}}</h1>
+        <h1>{{ "porquedeberias" | translate }}</h1>
         <div class="texto">
           <p>
-            {{"conchatbet" | translate}}.<br /><br />
+            {{ "conchatbet" | translate }}.<br /><br />
 
-            {{"optimiza" | translate}}<br /><br />
+            {{ "optimiza" | translate }}<br /><br />
           </p>
         </div>
       </div>
@@ -225,33 +231,49 @@
     <div class="third-flex">
       <div class="text">
         <p>
-          <span class="TitleBold">{{"entiendeyguia" | translate}}</span> {{"laexperiencia" | translate}}
+          <span class="TitleBold">{{ "entiendeyguia" | translate }}</span>
+          {{ "laexperiencia" | translate }}
         </p>
-        <h1>{{"depositos" | translate}}</h1>
+        <h1>{{ "depositos" | translate }}</h1>
         <div class="texto">
-          <p>
-            {{"optimiza" | translate}}tususuarios<br /><br />
-          </p>
+          <p>{{ "optimiza" | translate }}tususuarios<br /><br /></p>
         </div>
         <div class="botones">
-          <button ><span class="TitleBold3">{{"casinos" | translate}}</span></button>
-          <button ><span class="TitleBold3">{{"soporte" | translate}}</span></button>
-          <button ><span class="TitleBold3">{{"sugerencias" | translate}}</span></button><br>
-          <button ><span class="TitleBold3">{{"soporterespuestas" | translate}}</span></button><br>
+          <button>
+            <span class="TitleBold3">{{ "casinos" | translate }}</span>
+          </button>
+          <button>
+            <span class="TitleBold3">{{ "soporte" | translate }}</span>
+          </button>
+          <button>
+            <span class="TitleBold3">{{
+              "sugerencias" | translate
+            }}</span></button
+          ><br />
+          <button>
+            <span class="TitleBold3">{{
+              "soporterespuestas" | translate
+            }}</span></button
+          ><br />
           <div class="division">
-            <button ><span class="TitleBold3">Open AI</span></button>
+            <button><span class="TitleBold3">Open AI</span></button>
             <button><span class="TitleBold3">CloudFlrare</span></button>
-            <button><span class="TitleBold3">{{"promociones" | translate}}</span></button>
+            <button>
+              <span class="TitleBold3">{{ "promociones" | translate }}</span>
+            </button>
           </div>
-          <button ><span class="TitleBold3">{{"ofertas" | translate}}</span></button><br>
-          <button ><span class="TitleBold3">{{"noticias" | translate}}</span></button>
+          <button>
+            <span class="TitleBold3">{{ "ofertas" | translate }}</span></button
+          ><br />
+          <button>
+            <span class="TitleBold3">{{ "noticias" | translate }}</span>
+          </button>
         </div>
       </div>
 
       <div class="frame4" style="display: flex">
-        <img  src="../../../../assets/img/Frame4.png" alt="" />
+        <img src="../../../../assets/img/Frame4.png" alt="" />
       </div>
-
     </div>
   </div>
 </div>
@@ -267,14 +289,13 @@
         <div class="texto">
           <p>
             {{ "tususuariosapuestan" | translate }}<br /><br />
-            <span class="TitleBold3"
-              >{{ "tususuarioshacen" | translate }}</span
+            <span class="TitleBold3">{{ "tususuarioshacen" | translate }}</span
             ><br />
             {{ "enlugar" | translate }}<br /><br />
-            <span class="TitleBold3">{{ "ingresan" | translate }}</span><br />
+            <span class="TitleBold3">{{ "ingresan" | translate }}</span
+            ><br />
             {{ "soloindican" | translate }}<br /><br />
-            <span class="TitleBold3"
-              >{{ "confirman" | translate }}</span
+            <span class="TitleBold3">{{ "confirman" | translate }}</span
             ><br />
             {{ "unmensajerapido" | translate }}
             <br /><br />
@@ -283,10 +304,8 @@
         </div>
 
         <div class="completebutton">
-
           <button>{{ "Get" | translate }}</button>
         </div>
-
       </div>
     </div>
   </div>
@@ -294,12 +313,11 @@
 
 <div class="backgroundline">
   <div class="review">
-  <img src="../../../../assets/Background/reviews.png" alt="" />
+    <img src="../../../../assets/Background/reviews.png" alt="" />
   </div>
 
   <div class="reviewphone">
     <img src="../../../../assets/Background/carrusel.png" alt="" />
-
   </div>
 </div>
 
@@ -395,14 +413,11 @@
 </div>
 
 <div class="backgroundline">
-
   <div class="fotter1">
-
     <img src="../../../../assets/Background/footer.png " alt="" />
   </div>
 
   <div class="fotter2">
     <img src="../../../../assets/Background/2footer.png " alt="" />
-
   </div>
 </div>

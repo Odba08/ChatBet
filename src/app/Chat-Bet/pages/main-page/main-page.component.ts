@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { ToastrService } from 'ngx-toastr';
+import { AnimationOptions } from 'ngx-lottie';
+
 
 @Component({
   selector: 'app-chatbet-main-page',
@@ -10,10 +12,25 @@ import { ToastrService } from 'ngx-toastr';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
-
-
     @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
     @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
+
+    
+    options: AnimationOptions = {
+      path: '../../../../assets/animation/lottie.json',
+      renderer: 'svg',
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
+
+    secondoptions: AnimationOptions = {
+      path: '../../../../assets/animation/Animation_En.json',
+      renderer: 'svg',
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    }
   
     form: FormGroup = this.fb.group({
       name: ['', Validators.required], 
@@ -60,6 +77,12 @@ export class MainPageComponent {
       private fb: FormBuilder, 
       private toastr: ToastrService
     ) {}
+  
+    ngOnInit() {
+      setTimeout(() => {
+        this.changeAnimation(); 
+      }, 2800);
+    }
   
     nextParagraph() {
       if (this.currentIndex < 3) {
@@ -110,6 +133,8 @@ export class MainPageComponent {
         videoMobile.load(); 
       }
     }
+
+    
   
     async send() {
       if (this.form.invalid) {
@@ -173,6 +198,12 @@ export class MainPageComponent {
           }
         }
       });
+    }
+
+    changeAnimation() {
+      this.options = {
+        path: '../../../../assets/animation/Idle.json' 
+      };
     }
   
     playVideoMobile() {

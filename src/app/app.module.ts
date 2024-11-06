@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -10,8 +10,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatBetModule } from './Chat-Bet/chat-bet.module';
-
-
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,6 +18,7 @@ import { ChatBetModule } from './Chat-Bet/chat-bet.module';
 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     ChatBetModule,
@@ -33,8 +33,10 @@ import { ChatBetModule } from './Chat-Bet/chat-bet.module';
       }
     })
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
 
