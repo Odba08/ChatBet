@@ -17,7 +17,7 @@ export class MainPageComponent {
 
     
     options: AnimationOptions = {
-      path: '../../../../assets/animation/lottie.json',
+      path: '../../../../assets/animation/Titulo_AnimacionV2_Esp.json',
       renderer: 'svg',
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
@@ -25,7 +25,7 @@ export class MainPageComponent {
     };
 
     secondoptions: AnimationOptions = {
-      path: '../../../../assets/animation/Idle _En.json',
+      path: '../../../../assets/animation/Title_AnimationV2.json',
       renderer: 'svg',
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
@@ -78,11 +78,11 @@ export class MainPageComponent {
       private toastr: ToastrService
     ) {}
   
-    ngOnInit() {
+/*     ngOnInit() {
       setTimeout(() => {
         this.changeAnimation(); 
       }, 2800);
-    }
+    } */
   
     nextParagraph() {
       if (this.currentIndex < 3) {
@@ -200,13 +200,13 @@ export class MainPageComponent {
       });
     }
 
-    changeAnimation() {
+  /*   changeAnimation() {
       this.options = {
         path: '../../../../assets/animation/Idle.json' 
       };
     
     }
-  
+   */
     playVideoMobile() {
       const gifImageMobile = document.getElementById('gifImageMobile');
       const video: HTMLVideoElement = this.videoElementMobile.nativeElement;
