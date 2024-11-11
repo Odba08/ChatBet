@@ -45,20 +45,20 @@ export class MainPageComponent {
   
     imagePaths: { [key: string]: { [key: string]: string } } = {
       es: {
-        img1: './assets/img/1.png',
-        img2: './assets/img/2.png',
-        img3: './assets/img/3.png',
-        img4: './assets/img/4.png',
+        img1: '../../../../assets/img/Enespañol.png',
+        img2: './assets/img/Frame7.png',
+        img3: '../../../../assets/Icon/video.png',
+        img4: '../../../../assets/Background/reviews.png',
         img5: './assets/img/5.png',
         third: './assets/img/third-phone.png',
         second: './assets/img/second-phone.png',
         video: './assets/video/vid-es.mp4'
       },
       en: {
-        img1: './assets/img/guardar/1.png',
-        img2: './assets/img/guardar/2.png',
-        img3: './assets/img/guardar/3.png',
-        img4: './assets/img/guardar/4.png',
+        img1: '../../../../assets/img/Eningles.png',
+        img2: './assets/img/Frame7.en.png',
+        img3: '../../../../assets/Icon/video-en.png',
+        img4: '../../../../assets/Background/reviews-en.png',
         img5: './assets/img/guardar/5.png',
         third: './assets/img/guardar/third-phone.png',
         second: './assets/img/guardar/second-phone.png',

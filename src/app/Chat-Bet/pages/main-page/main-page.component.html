@@ -76,7 +76,7 @@
         <div class="video">
           <button>{{ "Get" | translate }}</button>
           <img
-            src="../../../../assets/Icon/video.png"
+            [src]="currentImages['img3']"
             alt=""
             (click)="playVideo()"
           />
@@ -89,7 +89,7 @@
           alt=""
           style="margin-top: 0"
         />
-        <img class="lastimage" src="../../../../assets/img/Frame7.png" alt="" />
+        <img class="lastimage" [src]="currentImages['img2']" alt="" />
       </div>
 
       <div
@@ -202,7 +202,7 @@
         </div>
       </div>
       <div class="image-section" style="display: flex">
-        <img src="../../../../assets/img/Frame3.png" alt="" />
+        <img [src]="currentImages['img1']" alt="" />
       </div>
     </div>
   </div>
@@ -295,7 +295,7 @@
 
 <div class="backgroundline">
   <div class="review">
-    <img src="../../../../assets/Background/reviews.png" alt="" />
+    <img [src]="currentImages['img4']" alt="" />
   </div>
 
   <div class="reviewphone">
