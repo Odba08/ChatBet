@@ -17,7 +17,7 @@ export class MainPageComponent {
 
     
     options: AnimationOptions = {
-      path: '../../../../assets/animation/Titulo_AnimacionV2_Esp.json',
+      path: '../../../../assets/animation/lottieesp.json',
       renderer: 'svg',
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'

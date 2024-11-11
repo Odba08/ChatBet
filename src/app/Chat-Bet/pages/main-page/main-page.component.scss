@@ -73,7 +73,7 @@ p{
             width: 80%;
             
         }
-        transform: scale(1); 
+        transform: scale(1.2); 
         object-fit: contain; 
     }
 }
@@ -244,7 +244,7 @@ h3{
         width:100%;
         margin-top: 3rem;
         .image-first-container{
-            width:50%;
+            width:40%;
             position: relative;
             
             .lastimage{
@@ -252,6 +252,7 @@ h3{
                 top: 0;
                 right: 0;
                 width: 35%;
+                margin-right: 10%;
                 height: auto;
               }
             img{
@@ -566,20 +567,34 @@ h3{
 
         }
         .botones{
-            button{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 32px;
+            flex-direction: column;
+            @media (max-width: 900px){
+                margin-bottom: 32px;
+                
+            }
+
+            span{
                 background-color: white;
                 color: #5554F3;
                 border: solid 1px;
                 border-color:#5554F3;
+                border-radius: 50px;
                 padding: 5px;
                 margin-left: 5px;
                 width: 100%;
+                margin-top: 5px;
+                text-align: center;
+                
                
             }
-            button:hover{
+         /*    button:hover{
                 background-color:#5554F3;
                 color: white;
-            }
+            } */
 
             @media screen and (max-width: 900px){
                 display: flex;
