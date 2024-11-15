@@ -1,11 +1,12 @@
 <div class="section">
   <div class="background">
-    <img src="./assets/Background/Seccion1.svg" alt="" />
+    <img src="./assets/Background/Seccion1.png" alt="" />
   </div>
 
   <header>
     <div class="section-header">
-      <img src="./assets/Icon/Layer_1.png" alt="" />
+      <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" />
+      <img class="chatbet" src="../../../../assets/img/Frame0.png" alt="" />
       <div class="navbar">
         <a href="#funciones">{{ "headerone" | translate }}</a>
         <a href="#beneficios">{{ "headertwo" | translate }}</a>
@@ -42,50 +43,53 @@
   <div class="first-section">
     <div class="gif2">
       <img
-        src="./assets/img/VIdeoGreenRun_Mobile_MatGif_05_02.gif"
+        src="../../../../assets/img/phone-tlf.png"
         alt=""
         style="margin-top: 0"
       />
-      <div class="video" id="gifImageMobile" (click)="playVideoMobile()"></div>
-      <video
-        #videoElementMobile
-        width="100%"
-        height="100%"
-        style="display: none"
-        controls
-      >
-        <source [src]="currentImages['video']" type="video/mp4" />
-        Tu navegador no soporta la etiqueta de video.
-      </video>
     </div>
-
-    <h1>
-      {{ "title" | translate }}
-    </h1>
-    <h3>{{ "subtitle" | translate }}</h3>
 
     <div class="first-section-container">
       <div class="text">
+        <!-- <img src="../../../../assets/img/Frame8.png" alt="" /> -->
+        <div class="animation-container">
+          <ng-lottie
+            *ngIf="currentLanguage === 'es'; else otherOptions"
+            [options]="options"
+            class="lottie-animation"
+          >
+          </ng-lottie>
+          <ng-template #otherOptions>
+            <ng-lottie [options]="secondoptions" class="lottie-animation">
+            </ng-lottie>
+          </ng-template>
+        </div>
         <div class="texto">
           <ng-container *ngIf="currentLanguage === 'es'">
-            <p>
-              {{ "text" | translate }} <br /><br />
-              {{ "secondtext" | translate }}<br /><br />
-              {{ "thankstoia" | translate }},
-              <span class="TitleBold">ChatBet</span>,
-              {{ "thankstoiatwo" | translate }}
-            </p>
+            <p>{{ "text" | translate }} <br /><br /></p>
           </ng-container>
 
           <ng-container *ngIf="currentLanguage === 'en'">
-            <p>
-              {{ "text" | translate }} <br /><br />
-              <span class="TitleBold">ChatBet</span>
-              {{ "thankstoiatwo" | translate }}
-            </p>
+            <p>{{ "text" | translate }} <br /><br /></p>
           </ng-container>
         </div>
-        <button>{{ "Get" | translate }}</button>
+        <div class="video">
+          <button>{{ "Get" | translate }}</button>
+          <img
+            [src]="currentImages['img3']"
+            alt=""
+            (click)="playVideo()"
+          />
+        </div>
+      </div>
+
+      <div class="image-first-container">
+        <img
+          [src]="currentImages['img5']"
+          alt=""
+          style="margin-top: 0"
+        />
+        <img class="lastimage" [src]="currentImages['img2']" alt="" />
       </div>
 
       <div
@@ -95,12 +99,6 @@
           'en-size': currentLanguage === 'en'
         }"
       >
-        <img
-          src="./assets/img/VIdeoGreenRun_Mobile_MatGif_05_02.gif"
-          alt=""
-          style="margin-top: 0"
-        />
-        <div class="video-play" id="gifImage" (click)="playVideo()"></div>
         <video
           #videoElement
           width="100%"
@@ -116,201 +114,219 @@
   </div>
 </div>
 
-<div id="funciones" class="section">
-  <div class="background">
-    <img src="./assets/Background/Seccion2.svg" alt="" />
-  </div>
-  <div class="second-section">
-    <h1>{{ "Features" | translate }}</h1>
-    <div class="second-flex">
-      <div class="text">
-        <h3>{{ "Potencie" | translate }}</h3>
-        <div class="texto">
-          <p *ngIf="currentIndex === 0">
-            <span class="TitleBold">{{ "Generación" | translate }}</span>
-            {{ "Mantenga" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Pronósticos" | translate }}</span>
-            {{ "Proporcione" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Bonos" | translate }}</span>
-            {{ "Incentive" | translate }}
-          </p>
-
-          <p *ngIf="currentIndex === 1">
-            <span class="TitleBold">{{ "slideone" | translate }}</span>
-            {{ "slidetwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidethree" | translate }}</span>
-            {{ "slidefour" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefive" | translate }}</span>
-            {{ "slidesix" | translate }}<span class="TitleBold"> ChatBet </span
-            >{{ "slideseven" | translate }}
-          </p>
-
-          <p *ngIf="currentIndex === 2">
-            <span class="TitleBold">{{ "slidetwoone" | translate }}</span>
-            <span class="TitleBold"> ChatBet </span
-            >{{ "slidetwotwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidetwothre" | translate }}</span>
-            {{ "slidetwofour" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidetwofive" | translate }}</span>
-            {{ "slidetwosix" | translate }}
-            <span class="TitleBold">ChatBet</span>
-            {{ "slidetwoseven" | translate }}
-          </p>
-
-          <p *ngIf="currentIndex === 3">
-            <span class="TitleBold">{{ "sliderthreeone" | translate }}</span>
-            {{ "sliderthreetwo" | translate }}
-            <span class="TitleBold"> ChatBet </span>
-            {{ "sliderthreethree" | translate }}<br /><br />
-            <span class="TitleBold">{{ "sliderthreefour" | translate }}</span>
-            {{ "sliderthreefive" | translate }}
-            <span class="TitleBold"> ChatBet </span>
-            {{ "sliderthreesix" | translate }}<br /><br />
-            <span class="TitleBold">{{ "sliderthreeseven" | translate }}</span>
-          </p>
-        </div>
-        <div class="navigation-buttons">
-          <button [class.hidden]="currentIndex === 0" (click)="prevParagraph()">
-            <
-          </button>
-          <button [class.hidden]="currentIndex === 3" (click)="nextParagraph()">
-            >
-          </button>
-        </div>
-      </div>
-
-      <div class="image-section" style="margin-top: 6%">
-        <img [src]="currentImages['second']" alt="" />
-      </div>
-    </div>
+<div class="backgroundline">
+  <div class="iconline">
+    <img src="../../../../assets/Background/end-sect-one.png " alt="" />
+    <img class="line" src="../../../../assets/Icon/icons.png" alt="" />
   </div>
 </div>
 
-<div id="beneficios" class="section">
-  <div class="background">
-    <img src="./assets/Background/Seccion3.svg" alt="" />
-  </div>
-  <div class="third-section">
-    <h1>{{ "Beneficios" | translate }}</h1>
-    <div class="third-flex">
+<div id="funciones" class="section">
+  <div class="second-section">
+    <div class="second-flex">
+      <h1>{{ "Features" | translate }}</h1>
       <div class="text">
         <div class="texto">
-          <p *ngIf="currentIndextwo === 0">
-            <span class="TitleBold">{{ "Reducción" | translate }}</span>
-            {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "Machine" | translate }} </span
-            >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold">{{ "IA" | translate }}</span>
-            {{ "Responde" | translate }}
-          </p>
-
-          <p *ngIf="currentIndextwo === 1">
-            <span class="TitleBold">{{ "slidefourone" | translate }}</span>
-            {{ "slidefourtwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefourthree" | translate }}</span>
-            {{ "slidefourfour" | translate }}
-          </p>
-
-          <p *ngIf="currentIndextwo === 2">
-            <span class="TitleBold">{{ "slidefiveone" | translate }}</span>
-            {{ "slidefivetwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefivethree" | translate }}</span>
-            {{ "slidefivefour" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefivefive" | translate }}</span>
-            {{ "slidefivesix" | translate }}
-          </p>
-
-          <p *ngIf="currentIndextwo === 3">
-            <span class="TitleBold">{{ "slidefiveoneone" | translate }}</span>
-            {{ "slidefivetwotwo" | translate }}<br /><br />
-            <span class="TitleBold">{{ "slidefivethreeone" | translate }}</span>
-          </p>
+          <p>{{ "Mantenga" | translate }}<br /><br /></p>
         </div>
-        <div class="navigation-buttons">
-          <button
-            [class.hidden]="currentIndextwo === 0"
-            (click)="prevParagraphtwo()"
-          >
-            <
-          </button>
-          <button
-            [class.hidden]="currentIndextwo === 3"
-            (click)="nextParagraptwo()"
-          >
-            >
-          </button>
-        </div>
-      </div>
-      <div class="image-section" style="display: flex">
-        <img [src]="currentImages['third']" alt="" />
       </div>
     </div>
   </div>
 </div>
 
 <div id="comofunciona" class="section">
-  <div class="background">
-    <img src="./assets/Background/Seccion4.svg" alt="" />
-  </div>
   <div class="fourth-section">
-    <div class="text">
-      <h1>{{ "CómoFunciona" | translate }}</h1>
-      <div class="texto">
-        <p>
-          {{ "integramos" | translate }} <span class="TitleBold">ChatBet</span>
-          {{ "sitio" | translate }}
-        </p>
-      </div>
-    </div>
-
     <div class="image-carousel">
       <div class="carousel-item">
-        <img [src]="currentImages['img1']" alt="" />
+        <img src="../../../../assets/Icon/icon1.png" alt="" />
+        <h2>{{ "title1" | translate }}</h2>
+
         <p>{{ "Hablacon" | translate }}</p>
       </div>
 
       <div class="carousel-item">
-        <img [src]="currentImages['img2']" alt="" />
+        <img src="../../../../assets/Icon/icon2.png" alt="" />
+        <h2>{{ "title2" | translate }}</h2>
         <p>{{ "Buscacon" | translate }}</p>
       </div>
       <div class="carousel-item">
-        <img [src]="currentImages['img3']" alt="" />
+        <img src="../../../../assets/Icon/icon3.png" alt="" />
+        <h2>{{ "title3" | translate }}</h2>
         <p>{{ "Conuna" | translate }}</p>
-      </div>
-      <div class="carousel-item">
-        <img [src]="currentImages['img4']" alt="" />
-        <p>{{ "Seleccionacuánto" | translate }}</p>
-      </div>
-      <div class="carousel-item">
-        <img [src]="currentImages['img5']" alt="" />
-        <p>{{ "LaIA" | translate }}</p>
       </div>
     </div>
   </div>
 </div>
 
-<div id="integracion" class="section">
-  <div class="fifth-section">
-    <div class="text">
-      <h1>{{ "Sencilla" | translate }}</h1>
-      <h3>
-        {{ "Personalice" | translate }}<span class="TitleBold"> ChatBet</span>
-        {{ "yhaga" | translate }}
-      </h3>
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame2.png" alt="" />
+      </div>
+      <div class="text">
+        <h1>{{ "Beneficios" | translate }}</h1>
+        <div class="texto">
+          <p>
+            <span class="TitleBold3">{{ "Reducción" | translate }}</span>
+            {{ "Minimiza" | translate }}<br /><br />
+            <span class="TitleBold3">{{ "Machine" | translate }} </span
+            >{{ "Utiliza" | translate }}<br /><br />
+            <span class="TitleBold3">{{ "IA" | translate }}</span>
+            {{ "Responde" | translate }}
+          </p>
+        </div>
+        <div class="completebutton">
+          <button>{{ "Get" | translate }}</button>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="image-section">
-      <img src="./assets/img/scheme.png" alt="" />
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="text">
+        <p>
+          <span class="TitleBold">{{ "mascientocincuenta" | translate }}</span>
+          {{ "activos" | translate }}
+        </p>
+        <h1>{{ "porquedeberias" | translate }}</h1>
+        <div class="texto">
+          <p>
+            {{ "conchatbet" | translate }}.<br /><br />
+
+            {{ "optimiza" | translate }}<br /><br />
+          </p>
+        </div>
+      </div>
+      <div class="image-section" style="display: flex">
+        <img [src]="currentImages['img1']" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="backgroundline">
+  <img src="../../../../assets/Background/end-sect-one.png " alt="" />
+</div> -->
+
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="text">
+        <p>
+          <span class="TitleBold">{{ "entiendeyguia" | translate }}</span>
+          {{ "laexperiencia" | translate }}
+        </p>
+        <h1>{{ "depositos" | translate }}</h1>
+        <div class="texto">
+          <p>{{ "optimiza" | translate }}tususuarios<br /><br /></p>
+        </div>
+        <div class="botones">
+         
+            <span class="TitleBold3">{{ "casinos" | translate }}</span>
+       
+        
+            <span class="TitleBold3">{{ "soporte" | translate }}</span>
+       
+            <span class="TitleBold3">{{
+              "sugerencias" | translate
+            }}</span><br />
+         
+            <span class="TitleBold3">{{
+              "soporterespuestas" | translate
+            }}</span><br />
+          <div class="division">
+            <span class="TitleBold3">Open AI</span>
+            <span class="TitleBold3">CloudFlrare</span>
+            
+              <span class="TitleBold3">{{ "promociones" | translate }}</span>
+            
+          </div>
+          
+            <span class="TitleBold3">{{ "ofertas" | translate }}</span><br />
+          
+            <span class="TitleBold3">{{ "noticias" | translate }}</span>
+          
+        </div>
+      </div>
+
+      <div class="frame4" style="display: flex">
+        <img src="../../../../assets/img/Frame4.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img [src]="currentImages['third']" alt="" />
+      </div>
+      <div class="text">
+        <h1>{{ "sincomplicaciones" | translate }}</h1>
+        <div class="texto">
+          <p>
+            {{ "tususuariosapuestan" | translate }}<br /><br />
+            <span class="TitleBold3">{{ "tususuarioshacen" | translate }}</span
+            ><br />
+            {{ "enlugar" | translate }}<br /><br />
+            <span class="TitleBold3">{{ "ingresan" | translate }}</span
+            ><br />
+            {{ "soloindican" | translate }}<br /><br />
+            <span class="TitleBold3">{{ "confirman" | translate }}</span
+            ><br />
+            {{ "unmensajerapido" | translate }}
+            <br /><br />
+            {{ "esproceso" | translate }}
+          </p>
+        </div>
+
+        <div class="completebutton">
+          <button>{{ "Get" | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="backgroundline">
+  <div class="review">
+    <img [src]="currentImages['img4']" alt="" />
+  </div>
+
+  <div class="reviewphone">
+    <img src="../../../../assets/Background/carrusel.png" alt="" />
+  </div>
+</div>
+
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame6.png" alt="" />
+      </div>
+      <div class="text">
+        <span class="TitleBold2">{{ "proteccion" | translate }}</span>
+        <h1>{{ "laplataforma" | translate }}</h1>
+
+        <div class="texto">
+          <p>
+            {{ "segura" | translate }}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div id="contactanos" class="section">
-  <div class="background">
-    <img src="./assets/Background/Seccion5.svg" alt="" />
-  </div>
   <div class="sixth-section">
     <div class="text">
+      <span class="TitleBold2">{{ "unanse" | translate }}</span>
       <h1>{{ "Listopara" | translate }}</h1>
       <h3>
         <span class="TitleBoldMobile">{{ "Únase" | translate }} </span>
@@ -322,7 +338,6 @@
       <form action="javascript:void(0)" (submit)="send()">
         <div class="form-input">
           <div class="form-section">
-            <label>{{ "NombreT" | translate }}</label>
             <input
               formControlName="name"
               type="text"
@@ -330,7 +345,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "NúmeroT" | translate }}</label>
             <input
               formControlName="contact"
               type="text"
@@ -338,7 +352,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "CorreoT" | translate }}</label>
             <input
               formControlName="email"
               type="text"
@@ -346,7 +359,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "EmpresaT" | translate }}</label>
             <input
               formControlName="empresa"
               type="text"
@@ -354,7 +366,6 @@
             />
           </div>
           <div class="form-section">
-            <label>{{ "CargoT" | translate }}</label>
             <input
               formControlName="cargo"
               type="text"
@@ -362,7 +373,6 @@
             />
           </div>
           <div class="form-section">
-            <label style="margin-right: 10px">{{ "PaisT" | translate }}</label>
             <input
               formControlName="country"
               type="text"
@@ -371,7 +381,6 @@
           </div>
         </div>
         <div class="form-send">
-          <label for=""> {{ "Doyou" | translate }}</label>
           <input
             formControlName="message"
             type="text"
@@ -382,5 +391,15 @@
         </div>
       </form>
     </div>
+  </div>
+</div>
+
+<div class="backgroundline">
+  <div class="fotter1">
+    <img [src]="currentImages['footer']" alt="" />
+  </div>
+
+  <div class="fotter2">
+    <img [src]="currentImages['footer2'] " alt="" />
   </div>
 </div>
