@@ -52,7 +52,9 @@ export class MainPageComponent {
         img5: './assets/img/Frame1.png',
         third: './assets/img/Frame5.png',
         second: './assets/img/second-phone.png',
-        video: './assets/video/vid-es.mp4'
+        video: './assets/video/vid-es.mp4',
+        footer: '../../../../assets/Background/footer.png',
+        footer2: '../../../../assets/Background/2footer.png'
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
@@ -62,7 +64,9 @@ export class MainPageComponent {
         img5: './assets/img/Frame1.2.png',
         third: './assets/img/Frame5.2.png',
         second: './assets/img/guardar/second-phone.png',
-        video: './assets/video/vid-es.mp4'
+        video: './assets/video/vid-es.mp4',
+        footer: '../../../../assets/Background/footer-en.png',
+        footer2: '../../../../assets/Background/2footer-en.png'
       }
     };
   
