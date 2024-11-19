@@ -55,7 +55,7 @@ export class MainPageComponent {
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
-        phone: '../../../../assets/img/phone-es.svg'
+        phone: '../../../../assets/img/phone-es.png'
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
@@ -68,7 +68,7 @@ export class MainPageComponent {
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
-        phone: '../../../../assets/img/phone-tlf.svg'
+        phone: '../../../../assets/img/phone-tlf.png'
 
       }
     };
