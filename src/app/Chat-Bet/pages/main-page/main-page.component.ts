@@ -56,7 +56,7 @@ export class MainPageComponent {
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
         phone: '../../../../assets/img/phone-es.png',
-        Frame4: '../../../../assets/img/Frame4-es.svg'
+        Frame4: '../../../../assets/img/Frame4-es.png'
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
@@ -70,7 +70,7 @@ export class MainPageComponent {
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
         phone: '../../../../assets/img/phone-tlf.png',
-        Frame4: '../../../../assets/img/Frame4.svg'
+        Frame4: '../../../../assets/img/Frame4.png'
       }
     };
   
