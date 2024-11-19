@@ -49,12 +49,13 @@ export class MainPageComponent {
         img2: './assets/img/Frame7.png',
         img3: '../../../../assets/Icon/video.png',
         img4: '../../../../assets/Background/reviews.png',
-        img5: './assets/img/Frame1.svg',
+        img5: './assets/img/Frame1-es.svg',
         third: './assets/img/Frame5.png',
         second: './assets/img/second-phone.png',
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
-        footer2: '../../../../assets/Background/2footer.svg'
+        footer2: '../../../../assets/Background/2footer.svg',
+        phone: '../../../../assets/img/phone-es.svg'
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
@@ -66,7 +67,9 @@ export class MainPageComponent {
         second: './assets/img/guardar/second-phone.png',
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
-        footer2: '../../../../assets/Background/2footer.svg'
+        footer2: '../../../../assets/Background/2footer.svg',
+        phone: '../../../../assets/img/phone-tlf.svg'
+
       }
     };
   
