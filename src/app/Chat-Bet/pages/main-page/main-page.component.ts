@@ -49,24 +49,24 @@ export class MainPageComponent {
         img2: './assets/img/Frame7.png',
         img3: '../../../../assets/Icon/video.png',
         img4: '../../../../assets/Background/reviews.png',
-        img5: './assets/img/Frame1.png',
+        img5: './assets/img/Frame1.svg',
         third: './assets/img/Frame5.png',
         second: './assets/img/second-phone.png',
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.png',
-        footer2: '../../../../assets/Background/2footer.png'
+        footer2: '../../../../assets/Background/2footer.svg'
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
         img2: './assets/img/Frame7.en.png',
         img3: '../../../../assets/Icon/video-en.png',
         img4: '../../../../assets/Background/reviews-en.png',
-        img5: './assets/img/Frame1.2.png',
+        img5: './assets/img/Frame1.svg',
         third: './assets/img/Frame5.2.png',
         second: './assets/img/guardar/second-phone.png',
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer-en.png',
-        footer2: '../../../../assets/Background/2footer-en.png'
+        footer2: '../../../../assets/Background/2footer.svg'
       }
     };
   

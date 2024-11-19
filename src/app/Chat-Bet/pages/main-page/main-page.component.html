@@ -15,7 +15,13 @@
         <a href="#contactanos">{{ "headerfive" | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <img
+          <a href="" (click)="switchLanguage('en')">
+            En
+          </a>
+          <a href="" (click)="switchLanguage('es')">
+            Es
+          </a>
+         <!--  <img
             [src]="
               currentLanguage === 'en'
                 ? '../../../../assets/img/us-on.svg'
@@ -34,7 +40,7 @@
             alt=""
             class="esp"
             (click)="switchLanguage('es')"
-          />
+          /> -->
         </div>
       </div>
     </div>
@@ -43,7 +49,7 @@
   <div class="first-section">
     <div class="gif2">
       <img
-        src="../../../../assets/img/phone-tlf.png"
+        src="../../../../assets/img/phone-tlf.svg"
         alt=""
         style="margin-top: 0"
       />
@@ -255,7 +261,7 @@
       </div>
 
       <div class="frame4" style="display: flex">
-        <img src="../../../../assets/img/Frame4.png" alt="" />
+        <img src="../../../../assets/img/Frame4.svg" alt="" />
       </div>
     </div>
   </div>
