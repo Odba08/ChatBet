@@ -124,11 +124,23 @@ h3{
         padding: 10px;
         align-items: center;
 
+        .phonediv{
+            display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+       
+        @media screen and (min-width: 900px){
+            display: none;
+        }
+        }
+
         @media screen and (max-width: 900px){
             align-items: center;
             justify-content: center;
             flex-direction: column;
             
+        
           .chatbetone{
             display: none;
           }
@@ -139,7 +151,32 @@ h3{
             display: none;
           }
         }
+
+        .newidioma{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            justify-content: space-between;
+            margin-left: 15px;
+            a{
+                margin: 5px;
+                color: white;
+                text-decoration: none;
+                font-family: "Poppins", sans-serif;
+                font-size: 1.2rem;
+                font-weight: 600;
+
+                &:hover{
+                    color: #9595ff;
+                }
+            }
+            @media screen and (min-width: 900px){
+                display: none;
+            }
+        }
     }
+
 
     .navbar{
         display: flex;
@@ -176,6 +213,12 @@ h3{
             align-items: center;
             cursor: pointer;
             justify-content: space-between;
+            /* font-size: 1.5rem; */
+            margin: 0;
+            font-weight: 400;
+            a{
+                margin: 5px;
+            }
 
             @media screen and (max-width: 900px){
                 margin-top: 20px;
@@ -225,10 +268,10 @@ h3{
                 align-items: center;
                 justify-content: center;
                 img{
-                    width: 50%;
+                    width: 100%;
                     height: auto;
                      object-fit: contain;  
-                     /* margin-bottom: -110px      */
+                     margin-bottom: -110px     
                 }
 
 
@@ -337,18 +380,18 @@ h3{
             }
         }
 
-        button{
-            width: 40%;
+        a{
             padding: 1rem;
             border: solid 1px;
             border-color: #9595ff;
             border-radius: 50px;
             background-color: #5554F3;
-            /* color: #9595ff; */
             color: white;
             font-family: 'Poppins', sans-serif;
             margin-top: 32px;
             font-size: medium;
+            text-align: center;
+            text-decoration: none;
 
             @media (max-width: 900px){
                 width: 100%;
@@ -356,7 +399,7 @@ h3{
             }
         }
 
-        button:hover{
+        a:hover{
             opacity: 0.5;
             cursor: pointer;
         }
@@ -565,10 +608,33 @@ h3{
         }
 
         .completebutton{
-            button{
-                width: 100%;
+            margin-top: 2rem;
+             a{
+            padding: 1rem;
+            border: solid 1px;
+            border-color: #9595ff;
+            border-radius: 50px;
+            background-color: #5554F3;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            text-align: center;
+            text-decoration: none;
+            width: 90%;
+            display: flex;
+            justify-content: center;
 
+            @media (max-width: 900px){
+                width: 90%;
+                
             }
+        }
+
+        a:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+       
         }
 
         .frame4{
@@ -599,14 +665,13 @@ h3{
             }
 
             span{
-                background-color: white;
+                background-color: #F3F2FF;
                 color: #5554F3;
-                border: solid 1px;
-                border-color:#5554F3;
+                margin: 8px;
                 border-radius: 50px;
                 padding: 5px;
                 margin-left: 5px;
-                width: 100%;
+                width: 95%;
                 margin-top: 5px;
                 text-align: center;
                 

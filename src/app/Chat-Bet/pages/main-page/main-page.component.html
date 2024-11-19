@@ -6,7 +6,17 @@
   <header>
     <div class="section-header">
       <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" />
+      
       <img class="chatbet" src="../../../../assets/img/Frame0.png" alt="" />
+      <div class="newidioma">
+        <a href="" (click)="switchLanguage('en')">
+          En
+        </a>
+        <a href="">|</a>
+        <a href="" (click)="switchLanguage('es')">
+          Es
+        </a>
+      </div>
       <div class="navbar">
         <a href="#funciones">{{ "headerone" | translate }}</a>
         <a href="#beneficios">{{ "headertwo" | translate }}</a>
@@ -15,7 +25,13 @@
         <a href="#contactanos">{{ "headerfive" | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <img
+          <a href="" (click)="switchLanguage('en')">
+            En
+          </a>
+          <a href="" (click)="switchLanguage('es')">
+            Es
+          </a>
+         <!--  <img
             [src]="
               currentLanguage === 'en'
                 ? '../../../../assets/img/us-on.svg'
@@ -34,7 +50,7 @@
             alt=""
             class="esp"
             (click)="switchLanguage('es')"
-          />
+          /> -->
         </div>
       </div>
     </div>
@@ -43,7 +59,7 @@
   <div class="first-section">
     <div class="gif2">
       <img
-        src="../../../../assets/img/phone-tlf.png"
+        [src]="currentImages['phone']"
         alt=""
         style="margin-top: 0"
       />
@@ -74,7 +90,8 @@
           </ng-container>
         </div>
         <div class="video">
-          <button>{{ "Get" | translate }}</button>
+          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <!-- <button href="#contactanos">{{ "Get" | translate }}</button> -->
           <img
             [src]="currentImages['img3']"
             alt=""
@@ -117,7 +134,7 @@
 <div class="backgroundline">
   <div class="iconline">
     <img src="../../../../assets/Background/end-sect-one.png " alt="" />
-    <img class="line" src="../../../../assets/Icon/icons.png" alt="" />
+    <img class="line" src="../../../../assets/Icon/icons.svg" alt="" />
   </div>
 </div>
 
@@ -177,7 +194,7 @@
           </p>
         </div>
         <div class="completebutton">
-          <button>{{ "Get" | translate }}</button>
+          <a href="#contactanos">{{ "Get" | translate }}</a>
         </div>
       </div>
     </div>
@@ -233,11 +250,11 @@
        
             <span class="TitleBold3">{{
               "sugerencias" | translate
-            }}</span><br />
+            }}</span>
          
             <span class="TitleBold3">{{
               "soporterespuestas" | translate
-            }}</span><br />
+            }}</span>
           <div class="division">
             <span class="TitleBold3">Open AI</span>
             <span class="TitleBold3">CloudFlrare</span>
@@ -246,7 +263,7 @@
             
           </div>
           
-            <span class="TitleBold3">{{ "ofertas" | translate }}</span><br />
+            <span class="TitleBold3">{{ "ofertas" | translate }}</span>
           
             <span class="TitleBold3">{{ "noticias" | translate }}</span>
           
@@ -254,7 +271,7 @@
       </div>
 
       <div class="frame4" style="display: flex">
-        <img src="../../../../assets/img/Frame4.png" alt="" />
+        <img [src]="currentImages['Frame4']" alt="" />
       </div>
     </div>
   </div>
@@ -284,10 +301,10 @@
             {{ "esproceso" | translate }}
           </p>
         </div>
-
         <div class="completebutton">
-          <button>{{ "Get" | translate }}</button>
+          <a href="#contactanos">{{ "Get" | translate }}</a>
         </div>
+
       </div>
     </div>
   </div>
