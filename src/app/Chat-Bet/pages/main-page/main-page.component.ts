@@ -53,7 +53,7 @@ export class MainPageComponent {
         third: './assets/img/Frame5.png',
         second: './assets/img/second-phone.png',
         video: './assets/video/vid-es.mp4',
-        footer: '../../../../assets/Background/footer.png',
+        footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg'
       },
       en: {
@@ -65,7 +65,7 @@ export class MainPageComponent {
         third: './assets/img/Frame5.2.png',
         second: './assets/img/guardar/second-phone.png',
         video: './assets/video/vid-es.mp4',
-        footer: '../../../../assets/Background/footer-en.png',
+        footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg'
       }
     };
