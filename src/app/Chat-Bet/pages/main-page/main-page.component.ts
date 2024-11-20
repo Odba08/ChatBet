@@ -72,7 +72,7 @@ export class MainPageComponent {
         footer2: '../../../../assets/Background/2footer.svg',
         phone: '../../../../assets/img/phone-tlf.png',
         Frame4: '../../../../assets/img/Frame4.png',
-        reviewphone: '../../../../assets/Background/review-en-tlf.svg'
+        reviewphone: '../../../../assets/Background/review-en-tlf.svg' 
 
       }
     };
