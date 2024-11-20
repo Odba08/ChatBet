@@ -75,6 +75,7 @@ export class MainPageComponent {
         Frame4: '../../../../assets/img/Frame4.png',
         phonetlfimage: '../../../../assets/Background/review-en-tlf.svg'
 
+
       }
     };
   
