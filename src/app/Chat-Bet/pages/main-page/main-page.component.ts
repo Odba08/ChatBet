@@ -58,6 +58,7 @@ export class MainPageComponent {
         phone: '../../../../assets/img/phone-es.png',
         Frame4: '../../../../assets/img/Frame4-es.png',
         reviewphone: '../../../../assets/Background/review-tlf.svg'
+
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
