@@ -71,7 +71,7 @@ export class MainPageComponent {
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
-        phoneimage: '../../../../assets/img/phone-tlf.png',
+        phoneimage: '../../../../assets/img/phone-en.png',
         Frame4: '../../../../assets/img/Frame4.png',
         phonetlfimage: '../../../../assets/Background/review-en-tlf.svg'
 
