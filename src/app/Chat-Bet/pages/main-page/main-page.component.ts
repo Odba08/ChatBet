@@ -70,7 +70,7 @@ export class MainPageComponent {
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
-        phone: '../../../../assets/img/phone-tlf.png',
+        phone: '../../../../assets/img/phone-tlf.svg',
         Frame4: '../../../../assets/img/Frame4.png',
         reviewphone: '../../../../assets/Background/review-en-tlf.svg'
 
