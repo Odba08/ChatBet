@@ -55,9 +55,9 @@ export class MainPageComponent {
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
-        phone: '../../../../assets/img/phone-es.png',
+        phoneimage: '../../../../assets/img/phone-es.png',
         Frame4: '../../../../assets/img/Frame4-es.png',
-        reviewphone: '../../../../assets/Background/review-tlf.svg'
+        phonetlfimage: '../../../../assets/Background/review-tlf.svg'
 
       },
       en: {
@@ -71,9 +71,10 @@ export class MainPageComponent {
         video: './assets/video/vid-es.mp4',
         footer: '../../../../assets/Background/footer.svg',
         footer2: '../../../../assets/Background/2footer.svg',
-        phone: '../../../../assets/img/phone-tlf.png',
+        phoneimage: '../../../../assets/img/phone-tlf.png',
         Frame4: '../../../../assets/img/Frame4.png',
-        reviewphone: '../../../../assets/Background/review-en-tlf.svg' 
+        phonetlfimage: '../../../../assets/Background/review-en-tlf.svg'
+
 
       }
     };
