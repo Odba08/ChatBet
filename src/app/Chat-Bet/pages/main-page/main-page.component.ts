@@ -48,7 +48,7 @@ export class MainPageComponent {
         img1: '../../../../assets/img/Enespañol.png',
         img2: './assets/img/Frame7.png',
         img3: '../../../../assets/Icon/video.png',
-        img4: '../../../../assets/Background/review.svg',
+        img4: '../../../../assets/Background/review2.svg',
         img5: './assets/img/Frame1-es.svg',
         third: './assets/img/Frame5.png',
         second: './assets/img/second-phone.png',
@@ -57,14 +57,14 @@ export class MainPageComponent {
         footer2: '../../../../assets/Background/2footer.svg',
         phoneimage: '../../../../assets/img/phone-es.png',
         Frame4: '../../../../assets/img/Frame4-es.png',
-        phonetlfimage: '../../../../assets/Background/review-tlf.svg'
+        phonetlfimage: '../../../../assets/Background/review-tlf2.svg'
 
       },
       en: {
         img1: '../../../../assets/img/Eningles.png',
         img2: './assets/img/Frame7.en.png',
         img3: '../../../../assets/Icon/video-en.png',
-        img4: '../../../../assets/Background/review-en.svg',
+        img4: '../../../../assets/Background/review-en2.svg',
         img5: './assets/img/Frame1.svg',
         third: './assets/img/Frame5.2.png',
         second: './assets/img/guardar/second-phone.png',
@@ -73,7 +73,7 @@ export class MainPageComponent {
         footer2: '../../../../assets/Background/2footer.svg',
         phoneimage: '../../../../assets/img/phone-en.png',
         Frame4: '../../../../assets/img/Frame4.png',
-        phonetlfimage: '../../../../assets/Background/review-en-tlf.svg'
+        phonetlfimage: '../../../../assets/Background/review-en-tlf2.svg'
 
 
       }
