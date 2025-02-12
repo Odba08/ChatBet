@@ -31,16 +31,35 @@
           <a href="" (click)="switchLanguage('es')">
             Es
           </a>
+         <!--  <img
+            [src]="
+              currentLanguage === 'en'
+                ? '../../../../assets/img/us-on.svg'
+                : '../../../../assets/img/us-of.png'
+            "
+            alt=""
+            class="us"
+            (click)="switchLanguage('en')"
+          />
+          <img
+            [src]="
+              currentLanguage === 'es'
+                ? '../../../../assets/img/esp-on.png'
+                : '../../../../assets/img/esp-off.svg'
+            "
+            alt=""
+            class="esp"
+            (click)="switchLanguage('es')"
+          /> -->
         </div>
       </div>
     </div>
   </header>
 
   <div class="first-section">
-    
     <div class="gif2">
       <img
-        [src]="currentImages['phoneimage']"
+        [src]="currentImages['phone']"
         alt=""
         style="margin-top: 0"
       />
@@ -220,7 +239,7 @@
         </p>
         <h1>{{ "depositos" | translate }}</h1>
         <div class="texto">
-          <p>{{ "optimiza" | translate }}<br /><br /></p>
+          <p>{{ "optimiza" | translate }}tususuarios<br /><br /></p>
         </div>
         <div class="botones">
          
@@ -233,10 +252,12 @@
               "sugerencias" | translate
             }}</span>
          
-
+            <span class="TitleBold3">{{
+              "soporterespuestas" | translate
+            }}</span>
           <div class="division">
             <span class="TitleBold3">Open AI</span>
-            <span class="TitleBold3">CloudFlare</span>
+            <span class="TitleBold3">CloudFlrare</span>
             
               <span class="TitleBold3">{{ "promociones" | translate }}</span>
             
@@ -277,7 +298,7 @@
             ><br />
             {{ "unmensajerapido" | translate }}
             <br /><br />
-            {{ "esteproceso" | translate }}
+            {{ "esproceso" | translate }}
           </p>
         </div>
         <div class="completebutton">
@@ -295,7 +316,7 @@
   </div>
 
   <div class="reviewphone">
-    <img [src]="currentImages['phonetlfimage']" alt="" />
+    <img [src]="currentImages['reviewphone']" alt="" />
 
   </div>
 </div>
@@ -335,56 +356,32 @@
       <form action="javascript:void(0)" (submit)="send()">
         <div class="form-input">
           <div class="form-section">
-            <input
-              formControlName="name"
-              type="text"
-              placeholder="{{ 'Nombre' | translate }}"
-            />
+            <input formControlName="name" type="text" placeholder="Nombre" />
           </div>
           <div class="form-section">
-            <input
-              formControlName="contact"
-              type="text"
-              placeholder="{{ 'Número' | translate }}"
-            />
+            <div class="countries">
+              <div class="num-selector">
+                <app-custom-select [countries]="countries" (countrySelected)="onCountrySelected($event)"></app-custom-select>
+              </div>
+              <input formControlName="contact" type="text" placeholder="Número" />
+            </div>
           </div>
           <div class="form-section">
-            <input
-              formControlName="email"
-              type="text"
-              placeholder="{{ 'Correo' | translate }}"
-            />
+            <input formControlName="email" type="text" placeholder="Correo" />
           </div>
           <div class="form-section">
-            <input
-              formControlName="empresa"
-              type="text"
-              placeholder="{{ 'Empresa' | translate }}"
-            />
+            <input formControlName="empresa" type="text" placeholder="Empresa" />
           </div>
           <div class="form-section">
-            <input
-              formControlName="cargo"
-              type="text"
-              placeholder="{{ 'Cargo' | translate }}"
-            />
+            <input formControlName="cargo" type="text" placeholder="Cargo" />
           </div>
           <div class="form-section">
-            <input
-              formControlName="country"
-              type="text"
-              placeholder="{{ 'Pais' | translate }}"
-            />
+            <input formControlName="country" type="text" placeholder="País" />
           </div>
         </div>
         <div class="form-send">
-          <input
-            formControlName="message"
-            type="text"
-            placeholder="{{ 'Feel' | translate }}"
-          />
-
-          <button type="submit">{{ "Sumbit" | translate }}</button>
+          <input formControlName="message" type="text" placeholder="Mensaje" />
+          <button type="submit">Enviar</button>
         </div>
       </form>
     </div>
