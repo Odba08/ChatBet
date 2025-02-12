@@ -6,13 +6,15 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LottieComponent, provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
+import { CustomSelectComponent } from './custom-select/custom-select.component';
 export function playerFactory() {
   return player;
 }
 
 @NgModule({
   declarations: [
-    MainPageComponent
+    MainPageComponent,
+    CustomSelectComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,7 @@ export function playerFactory() {
     SlickCarouselModule,
     LottieComponent,
     ReactiveFormsModule,
-
+   
   ],
   exports: [
     MainPageComponent

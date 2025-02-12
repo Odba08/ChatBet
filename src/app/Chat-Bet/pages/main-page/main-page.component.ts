@@ -4,6 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { ToastrService } from 'ngx-toastr';
 import { AnimationOptions } from 'ngx-lottie';
+import { countries } from '../../../model/contry-data.store';
 
 
 @Component({
@@ -12,6 +13,10 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
+  public countries:any = countries
+  public dialCode: string | null = null;
+
+ 
     @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
     @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
 
@@ -57,7 +62,7 @@ export class MainPageComponent {
         footer2: '../../../../assets/Background/2footer.svg',
         phoneimage: '../../../../assets/img/phone-es.png',
         Frame4: '../../../../assets/img/Frame4-es.png',
-        phonetlfimage: '../../../../assets/Background/review-tlf2.svg'
+        reviewphone: '../../../../assets/Background/review-tlf2.svg'
 
       },
       en: {
@@ -73,8 +78,7 @@ export class MainPageComponent {
         footer2: '../../../../assets/Background/2footer.svg',
         phoneimage: '../../../../assets/img/phone-en.png',
         Frame4: '../../../../assets/img/Frame4.png',
-        phonetlfimage: '../../../../assets/Background/review-en-tlf2.svg'
-
+        reviewphone: '../../../../assets/Background/review-en-tlf2.svg'
 
       }
     };
@@ -147,10 +151,13 @@ export class MainPageComponent {
       }
     }
 
-    
-  
+    onCountrySelected(country: any) {
+      console.log('Selected Country:', country);
+      this.dialCode = country.dialCode;
+    }
+
     async send() {
-      if (this.form.invalid) {
+      if (this.form.invalid || !this.dialCode) {
         if (this.currentLanguage === 'es') {
           this.toastr.error('Por favor, complete todos los campos antes de enviar');
         } else {
@@ -165,7 +172,7 @@ export class MainPageComponent {
         let response = await emailjs.send("service_c895d9m", "template_worpfzp", {
           from_name: this.form.value.name,
           from_email: this.form.value.email,
-          from_contact: this.form.value.contact,
+          from_contact: `${this.dialCode} ${this.form.value.contact}`,
           from_empresa: this.form.value.empresa,
           from_cargo: this.form.value.cargo,
           from_country: this.form.value.country,
@@ -174,11 +181,15 @@ export class MainPageComponent {
   
         if (this.currentLanguage === 'es') {
           this.toastr.success('Mensaje enviado con éxito');
+          console.log('Response:', response);
+          
         } else {
           this.toastr.success('Message sent successfully');
+          console.log('Response:', response);
         }
   
         this.form.reset();
+        this.dialCode = null;
       } catch (error) {
         if (this.currentLanguage === 'es') {
           this.toastr.error('Error al enviar el mensaje');

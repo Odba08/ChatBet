@@ -270,7 +270,7 @@ h3{
                 img{
                     width: 100%;
                     height: auto;
-                     object-fit: cover;  
+                     object-fit: contain;  
                      margin-bottom: -110px     
                 }
 
@@ -602,6 +602,9 @@ h3{
 
         .division{
             display: flex;
+            .TitleBold3{
+                font-size: 0.9rem;
+            }
             button{
                 width: 35%;
             }
@@ -944,6 +947,22 @@ h3{
 
 .form-section{
     margin-top: 1rem;
+
+    .countries{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+
+    .num-selector{
+        width: 20%;
+        padding: 1rem;
+        border-bottom: solid 1px;
+        border-color: black;
+        color: black;
+        font-family: 'Poppins', sans-serif; 
+        margin-top: 15px;
+    }
+}
 }
 
 .form-send{
