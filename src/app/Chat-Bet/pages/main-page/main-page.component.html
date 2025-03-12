@@ -24,6 +24,10 @@
         <a href="#integracion">{{ "headerfour" | translate }}</a>
         <a href="#contactanos">{{ "headerfive" | translate }}</a>
         <span class="divisor">|</span>
+        <a href="">Spotlight</a>
+        <span class="divisor">|</span>
+        <a href="">About Us</a>
+        <span class="divisor">|</span>
         <div class="idioma">
           <a href="" (click)="switchLanguage('en')">
             En
@@ -89,6 +93,23 @@
             <p>{{ "text" | translate }} <br /><br /></p>
           </ng-container>
         </div>
+       <div class="lista">
+        <ul>
+          <li>
+            <span class="TitleBold3">No Apps. No Websites. No Hassle.</span></li>
+          <li>
+            <span class="TitleBold3">
+              Real-Time, Personalized Bets
+            </span>
+          </li>
+          <li>
+            <span class="TitleBold3">
+              Seamless Integration for Operators
+            </span>
+          </li>
+          </ul>
+       </div>
+
         <div class="video">
           <a href="#contactanos">{{ "Get" | translate }}</a>
           <!-- <button href="#contactanos">{{ "Get" | translate }}</button> -->
@@ -134,10 +155,79 @@
 <div class="backgroundline">
   <div class="iconline">
     <img src="../../../../assets/Background/end-sect-one.png " alt="" />
-    <img class="line" src="../../../../assets/Icon/icons.svg" alt="" />
+    <img class="line" src="../../../../assets/inversionistas.png" alt="" />
   </div>
 </div>
 
+<div class="trust">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="text">
+          <span class="TitleBold">Trusted by Leading igaming operators</span>
+          <h1>Now available to use with</h1>
+        </div>
+        <div class="image-section" style="display: flex">
+          <img src="../../../../assets/imagenes.png" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+
+<!-- 1. Primera Parte -->
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="text">
+       <!--  <p>
+          <span class="TitleBold">Que es ChatBet</span>
+          {{ "activos" | translate }}
+        </p> -->
+        <h1>What is ChatBet?</h1>
+        <div >
+          <p>
+            ChatBet is the first AI-powered conversational betting solution, designed to help iGaming operators provide their users with an intuitive, chat-based betting experience.<br /><br />
+
+            By integrating ChatBet, operators can:<br /><br />
+          </p>
+
+          <ul>
+            <li>
+              <span class="TitleBold3">Increase engagement:</span>
+               Players place bets naturally, just like chatting with a friend
+            </li>
+            <li>
+              <span class="TitleBold3">Boost retention:</span>
+               AI-driven personalization keeps players coming back
+            </li>
+            <li>
+              <span class="TitleBold3">Maximize revenue:</span>
+               +20% monthly turnover growth from friction-less betting
+            </li>
+          </ul>
+
+          <p>
+            ChatBet is exclusively available through licensed sportsbook operators—ensuring a fully compliant and secure integration.
+          </p>
+        </div>
+
+        <div class="completebutton">
+          <a href="#contactanos">{{ "Get" | translate }}</a>
+        </div>
+
+      </div>
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/prueba.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<!--2. Feature -->
 <div id="funciones" class="section">
   <div class="second-section">
     <div class="second-flex">
@@ -150,6 +240,7 @@
     </div>
   </div>
 </div>
+
 
 <div id="comofunciona" class="section">
   <div class="fourth-section">
@@ -171,10 +262,43 @@
         <h2>{{ "title3" | translate }}</h2>
         <p>{{ "Conuna" | translate }}</p>
       </div>
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon3.png" alt="" />
+        <h2>{{ "title3" | translate }}</h2>
+        <p>{{ "Conuna" | translate }}</p>
+      </div>
+    </div>
+    
+    <div class="image-carousel">
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon1.png" alt="" />
+        <h2>{{ "title1" | translate }}</h2>
+
+        <p>{{ "Hablacon" | translate }}</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon2.png" alt="" />
+        <h2>{{ "title2" | translate }}</h2>
+        <p>{{ "Buscacon" | translate }}</p>
+      </div>
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon3.png" alt="" />
+        <h2>{{ "title3" | translate }}</h2>
+        <p>{{ "Conuna" | translate }}</p>
+      </div>
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/icon3.png" alt="" />
+        <h2>{{ "title3" | translate }}</h2>
+        <p>{{ "Conuna" | translate }}</p>
+      </div>
     </div>
   </div>
 </div>
 
+<hr class="hr">
+
+<!-- 3. Beneficios -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
@@ -201,6 +325,9 @@
   </div>
 </div>
 
+<hr class="hr">
+
+<!-- 4. Como Funciona -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
@@ -225,10 +352,13 @@
   </div>
 </div>
 
+<hr class="hr">
+
 <!-- <div class="backgroundline">
   <img src="../../../../assets/Background/end-sect-one.png " alt="" />
 </div> -->
 
+<!-- 5. Seguridad -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
@@ -277,6 +407,9 @@
   </div>
 </div>
 
+<hr class="hr">
+
+<!-- 6. Integracion-->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
@@ -310,6 +443,9 @@
   </div>
 </div>
 
+<hr class="hr">
+
+<!--7. Carrusel -->
 <div class="backgroundline">
   <div class="review">
     <img [src]="currentImages['img4']" alt="" />
@@ -321,6 +457,9 @@
   </div>
 </div>
 
+<hr class="hr">
+
+<!-- 8. Ultima Imagen -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
@@ -341,6 +480,9 @@
   </div>
 </div>
 
+<hr class="hr">
+
+<!-- 9. Contactanos -->
 <div id="contactanos" class="section">
   <div class="sixth-section">
     <div class="text">
@@ -350,7 +492,7 @@
         <span class="TitleBoldMobile">{{ "Únase" | translate }} </span>
         {{ "Agendemos" | translate }}
       </h3>
-    </div>
+    </div> 
 
     <div class="form" [formGroup]="form">
       <form action="javascript:void(0)" (submit)="send()">
@@ -387,6 +529,8 @@
     </div>
   </div>
 </div>
+
+
 
 <div class="backgroundline">
   <div class="fotter1">

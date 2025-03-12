@@ -7,6 +7,7 @@ h1,h2,h3,h4,h5,h6{
     color:#5554F3;
 }
 
+
 .TitleBold3{
     font-family: "Poppins-Bold", sans-serif;
     span{
@@ -61,13 +62,12 @@ p{
             height: 80px;
             
         }
-      
     }
     
     .line {
         position: absolute;
-        width: 50%;
-        height: 50%;
+        width: 35%;
+        height: 35%;
         @media (max-width:900px){
             height: 80%;
             width: 80%;
@@ -96,6 +96,31 @@ h3{
     margin-top: 16px;
    
 }
+
+
+    .hr {
+        border: 0;
+        height: 1.8px; 
+        background-color: rgba(204, 204, 204, 0.5);
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+        margin: 5% 9%; 
+    }
+
+
+
+    .trust{
+        position: relative;
+        max-width: 1280px;
+        margin-top: 50px;
+        padding-left: 7%;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding-right: 7%;
+        margin-bottom: 100px;
+        
+    }
 
     .section{
         position: relative;
@@ -203,6 +228,7 @@ h3{
             margin-right: 5px;
             font-family: "Poppins", sans-serif;
             font-weight: bold;
+            color: #F3F2FF;
 
             @media screen and (max-width: 1049px){
                 display: none;  
