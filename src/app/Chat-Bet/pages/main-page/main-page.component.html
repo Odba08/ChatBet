@@ -71,7 +71,6 @@
 
     <div class="first-section-container">
       <div class="text">
-        <!-- <img src="../../../../assets/img/Frame8.png" alt="" /> -->
         <div class="animation-container">
           <ng-lottie
             *ngIf="currentLanguage === 'es'; else otherOptions"
@@ -96,15 +95,15 @@
        <div class="lista">
         <ul>
           <li>
-            <span class="TitleBold3">No Apps. No Websites. No Hassle.</span></li>
+            <span class="TitleBold3">{{"noapps" | translate }}</span></li>
           <li>
             <span class="TitleBold3">
-              Real-Time, Personalized Bets
+              {{"realtime" | translate }}
             </span>
           </li>
           <li>
             <span class="TitleBold3">
-              Seamless Integration for Operators
+              {{"seamless" | translate }}
             </span>
           </li>
           </ul>
@@ -112,7 +111,6 @@
 
         <div class="video">
           <a href="#contactanos">{{ "Get" | translate }}</a>
-          <!-- <button href="#contactanos">{{ "Get" | translate }}</button> -->
           <img
             [src]="currentImages['img3']"
             alt=""
@@ -163,11 +161,14 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-          <span class="TitleBold">Trusted by Leading igaming operators</span>
-          <h1>Now available to use with</h1>
+          <span class="TitleBold">{{ "trusted" | translate }}</span>
+          <h1>{{ "nowavailable" | translate }}</h1>
         </div>
-        <div class="image-section" style="display: flex">
-          <img src="../../../../assets/imagenes.png" alt="">
+        <div class="merch" >
+          <img src="../../../../assets/betvip.png" alt="">
+          <img src="../../../../assets/betano.png" alt="">
+          <img src="../../../../assets/betplay.png" alt="">
+          <img src="../../../../assets/premier.png" alt="">
         </div>
     </div>
   </div>
@@ -181,35 +182,32 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-       <!--  <p>
-          <span class="TitleBold">Que es ChatBet</span>
-          {{ "activos" | translate }}
-        </p> -->
-        <h1>What is ChatBet?</h1>
+        <h1>{{ "whatischatbet" | translate }}</h1>
         <div >
           <p>
-            ChatBet is the first AI-powered conversational betting solution, designed to help iGaming operators provide their users with an intuitive, chat-based betting experience.<br /><br />
-
-            By integrating ChatBet, operators can:<br /><br />
+            {{ "chatbetis" | translate }}<br /><br />
+            {{ "chatbetistwo" | translate }}
           </p>
 
-          <ul>
-            <li>
-              <span class="TitleBold3">Increase engagement:</span>
-               Players place bets naturally, just like chatting with a friend
-            </li>
-            <li>
-              <span class="TitleBold3">Boost retention:</span>
-               AI-driven personalization keeps players coming back
-            </li>
-            <li>
-              <span class="TitleBold3">Maximize revenue:</span>
-               +20% monthly turnover growth from friction-less betting
-            </li>
-          </ul>
+          <div class="secondlist">
+            <ul>
+              <li>
+                <span class="TitleBold3">{{ "increase" | translate }}</span>
+                {{ "players" | translate }}
+              </li>
+              <li>
+                <span class="TitleBold3">{{ "boost" | translate }}:</span>
+                {{ "Aidriven" | translate }}
+              </li>
+              <li>
+                <span class="TitleBold3">{{ "maximize" | translate }}</span>
+                {{ "20monthly" | translate }}
+              </li>
+            </ul>
+          </div>
 
           <p>
-            ChatBet is exclusively available through licensed sportsbook operators—ensuring a fully compliant and secure integration.
+            {{ "isexclusive" | translate }}
           </p>
         </div>
 
@@ -218,7 +216,7 @@
         </div>
 
       </div>
-      <div class="image-section" style="display: flex">
+      <div class="chatbetimage" style="display: flex">
         <img src="../../../../assets/prueba.png" alt="">
       </div>
     </div>
@@ -267,9 +265,7 @@
         <h2>{{ "title3" | translate }}</h2>
         <p>{{ "Conuna" | translate }}</p>
       </div>
-    </div>
     
-    <div class="image-carousel">
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon1.png" alt="" />
         <h2>{{ "title1" | translate }}</h2>
@@ -354,10 +350,6 @@
 
 <hr class="hr">
 
-<!-- <div class="backgroundline">
-  <img src="../../../../assets/Background/end-sect-one.png " alt="" />
-</div> -->
-
 <!-- 5. Seguridad -->
 <div id="beneficios" class="section">
   <div class="third-section">
@@ -372,34 +364,23 @@
           <p>{{ "optimiza" | translate }}tususuarios<br /><br /></p>
         </div>
         <div class="botones">
-         
             <span class="TitleBold3">{{ "casinos" | translate }}</span>
-       
-        
             <span class="TitleBold3">{{ "soporte" | translate }}</span>
-       
             <span class="TitleBold3">{{
               "sugerencias" | translate
             }}</span>
-         
             <span class="TitleBold3">{{
               "soporterespuestas" | translate
             }}</span>
           <div class="division">
             <span class="TitleBold3">Open AI</span>
             <span class="TitleBold3">CloudFlrare</span>
-            
-              <span class="TitleBold3">{{ "promociones" | translate }}</span>
-            
+              <span class="TitleBold3">{{ "promociones" | translate }}</span>  
           </div>
-          
             <span class="TitleBold3">{{ "ofertas" | translate }}</span>
-          
             <span class="TitleBold3">{{ "noticias" | translate }}</span>
-          
         </div>
       </div>
-
       <div class="frame4" style="display: flex">
         <img [src]="currentImages['Frame4']" alt="" />
       </div>
@@ -450,10 +431,8 @@
   <div class="review">
     <img [src]="currentImages['img4']" alt="" />
   </div>
-
   <div class="reviewphone">
     <img [src]="currentImages['reviewphone']" alt="" />
-
   </div>
 </div>
 
