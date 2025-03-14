@@ -245,54 +245,59 @@
     <div class="image-carousel">
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon1.png" alt="" />
-        <h2>{{ "title1" | translate }}</h2>
-
-        <p>{{ "Hablacon" | translate }}</p>
+        <!-- <h2>{{ "title1" | translate }}</h2> -->
+        <h2>Natural Language Betting</h2>
+        <p>Players bet as easily and naturally as texting a friend.</p>
+        <!-- <p>{{ "Hablacon" | translate }}</p> -->
       </div>
 
       <div class="carousel-item">
-        <img src="../../../../assets/Icon/icon2.png" alt="" />
-        <h2>{{ "title2" | translate }}</h2>
-        <p>{{ "Buscacon" | translate }}</p>
+        <img src="../../../../assets/Icon/ia.png" alt="" />
+        <!-- <h2>{{ "title2" | translate }}</h2> -->
+        <h2>AI-Powered Personalization</h2>
+        <p>Available on web, mobile app, and more with easy integration.</p>
+        <!-- <p>{{ "Buscacon" | translate }}</p> -->
+      </div>
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/moneda.png" alt="" />
+        <!-- <h2>{{ "title3" | translate }}</h2>
+        <p>{{ "Conuna" | translate }}</p> -->
+        <h2>Instant Bets</h2>
+        <p>Bet in seconds with fast responses and no waiting.</p>
       </div>
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>{{ "title3" | translate }}</h2>
-        <p>{{ "Conuna" | translate }}</p>
-      </div>
-      <div class="carousel-item">
-        <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>{{ "title3" | translate }}</h2>
-        <p>{{ "Conuna" | translate }}</p>
+        <h2>Seamless Multi-platform Integration</h2>
+        <p>WhatsApp, Telegram, web, or app—wherever your players are.</p>
       </div>
     
       <div class="carousel-item">
-        <img src="../../../../assets/Icon/icon1.png" alt="" />
-        <h2>{{ "title1" | translate }}</h2>
-
-        <p>{{ "Hablacon" | translate }}</p>
-      </div>
-
-      <div class="carousel-item">
         <img src="../../../../assets/Icon/icon2.png" alt="" />
-        <h2>{{ "title2" | translate }}</h2>
-        <p>{{ "Buscacon" | translate }}</p>
+        <h2>Secure & Reliable Transactions</h2>
+        <p>Full encryption and compliance with industry standards.</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../../../assets/Icon/tuerca.png" alt="" />
+        <h2>Effortless Operator Integration</h2>
+        <p>Your transactions and data are always protected.</p>
       </div>
       <div class="carousel-item">
-        <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>{{ "title3" | translate }}</h2>
-        <p>{{ "Conuna" | translate }}</p>
+        <img src="../../../../assets/Icon/balon.png" alt="" />
+        <h2>Mid-Game & High-Payout Bets</h2>
+        <p>Custom bets on the go, even mid-match.</p>
       </div>
       <div class="carousel-item">
-        <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>{{ "title3" | translate }}</h2>
-        <p>{{ "Conuna" | translate }}</p>
+        <img src="../../../../assets/Icon/dosmonedas.png" alt="" />
+        <h2>Cross-Vertical Gaming</h2>
+        <p>Switch between betting and casino without leaving the chat.</p>
       </div>
     </div>
   </div>
 </div>
 
 <hr class="hr">
+
 
 <!-- 3. Beneficios -->
 <div id="beneficios" class="section">
@@ -303,21 +308,150 @@
       </div>
       <div class="text">
         <h1>{{ "Beneficios" | translate }}</h1>
-        <div class="texto">
-          <p>
+
+        <div class="top-buttons">
+          <button
+          [class.active]="operatorsType === 'operators'"
+            (click)="operatorsType = 'operators'"
+          >Opedores</button>
+          <button
+          [class.active]="operatorsType === 'players'"
+          (click)="operatorsType = 'players'">Players</button>
+        </div>
+
+        <div class="texto"  *ngIf="operatorsType === 'operators'">
+         <!--  <p>
             <span class="TitleBold3">{{ "Reducción" | translate }}</span>
             {{ "Minimiza" | translate }}<br /><br />
             <span class="TitleBold3">{{ "Machine" | translate }} </span
             >{{ "Utiliza" | translate }}<br /><br />
             <span class="TitleBold3">{{ "IA" | translate }}</span>
             {{ "Responde" | translate }}
-          </p>
+          </p> -->
+          <div class="secondlist">
+            <ul>
+              <li>
+                <span class="TitleBold3">Boost Player Retention –</span>
+                +30% improvement in 90-day retention
+              </li>
+              <li>
+                <span class="TitleBold3">Increase Betting Volume –</span>
+                Players bet more frequently with AI-driven prompts
+              </li>
+              <li>
+                <span class="TitleBold3">Drive-up GGR –</span>
+                +20% monthly increase in GGR 
+              </li>
+              <li>
+                <span class="TitleBold3">Effortless Integration –</span>
+                Plug & play setup with minimal effort
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="texto" *ngIf="operatorsType === 'players'">
+          <div class="secondlist">
+            <ul>
+              <li>
+                <span class="TitleBold3">Bet as Easily as Chatting –</span>
+                No apps or websites, just type and play
+              </li>
+              <li>
+                <span class="TitleBold3">Hyper-Personalized Bets –</span>
+                AI tailors recommendations for a unique experience
+              </li>
+              <li>
+                <span class="TitleBold3">Real-Time Optimization –</span>
+                AI refines bets on the fly, driving higher engagement 
+              </li>
+              <li>
+                <span class="TitleBold3">Faster Transactions –</span>
+                Place bets and withdraw winnings instantly
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="completebutton">
           <a href="#contactanos">{{ "Get" | translate }}</a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<!-- 3.5 Tabla de Beneficios -->
+<div id="funciones" class="section">
+  <div class="second-section">
+    <div class="second-flex">
+      <h1>Check Why We are the Best!</h1>
+    </div>
+
+        <div class="table">
+          <table>
+            <tr class="thtitle">
+              <th class="feature">Feature</th>
+              <th>ChatBet</th>
+              <th>Other Chat-Based Platforms</th>
+              <th>Traditional Sportbooks</th>
+            </tr>
+            <td colspan="4">
+              <div class="separator"></div> <!-- Línea horizontal -->
+            </td>
+            <tr>
+              <td class="tdtitle">True Chat-Based Betting</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td>LIMITED</td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="tdtitle">AI-Powered Personalization</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td>BASIC</td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="tdtitle">Real-time Bet Optimizatio</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+
+            <tr>
+              <td class="tdtitle">Instant Betting & Results</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td>PARCIAL</td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="tdtitle">Multi-Platform Access</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="tdtitle">Custom Mid-Game & High-Payout Bets</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td>LIMITED</td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="tdtitle">Seamless Operator Integration</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td>REQUIRES CUSTOM INTEGRATION</td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="tdtitle">Higher Revenue & Retention</td>
+              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
+              <td>N/A</td>
+              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
+            </tr>
+          </table>
+        </div>
   </div>
 </div>
 

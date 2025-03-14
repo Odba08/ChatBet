@@ -17,6 +17,7 @@ export class MainPageComponent {
   public dialCode: string | null = null;
   public maxLength: number = 0;
   public minLength: number = 0;
+  public operatorsType: 'operators' | 'players' = 'operators';
 
  
     @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
@@ -76,8 +77,8 @@ export class MainPageComponent {
         third: './assets/img/Frame5.2.png',
         second: './assets/img/guardar/second-phone.png',
         video: 'https://landing-page-chatbet.s3.us-east-1.amazonaws.com/assets/video/vid-es.mp4',
-        footer: '../../../../assets/Background/footer.svg',
-        footer2: '../../../../assets/Background/2footer.svg',
+        footer: '../../../../assets/Background/footer-en.png',
+        footer2: '../../../../assets/Background/2footer-en.png',
         phoneimage: '../../../../assets/img/phone-en.png',
         Frame4: '../../../../assets/img/Frame4.png',
         reviewphone: '../../../../assets/Background/review-en-tlf2.svg'
