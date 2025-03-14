@@ -605,7 +605,7 @@ h3{
         box-shadow: 0 4px 10px rgba(149, 149, 255, 0.5);
         font-size: 1.1rem;
         @media (max-width: 900px){
-            width: 100%;
+            display: none;
         }
         td{
             padding: 0.7rem;
