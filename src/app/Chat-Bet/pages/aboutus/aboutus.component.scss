@@ -886,8 +886,7 @@ h3{
   
 
   .image-carousel {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: flex;
       grid-row: 1fr 1fr;
       grid-gap: 10px;
       justify-content: space-between;
@@ -896,14 +895,7 @@ h3{
   
       @media (max-width: 900px) {
           display: flex;
-          overflow-x: auto; 
-          flex-wrap: nowrap; 
-          scroll-snap-type: x mandatory; 
-          -webkit-overflow-scrolling: touch; 
-          scrollbar-width: none; 
-          &::-webkit-scrollbar {
-              display: none; 
-          }
+          flex-direction: column;
       }
       .carousel-item {
           flex: 1;
