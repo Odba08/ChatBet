@@ -312,10 +312,11 @@ h3{
     }
 
     .merch{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         grid-gap: 10px;
-        @media (max-width: 900px) {
+
+
+        @media (max-width: 1500px) {
             display: flex;
             overflow-x: auto; 
             flex-wrap: nowrap; 
@@ -800,10 +801,11 @@ h3{
                     display: inline-flex;
                     background-color: white;
                     border-radius: 50px;
-                    border: 1px solid #5554F3; 
+                    border: 3px solid #5554F3; 
                     width: 70%;
                     padding: 0;
-                    margin: 0;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
                     height: auto;
                     align-items: stretch;
                    
@@ -811,14 +813,14 @@ h3{
                         width: 100%;
                      background-color: white; 
                      color: #5554F3; 
-                     border-radius: 50px; 
+                     border-radius: 50px;
                      cursor: pointer;
                      transition: all 0.8s ease; 
-                     position: relative;
+                     position:  relative;
                      overflow: hidden;
                      padding: 10px 20px;
                      font-size: 18px;
-                     margin-top: 0;
+                     margin: 4px;
                      font-weight: 700;
                      border:none;
                    }

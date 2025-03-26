@@ -1,0 +1,132 @@
+<div class="section">
+  <div class="background">
+    <img src="./assets/Background/nuevoheader.png" alt="" />
+  </div>
+
+  <header>
+    <div class="section-header">
+      <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" routerLink="/"/>
+      
+      <img class="chatbet" src="../../../../assets/img/Frame0.png" alt="" />
+      <div class="newidioma">
+        <a href="" >
+          En
+        </a>
+        <a href="">|</a>
+        <a href="" >
+          Es
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="#funciones">{{ "headerone" | translate }}</a>
+        <a href="#beneficios">{{ "headertwo" | translate }}</a>
+        <a href="#comofunciona">{{ "headertree" | translate }}</a>
+        <a href="#integracion">{{ "headerfour" | translate }}</a>
+        <a href="#contactanos">{{ "headerfive" | translate }}</a>
+        <span class="divisor">|</span>
+        <a routerLink="/spotlight"  >Spotlight</a>
+        <span class="divisor">|</span>
+        <a  routerLink="/aboutus" href="">About Us</a>
+        <span class="divisor">|</span>
+        <div class="idioma">
+          <a href="" >
+            En
+          </a>
+          <a href="" >
+            Es
+          </a>
+        
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="first-section">
+    
+
+    <div class="first-section-container">
+      <div class="text">
+        <br>
+        <h1>ABOUT US</h1>
+        <br>
+        <span class="TitleBold3">
+          A B2B Solution for iGaming Operators
+        </span>
+          <p>ChatBet was built to redefine the way licensed iGaming operators engage players—offering a frictionless betting experience through messaging apps</p>
+          <p>ChatBet is NOT a consumer-facing betting app. Instead, we power leading iGaming operators, enabling them to enhance player engagement and revenue with AI-driven, chat-based betting.</p>
+          
+          <ng-container *ngIf="currentLanguage === 'en'">
+            <p>{{ "text" | translate }} <br /><br /></p>
+          </ng-container>
+
+
+       
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<hr class="hr">
+
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="text">
+        <h1>How ChatBet is Changing the Game</h1>
+        <div >
+          <p>
+            ChatBet was born from a bold vision: to make betting as easy as chatting with a friend. In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat.
+          </p>
+          <p>
+            From a startup idea to becoming a trusted partner of industry leaders like AWS, OpenAI, and Meta, ChatBet is revolutionizing the way players and operators experience betting.
+          </p>
+
+        </div>
+
+        <div class="completebutton">
+          <a href="#contactanos">{{ "Get" | translate }}</a>
+        </div>
+
+      </div>
+      <div class="chatbetimage" style="display: flex">
+        <img src="../../../../assets/prueba.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/ourmision.png" alt="" />
+      </div>
+      <div class="text">
+        <h1 class="TitleBold2">Our Mission</h1>
+        <p>To make betting seamless, personalized, and engaging by leveraging AI and natural language processing—creating a frictionless experience for both players and operators.</p>
+        <h1 class="TitleBold2">Our Vision</h1>
+
+        <p>To lead the global shift towards chat-based gaming, making traditional betting platforms obsolete by offering a faster, smarter, and more intuitive way to bet.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+
+
+<div class="backgroundline">
+  <div class="fotter1">
+    <img [src]="currentImages['footer']" alt="" />
+  </div>
+
+  <div class="fotter2">
+    <img [src]="currentImages['footer2'] " alt="" />
+  </div>
+</div>

@@ -7,6 +7,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LottieComponent, provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
 import { CustomSelectComponent } from './custom-select/custom-select.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { SpotlightComponent } from './pages/spotlight/spotlight.component';
+import { ChatBetRoutingModule } from './chat-bet-routing.module';
 export function playerFactory() {
   return player;
 }
@@ -14,7 +17,9 @@ export function playerFactory() {
 @NgModule({
   declarations: [
     MainPageComponent,
-    CustomSelectComponent
+    CustomSelectComponent,
+    AboutusComponent,
+    SpotlightComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +27,7 @@ export function playerFactory() {
     SlickCarouselModule,
     LottieComponent,
     ReactiveFormsModule,
+    ChatBetRoutingModule
    
   ],
   exports: [

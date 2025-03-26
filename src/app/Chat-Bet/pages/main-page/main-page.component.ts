@@ -18,6 +18,7 @@ export class MainPageComponent {
   public maxLength: number = 0;
   public minLength: number = 0;
   public operatorsType: 'operators' | 'players' = 'operators';
+  public NewOperatorsType: 'operators' | 'players' = 'operators';
 
  
     @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;

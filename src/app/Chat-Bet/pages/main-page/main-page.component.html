@@ -1,6 +1,6 @@
 <div class="section">
   <div class="background">
-    <img src="./assets/Background/Seccion1.png" alt="" />
+    <img src="./assets/Background/nuevoheader.png" alt="" />
   </div>
 
   <header>
@@ -24,9 +24,9 @@
         <a href="#integracion">{{ "headerfour" | translate }}</a>
         <a href="#contactanos">{{ "headerfive" | translate }}</a>
         <span class="divisor">|</span>
-        <a href="">Spotlight</a>
+        <a routerLink="/spotlight"  >Spotlight</a>
         <span class="divisor">|</span>
-        <a href="">About Us</a>
+        <a  routerLink="/aboutus" href="">About Us</a>
         <span class="divisor">|</span>
         <div class="idioma">
           <a href="" (click)="switchLanguage('en')">
@@ -85,7 +85,10 @@
         </div>
         <div class="texto">
           <ng-container *ngIf="currentLanguage === 'es'">
-            <p>{{ "text" | translate }} <br /><br /></p>
+            <p>ChatBet is the #1 AI-powered betting assistant — transforming messaging apps into powerful revenue channels for operators. <br /><br />
+              Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting. <br/><br/>
+              Built for operators, enjoyed by players.<br/><br/>
+            </p>
           </ng-container>
 
           <ng-container *ngIf="currentLanguage === 'en'">
@@ -95,15 +98,15 @@
        <div class="lista">
         <ul>
           <li>
-            <span class="TitleBold3">{{"noapps" | translate }}</span></li>
+            <span class="TitleBold3">Boost Player Retention</span></li>
           <li>
             <span class="TitleBold3">
-              {{"realtime" | translate }}
+              Increase GGR & Bet Volume
             </span>
           </li>
           <li>
             <span class="TitleBold3">
-              {{"seamless" | translate }}
+              Seamless Integration
             </span>
           </li>
           </ul>
@@ -120,11 +123,14 @@
       </div>
 
       <div class="image-first-container">
-        <img
+       <!--  <img
           [src]="currentImages['img5']"
           alt=""
           style="margin-top: 0"
         />
+        <img class="lastimage" [src]="currentImages['img2']" alt="" /> -->
+
+        <img src="../../../../assets/imagen-inicial.png" alt="">
         <img class="lastimage" [src]="currentImages['img2']" alt="" />
       </div>
 
@@ -166,9 +172,8 @@
         </div>
         <div class="merch" >
           <img src="../../../../assets/betvip.png" alt="">
-          <img src="../../../../assets/betano.png" alt="">
           <img src="../../../../assets/betplay.png" alt="">
-          <img src="../../../../assets/premier.png" alt="">
+          <img src="../../../../assets/apuestasRoyale.png" alt="">
         </div>
     </div>
   </div>
@@ -404,7 +409,7 @@
             <tr>
               <td class="tdtitle">True Chat-Based Betting</td>
               <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>LIMITED</td>
+              <td><img src="../../../../assets/guion.png" alt=""></td>
               <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
             </tr>
             <tr>
@@ -423,7 +428,7 @@
             <tr>
               <td class="tdtitle">Instant Betting & Results</td>
               <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>PARCIAL</td>
+              <td><img src="../../../../assets/guion.png" alt=""></td>
               <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
             </tr>
             <tr>
@@ -435,7 +440,7 @@
             <tr>
               <td class="tdtitle">Custom Mid-Game & High-Payout Bets</td>
               <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>LIMITED</td>
+              <td><img src="../../../../assets/guion.png" alt=""></td>
               <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
             </tr>
             <tr>
@@ -447,7 +452,7 @@
             <tr>
               <td class="tdtitle">Higher Revenue & Retention</td>
               <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>N/A</td>
+              <td><img src="../../../../assets/na.png" alt=""></td>
               <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
             </tr>
           </table>
@@ -457,21 +462,113 @@
 
 <hr class="hr">
 
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      
+      <div class="text">
+        <h1>As Easy as 1, 2, 3… <br>
+          For Operators & Players</h1>
+
+        <div class="top-buttons">
+          <button
+          [class.active]="NewOperatorsType === 'operators'"
+            (click)="NewOperatorsType = 'operators'"
+          >Opedores</button>
+          <button
+          [class.active]="NewOperatorsType === 'players'"
+          (click)="NewOperatorsType = 'players'">Players</button>
+        </div>
+
+        <div class="texto"  *ngIf="NewOperatorsType === 'operators'">
+          <div class="secondlist">
+            <br>
+            <span class="TitleBold3">Seamless Integration</span>
+            <br>
+            <p>Integrating ChatBet is as simple as using it—enhancing platforms with minimal effort while maximizing revenue.</p>
+            <ul>
+              <li>
+                <span class="TitleBold3"> Quick API Integration:</span>
+                Works with existing platforms in weeks.
+              </li>
+              <li>
+                <span class="TitleBold3">Automated AI Handling:</span>
+                 No manual bet processing needed.
+              </li>
+              <li>
+                <span class="TitleBold3">Boost Revenue & Engagement:</span>
+                 More bets, higher retention, and increased turnover.
+              </li>
+            </ul>
+            <p>
+              This frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="texto" *ngIf="NewOperatorsType === 'players'">
+          <div class="secondlist">
+
+            <span class="TitleBold3">Effortless Betting - Just Chat & Play</span>
+            <p>With ChatBet, placing a bet is as easy as sending a message. No complex sites, no lengthy registrations—just a seamless chat experience.</p>
+
+            <ul>
+              <li>
+                <span class="TitleBold3">Just Chat -</span>
+                  Type your bet like a message—no apps, no forms.
+              </li>
+              <li>
+                <span class="TitleBold3">Instant AI Assistance –</span>
+                 Real-time odds, smart recommendations, and confirmations.
+              </li>
+              <li>
+                <span class="TitleBold3">Enter Your Amount –</span>
+                 No searching or manual input.
+              </li>
+              <li>
+                <span class="TitleBold3">Confirm & Bet Instantly 🤙 –</span>
+                 Quick confirmation, instant action.
+              </li>
+              <li>
+                <span class="TitleBold3"> Win & Withdraw –</span>
+                Secure payouts, no complications.
+              </li>
+            </ul>
+            <p>
+              This frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps.
+            </p>
+          </div>
+
+        </div>
+        <div class="completebutton">
+          <a href="#contactanos">{{ "Get" | translate }}</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/comofunciona.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="hr">
+
+
 <!-- 4. Como Funciona -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-        <p>
-          <span class="TitleBold">{{ "mascientocincuenta" | translate }}</span>
-          {{ "activos" | translate }}
-        </p>
-        <h1>{{ "porquedeberias" | translate }}</h1>
+
+        <h1>Proven Success</h1>
+
+        <span class="TitleBold3">AI-Driven Growth. Measurable Impact.</span>
         <div class="texto">
           <p>
-            {{ "conchatbet" | translate }}.<br /><br />
-
-            {{ "optimiza" | translate }}<br /><br />
+            ChatBet isn’t just easy—it’s profitable. Our AI-driven platform delivers real results.<br /><br />
+            ChatBet supports operators by keeping users engaged, maximizes betting value, and streamlines operations across multiple channels.<br /><br />
+            Effortlessly grow revenue, attract new bettors, and retain players—securely and efficiently
           </p>
         </div>
       </div>
@@ -484,8 +581,50 @@
 
 <hr class="hr">
 
-<!-- 5. Seguridad -->
+<!-- Proteccion -->
 <div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/img/Frame6.png" alt="" />
+      </div>
+      <div class="text">
+        <!-- <span class="TitleBold2">{{ "proteccion" | translate }}</span> -->
+        <h1>Top-Level Protection for Operators & Players</h1>
+
+        <p>
+          ChatBet is built on enterprise-grade infrastructure, ensuring maximum player and operator protection.
+        </p>
+
+        <div class="secondlist">
+          <ul>
+            <li>
+              <span class="TitleBold3">End-to-End Encryption:</span>
+               100% secure transactions & player data protection.
+            </li>
+            <li>
+              <span class="TitleBold3">PCI DSS & ISO 27001 Certified:</span>
+               Meets global financial security standards.
+            </li>
+            <li>
+              <span class="TitleBold3">AWS & OpenAI Infrastructure:</span>
+               Industry-leading cloud security & scalability.
+            </li>
+            <li>
+              <span class="TitleBold3"> Fraud Detection & Risk Management:</span>
+              AI-driven safeguards against unauthorized access.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<!-- 5. Seguridad -->
+<!-- <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
@@ -520,8 +659,55 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+<div id="beneficios" class="section">
+  <div class="third-section">
+    <div class="third-flex">
+      
+      <div class="text">
+        <h1>Regulatory-Compliant AI Betting</h1>
+        <br>
+        <p>ChatBet is designed to operate exclusively through licensed sportsbook operators, ensuring full legal & regulatory compliance.</p>
+        <p>While ChatBet introduces a new way to monetize—through messaging apps—it functions purely as a communication channel.</p>
+        <div class="texto"  *ngIf="NewOperatorsType === 'operators'">
+          <div class="secondlist">
+            <ul>
+              <li>
+                <span class="TitleBold3"> No direct fund handling:</span>
+                 All transactions go through the operator’s wallet.
+              </li>
+              <li>
+                <span class="TitleBold3">No player data storage:</span>
+                 ChatBet relays information but does not retain user data.
+              </li>
+              <li>
+                <span class="TitleBold3">Operator-controlled markets:</span>
+                 ChatBet mirrors the sportsbook’s existing offerings.
+              </li>
+              <li>
+                <span class="TitleBold3">Adheres to Global Regulations:</span>
+                 Compliance with iGaming, GDPR, and financial laws.
+              </li>
+            </ul>
+            <p>
+              ChatBet is not a new platform—it’s a smarter interface layered on top of the operator’s system, simplifying betting while maintaining full regulatory alignment.
+            </p>
+          </div>
+        </div>
 
+
+  
+        <div class="completebutton">
+          <a href="#contactanos">{{ "Get" | translate }}</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="image-section" style="display: flex">
+        <img src="../../../../assets/compilance.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
 <hr class="hr">
 
 <!-- 6. Integracion-->
@@ -529,25 +715,27 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="image-section" style="display: flex">
-        <img [src]="currentImages['third']" alt="" />
+        <img src="../../../../assets/integration.png" alt="" />
       </div>
       <div class="text">
-        <h1>{{ "sincomplicaciones" | translate }}</h1>
-        <div class="texto">
-          <p>
-            {{ "tususuariosapuestan" | translate }}<br /><br />
-            <span class="TitleBold3">{{ "tususuarioshacen" | translate }}</span
-            ><br />
-            {{ "enlugar" | translate }}<br /><br />
-            <span class="TitleBold3">{{ "ingresan" | translate }}</span
-            ><br />
-            {{ "soloindican" | translate }}<br /><br />
-            <span class="TitleBold3">{{ "confirman" | translate }}</span
-            ><br />
-            {{ "unmensajerapido" | translate }}
-            <br /><br />
-            {{ "esproceso" | translate }}
-          </p>
+        <h1>Fast Hassle-Free Integration</h1>
+        <p>Operators can integrate ChatBet effortlessly—launching chat-based betting within weeks.</p>
+        <div class="secondlist">
+          <ul>
+            <li>
+              <span class="TitleBold3"> Minimal Technical Effort:</span>
+               Works with existing systems.
+            </li>
+            <li>
+              <span class="TitleBold3">Customizable Configurations:</span>
+               Tailored to your needs.
+            </li>
+            <li>
+              <span class="TitleBold3">Full Technical Support:</span>
+               Dedicated assistance for a smooth launch.
+            </li>
+          </ul>
+
         </div>
         <div class="completebutton">
           <a href="#contactanos">{{ "Get" | translate }}</a>
@@ -567,29 +755,6 @@
   </div>
   <div class="reviewphone">
     <img [src]="currentImages['reviewphone']" alt="" />
-  </div>
-</div>
-
-<hr class="hr">
-
-<!-- 8. Ultima Imagen -->
-<div id="beneficios" class="section">
-  <div class="third-section">
-    <div class="third-flex">
-      <div class="image-section" style="display: flex">
-        <img src="../../../../assets/img/Frame6.png" alt="" />
-      </div>
-      <div class="text">
-        <span class="TitleBold2">{{ "proteccion" | translate }}</span>
-        <h1>{{ "laplataforma" | translate }}</h1>
-
-        <div class="texto">
-          <p>
-            {{ "segura" | translate }}
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -654,3 +819,5 @@
     <img [src]="currentImages['footer2'] " alt="" />
   </div>
 </div>
+
+
