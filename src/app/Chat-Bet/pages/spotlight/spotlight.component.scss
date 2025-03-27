@@ -116,6 +116,14 @@ h1,h2,h3,h4,h5,h6{
         padding-left: 7%;
         padding-right: 7%;
         margin-bottom: 64px;
+    
+    
+        .section-header:first-child {
+            margin-left: -7%;
+            margin-right: -7%;
+            padding-left: 7%;
+            padding-right: 7%;
+          }
         .background{
             position: absolute;
             left: 0;
@@ -129,14 +137,20 @@ h1,h2,h3,h4,h5,h6{
             }
         }
     }
-  
+    
     
     .section-header{
         display: flex;
         justify-content: space-between;
-        padding: 10px;
         align-items: center;
-
+        background: white;
+        padding: 2rem;
+        overflow: hidden;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+    
+        box-shadow: 0 10px 15px -5px rgba(85, 84, 243, 0.4);
         .chatbetone{
         cursor: pointer;}
         .phonediv{
@@ -188,10 +202,10 @@ h1,h2,h3,h4,h5,h6{
     .navbar{
         display: flex;
         a{
-            color: white;
+            color: #5554F3;
             text-decoration: none;
             margin-right: 20px;
-            font-family: "Poppins", sans-serif;
+            font-family:  "Poppins-Bold", sans-serif;
             &:hover{
                 color: #9595ff;
             }       
@@ -204,7 +218,7 @@ h1,h2,h3,h4,h5,h6{
             margin-right: 5px;
             font-family: "Poppins", sans-serif;
             font-weight: bold;
-            color: #F3F2FF;
+            color: #5554F3;
            @media screen and (max-width: 1049px){display: none;}
         }
         .idioma{
