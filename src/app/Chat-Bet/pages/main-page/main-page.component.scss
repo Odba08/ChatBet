@@ -356,9 +356,8 @@ h3{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-
-
-        @media (max-width: 1500px) {
+        margin-left: 15px;
+        @media (max-width: 900px) {
             display: flex;
             overflow-x: auto; 
             flex-wrap: nowrap; 
