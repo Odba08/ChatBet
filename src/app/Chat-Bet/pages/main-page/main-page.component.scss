@@ -145,8 +145,8 @@ h3{
         .section-header:first-child {
             margin-left: -7%;
             margin-right: -7%;
-            padding-left: 7%;
-            padding-right: 7%;
+            /* padding-left: 7%;
+            padding-right: 7%; */
           }
         .background{
             position: absolute;
@@ -224,8 +224,9 @@ h3{
         a{
             color: #5554F3;
             text-decoration: none;
-            margin-right: 20px;
-            font-family:  "Poppins-Bold", sans-serif;
+            margin-right: 12px;
+            font-family: "Poppins-Bold", sans-serif;
+            font-size: 0.8rem;
             &:hover{
                 color: #9595ff;
             }       
