@@ -115,7 +115,7 @@
        </div>
 
         <div class="video">
-          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <a href="#contactanos">Book a Live Demo</a>
           <img
             [src]="currentImages['img3']"
             alt=""
@@ -169,13 +169,13 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-          <span class="TitleBold">{{ "trusted" | translate }}</span>
-          <h1>{{ "nowavailable" | translate }}</h1>
+          <span class="TitleBold">Trusted by Leading igaming operators</span>
+          <h1>Now Integrating With</h1>
         </div>
         <div class="merch" >
           <img src="../../../../assets/betvip.png" alt="">
           <img src="../../../../assets/betplay.png" alt="">
-          <img src="../../../../assets/apuestasRoyale.png" alt="">
+          <!-- <img src="../../../../assets/apuestasRoyale.png" alt=""> -->
         </div>
     </div>
   </div>
@@ -222,12 +222,12 @@
           </p>
 
           <p>
-            Available exclusively through licensed sportsbook operators for a fully compliant, secure integration.
+            <em>Available exclusively through licensed sportsbook operators for a fully compliant, secure integration.</em>
           </p>
         </div>
 
         <div class="completebutton">
-          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <a href="#contactanos">See How It Works</a>
         </div>
 
       </div>
@@ -309,6 +309,9 @@
         <h2>Cross-Vertical Gaming</h2>
         <p>Switch between sports, casino, games without leaving the chat.</p>
       </div>
+    </div>
+    <div class="completebutton">
+      <a href="#contactanos">Learn More About ChatBet</a>
     </div>
   </div>
 </div>
@@ -392,7 +395,7 @@
           </div>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <a href="#contactanos">Get a Free Demo</a>
         </div>
       </div>
     </div>
@@ -429,7 +432,7 @@
             <tr>
               <td class="tdtitle">AI-Powered Personalization</td>
               <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>BASIC</td>
+              <td>Basic</td>
               <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
             </tr>
             <tr>
@@ -460,7 +463,7 @@
             <tr>
               <td class="tdtitle">Seamless Operator Integration</td>
               <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>REQUIRES CUSTOM INTEGRATION</td>
+              <td>Requires Custom Integration</td>
               <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
             </tr>
             <tr>
@@ -489,7 +492,7 @@
           <button
           [class.active]="NewOperatorsType === 'operators'"
             (click)="NewOperatorsType = 'operators'"
-          >Opedores</button>
+          >Operators</button>
           <button
           [class.active]="NewOperatorsType === 'players'"
           (click)="NewOperatorsType = 'players'">Players</button>
@@ -551,8 +554,7 @@
               </li>
             </ul>
             <p>
-              This frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps.
-            </p>
+              A frictionless solution that enhances user experience, drives profitability, and future-proofs your betting operation.            </p>
           </div>
 
         </div>
@@ -583,6 +585,9 @@
             ChatBet supports operators by keeping users engaged, maximizes betting value, and streamlines operations across multiple channels.<br /><br />
             Effortlessly grow revenue, attract new bettors, and retain players—securely and efficiently
           </p>
+        </div>
+        <div class="completebutton">
+          <a href="#contactanos">Join The Winning Operators</a>
         </div>
       </div>
       <div class="image-section" style="display: flex">
@@ -631,7 +636,7 @@
           </ul>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <a href="#contactanos">Learn More About Security</a>
         </div>
       </div>
     </div>
@@ -714,7 +719,7 @@
           </div>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <a href="#contactanos">Get Compliance Details</a>
         </div>
       </div>
       <!--  -->
@@ -755,7 +760,7 @@
 
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ "Get" | translate }}</a>
+          <a href="#contactanos">Start Integrating Today</a>
         </div>
 
       </div>
@@ -794,32 +799,32 @@
       <form action="javascript:void(0)" (submit)="send()">
         <div class="form-input">
           <div class="form-section">
-            <input formControlName="name" type="text" placeholder="Nombre" />
+            <input formControlName="name" type="text" placeholder="Your Name*" />
           </div>
           <div class="form-section">
             <div class="countries">
               <div class="num-selector">
                 <app-custom-select [countries]="countries" (countrySelected)="onCountrySelected($event)"></app-custom-select>
               </div>
-              <input formControlName="contact" type="text" placeholder="Número" />
+              <input formControlName="contact" type="text" placeholder="Your Contact Number*" />
             </div>
           </div>
           <div class="form-section">
-            <input formControlName="email" type="text" placeholder="Correo" />
+            <input formControlName="email" type="text" placeholder="Your Company Email*" />
           </div>
           <div class="form-section">
-            <input formControlName="empresa" type="text" placeholder="Empresa" />
+            <input formControlName="empresa" type="text" placeholder="Your Company Name*" />
           </div>
-          <div class="form-section">
+      <!--     <div class="form-section">
             <input formControlName="cargo" type="text" placeholder="Cargo" />
           </div>
           <div class="form-section">
             <input formControlName="country" type="text" placeholder="País" />
-          </div>
+          </div> -->
         </div>
         <div class="form-send">
-          <input formControlName="message" type="text" placeholder="Mensaje" />
-          <button type="submit">Enviar</button>
+          <input formControlName="message" type="text" placeholder="How Can Our Team Help?" />
+          <button type="submit">Send info</button>
         </div>
       </form>
     </div>

@@ -54,7 +54,7 @@ export class MainPageComponent {
   
     imagePaths: { [key: string]: { [key: string]: string } } = {
       es: {
-        img1: '../../../../assets/img/Enespañol.png',
+        img1: '../../../../assets/img/NEnEsp.png',
         img2: './assets/img/Frame7.png',
         img3: '../../../../assets/Icon/video.png',
         img4: '../../../../assets/Background/en-carrusel.png',
@@ -70,7 +70,7 @@ export class MainPageComponent {
 
       },
       en: {
-        img1: '../../../../assets/img/Eningles.png',
+        img1: '../../../../assets/img/NEnEsp.png',
         img2: './assets/img/Frame7.en.png',
         img3: '../../../../assets/Icon/video-en.png',
         img4: '../../../../assets/Background/en-carrusel.png',
