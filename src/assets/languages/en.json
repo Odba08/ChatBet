@@ -1,163 +1,335 @@
 {
-    
-        "hola": "Hello",
-        "title": "We Reinvent Sports Betting",
-        "subtitle": "Interactive Channel with AI for iGaming Operators",
-        "text": "With state-of-the-art AI, your players can bet easily and directly through their favorite messaging app. ChatBet responds instantly and naturally, offering a smooth, fast, and hassle-free betting experience.",
-        "secondtext": "This solution allows your players to place sports bets quickly and easily through their preferred messaging channel, eliminating the need to access the user interface of your sportsbook.",
-        "thankstoia": "Thanks to AI",
-        "thankstoiatwo": "it simulates a conversation between humans and speaks to your players naturally, providing intelligent communication just like people do, offering a unique, direct, and frictionless experience.",
-        "noapps" : "No Apps. No Websites. No Hassle.", 
-        "realtime": "Real-Time, Personalized Bets",
-        "seamless" : "Seamless Integration for Operators",
-
-        "trusted": "Trusted by Leading igaming operators",
-        "nowavailable": "Now available to use with",
-         
-        "whatischatbet": "What is ChatBet?",
-        "chatbetis": "ChatBet is the first AI-powered conversational betting solution, designed to help iGaming operators provide their users with an intuitive, chat-based betting experience.",
-        "chatbetistwo": "By integrating ChatBet, operators can:",
-        "increase": "Increase engagement:",
-        "players": "Players place bets naturally, just like chatting with a friend",
-        "boost": "Boost retention:",
-        "Aidriven": "AI-driven personalization keeps players coming back",
-        "maximize": "Maximize revenue:",
-        "20monthly": "+20% monthly turnover growth from friction-less betting",
-        "isexclusive":"ChatBet is exclusively available through licensed sportsbook operators—ensuring a fully compliant and secure integration.",
-
-
-        "Features": "Enhance Your Operation with ChatBet",
-        "Potencie": "Enhance Your Operation with ChatBet",
-        "Generación": "News Generation:",
-        "Mantenga": "Allow your players to bet from anywhere—whether through WhatsApp, Telegram, your app, or on the web. ChatBet easily integrates across all channels to offer an uninterrupted betting experience.",
-        "Pronósticos": "Forecasts, Tips, and Statistics:",
-        "Proporcione": "Provide detailed forecasts, expert advice, and updated statistics to enhance your users' betting experience.",
-        "Bonos": "Bonuses and Promotions:",
-        "Incentive": "Encourage participation and loyalty of your players with attractive offers.",
-    
-        "Beneficios": "AI Recommendations for Personalized Bets from ChatBet",
-        "Reducción": "Personalized Bets:",
-        "Minimiza": "ChatBet adjusts bets according to user preferences, increasing engagement.",
-        "Machine": "Real-Time Optimization:",
-        "Utiliza": "AI improves recommendations instantly, driving larger and more frequent bets.",
-        "IA": "Continuous Learning:",
-        "Responde": "Dynamic adjustments to offer the best options and increase retention.",
-    
-        "CómoFunciona": "How Does ChatBet Work?",
-        "integramos": "We integrate with your PAM provider or aggregator to activate",
-        "sitio": "on your betting website. From there, you can customize to your liking, the information you want to share, make your sports betting offers available, connect your users, and transform the way sports betting is done.",
-    
-        "Hablacon": "Bet in seconds with quick responses and no waiting.",
-        "Buscacon": "Your transactions and data always protected",
-        "Conuna": "With a simple interface, find matches in your preferred channel.",
-        "title1": "Instant Bets",
-        "title2": "Guaranteed Security",
-        "title3": "Multiplatform",
-    
-        "Sencilla": "Simple Integration",
-        "Personalice": "Customize",
-        "yhaga": "and match it with your brand's personality | Add a widget with a simple code.",
-    
-        "Listopara": "Ready for Action?",
-        "Únase": "Join the excitement!",
-        "Agendemos": "Let's schedule a demo and discover how ChatBet's AI transforms the user experience.",
-    
-        "Doyou": "Any message or question to resolve? (Optional)",
-        "Sumbit": "Submit form",
-        "Feel": "Check here any questions you have.",
-    
-        "NombreT": "Name",
-        "Nombre": "Enter your name",
-        "NúmeroT": "Contact Number",
-        "Número": "Contact Number",
-        "CorreoT": "Corporate Email",
-        "Correo": "Enter your email",
-        "EmpresaT": "Company",
-        "Empresa": "Enter your company's name",
-        "CargoT": "Position",
-        "Cargo": "Enter your position name (Optional)",
-        "PaisT": "Country",
-        "Pais": "Enter your city and/or country from where you are contacting us",
-    
-        "Get": "Get Demo",
-    
-        "headerone": "+Features",
-        "headertwo": "Benefits",
-        "headertree": "How Does It Work?",
-        "headerfour": "Integration",
-        "headerfive": "Contact Us",
-    
-        "slideone": "Withdrawals and Deposits:",
-        "slidetwo": "Allow managing withdrawals and deposits securely and conveniently, optimizing your users' financial transactions.",
-        "slidethree": "Bets in Other Verticals:",
-        "slidefour": "Present the option to play in other verticals of your operation and encourage cross-selling.",
-        "slidefive": "Affiliate Engine:",
-        "slidesix": "Affiliate players by making available",
-        "slideseven": "in groups and communities, while providing an attractive and differentiating experience, without paying affiliate commissions.",
-    
-        "slidetwoone": "Speed:",
-        "slidetwotwo": "Generates accurate responses in 1 second, so your users can bet without waiting.",
-        "slidetwothre": "Privacy and Security:",
-        "slidetwofour": "Your data and your users' data will always be hosted on your servers, ensuring security in transactions.",
-        "slidetwofive": "Hours:",
-        "slidetwosix": "Make available",
-        "slidetwoseven": "24 hours a day, 7 days a week, and provide an always accessible experience.",
-    
-        "sliderthreeone": "Multiplatform:",
-        "sliderthreetwo": "Add",
-        "sliderthreethree": "to your website, mobile app, or any other platform with a simple embed code or with our API.",
-        "sliderthreefour": "And Much More:",
-        "sliderthreefive": "Discover in a demo, the full range of functionalities of",
-        "sliderthreesix": "designed to maximize user satisfaction and retention.",
-        "sliderthreeseven": "Betting has never been so exciting and smart at the same time!",
-    
-        "slidefourone": "Immediate Bets:",
-        "slidefourtwo": "In an easy-to-use interface, that responds personally and contextually, AI processes and executes betting requests intelligently and instantly.",
-        "slidefourthree": "Activation in Multiple Channels:",
-        "slidefourfour": "Connect most messaging channels like your website, mobile apps, Apple Business Chat, Line, Facebook Messenger, WhatsApp, Telegram, Slack, Zapier, and more, and offer flexibility and convenience to your users, allowing them to choose their preferred channel to bet.",
-    
-        "slidefiveone": "Simplified Experience:",
-        "slidefivetwo": "The entire process is designed to be intuitive, allowing users to focus on their bets, which increases their satisfaction and loyalty.",
-        "slidefivethree": "Multilanguage:",
-        "slidefivefour": "Set your preferred language. This ensures that operators from various parts of the world can enjoy our services in their native language.",
-        "slidefivefive": "Backoffice:",
-        "slidefivesix": "Manage the user interface, messaging channels, and available functions; parameterize messages, links to redirect, minimum and maximum bet amounts; among others.",
-    
-        "slidefiveoneone": "Reports:",
-        "slidefivetwotwo": "Receive transaction reports, bets made with their respective ID, amounts bet, events they played on, statistics, performance indicators, and analyze metrics, etc.",
-        "slidefivethreeone": "ChatBet's AI is continuously trained with its performance.",
-    
-
-    
-        "mascientocincuenta": "More than 150,000 players",
-        "activos": "active and playing:",
-        "porquedeberias": "Why should you integrate Chat Bet?",
-        "conchatbet": "With ChatBet, retaining players has never been easier. Our AI personalizes each bet, creating unique experiences that keep users engaged and boost your growth.",
-        "optimiza": "Optimize turnover, attract new bettors, and improve retention, all while maximizing the value of each bet. Additionally, manage operations across multiple channels efficiently and securely, tailored to each player.",
-        "entiendeyguia": "Understand, guide, and enhance",
-        "laexperiencia": "the betting experience",
-        "depositos": "Secure Deposits and Withdrawals in Fiat or Crypto.",
-        "tususuarios": "With ChatBet, your users can make deposits and withdrawals securely in local currencies or cryptocurrencies through any installed channel, like WhatsApp or Telegram. All transactions are processed securely without leaving the chat, ensuring a seamless and hassle-free experience.",
-        "casinos": "Casino: Smart plays",
-        "soporte": "Support: Instant responses.",
-        "sugerencias": "Game Suggestions: Data-driven recommendations.",
-        "soporterespuestas": "Support: Instant responses.",
-        "promociones": "Promotions",
-        "ofertas": "Personalized offers",
-        "noticias": "News: Key events in real-time",
-        "sincomplicaciones": "Betting Without Complications for your Users—All in a Chat",
-        "tususuariosapuestan": "With ChatBet, your users bet as easily as sending a message. Without navigating sites or lengthy registrations, everything happens in a single conversation.",
-        "tususuarioshacen": "Your users place their bets in seconds",
-        "enlugar": "Instead of searching, they simply type in the chat the bet they want to make.",
-        "ingresan": "They enter the amount to bet",
-        "soloindican": "Your users simply indicate how much they want to bet and are ready.",
-        "confirman": "They confirm and the bet is placed instantly 🤙",
-        "unmensajerapido": "A quick confirmation message, and the bet is active—without delays or complications.",
-        "esteproceso": "This smooth process keeps users engaged, offering a fast and frictionless experience in their favorite messaging platform.",
-        "proteccion": "Top-level protection",
-        "laplataforma": "The secure platform your business needs.",
-        "segura": "Security is essential in our platform. With AWS, PCI DSS, and ISO 27001, we guarantee protected operations and secure data, meeting the highest industry standards.",
-        "unanse": "Join the excitement!"
-    
-
-}
+        "header": {
+          "logoAlt": "ChatBet Logo",
+          "languageSwitch": {
+            "english": "En",
+            "spanish": "Es"
+          },
+          "navigation": {
+            "features": "Features",
+            "benefits": "Benefits",
+            "howItWorks": "How It Works",
+            "security": "Security",
+            "compliance": "Compliance",
+            "integration": "Integration",
+            "contactUs": "ContactUs",
+            "spotlight": "Spotlight",
+            "aboutUs": "About Us"
+          }
+        },
+        "heroSection": {
+          "title": "ChatBet is the #1 AI-powered betting assistant",
+          "description": "Transforming messaging apps into powerful revenue channels for operators. Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting. Built for operators, enjoyed by players.",
+          "keyPoints": [
+            "Boost Player Retention",
+            "Increase GGR & Bet Volume",
+            "Seamless Integration"
+          ],
+          "cta": "Book a Live Demo"
+        },
+        "trustedBy": {
+          "title": "Trusted by Leading igaming operators",
+          "subtitle": "Now Integrating With"
+        },
+        "whatIsChatBet": {
+          "title": "What is ChatBet?",
+          "description": "ChatBet is the first AI-powered betting assistant, offering operators fully automated, real-time betting via chat - and unlocking a brand-new revenue channel through messaging platforms.",
+          "features": [
+            {
+              "title": "Increase Engagement:",
+              "description": "Players place bets as naturally as chatting with a friend."
+            },
+            {
+              "title": "Boost Retention:",
+              "description": "AI-driven personalization keeps players coming back."
+            },
+            {
+              "title": "Maximize Revenue:",
+              "description": "Operators report a +30% increase in retention & betting frequency."
+            },
+            {
+              "title": "Frictionless Betting:",
+              "description": "No apps, no websites—just chat & play."
+            }
+          ],
+          "footerText": "ChatBet turns WhatsApp, Telegram, and other messaging apps into high-performing betting channels, helping operators grow without adding complexity.",
+          "disclaimer": "Available exclusively through licensed sportsbook operators for a fully compliant, secure integration.",
+          "cta": "See How It Works"
+        },
+        "features": {
+          "title": "Features",
+          "description": "ChatBet is built for operators to boost engagement, streamline transactions, and enhance experiences.",
+          "items": [
+            {
+              "title": "Natural Language Betting",
+              "description": "Players bet as easily and naturally as texting a friend."
+            },
+            {
+              "title": "AI-Powered Personalization",
+              "description": "Available on web, mobile app, and more with easy integration."
+            },
+            {
+              "title": "Instant Bets",
+              "description": "Bet in seconds with fast responses and no waiting."
+            },
+            {
+              "title": "Seamless Multi-platform Integration",
+              "description": "WhatsApp, Telegram, web, or app—wherever your players are."
+            },
+            {
+              "title": "Secure & Reliable Transactions",
+              "description": "Full encryption and compliance with industry standards."
+            },
+            {
+              "title": "Effortless Operator Integration",
+              "description": "Your transactions and data are always protected."
+            },
+            {
+              "title": "Mid-Game & High-Payout Bets",
+              "description": "Custom bets on the go, even mid-match."
+            },
+            {
+              "title": "Cross-Vertical Gaming",
+              "description": "Switch between sports, casino, games without leaving the chat."
+            }
+          ],
+          "cta": "Learn More About ChatBet"
+        },
+        "benefits": {
+          "operators": {
+            "title": "Operators",
+            "items": [
+              {
+                "title": "Boost Player Retention –",
+                "description": "+30% improvement in 90-day retention"
+              },
+              {
+                "title": "Increase Betting Volume –",
+                "description": "Players bet more frequently with AI-driven prompts"
+              },
+              {
+                "title": "Drive-up GGR –",
+                "description": "+20% monthly increase in GGR"
+              },
+              {
+                "title": "Effortless Integration –",
+                "description": "Plug & play setup with minimal effort"
+              }
+            ]
+          },
+          "players": {
+            "title": "Players",
+            "items": [
+              {
+                "title": "Bet as Easily as Chatting –",
+                "description": "No apps or websites, just type and play"
+              },
+              {
+                "title": "Hyper-Personalized Bets –",
+                "description": "AI tailors recommendations for a unique experience"
+              },
+              {
+                "title": "Real-Time Optimization –",
+                "description": "AI refines bets on the fly, driving higher engagement"
+              },
+              {
+                "title": "Faster Transactions –",
+                "description": "Place bets and withdraw winnings instantly"
+              }
+            ]
+          },
+          "cta": "Get a Free Demo"
+        },
+        "comparisonTable": {
+          "title": "Check Why We are the Best!",
+          "headers": [
+            "Feature",
+            "ChatBet",
+            "Other Chat-Based Platforms",
+            "Traditional Sportbooks"
+          ],
+          "rows": [
+            {
+              "feature": "True Chat-Based Betting",
+              "chatbet": true,
+              "otherPlatforms": false,
+              "traditional": false
+            },
+            {
+              "feature": "AI-Powered Personalization",
+              "chatbet": true,
+              "otherPlatforms": "Basic",
+              "traditional": false
+            },
+            {
+              "feature": "Real-time Bet Optimization",
+              "chatbet": true,
+              "otherPlatforms": false,
+              "traditional": false
+            },
+            {
+              "feature": "Instant Betting & Results",
+              "chatbet": true,
+              "otherPlatforms": false,
+              "traditional": false
+            },
+            {
+              "feature": "Multi-Platform Access",
+              "chatbet": true,
+              "otherPlatforms": false,
+              "traditional": false
+            },
+            {
+              "feature": "Custom Mid-Game & High-Payout Bets",
+              "chatbet": true,
+              "otherPlatforms": false,
+              "traditional": false
+            },
+            {
+              "feature": "Seamless Operator Integration",
+              "chatbet": true,
+              "otherPlatforms": "Requires Custom Integration",
+              "traditional": false
+            },
+            {
+              "feature": "Higher Revenue & Retention",
+              "chatbet": true,
+              "otherPlatforms": false,
+              "traditional": false
+            }
+          ]
+        },
+        "howItWorks": {
+          "title": "As Easy as 1, 2, 3… For Operators & Players",
+          "operators": {
+            "title": "Operators",
+            "description": "Integrating ChatBet is as simple as using it—enhancing platforms with minimal effort while maximizing revenue.",
+            "items": [
+              {
+                "title": "Quick API Integration:",
+                "description": "Works with existing platforms in weeks."
+              },
+              {
+                "title": "Automated AI Handling:",
+                "description": "No manual bet processing needed."
+              },
+              {
+                "title": "Boost Revenue & Engagement:",
+                "description": "More bets, higher retention, and increased turnover."
+              }
+            ],
+            "footer": "A frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps."
+          },
+          "players": {
+            "title": "Players",
+            "description": "With ChatBet, placing a bet is as easy as sending a message. No complex sites, no lengthy registrations—just a seamless chat experience.",
+            "items": [
+              {
+                "title": "Just Chat -",
+                "description": "Type your bet like a message—no apps, no forms."
+              },
+              {
+                "title": "Instant AI Assistance –",
+                "description": "Real-time odds, smart recommendations, and confirmations."
+              },
+              {
+                "title": "Enter Your Amount –",
+                "description": "No searching or manual input."
+              },
+              {
+                "title": "Confirm & Bet Instantly 🤙 –",
+                "description": "Quick confirmation, instant action."
+              },
+              {
+                "title": "Win & Withdraw –",
+                "description": "Secure payouts, no complications."
+              }
+            ],
+            "footer": "A frictionless solution that enhances user experience, drives profitability, and future-proofs your betting operation."
+          }
+        },
+        "provenSuccess": {
+          "title": "Proven Success",
+          "subtitle": "AI-Driven Growth. Measurable Impact.",
+          "description": "ChatBet isn’t just easy—it’s profitable. Our AI-driven platform delivers real results. ChatBet supports operators by keeping users engaged, maximizes betting value, and streamlines operations across multiple channels. Effortlessly grow revenue, attract new bettors, and retain players—securely and efficiently",
+          "cta": "Join The Winning Operators"
+        },
+        "security": {
+          "title": "Top-Level Protection for Operators & Players",
+          "description": "ChatBet is built on enterprise-grade infrastructure, ensuring maximum player and operator protection.",
+          "items": [
+            {
+              "title": "End-to-End Encryption:",
+              "description": "100% secure transactions & player data protection."
+            },
+            {
+              "title": "PCI DSS & ISO 27001 Certified:",
+              "description": "Meets global financial security standards."
+            },
+            {
+              "title": "AWS & OpenAI Infrastructure:",
+              "description": "Industry-leading cloud security & scalability."
+            },
+            {
+              "title": "Fraud Detection & Risk Management:",
+              "description": "AI-driven safeguards against unauthorized access."
+            }
+          ],
+          "cta": "Learn More About Security"
+        },
+        "compliance": {
+          "title": "Regulatory-Compliant AI Betting",
+          "description": "ChatBet is designed to operate exclusively through licensed sportsbook operators, ensuring full legal & regulatory compliance. While ChatBet introduces a new way to monetize—through messaging apps—it functions purely as a communication channel.",
+          "items": [
+            {
+              "title": "No direct fund handling:",
+              "description": "All transactions go through the operator’s wallet."
+            },
+            {
+              "title": "No player data storage:",
+              "description": "ChatBet relays information but does not retain user data."
+            },
+            {
+              "title": "Operator-controlled markets:",
+              "description": "ChatBet mirrors the sportsbook’s existing offerings."
+            },
+            {
+              "title": "Adheres to Global Regulations:",
+              "description": "Compliance with iGaming, GDPR, and financial laws."
+            }
+          ],
+          "footer": "ChatBet is not a new platform—it’s a smarter interface layered on top of the operator’s system, simplifying betting while maintaining full regulatory alignment.",
+          "cta": "Get Compliance Details"
+        },
+        "integration": {
+          "title": "Fast Hassle-Free Integration",
+          "description": "Operators can integrate ChatBet effortlessly—launching chat-based betting within weeks.",
+          "items": [
+            {
+              "title": "Minimal Technical Effort:",
+              "description": "Works with existing systems."
+            },
+            {
+              "title": "Customizable Configurations:",
+              "description": "Tailored to your needs."
+            },
+            {
+              "title": "Full Technical Support:",
+              "description": "Dedicated assistance for a smooth launch."
+            }
+          ],
+          "cta": "Start Integrating Today"
+        },
+        "contactUs": {
+          "title": "Join the Future of AI-Powered Betting with ChatBet!",
+          "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
+          "form": {
+            "name": "Your Name*",
+            "contactNumber": "Your Contact Number*",
+            "email": "Your Company Email*",
+            "company": "Your Company Name*",
+            "message": "How Can Our Team Help?",
+            "submit": "Send info"
+          }
+        }
+      }

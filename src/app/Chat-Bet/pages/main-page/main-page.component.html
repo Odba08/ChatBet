@@ -5,58 +5,29 @@
 
   <header>
     <div class="section-header">
-      <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" />
-      
-      <!-- <img class="chatbet" src="../../../../assets/img/Frame0.png" alt="" /> -->
+      <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="{{ 'header.logoAlt' | translate }}" />
+
       <div class="newidioma">
-        <a href="" (click)="switchLanguage('en')">
-          En
-        </a>
+        <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
         <a href="">|</a>
-        <a href="" (click)="switchLanguage('es')">
-          Es
-        </a>
+        <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
       </div>
       <div class="navbar">
-        <a href="#feature">Features</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#HowDoesitWork">How It Works</a>
-        <a href="#security">Security</a>
-        <a href="#compliance">Compliance</a>
-        <a href="#integration">Integration</a>
-        <a href="#contactus">ContactUs</a>
+        <a href="#feature">{{ 'header.navigation.features' | translate }}</a>
+        <a href="#benefits">{{ 'header.navigation.benefits' | translate }}</a>
+        <a href="#HowDoesitWork">{{ 'header.navigation.howItWorks' | translate }}</a>
+        <a href="#security">{{ 'header.navigation.security' | translate }}</a>
+        <a href="#compliance">{{ 'header.navigation.compliance' | translate }}</a>
+        <a href="#integration">{{ 'header.navigation.integration' | translate }}</a>
+        <a href="#contactus">{{ 'header.navigation.contactUs' | translate }}</a>
         <span class="divisor">|</span>
-        <a routerLink="/spotlight"  >Spotlight</a>
+        <a routerLink="/spotlight">{{ 'header.navigation.spotlight' | translate }}</a>
         <span class="divisor">|</span>
-        <a  routerLink="/aboutus" href="">About Us</a>
+        <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <a href="" (click)="switchLanguage('en')">
-            En
-          </a>
-          <a href="" (click)="switchLanguage('es')">
-            Es
-          </a>
-         <!--  <img
-            [src]="
-              currentLanguage === 'en'
-                ? '../../../../assets/img/us-on.svg'
-                : '../../../../assets/img/us-of.png'
-            "
-            alt=""
-            class="us"
-            (click)="switchLanguage('en')"
-          />
-          <img
-            [src]="
-              currentLanguage === 'es'
-                ? '../../../../assets/img/esp-on.png'
-                : '../../../../assets/img/esp-off.svg'
-            "
-            alt=""
-            class="esp"
-            (click)="switchLanguage('es')"
-          /> -->
+          <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
+          <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
         </div>
       </div>
     </div>
@@ -64,94 +35,44 @@
 
   <div class="first-section">
     <div class="gif2">
-      <img
-        [src]="currentImages['phone']"
-        alt=""
-        style="margin-top: 0"
-      />
+      <img [src]="currentImages['phone']" alt="" style="margin-top: 0" />
     </div>
 
     <div class="first-section-container">
       <div class="text">
         <div class="animation-container">
-          <ng-lottie
-            *ngIf="currentLanguage === 'es'; else otherOptions"
-            [options]="options"
-            class="lottie-animation"
-          >
+          <ng-lottie *ngIf="currentLanguage === 'es'; else otherOptions" [options]="options" class="lottie-animation">
           </ng-lottie>
           <ng-template #otherOptions>
-            <ng-lottie [options]="secondoptions" class="lottie-animation">
-            </ng-lottie>
+            <ng-lottie [options]="secondoptions" class="lottie-animation"> </ng-lottie>
           </ng-template>
         </div>
         <div class="texto">
-          <ng-container *ngIf="currentLanguage === 'es'">
-            <p>ChatBet is the #1 AI-powered betting assistant — transforming messaging apps into powerful revenue channels for operators. <br /><br />
-              Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting. <br/><br/>
-              Built for operators, enjoyed by players.<br/><br/>
-            </p>
-          </ng-container>
-
-          <ng-container *ngIf="currentLanguage === 'en'">
-            <p>{{ "text" | translate }} <br /><br /></p>
-          </ng-container>
+          <p>{{ 'heroSection.description' | translate }}</p>
         </div>
-       <div class="lista">
-        <ul>
-          <li>
-            <span class="TitleBold3">Boost Player Retention</span></li>
-          <li>
-            <span class="TitleBold3">
-              Increase GGR & Bet Volume
-            </span>
-          </li>
-          <li>
-            <span class="TitleBold3">
-              Seamless Integration
-            </span>
-          </li>
+        <div class="lista">
+          <ul>
+            <li><span class="TitleBold3">{{ 'heroSection.keyPoints.0' | translate }}</span></li>
+            <li><span class="TitleBold3">{{ 'heroSection.keyPoints.1' | translate }}</span></li>
+            <li><span class="TitleBold3">{{ 'heroSection.keyPoints.2' | translate }}</span></li>
           </ul>
-       </div>
+        </div>
 
         <div class="video">
-          <a href="#contactanos">Book a Live Demo</a>
-          <img
-            [src]="currentImages['img3']"
-            alt=""
-            (click)="playVideo()"
-          />
+          <a href="#contactanos">{{ 'heroSection.cta' | translate }}</a>
+          <img [src]="currentImages['img3']" alt="" (click)="playVideo()" />
         </div>
       </div>
 
       <div class="image-first-container">
-       <!--  <img
-          [src]="currentImages['img5']"
-          alt=""
-          style="margin-top: 0"
-        />
-        <img class="lastimage" [src]="currentImages['img2']" alt="" /> -->
-
-        <img src="../../../../assets/imagen-inicial.png" alt="">
+        <img src="../../../../assets/imagen-inicial.png" alt="" />
         <img class="lastimage" [src]="currentImages['img2']" alt="" />
       </div>
 
-      <div
-        class="gif"
-        [ngClass]="{
-          'es-size': currentLanguage === 'es',
-          'en-size': currentLanguage === 'en'
-        }"
-      >
-        <video
-          #videoElement
-          width="100%"
-          height="100%"
-          style="display: none"
-          controls
-        >
+      <div class="gif" [ngClass]="{'es-size': currentLanguage === 'es', 'en-size': currentLanguage === 'en'}">
+        <video #videoElement width="100%" height="100%" style="display: none" controls>
           <source [src]="currentImages['video']" type="video/mp4" />
-          Tu navegador no soporta la etiqueta de video.
+          {{ 'videoNotSupported' | translate }}
         </video>
       </div>
     </div>
@@ -160,7 +81,7 @@
 
 <div class="backgroundline">
   <div class="iconline">
-    <img src="../../../../assets/Background/end-sect-one.png " alt="" />
+    <img src="../../../../assets/Background/end-sect-one.png" alt="" />
     <img class="line" src="../../../../assets/inversionistas.png" alt="" />
   </div>
 </div>
@@ -169,157 +90,138 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-          <span class="TitleBold">Trusted by Leading igaming operators</span>
-          <h1>Now Integrating With</h1>
-        </div>
-        <div class="merch" >
-          <img src="../../../../assets/betvip.png" alt="">
-          <img src="../../../../assets/betplay.png" alt="">
-          <!-- <img src="../../../../assets/apuestasRoyale.png" alt=""> -->
-        </div>
+        <span class="TitleBold">{{ 'trustedBy.title' | translate }}</span>
+        <h1>{{ 'trustedBy.subtitle' | translate }}</h1>
+      </div>
+      <div class="merch">
+        <img src="../../../../assets/betvip.png" alt="" />
+        <img src="../../../../assets/betplay.png" alt="" />
+      </div>
     </div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
-
-<!-- 1. Primera Parte -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-        <h1>What is ChatBet?</h1>
-        <div >
-          <p>
-            ChatBet is the first AI-powered betting assistant, offering operators fully automated, real-time betting via chat - and unlocking a brand-new revenue channel thorugh messaging platforms.
-          </p>
+        <h1>{{ 'whatIsChatBet.title' | translate }}</h1>
+        <div>
+          <p>{{ 'whatIsChatBet.description' | translate }}</p>
 
           <div class="secondlist">
             <ul>
               <li>
-                <span class="TitleBold3">Increase Engagement:</span>
-                 Players place bets as naturally as chatting with a friend.
+                <span class="TitleBold3">{{ 'whatIsChatBet.features.0.title' | translate }}</span>
+                {{ 'whatIsChatBet.features.0.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Boost Retention:</span>
-                 AI-driven personalization keeps players coming back.
+                <span class="TitleBold3">{{ 'whatIsChatBet.features.1.title' | translate }}</span>
+                {{ 'whatIsChatBet.features.1.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Maximize Revenue:</span>
-                 Operators report a +30% increase in retention & betting frequency.
+                <span class="TitleBold3">{{ 'whatIsChatBet.features.2.title' | translate }}</span>
+                {{ 'whatIsChatBet.features.2.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Frictionless Betting:</span>
-                 No apps, no websites—just chat & play.
+                <span class="TitleBold3">{{ 'whatIsChatBet.features.3.title' | translate }}</span>
+                {{ 'whatIsChatBet.features.3.description' | translate }}
               </li>
-              
             </ul>
           </div>
 
-          <p>
-            ChatBet turns WhatsApp, Telegram, and other messaging apps into high-performing betting channels, helping operators grow without adding complexity.
-          </p>
-
-          <p>
-            <em>Available exclusively through licensed sportsbook operators for a fully compliant, secure integration.</em>
-          </p>
+          <p>{{ 'whatIsChatBet.footerText' | translate }}</p>
+          <p><em>{{ 'whatIsChatBet.disclaimer' | translate }}</em></p>
         </div>
 
         <div class="completebutton">
-          <a href="#contactanos">See How It Works</a>
+          <a href="#contactanos">{{ 'whatIsChatBet.cta' | translate }}</a>
         </div>
-
       </div>
       <div class="chatbetimage" style="display: flex">
-        <img src="../../../../assets/prueba.png" alt="">
+        <img src="../../../../assets/prueba.png" alt="" />
       </div>
     </div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
-<!--2. Feature -->
 <div id="funciones" class="section">
   <div class="second-section">
     <div class="second-flex">
-      <span class="TitleTag" id="feature">Features</span>
-      <h1>{{ "Features" | translate }}</h1>
+      <span class="TitleTag" id="feature">{{ 'features.title' | translate }}</span>
+      <h1>{{ 'features.title' | translate }}</h1>
       <div class="text">
         <div class="texto">
-          <p>ChatBet is built for operators to boost engagement, streamline transactions, and enhance experiences. <br /><br /></p>
+          <p>{{ 'features.description' | translate }}</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <div id="comofunciona" class="section">
   <div class="fourth-section">
     <div class="image-carousel">
       <div class="carousel-item">
-        
         <img src="../../../../assets/Icon/icon1.png" alt="" />
-        <!-- <h2>{{ "title1" | translate }}</h2> -->
-        <h2>Natural Language Betting</h2>
-        <p>Players bet as easily and naturally as texting a friend.</p>
-        <!-- <p>{{ "Hablacon" | translate }}</p> -->
+        <h2>{{ 'features.items.0.title' | translate }}</h2>
+        <p>{{ 'features.items.0.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/ia.png" alt="" />
-        <!-- <h2>{{ "title2" | translate }}</h2> -->
-        <h2>AI-Powered Personalization</h2>
-        <p>Available on web, mobile app, and more with easy integration.</p>
-        <!-- <p>{{ "Buscacon" | translate }}</p> -->
+        <h2>{{ 'features.items.1.title' | translate }}</h2>
+        <p>{{ 'features.items.1.description' | translate }}</p>
       </div>
+
       <div class="carousel-item">
         <img src="../../../../assets/Icon/moneda.png" alt="" />
-        <!-- <h2>{{ "title3" | translate }}</h2>
-        <p>{{ "Conuna" | translate }}</p> -->
-        <h2>Instant Bets</h2>
-        <p>Bet in seconds with fast responses and no waiting.</p>
+        <h2>{{ 'features.items.2.title' | translate }}</h2>
+        <p>{{ 'features.items.2.description' | translate }}</p>
       </div>
+
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>Seamless Multi-platform Integration</h2>
-        <p>WhatsApp, Telegram, web, or app—wherever your players are.</p>
+        <h2>{{ 'features.items.3.title' | translate }}</h2>
+        <p>{{ 'features.items.3.description' | translate }}</p>
       </div>
-    
+
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon2.png" alt="" />
-        <h2>Secure & Reliable Transactions</h2>
-        <p>Full encryption and compliance with industry standards.</p>
+        <h2>{{ 'features.items.4.title' | translate }}</h2>
+        <p>{{ 'features.items.4.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/tuerca.png" alt="" />
-        <h2>Effortless Operator Integration</h2>
-        <p>Your transactions and data are always protected.</p>
+        <h2>{{ 'features.items.5.title' | translate }}</h2>
+        <p>{{ 'features.items.5.description' | translate }}</p>
       </div>
+
       <div class="carousel-item">
         <img src="../../../../assets/Icon/balon.png" alt="" />
-        <h2>Mid-Game & High-Payout Bets</h2>
-        <p>Custom bets on the go, even mid-match.</p>
+        <h2>{{ 'features.items.6.title' | translate }}</h2>
+        <p>{{ 'features.items.6.description' | translate }}</p>
       </div>
+
       <div class="carousel-item">
         <img src="../../../../assets/Icon/dosmonedas.png" alt="" />
-        <h2>Cross-Vertical Gaming</h2>
-        <p>Switch between sports, casino, games without leaving the chat.</p>
+        <h2>{{ 'features.items.7.title' | translate }}</h2>
+        <p>{{ 'features.items.7.description' | translate }}</p>
       </div>
     </div>
     <div class="completebutton">
-      <a href="#contactanos">Learn More About ChatBet</a>
+      <a href="#contactanos">{{ 'features.cta' | translate }}</a>
     </div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
-
-<!-- 3. Beneficios -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
@@ -327,267 +229,238 @@
         <img src="../../../../assets/img/Frame2.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleTag" id="benefits">Benefits</span>
-        <h1>{{ "Beneficios" | translate }}</h1>
+        <span class="TitleTag" id="benefits">{{ 'benefits.operators.title' | translate }}</span>
+        <h1>{{ 'benefits.operators.title' | translate }}</h1>
 
         <div class="top-buttons">
-          <button
-          [class.active]="operatorsType === 'operators'"
-            (click)="operatorsType = 'operators'"
-          >Operators</button>
-          <button
-          [class.active]="operatorsType === 'players'"
-          (click)="operatorsType = 'players'">Players</button>
+          <button [class.active]="operatorsType === 'operators'" (click)="operatorsType = 'operators'">
+            {{ 'benefits.operators.title' | translate }}
+          </button>
+          <button [class.active]="operatorsType === 'players'" (click)="operatorsType = 'players'">
+            {{ 'benefits.players.title' | translate }}
+          </button>
         </div>
 
-        <div class="texto"  *ngIf="operatorsType === 'operators'">
-         <!--  <p>
-            <span class="TitleBold3">{{ "Reducción" | translate }}</span>
-            {{ "Minimiza" | translate }}<br /><br />
-            <span class="TitleBold3">{{ "Machine" | translate }} </span
-            >{{ "Utiliza" | translate }}<br /><br />
-            <span class="TitleBold3">{{ "IA" | translate }}</span>
-            {{ "Responde" | translate }}
-          </p> -->
+        <div class="texto" *ngIf="operatorsType === 'operators'">
           <div class="secondlist">
             <ul>
               <li>
-                <span class="TitleBold3">Boost Player Retention –</span>
-                +30% improvement in 90-day retention
+                <span class="TitleBold3">{{ 'benefits.operators.items.0.title' | translate }}</span>
+                {{ 'benefits.operators.items.0.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Increase Betting Volume –</span>
-                Players bet more frequently with AI-driven prompts
+                <span class="TitleBold3">{{ 'benefits.operators.items.1.title' | translate }}</span>
+                {{ 'benefits.operators.items.1.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Drive-up GGR –</span>
-                +20% monthly increase in GGR 
+                <span class="TitleBold3">{{ 'benefits.operators.items.2.title' | translate }}</span>
+                {{ 'benefits.operators.items.2.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Effortless Integration –</span>
-                Plug & play setup with minimal effort
+                <span class="TitleBold3">{{ 'benefits.operators.items.3.title' | translate }}</span>
+                {{ 'benefits.operators.items.3.description' | translate }}
               </li>
             </ul>
           </div>
         </div>
-
 
         <div class="texto" *ngIf="operatorsType === 'players'">
           <div class="secondlist">
             <ul>
               <li>
-                <span class="TitleBold3">Bet as Easily as Chatting –</span>
-                No apps or websites, just type and play
+                <span class="TitleBold3">{{ 'benefits.players.items.0.title' | translate }}</span>
+                {{ 'benefits.players.items.0.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Hyper-Personalized Bets –</span>
-                AI tailors recommendations for a unique experience
+                <span class="TitleBold3">{{ 'benefits.players.items.1.title' | translate }}</span>
+                {{ 'benefits.players.items.1.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Real-Time Optimization –</span>
-                AI refines bets on the fly, driving higher engagement 
+                <span class="TitleBold3">{{ 'benefits.players.items.2.title' | translate }}</span>
+                {{ 'benefits.players.items.2.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Faster Transactions –</span>
-                Place bets and withdraw winnings instantly
+                <span class="TitleBold3">{{ 'benefits.players.items.3.title' | translate }}</span>
+                {{ 'benefits.players.items.3.description' | translate }}
               </li>
             </ul>
           </div>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">Get a Free Demo</a>
+          <a href="#contactanos">{{ 'benefits.cta' | translate }}</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<hr class="hr">
+<!-- Resto del HTML con el mismo patrón de traducción -->
 
 <!-- 3.5 Tabla de Beneficios -->
 <div id="funciones" class="section">
   <div class="second-section">
     <div class="second-flex">
-      <span class="TitleTag">Comparison Table</span>
-      <h1>Check Why We are the Best!</h1>
+      <span class="TitleTag">{{ 'comparisonTable.title' | translate }}</span>
+      <h1>{{ 'comparisonTable.title' | translate }}</h1>
     </div>
 
-        <div class="table">
-          <table>
-            <tr class="thtitle">
-              <th class="feature">Feature</th>
-              <th>ChatBet</th>
-              <th>Other Chat-Based Platforms</th>
-              <th>Traditional Sportbooks</th>
-            </tr>
-            <td colspan="4">
-              <div class="separator"></div> <!-- Línea horizontal -->
-            </td>
-            <tr>
-              <td class="tdtitle">True Chat-Based Betting</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td><img src="../../../../assets/guion.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-            <tr>
-              <td class="tdtitle">AI-Powered Personalization</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>Basic</td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-            <tr>
-              <td class="tdtitle">Real-time Bet Optimization</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-
-            <tr>
-              <td class="tdtitle">Instant Betting & Results</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td><img src="../../../../assets/guion.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-            <tr>
-              <td class="tdtitle">Multi-Platform Access</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-            <tr>
-              <td class="tdtitle">Custom Mid-Game & High-Payout Bets</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td><img src="../../../../assets/guion.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-            <tr>
-              <td class="tdtitle">Seamless Operator Integration</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td>Requires Custom Integration</td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-            <tr>
-              <td class="tdtitle">Higher Revenue & Retention</td>
-              <td><img src="../../../../assets/newsetimg/true.png" alt=""></td>
-              <td><img src="../../../../assets/na.png" alt=""></td>
-              <td><img src="../../../../assets/newsetimg/false.png" alt=""></td>
-            </tr>
-          </table>
-        </div>
+    <div class="table">
+      <table>
+        <tr class="thtitle">
+          <th class="feature">{{ 'comparisonTable.headers.0' | translate }}</th>
+          <th>{{ 'comparisonTable.headers.1' | translate }}</th>
+          <th>{{ 'comparisonTable.headers.2' | translate }}</th>
+          <th>{{ 'comparisonTable.headers.3' | translate }}</th>
+        </tr>
+        <td colspan="4">
+          <div class="separator"></div>
+        </td>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.0.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td><img src="../../../../assets/guion.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.1.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td>{{ 'comparisonTable.rows.1.otherPlatforms' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.2.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.3.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td><img src="../../../../assets/guion.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.4.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.5.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td><img src="../../../../assets/guion.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.6.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td>{{ 'comparisonTable.rows.6.otherPlatforms' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="tdtitle">{{ 'comparisonTable.rows.7.feature' | translate }}</td>
+          <td><img src="../../../../assets/newsetimg/true.png" alt="" /></td>
+          <td><img src="../../../../assets/na.png" alt="" /></td>
+          <td><img src="../../../../assets/newsetimg/false.png" alt="" /></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
-      
       <div class="text">
-        <span class="TitleTag" id="HowDoesitWork">How Does it Work</span>
-        <h1>As Easy as 1, 2, 3… <br>
-          For Operators & Players</h1>
+        <span class="TitleTag" id="HowDoesitWork">{{ 'howItWorks.title' | translate }}</span>
+        <h1>{{ 'howItWorks.title' | translate }}</h1>
 
         <div class="top-buttons">
-          <button
-          [class.active]="NewOperatorsType === 'operators'"
-            (click)="NewOperatorsType = 'operators'"
-          >Operators</button>
-          <button
-          [class.active]="NewOperatorsType === 'players'"
-          (click)="NewOperatorsType = 'players'">Players</button>
+          <button [class.active]="NewOperatorsType === 'operators'" (click)="NewOperatorsType = 'operators'">
+            {{ 'howItWorks.operators.title' | translate }}
+          </button>
+          <button [class.active]="NewOperatorsType === 'players'" (click)="NewOperatorsType = 'players'">
+            {{ 'howItWorks.players.title' | translate }}
+          </button>
         </div>
 
-        <div class="texto"  *ngIf="NewOperatorsType === 'operators'">
+        <div class="texto" *ngIf="NewOperatorsType === 'operators'">
           <div class="secondlist">
-            <br>
-            <span class="TitleBold3">Seamless Integration</span>
-            <br>
-            <p>Integrating ChatBet is as simple as using it—enhancing platforms with minimal effort while maximizing revenue.</p>
+            <br />
+            <span class="TitleBold3">{{ 'howItWorks.operators.title' | translate }}</span>
+            <br />
+            <p>{{ 'howItWorks.operators.description' | translate }}</p>
             <ul>
               <li>
-                <span class="TitleBold3"> Quick API Integration:</span>
-                Works with existing platforms in weeks.
+                <span class="TitleBold3">{{ 'howItWorks.operators.items.0.title' | translate }}</span>
+                {{ 'howItWorks.operators.items.0.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Automated AI Handling:</span>
-                 No manual bet processing needed.
+                <span class="TitleBold3">{{ 'howItWorks.operators.items.1.title' | translate }}</span>
+                {{ 'howItWorks.operators.items.1.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Boost Revenue & Engagement:</span>
-                 More bets, higher retention, and increased turnover.
+                <span class="TitleBold3">{{ 'howItWorks.operators.items.2.title' | translate }}</span>
+                {{ 'howItWorks.operators.items.2.description' | translate }}
               </li>
             </ul>
-            <p>
-              A frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps.
-            </p>
+            <p>{{ 'howItWorks.operators.footer' | translate }}</p>
           </div>
         </div>
-
 
         <div class="texto" *ngIf="NewOperatorsType === 'players'">
           <div class="secondlist">
-
-            <span class="TitleBold3">Effortless Betting - Just Chat & Play</span>
-            <p>With ChatBet, placing a bet is as easy as sending a message. No complex sites, no lengthy registrations—just a seamless chat experience.</p>
-
+            <span class="TitleBold3">{{ 'howItWorks.players.title' | translate }}</span>
+            <p>{{ 'howItWorks.players.description' | translate }}</p>
             <ul>
               <li>
-                <span class="TitleBold3">Just Chat -</span>
-                  Type your bet like a message—no apps, no forms.
+                <span class="TitleBold3">{{ 'howItWorks.players.items.0.title' | translate }}</span>
+                {{ 'howItWorks.players.items.0.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Instant AI Assistance –</span>
-                 Real-time odds, smart recommendations, and confirmations.
+                <span class="TitleBold3">{{ 'howItWorks.players.items.1.title' | translate }}</span>
+                {{ 'howItWorks.players.items.1.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Enter Your Amount –</span>
-                 No searching or manual input.
+                <span class="TitleBold3">{{ 'howItWorks.players.items.2.title' | translate }}</span>
+                {{ 'howItWorks.players.items.2.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3">Confirm & Bet Instantly 🤙 –</span>
-                 Quick confirmation, instant action.
+                <span class="TitleBold3">{{ 'howItWorks.players.items.3.title' | translate }}</span>
+                {{ 'howItWorks.players.items.3.description' | translate }}
               </li>
               <li>
-                <span class="TitleBold3"> Win & Withdraw –</span>
-                Secure payouts, no complications.
+                <span class="TitleBold3">{{ 'howItWorks.players.items.4.title' | translate }}</span>
+                {{ 'howItWorks.players.items.4.description' | translate }}
               </li>
             </ul>
-            <p>
-              A frictionless solution that enhances user experience, drives profitability, and future-proofs your betting operation.            </p>
+            <p>{{ 'howItWorks.players.footer' | translate }}</p>
           </div>
-
         </div>
-        
       </div>
-      <!--  -->
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/comofunciona.png" alt="" />
       </div>
     </div>
   </div>
 </div>
-<hr class="hr">
 
+<hr class="hr" />
 
 <!-- 4. Como Funciona -->
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-
-        <h1>Proven Success</h1>
-
-        <span class="TitleBold3">AI-Driven Growth. Measurable Impact.</span>
+        <h1>{{ 'provenSuccess.title' | translate }}</h1>
+        <span class="TitleBold3">{{ 'provenSuccess.subtitle' | translate }}</span>
         <div class="texto">
-          <p>
-            ChatBet isn’t just easy—it’s profitable. Our AI-driven platform delivers real results.<br /><br />
-            ChatBet supports operators by keeping users engaged, maximizes betting value, and streamlines operations across multiple channels.<br /><br />
-            Effortlessly grow revenue, attract new bettors, and retain players—securely and efficiently
-          </p>
+          <p>{{ 'provenSuccess.description' | translate }}</p>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">Join The Winning Operators</a>
+          <a href="#contactanos">{{ 'provenSuccess.cta' | translate }}</a>
         </div>
       </div>
       <div class="image-section" style="display: flex">
@@ -597,7 +470,7 @@
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
 <!-- Proteccion -->
 <div id="beneficios" class="section">
@@ -607,129 +480,80 @@
         <img src="../../../../assets/img/NFrame6.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleTag" id="security">Security</span>
-        <!-- <span class="TitleBold2">{{ "proteccion" | translate }}</span> -->
-        <h1>Top-Level Protection for Operators & Players</h1>
-
-        <p>
-          ChatBet is built on enterprise-grade infrastructure, ensuring maximum player and operator protection.
-        </p>
-
+        <span class="TitleTag" id="security">{{ 'security.title' | translate }}</span>
+        <h1>{{ 'security.title' | translate }}</h1>
+        <p>{{ 'security.description' | translate }}</p>
         <div class="secondlist">
           <ul>
             <li>
-              <span class="TitleBold3">End-to-End Encryption:</span>
-               100% secure transactions & player data protection.
+              <span class="TitleBold3">{{ 'security.items.0.title' | translate }}</span>
+              {{ 'security.items.0.description' | translate }}
             </li>
             <li>
-              <span class="TitleBold3">PCI DSS & ISO 27001 Certified:</span>
-               Meets global financial security standards.
+              <span class="TitleBold3">{{ 'security.items.1.title' | translate }}</span>
+              {{ 'security.items.1.description' | translate }}
             </li>
             <li>
-              <span class="TitleBold3">AWS & OpenAI Infrastructure:</span>
-               Industry-leading cloud security & scalability.
+              <span class="TitleBold3">{{ 'security.items.2.title' | translate }}</span>
+              {{ 'security.items.2.description' | translate }}
             </li>
             <li>
-              <span class="TitleBold3"> Fraud Detection & Risk Management:</span>
-              AI-driven safeguards against unauthorized access.
+              <span class="TitleBold3">{{ 'security.items.3.title' | translate }}</span>
+              {{ 'security.items.3.description' | translate }}
             </li>
           </ul>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">Learn More About Security</a>
+          <a href="#contactanos">{{ 'security.cta' | translate }}</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<hr class="hr">
-
-<!-- 5. Seguridad -->
-<!-- <div id="beneficios" class="section">
-  <div class="third-section">
-    <div class="third-flex">
-      <div class="text">
-        <p>
-          <span class="TitleBold">{{ "entiendeyguia" | translate }}</span>
-          {{ "laexperiencia" | translate }}
-        </p>
-        <h1>{{ "depositos" | translate }}</h1>
-        <div class="texto">
-          <p>{{ "optimiza" | translate }}tususuarios<br /><br /></p>
-        </div>
-        <div class="botones">
-            <span class="TitleBold3">{{ "casinos" | translate }}</span>
-            <span class="TitleBold3">{{ "soporte" | translate }}</span>
-            <span class="TitleBold3">{{
-              "sugerencias" | translate
-            }}</span>
-            <span class="TitleBold3">{{
-              "soporterespuestas" | translate
-            }}</span>
-          <div class="division">
-            <span class="TitleBold3">Open AI</span>
-            <span class="TitleBold3">CloudFlrare</span>
-              <span class="TitleBold3">{{ "promociones" | translate }}</span>  
-          </div>
-            <span class="TitleBold3">{{ "ofertas" | translate }}</span>
-            <span class="TitleBold3">{{ "noticias" | translate }}</span>
-        </div>
-      </div>
-      <div class="frame4" style="display: flex">
-        <img [src]="currentImages['Frame4']" alt="" />
-      </div>
-    </div>
-  </div>
-</div> -->
+<hr class="hr" />
 
 <div id="beneficios" class="section">
   <div class="third-section">
     <div class="third-flex">
-      
       <div class="text">
-        <span class="TitleTag" id="compliance">Compliance</span>
-        <h1>Regulatory-Compliant AI Betting</h1>
-        <br>
-        <p>ChatBet is designed to operate exclusively through licensed sportsbook operators, ensuring full legal & regulatory compliance.</p>
-        <p>While ChatBet introduces a new way to monetize—through messaging apps—it functions purely as a communication channel.</p>
-        <div class="texto"  *ngIf="NewOperatorsType === 'operators'">
-          <div class="secondlist">
-            <ul>
-              <li>
-                <span class="TitleBold3"> No direct fund handling:</span>
-                 All transactions go through the operator’s wallet.
-              </li>
-              <li>
-                <span class="TitleBold3">No player data storage:</span>
-                 ChatBet relays information but does not retain user data.
-              </li>
-              <li>
-                <span class="TitleBold3">Operator-controlled markets:</span>
-                 ChatBet mirrors the sportsbook’s existing offerings.
-              </li>
-              <li>
-                <span class="TitleBold3">Adheres to Global Regulations:</span>
-                 Compliance with iGaming, GDPR, and financial laws.
-              </li>
-            </ul>
-            <p>
-              ChatBet is not a new platform—it’s a smarter interface layered on top of the operator’s system, simplifying betting while maintaining full regulatory alignment.
-            </p>
-          </div>
+        <span class="TitleTag" id="compliance">{{ 'compliance.title' | translate }}</span>
+        <h1>{{ 'compliance.title' | translate }}</h1>
+        <br />
+        <p>{{ 'compliance.description' | translate }}</p>
+        <div class="secondlist">
+          <ul>
+            <li>
+              <span class="TitleBold3">{{ 'compliance.items.0.title' | translate }}</span>
+              {{ 'compliance.items.0.description' | translate }}
+            </li>
+            <li>
+              <span class="TitleBold3">{{ 'compliance.items.1.title' | translate }}</span>
+              {{ 'compliance.items.1.description' | translate }}
+            </li>
+            <li>
+              <span class="TitleBold3">{{ 'compliance.items.2.title' | translate }}</span>
+              {{ 'compliance.items.2.description' | translate }}
+            </li>
+            <li>
+              <span class="TitleBold3">{{ 'compliance.items.3.title' | translate }}</span>
+              {{ 'compliance.items.3.description' | translate }}
+            </li>
+          </ul>
         </div>
+        <p>{{ 'compliance.footer' | translate }}</p>
         <div class="completebutton">
-          <a href="#contactanos">Get Compliance Details</a>
+          <a href="#contactanos">{{ 'compliance.cta' | translate }}</a>
         </div>
       </div>
-      <!--  -->
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/compilance.svg" alt="" />
       </div>
     </div>
   </div>
 </div>
-<hr class="hr">
+
+<hr class="hr" />
 
 <!-- 6. Integracion-->
 <div id="beneficios" class="section">
@@ -739,36 +563,34 @@
         <img src="../../../../assets/integration.png" alt="" />
       </div>
       <div class="text">
-          <span class="TitleTag" id="integration">Integration</span>
-        <h1>Fast Hassle-Free Integration</h1>
-        <p>Operators can integrate ChatBet effortlessly—launching chat-based betting within weeks.</p>
+        <span class="TitleTag" id="integration">{{ 'integration.title' | translate }}</span>
+        <h1>{{ 'integration.title' | translate }}</h1>
+        <p>{{ 'integration.description' | translate }}</p>
         <div class="secondlist">
           <ul>
             <li>
-              <span class="TitleBold3"> Minimal Technical Effort:</span>
-               Works with existing systems.
+              <span class="TitleBold3">{{ 'integration.items.0.title' | translate }}</span>
+              {{ 'integration.items.0.description' | translate }}
             </li>
             <li>
-              <span class="TitleBold3">Customizable Configurations:</span>
-               Tailored to your needs.
+              <span class="TitleBold3">{{ 'integration.items.1.title' | translate }}</span>
+              {{ 'integration.items.1.description' | translate }}
             </li>
             <li>
-              <span class="TitleBold3">Full Technical Support:</span>
-               Dedicated assistance for a smooth launch.
+              <span class="TitleBold3">{{ 'integration.items.2.title' | translate }}</span>
+              {{ 'integration.items.2.description' | translate }}
             </li>
           </ul>
-
         </div>
         <div class="completebutton">
-          <a href="#contactanos">Start Integrating Today</a>
+          <a href="#contactanos">{{ 'integration.cta' | translate }}</a>
         </div>
-
       </div>
     </div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
 <!--7. Carrusel -->
 <div class="backgroundline">
@@ -780,58 +602,52 @@
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr" />
 
-<!-- 9. Contactanos -->
 <div id="contactanos" class="section">
   <div class="sixth-section">
     <div class="text">
       <div class="tag">
-        <span class="TitleTag" id="contactus">Contact Us</span>
+        <span class="TitleTag" id="contactus">{{ 'contactUs.title' | translate }}</span>
       </div>
-      <h1>Join the Future of AI-Powered Betting with ChatBet!</h1>
+      <h1>{{ 'contactUs.title' | translate }}</h1>
       <h3>
-        <span class="TitleBoldMobile">Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.</span>
+        <span class="TitleBoldMobile">{{ 'contactUs.subtitle' | translate }}</span>
       </h3>
-    </div> 
+    </div>
 
     <div class="form" [formGroup]="form">
       <form action="javascript:void(0)" (submit)="send()">
         <div class="form-input">
           <div class="form-section">
-            <input formControlName="name" type="text" placeholder="Your Name*" />
+            <input formControlName="name" type="text" [placeholder]="'contactUs.form.name' | translate" />
           </div>
           <div class="form-section">
             <div class="countries">
               <div class="num-selector">
-                <app-custom-select [countries]="countries" (countrySelected)="onCountrySelected($event)"></app-custom-select>
+                <app-custom-select
+                  [countries]="countries"
+                  (countrySelected)="onCountrySelected($event)"
+                ></app-custom-select>
               </div>
-              <input formControlName="contact" type="text" placeholder="Your Contact Number*" />
+              <input formControlName="contact" type="text" [placeholder]="'contactUs.form.contactNumber' | translate" />
             </div>
           </div>
           <div class="form-section">
-            <input formControlName="email" type="text" placeholder="Your Company Email*" />
+            <input formControlName="email" type="text" [placeholder]="'contactUs.form.email' | translate" />
           </div>
           <div class="form-section">
-            <input formControlName="empresa" type="text" placeholder="Your Company Name*" />
+            <input formControlName="empresa" type="text" [placeholder]="'contactUs.form.company' | translate" />
           </div>
-      <!--     <div class="form-section">
-            <input formControlName="cargo" type="text" placeholder="Cargo" />
-          </div>
-          <div class="form-section">
-            <input formControlName="country" type="text" placeholder="País" />
-          </div> -->
         </div>
         <div class="form-send">
-          <input formControlName="message" type="text" placeholder="How Can Our Team Help?" />
-          <button type="submit">Send info</button>
+          <input formControlName="message" type="text" [placeholder]="'contactUs.form.message' | translate" />
+          <button type="submit">{{ 'contactUs.form.submit' | translate }}</button>
         </div>
       </form>
     </div>
   </div>
 </div>
-
-
 
 <div class="backgroundline">
   <div class="fotter1">
@@ -842,5 +658,3 @@
     <img [src]="currentImages['footer2'] " alt="" />
   </div>
 </div>
-
-
