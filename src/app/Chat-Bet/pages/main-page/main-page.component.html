@@ -49,7 +49,10 @@
         </div>
         <div class="texto">
           <p>{{ 'heroSection.description' | translate }}</p>
+          
         </div>
+        <p>{{ 'heroSection.secondDescription' | translate }}</p>
+        <p>{{ 'heroSection.thirdDescription' | translate }}</p>
         <div class="lista">
           <ul>
             <li><span class="TitleBold3">{{ 'heroSection.keyPoints.0' | translate }}</span></li>
@@ -152,7 +155,7 @@
 <div id="funciones" class="section">
   <div class="second-section">
     <div class="second-flex">
-      <span class="TitleTag" id="feature">{{ 'features.title' | translate }}</span>
+      <span class="TitleTag" id="feature">{{ 'features.descriptionHeader' | translate }}</span>
       <h1>{{ 'features.title' | translate }}</h1>
       <div class="text">
         <div class="texto">
@@ -229,15 +232,16 @@
         <img src="../../../../assets/img/Frame2.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleTag" id="benefits">{{ 'benefits.operators.title' | translate }}</span>
+        <span class="TitleTag" id="benefits">{{ 'benefits.operators.descriptionHeader' | translate }}</span>
         <h1>{{ 'benefits.operators.title' | translate }}</h1>
+        <p>{{ 'benefits.operators.description' | translate }}</p>
 
         <div class="top-buttons">
           <button [class.active]="operatorsType === 'operators'" (click)="operatorsType = 'operators'">
-            {{ 'benefits.operators.title' | translate }}
+            {{ 'benefits.operators.button' | translate }}
           </button>
           <button [class.active]="operatorsType === 'players'" (click)="operatorsType = 'players'">
-            {{ 'benefits.players.title' | translate }}
+            {{ 'benefits.players.button' | translate }}
           </button>
         </div>
 
@@ -293,6 +297,7 @@
     </div>
   </div>
 </div>
+<hr class="hr" />
 
 <!-- Resto del HTML con el mismo patrón de traducción -->
 
@@ -300,7 +305,7 @@
 <div id="funciones" class="section">
   <div class="second-section">
     <div class="second-flex">
-      <span class="TitleTag">{{ 'comparisonTable.title' | translate }}</span>
+      <span class="TitleTag">{{ 'comparisonTable.titleheader' | translate }}</span>
       <h1>{{ 'comparisonTable.title' | translate }}</h1>
     </div>
 
@@ -374,7 +379,7 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-        <span class="TitleTag" id="HowDoesitWork">{{ 'howItWorks.title' | translate }}</span>
+        <span class="TitleTag" id="HowDoesitWork">{{ 'howItWorks.titleheader' | translate }}</span>
         <h1>{{ 'howItWorks.title' | translate }}</h1>
 
         <div class="top-buttons">
@@ -389,7 +394,7 @@
         <div class="texto" *ngIf="NewOperatorsType === 'operators'">
           <div class="secondlist">
             <br />
-            <span class="TitleBold3">{{ 'howItWorks.operators.title' | translate }}</span>
+            <span class="TitleBold3">{{ 'howItWorks.secondtitle' | translate }}</span>
             <br />
             <p>{{ 'howItWorks.operators.description' | translate }}</p>
             <ul>
@@ -459,6 +464,8 @@
         <div class="texto">
           <p>{{ 'provenSuccess.description' | translate }}</p>
         </div>
+        <p>{{ 'provenSuccess.secondDescription' | translate }}</p>
+        <p>{{ 'provenSuccess.thirdDescription' | translate }}</p>
         <div class="completebutton">
           <a href="#contactanos">{{ 'provenSuccess.cta' | translate }}</a>
         </div>
@@ -480,7 +487,7 @@
         <img src="../../../../assets/img/NFrame6.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleTag" id="security">{{ 'security.title' | translate }}</span>
+        <span class="TitleTag" id="security">{{ 'security.titleheader' | translate }}</span>
         <h1>{{ 'security.title' | translate }}</h1>
         <p>{{ 'security.description' | translate }}</p>
         <div class="secondlist">
@@ -517,10 +524,11 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-        <span class="TitleTag" id="compliance">{{ 'compliance.title' | translate }}</span>
+        <span class="TitleTag" id="compliance">{{ 'compliance.titleheader' | translate }}</span>
         <h1>{{ 'compliance.title' | translate }}</h1>
         <br />
         <p>{{ 'compliance.description' | translate }}</p>
+        <p>{{ 'compliance.secondDescription' | translate }}</p>
         <div class="secondlist">
           <ul>
             <li>
@@ -563,7 +571,7 @@
         <img src="../../../../assets/integration.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleTag" id="integration">{{ 'integration.title' | translate }}</span>
+        <span class="TitleTag" id="integration">{{ 'integration.titleheader' | translate }}</span>
         <h1>{{ 'integration.title' | translate }}</h1>
         <p>{{ 'integration.description' | translate }}</p>
         <div class="secondlist">
@@ -608,7 +616,7 @@
   <div class="sixth-section">
     <div class="text">
       <div class="tag">
-        <span class="TitleTag" id="contactus">{{ 'contactUs.title' | translate }}</span>
+        <span class="TitleTag" id="contactus">{{ 'contactUs.titleheader' | translate }}</span>
       </div>
       <h1>{{ 'contactUs.title' | translate }}</h1>
       <h3>

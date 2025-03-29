@@ -19,7 +19,9 @@
         },
         "heroSection": {
           "title": "ChatBet is the #1 AI-powered betting assistant",
-          "description": "Transforming messaging apps into powerful revenue channels for operators. Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting. Built for operators, enjoyed by players.",
+          "description": "ChatBet is the #1 AI-powered betting assistant-Transforming messaging apps into powerful revenue channels for operators.",
+          "secondDescription":"Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting.",
+          "thirdDescription":"Built for operators, enjoyed by players.",
           "keyPoints": [
             "Boost Player Retention",
             "Increase GGR & Bet Volume",
@@ -57,7 +59,8 @@
           "cta": "See How It Works"
         },
         "features": {
-          "title": "Features",
+          "title": "Enhance Your Operation With ChatBet",
+          "descriptionHeader":"Features",
           "description": "ChatBet is built for operators to boost engagement, streamline transactions, and enhance experiences.",
           "items": [
             {
@@ -97,7 +100,10 @@
         },
         "benefits": {
           "operators": {
-            "title": "Operators",
+            "descriptionHeader": "Benefits",
+            "title": "Why ChatBet? Smarter Betting, Bigger Results",
+            "button": "Operators",
+            "description": "Seamless for operators, effortless for players—ChatBet drives engagement, retention, and revenue.", 
             "items": [
               {
                 "title": "Boost Player Retention –",
@@ -119,6 +125,7 @@
           },
           "players": {
             "title": "Players",
+            "button": "Players",
             "items": [
               {
                 "title": "Bet as Easily as Chatting –",
@@ -142,6 +149,7 @@
         },
         "comparisonTable": {
           "title": "Check Why We are the Best!",
+          "titleheader":"Comparison Table",
           "headers": [
             "Feature",
             "ChatBet",
@@ -201,6 +209,8 @@
         },
         "howItWorks": {
           "title": "As Easy as 1, 2, 3… For Operators & Players",
+          "titleheader":"How Does it Work",
+          "secondtitle": "Seamless Integration",
           "operators": {
             "title": "Operators",
             "description": "Integrating ChatBet is as simple as using it—enhancing platforms with minimal effort while maximizing revenue.",
@@ -251,11 +261,14 @@
         "provenSuccess": {
           "title": "Proven Success",
           "subtitle": "AI-Driven Growth. Measurable Impact.",
-          "description": "ChatBet isn’t just easy—it’s profitable. Our AI-driven platform delivers real results. ChatBet supports operators by keeping users engaged, maximizes betting value, and streamlines operations across multiple channels. Effortlessly grow revenue, attract new bettors, and retain players—securely and efficiently",
+          "description": "ChatBet isn’t just easy—it’s profitable. Our AI-driven platform delivers real results.",
+          "secondDescription":"ChatBet supports operators by keeping users engaged, maximizes betting value, and streamlines operations across multiple channels.",
+          "thirdDescription":"Effortlessly grow revenue, attract new bettors, and retain players—securely and efficiently.",
           "cta": "Join The Winning Operators"
         },
         "security": {
           "title": "Top-Level Protection for Operators & Players",
+          "titleheader":"Security",
           "description": "ChatBet is built on enterprise-grade infrastructure, ensuring maximum player and operator protection.",
           "items": [
             {
@@ -279,7 +292,9 @@
         },
         "compliance": {
           "title": "Regulatory-Compliant AI Betting",
-          "description": "ChatBet is designed to operate exclusively through licensed sportsbook operators, ensuring full legal & regulatory compliance. While ChatBet introduces a new way to monetize—through messaging apps—it functions purely as a communication channel.",
+          "titleheader":"Compliance",
+          "description": "ChatBet is designed to operate exclusively through licensed sportsbook operators, ensuring full legal & regulatory compliance. ",
+          "secondDescription":"While ChatBet introduces a new way to monetize—through messaging apps—it functions purely as a communication channel.",
           "items": [
             {
               "title": "No direct fund handling:",
@@ -303,6 +318,7 @@
         },
         "integration": {
           "title": "Fast Hassle-Free Integration",
+          "titleheader":"Integration",
           "description": "Operators can integrate ChatBet effortlessly—launching chat-based betting within weeks.",
           "items": [
             {
@@ -322,6 +338,7 @@
         },
         "contactUs": {
           "title": "Join the Future of AI-Powered Betting with ChatBet!",
+          "titleheader":"Contact Us",
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
           "form": {
             "name": "Your Name*",
