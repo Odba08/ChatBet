@@ -651,27 +651,47 @@ h3{
         margin-top: 2rem;
         font-family: 'Poppins', sans-serif;
         box-shadow: 0 4px 10px rgba(149, 149, 255, 0.5);
-        font-size: 1.1rem;
-        @media (max-width: 900px){
-            display: none;
+        font-size: clamp(0.6rem, 1.5vw, 1.1rem);
+
+    
+        @media (max-width: 749px){
+            font-size: 0.8rem;
         }
+        
         td{
             padding: 0.7rem;
+            @media (max-width: 749px){
+                padding: 0.3rem;
+            }
         }
         th{
             padding: 0 3rem;
+            font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+            @media (max-width: 749px){
+                font-size: clamp(0.4rem, 1.5vw, 0.9rem);
+            }
+        @media (min-width:750px) and (max-width:900px){
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+        }
         }
         .thtitle {
             color: #5554F3;
-            font-size: 1.5rem;
+            font-size: clamp(0.5rem, 2vw, 1.5rem);
             font-weight: bold;  
             .feature{
             text-align: left;
+           /*  @media (max-width: 900px){
+                font-size: 0.5rem;
+          
+            } */
         }
         }
 
         .tdtitle{
             text-align: left;
+
+            @media (max-width: 900px){
+                font-size: clamp(0.2rem, 1.5vw, 1.2rem);}
         }
     }
 
