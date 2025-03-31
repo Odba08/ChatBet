@@ -902,6 +902,10 @@ h3{
                      margin: 4px;
                      font-weight: 700;
                      border:none;
+
+                     @media screen and (max-width: 900px){
+                        font-size: 12px;
+                     }
                    }
                    button.active {
                     background-color: #5554F3; 
