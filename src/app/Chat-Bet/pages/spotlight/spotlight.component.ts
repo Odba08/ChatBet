@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AnimationOptions } from 'ngx-lottie';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-spotlight',
@@ -7,6 +9,13 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrl: './spotlight.component.scss'
 })
 export class SpotlightComponent {
+
+
+  constructor(
+        private translate: TranslateService, 
+  
+      ) {}
+  
    imagePaths: { [key: string]: { [key: string]: string } } = {
       es: {
         img1: '../../../../assets/img/Enespañol.png',
@@ -61,5 +70,12 @@ export class SpotlightComponent {
           }
         }
       
+
+        switchLanguage(language: string) {
+          this.translate.use(language);
+          this.currentLanguage = language;
+          this.currentImages = this.imagePaths[this.currentLanguage];
+         
+        }
 
 }

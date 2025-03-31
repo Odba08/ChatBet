@@ -55,7 +55,7 @@ export class MainPageComponent {
     imagePaths: { [key: string]: { [key: string]: string } } = {
       es: {
         img1: '../../../../assets/img/NEnEsp.png',
-        img2: './assets/img/Frame7.png',
+        img2: './assets/img/incremento.png',
         img3: '../../../../assets/Icon/video.png',
         img4: '../../../../assets/Background/en-carrusel.png',
         img5: './assets/img/Frame1-es.svg',
@@ -71,8 +71,8 @@ export class MainPageComponent {
       },
       en: {
         img1: '../../../../assets/img/NEnEsp.png',
-        img2: './assets/img/Frame7.en.png',
-        img3: '../../../../assets/Icon/video-en.png',
+        img2: './assets/img/increase.png',
+        img3: '../../../../assets/Icon/video.png',
         img4: '../../../../assets/Background/en-carrusel.png',
         img5: './assets/img/Frame1.svg',
         third: './assets/img/Frame5.2.png',

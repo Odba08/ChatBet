@@ -19,6 +19,7 @@
         },
         "heroSection": {
           "title": "ChatBet is the #1 AI-powered betting assistant",
+          "secondtitle":"AI-powered betting via chat with NLP",
           "description": "ChatBet is the #1 AI-powered betting assistant-Transforming messaging apps into powerful revenue channels for operators.",
           "secondDescription":"Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting.",
           "thirdDescription":"Built for operators, enjoyed by players.",
@@ -30,7 +31,7 @@
           "cta": "Book a Live Demo"
         },
         "trustedBy": {
-          "title": "Trusted by Leading igaming operators",
+          "title": "TRUSTED BY LEADING IGAMING OPERATORS",
           "subtitle": "Now Integrating With"
         },
         "whatIsChatBet": {
@@ -106,19 +107,19 @@
             "description": "Seamless for operators, effortless for players—ChatBet drives engagement, retention, and revenue.", 
             "items": [
               {
-                "title": "Boost Player Retention –",
+                "title": "Boost Player Retention:",
                 "description": "+30% improvement in 90-day retention"
               },
               {
-                "title": "Increase Betting Volume –",
+                "title": "Increase Betting Volume:",
                 "description": "Players bet more frequently with AI-driven prompts"
               },
               {
-                "title": "Drive-up GGR –",
+                "title": "Drive-up GGR:",
                 "description": "+20% monthly increase in GGR"
               },
               {
-                "title": "Effortless Integration –",
+                "title": "Effortless Integration:",
                 "description": "Plug & play setup with minimal effort"
               }
             ]
@@ -128,19 +129,19 @@
             "button": "Players",
             "items": [
               {
-                "title": "Bet as Easily as Chatting –",
+                "title": "Bet as Easily as Chatting:",
                 "description": "No apps or websites, just type and play"
               },
               {
-                "title": "Hyper-Personalized Bets –",
+                "title": "Hyper-Personalized Bets:",
                 "description": "AI tailors recommendations for a unique experience"
               },
               {
-                "title": "Real-Time Optimization –",
+                "title": "Real-Time Optimization:",
                 "description": "AI refines bets on the fly, driving higher engagement"
               },
               {
-                "title": "Faster Transactions –",
+                "title": "Faster Transactions:",
                 "description": "Place bets and withdraw winnings instantly"
               }
             ]
@@ -348,5 +349,116 @@
             "message": "How Can Our Team Help?",
             "submit": "Send info"
           }
-        }
+        },
+
+          "aboutUs": {
+            "title": "ABOUT US",
+            "subtitle": "A B2B Solution for iGaming Operators",
+            "description1": {
+              "part1": "ChatBet was built to ",
+              "highlight1": "redefine the way licensed iGaming operators engage players",
+              "part2": "—offering a ",
+              "highlight2": "frictionless betting experience through messaging apps"
+            },
+            "description2": {
+              "highlight1": "ChatBet is NOT a consumer-facing betting app",
+              "part1": ". Instead,",
+              "highlight2": "we power leading iGaming operators",
+              "part2": ", enabling them to enhance player engagement and revenue with",
+              "highlight3": "AI-driven, chat-based betting."
+            },
+            "changingGame": {
+              "title": "How ChatBet is Changing the Game",
+              "paragraph1": {
+                "part1": "ChatBet was born from a bold vision: ",
+                "highlight1": "to make betting as easy as chatting with a friend",
+                "part2": ". In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat."
+              },
+              "paragraph2": {
+                "part1": "From a startup idea to becoming a",
+                "highlight1": "trusted partner of industry leaders like AWS, OpenAI, and Meta",
+                "part2": ", ChatBet is revolutionizing the way players and operators experience betting."
+              }
+            },
+            "mission": {
+              "title": "Our Mission",
+              "text": "To make betting seamless, personalized, and engaging by leveraging AI and natural language processing—creating a frictionless experience for both players and operators."
+            },
+            "vision": {
+              "title": "Our Vision",
+              "text": "To lead the global shift towards chat-based gaming, making traditional betting platforms obsolete by offering a faster, smarter, and more intuitive way to bet."
+            },
+            "team": {
+              "title": "The Team",
+              "heading": "Meet the Team Behind ChatBet",
+              "description": "Our team brings together experts in AI, gaming, and technology, united by a passion for innovation.",
+              "members": [
+                {
+                  "name": "Mauricio Lince",
+                  "position": "CEO",
+                  "description": "Visionary leader with extensive experience in the gaming industry, driving ChatBet's strategic growth and innovation."
+                },
+                {
+                  "name": "Luis Vargas",
+                  "position": "CTO",
+                  "description": "AI and tech expert responsible for ChatBet's cutting-edge natural language processing and AI-powered betting capabilities."
+                },
+                {
+                  "name": "Manuel Jimenez",
+                  "position": "CSO",
+                  "description": "Leading LatAm growth and expansion, securing key partnerships, and driving revenue in the region."
+                },
+                {
+                  "name": "Josh Swerdlow",
+                  "position": "CGO",
+                  "description": "Driving global expansion beyond LatAm, leading investor negotiations, and executing high-impact growth strategies."
+                },
+                {
+                  "name": "Jean Varon",
+                  "position": "CCSO",
+                  "description": "Focused on customer success, ensuring seamless operator integrations, retention, and long-term client satisfaction."
+                }
+              ]
+            },
+            "cta": "Contact Us"
+          },
+
+
+
+          "spotlight": {
+    "title": "SPOTLIGHT",
+    "subtitle": "Breaking News & Milestones",
+    "description": "Stay up to date with ChatBet's latest achievements, industry recognitions, and global expansion. From exclusive event invitations to game-changing partnerships, this is where we showcase our journey as we redefine the future of betting.",
+    "notices": [
+      {
+        "image": "../../../../assets/notice/notice1.png",
+        "title": "ChatBet Takes the Stage at ICE 2025 in Barcelona!",
+        "date": "10-jan-2025",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": "20-22 January, 2025"
+          },
+          {
+            "label": "Location:",
+            "text": "ICE 2025, Barcelona"
+          }
+        ],
+        "content": [
+          "We're thrilled to announce that ChatBet has been officially invited to ICE 2025 in Barcelona, one of the most prestigious events in the gaming industry! Not only will we have a presence at the event, but we've also been selected to participate in the Startup Pitch, where the most innovative companies in gaming showcase their technology to investors and industry leaders.",
+          "Stay tuned for more updates as we prepare to showcase how ChatBet is revolutionizing AI-powered betting!"
+        ]
+      },
+      {
+        "image": "../../../../assets/notice/notice2.png",
+        "title": "ChatBet Named Finalist in the ICE 2025 Startup Pitch!",
+        "date": "22-jan-2025",
+        "content": [
+          "The excitement continues—ChatBet officially made it to the finals of the ICE 2025 Startup Pitch in Barcelona! Out of countless applicants, our AI-powered betting solution stood out as one of the most disruptive innovations in the gaming industry.",
+          "This recognition reinforces our vision: chat-based betting is the future. We are honored to pitch in front of top investors, operators, and industry experts who recognize the impact of our technology."
+        ]
+      }
+    ],
+    "cta": "Contact Us"
+  }
       }

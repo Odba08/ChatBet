@@ -7,110 +7,70 @@
     <div class="section-header">
       <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" routerLink="/"/>
       
-      <!-- <img class="chatbet" src="../../../../assets/img/Frame0.png" alt="" /> -->
       <div class="newidioma">
-        <a href="" >
-          En
-        </a>
-        <a href="">|</a>
-        <a href="" >
-          Es
-        </a>
+        <a (click)="switchLanguage('en'); false">En</a>
+        <a>|</a>
+        <a (click)="switchLanguage('es'); false">Es</a>
       </div>
       <div class="navbar">
-        <a href="#feature">Features</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#HowDoesitWork">How It Works</a>
-        <a href="#security">Security</a>
-        <a href="#compliance">Compliance</a>
-        <a href="#integration">Integration</a>
-        <a href="#contactus">ContactUs</a>
+        <a href="#feature">{{ 'header.navigation.features' | translate }}</a>
+        <a href="#benefits">{{ 'header.navigation.benefits' | translate }}</a>
+        <a href="#HowDoesitWork">{{ 'header.navigation.howItWorks' | translate }}</a>
+        <a href="#security">{{ 'header.navigation.security' | translate }}</a>
+        <a href="#compliance">{{ 'header.navigation.compliance' | translate }}</a>
+        <a href="#integration">{{ 'header.navigation.integration' | translate }}</a>
+        <a href="#contactus">{{ 'header.navigation.contactUs' | translate }}</a>
         <span class="divisor">|</span>
-        <a routerLink="/spotlight"  >Spotlight</a>
+        <a routerLink="/spotlight">{{ 'header.navigation.spotlight' | translate }}</a>
         <span class="divisor">|</span>
-        <a  routerLink="/aboutus" href="">About Us</a>
+        <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <a href="" >
-            En
-          </a>
-          <a href="" >
-            Es
-          </a>
-  
+          <a (click)="switchLanguage('en'); false">En</a>
+          <a (click)="switchLanguage('es'); false">Es</a>
         </div>
       </div>
     </div>
   </header>
 
-
-
   <div class="first-section">
-    
-
     <div class="first-section-container">
       <div class="text">
         <br>
-        <h1>SPOTLIGHT</h1>
+        <h1>{{ 'spotlight.title' | translate }}</h1>
         <br>
-        <span class="TitleBold3">
-          Breaking News & Milestones
-        </span>
-          <p>Stay up to date with ChatBet’s latest achievements, industry recognitions, and global expansion. From exclusive event invitations to game-changing partnerships, this is where we showcase our journey as we redefine the future of betting.</p>
-      
+        <span class="TitleBold3">{{ 'spotlight.subtitle' | translate }}</span>
+        <p>{{ 'spotlight.description' | translate }}</p>
       </div>
     </div>
   </div>
-  
 </div>
 
 <hr class="hr">
 
 <div id="beneficios" class="section">
   <div class="notice-section">
-    <div class="notice">
-      <img src="../../../../assets/notice/notice1.png" alt="">
+    <div class="notice" *ngFor="let notice of 'spotlight.notices' | translate; let i = index">
+      <img [src]="notice.image" alt="">
 
       <div class="infonotice">
-        <h2>
-          ChatBet Takes the Stage at ICE 2025 in Barcelona!        </h2>
-        <p>10-jan-2025</p>
-        <ul>
-          <li>
-            <span class="TitleBold3">Event Date:</span>
-            20-22 January, 2025
-          </li>
-          <li>
-            <span class="TitleBold3">Location:</span>
-            ICE 2025, Barcelona
+        <h2>{{ notice.title }}</h2>
+        <p>{{ notice.date }}</p>
+        <ul *ngIf="notice.details">
+          <li *ngFor="let detail of notice.details">
+            <span class="TitleBold3">{{ detail.label | translate }}</span>
+            {{ detail.text }}
           </li>
         </ul>
-        <p>We’re thrilled to announce that ChatBet has been officially invited to ICE 2025 in Barcelona, one of the most prestigious events in the gaming industry! Not only will we have a presence at the event, but we’ve also been selected to participate in the Startup Pitch, where the most innovative companies in gaming showcase their technology to investors and industry leaders.</p>
-        <p>Stay tuned for more updates as we prepare to showcase how ChatBet is revolutionizing AI-powered betting!</p>
-
+        
+        <p *ngFor="let paragraph of notice.content">{{ paragraph }}</p>
       </div>
-
     </div>
     
-    <hr class="hr">
-
-    <div class="notice">
-      <img src="../../../../assets/notice/notice2.png" alt="">
-
-      <div class="infonotice">
-        <h2>
-          ChatBet Named Finalist in the ICE 2025 Startup Pitch!        </h2>
-        <p>22-jan-2025</p>
-        <p>The excitement continues—ChatBet officially made it to the finals of the ICE 2025 Startup Pitch in Barcelona! Out of countless applicants, our AI-powered betting solution stood out as one of the most disruptive innovations in the gaming industry.</p>
-        <p>This recognition reinforces our vision: chat-based betting is the future. We are honored to pitch in front of top investors, operators, and industry experts who recognize the impact of our technology.</p>
-
-      </div>
-
-    </div>
+   
   </div>
 </div>
 
-<hr class="hr">
 
 
 <div class="backgroundline">
@@ -119,6 +79,6 @@
   </div>
 
   <div class="fotter2">
-    <img [src]="currentImages['footer2'] " alt="" />
+    <img [src]="currentImages['footer2']" alt="" />
   </div>
 </div>

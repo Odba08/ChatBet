@@ -19,6 +19,7 @@
   },
   "heroSection": {
     "title": "ChatBet es el asistente de apuestas con IA #1",
+    "secondtitle": "Apuestas con IA mediante chat usando NLP",
     "description": "ChatBet es el asistente de apuestas con IA #1 - Transformando aplicaciones de mensajería en potentes canales de ingresos para operadores.",
     "secondDescription": "Los jugadores pueden apostar al instante a través de WhatsApp, Telegram, Discord y más. Sin aplicaciones, sin fricción, solo apuestas fluidas basadas en chat.",
     "thirdDescription": "Creado para operadores, disfrutado por jugadores.",
@@ -348,5 +349,117 @@
       "message": "¿Cómo Puede Ayudarte Nuestro Equipo?",
       "submit": "Enviar info"
     }
+  },
+
+
+
+  "aboutUs": {
+  "title": "NOSOTROS",
+  "subtitle": "Una solución B2B para operadores de iGaming",
+  "description1": {
+    "part1": "ChatBet fue creado para ",
+    "highlight1": "redefinir cómo los operadores de iGaming interactúan con los jugadores",
+    "part2": ", ofreciendo una ",
+    "highlight2": "experiencia de apuestas sin fricciones a través de apps de mensajería"
+  },
+  "description2": {
+    "highlight1": "ChatBet NO es una aplicación de apuestas para consumidores finales",
+    "part1": ". En cambio, ",
+    "highlight2": "potenciamos a los principales operadores de iGaming",
+    "part2": ", permitiéndoles mejorar el engagement de los jugadores y sus ingresos con ",
+    "highlight3": "apuestas basadas en chat impulsadas por IA."
+  },
+  "changingGame": {
+    "title": "Cómo ChatBet está cambiando el juego",
+    "paragraph1": {
+      "part1": "ChatBet nació de una visión audaz: ",
+      "highlight1": "hacer que apostar sea tan fácil como chatear con un amigo",
+      "part2": ". En un mundo donde los usuarios interactúan más que nunca a través de mensajes, vimos la oportunidad de eliminar las fricciones en las apuestas. Sin apps, sin sitios web, solo apuestas simples mediante chat con tecnología de IA."
+    },
+    "paragraph2": {
+      "part1": "De una idea de startup a convertirnos en ",
+      "highlight1": "socio estratégico de líderes de la industria como AWS, OpenAI y Meta",
+      "part2": ", ChatBet está revolucionando la forma en que jugadores y operadores experimentan las apuestas."
+    }
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "text": "Hacer que las apuestas sean fluidas, personalizadas y atractivas aprovechando la IA y el procesamiento de lenguaje natural, creando una experiencia sin fricciones tanto para jugadores como para operadores."
+  },
+  "vision": {
+    "title": "Nuestra Visión",
+    "text": "Liderar el cambio global hacia los juegos basados en chat, haciendo obsoletas las plataformas tradicionales de apuestas al ofrecer una forma más rápida, inteligente e intuitiva de apostar."
+  },
+  "team": {
+    "title": "El Equipo",
+    "heading": "Conoce al equipo detrás de ChatBet",
+    "description": "Nuestro equipo reúne a expertos en IA, gaming y tecnología, unidos por una pasión por la innovación.",
+    "members": [
+      {
+        "name": "Mauricio Lince",
+        "position": "CEO",
+        "description": "Líder visionario con amplia experiencia en la industria del gaming, impulsando el crecimiento estratégico e innovación de ChatBet."
+      },
+      {
+        "name": "Luis Vargas",
+        "position": "CTO",
+        "description": "Experto en IA y tecnología responsable de las capacidades de procesamiento de lenguaje natural y apuestas con IA de vanguardia de ChatBet."
+      },
+      {
+        "name": "Manuel Jimenez",
+        "position": "CSO",
+        "description": "Lidera el crecimiento y expansión en LatAm, asegurando alianzas clave e impulsando los ingresos en la región."
+      },
+      {
+        "name": "Josh Swerdlow",
+        "position": "CGO",
+        "description": "Impulsa la expansión global más allá de LatAm, liderando negociaciones con inversionistas y ejecutando estrategias de crecimiento de alto impacto."
+      },
+      {
+        "name": "Jean Varon",
+        "position": "CCSO",
+        "description": "Enfocado en el éxito del cliente, asegurando integraciones perfectas con operadores, retención y satisfacción a largo plazo."
+      }
+    ]
+  },
+  "cta": "Contáctenos"
+},
+
+  "spotlight": {
+    "title": "DESTACADOS",
+    "subtitle": "Noticias importantes y logros",
+    "description": "Mantente al día con los últimos logros de ChatBet, reconocimientos de la industria y expansión global. Desde invitaciones exclusivas a eventos hasta alianzas transformadoras, aquí mostramos nuestro viaje mientras redefinimos el futuro de las apuestas.",
+    "notices": [
+      {
+        "image": "../../../../assets/notice/notice1.png",
+        "title": "¡ChatBet llega al escenario de ICE 2025 en Barcelona!",
+        "date": "10-ene-2025",
+        "details": [
+          {
+            "label": "Fecha del evento:",
+            "text": "20-22 de enero, 2025"
+          },
+          {
+            "label": "Ubicación:",
+            "text": "ICE 2025, Barcelona"
+          }
+        ],
+        "content": [
+          "Nos complace anunciar que ChatBet ha sido invitado oficialmente a ICE 2025 en Barcelona, ¡uno de los eventos más prestigiosos de la industria del gaming! No solo tendremos presencia en el evento, sino que también hemos sido seleccionados para participar en el Startup Pitch, donde las empresas más innovadoras del sector muestran su tecnología a inversionistas y líderes de la industria.",
+          "¡Mantente atento a más actualizaciones mientras nos preparamos para mostrar cómo ChatBet está revolucionando las apuestas con tecnología de IA!"
+        ]
+      },
+      {
+        "image": "../../../../assets/notice/notice2.png",
+        "title": "¡ChatBet finalista en el Startup Pitch de ICE 2025!",
+        "date": "22-ene-2025",
+        "content": [
+          "La emoción continúa: ¡ChatBet llegó oficialmente a la final del Startup Pitch de ICE 2025 en Barcelona! De entre innumerables aplicantes, nuestra solución de apuestas con IA se destacó como una de las innovaciones más disruptivas en la industria del gaming.",
+          "Este reconocimiento refuerza nuestra visión: las apuestas por chat son el futuro. Nos sentimos honrados de presentar nuestro proyecto frente a los principales inversionistas, operadores y expertos de la industria que reconocen el impacto de nuestra tecnología."
+        ]
+      }
+    ],
+    "cta": "Contáctenos"
   }
+
 }

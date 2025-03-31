@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AnimationOptions } from 'ngx-lottie';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-aboutus',
@@ -7,6 +8,10 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrl: './aboutus.component.scss'
 })
 export class AboutusComponent {
+constructor(
+      private translate: TranslateService, 
+
+    ) {}
 
   imagePaths: { [key: string]: { [key: string]: string } } = {
     es: {
@@ -62,5 +67,10 @@ export class AboutusComponent {
         }
       }
     
-
+      switchLanguage(language: string) {
+        this.translate.use(language);
+        this.currentLanguage = language;
+        this.currentImages = this.imagePaths[this.currentLanguage];
+       
+      }
 }
