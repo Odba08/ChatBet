@@ -5,14 +5,27 @@
 
   <header>
     <div class="section-header">
-      <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" routerLink="/"/>
-      
-      <div class="newidioma">
-        <a (click)="switchLanguage('en'); false">En</a>
-        <a>|</a>
-        <a (click)="switchLanguage('es'); false">Es</a>
+
+      <div class="mobileheader">
+        <img class="chatbetone" src="./assets/Icon/Layer_1.png" routerLink="/" />
+        <div class="newidioma">
+          <div class="newidioma">
+            <a (click)="switchLanguage('en'); false">En</a>
+            <a>|</a>
+            <a (click)="switchLanguage('es'); false">Es</a>
+          </div>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu" (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
       </div>
-      <div class="navbar">
+<!-- 
+      <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="" routerLink="/"/> -->
+      <div class="menu-overlay" [class.active]="isMenuOpen" (click)="toggleMenu()"></div>
+      <div class="navbar" [class.active]="isMenuOpen">
         <a href="#feature">{{ 'header.navigation.features' | translate }}</a>
         <a href="#benefits">{{ 'header.navigation.benefits' | translate }}</a>
         <a href="#HowDoesitWork">{{ 'header.navigation.howItWorks' | translate }}</a>

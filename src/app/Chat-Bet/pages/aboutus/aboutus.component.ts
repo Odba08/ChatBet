@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './aboutus.component.scss'
 })
 export class AboutusComponent {
+isMenuOpen: boolean = false;
 constructor(
       private translate: TranslateService, 
 
@@ -66,11 +67,14 @@ constructor(
           preserveAspectRatio: 'xMidYMid slice'
         }
       }
-    
+      toggleMenu() {
+        this.isMenuOpen = !this.isMenuOpen;
+      }
+  
       switchLanguage(language: string) {
         this.translate.use(language);
         this.currentLanguage = language;
         this.currentImages = this.imagePaths[this.currentLanguage];
-       
+        this.isMenuOpen = false;
       }
 }

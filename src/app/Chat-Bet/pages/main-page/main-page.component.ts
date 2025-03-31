@@ -19,7 +19,7 @@ export class MainPageComponent {
   public minLength: number = 0;
   public operatorsType: 'operators' | 'players' = 'operators';
   public NewOperatorsType: 'operators' | 'players' = 'operators';
-
+  isMenuOpen: boolean = false;
  
     @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
     @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
@@ -99,13 +99,18 @@ export class MainPageComponent {
       private toastr: ToastrService
     ) {}
 
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
+
     switchLanguage(language: string) {
       this.translate.use(language);
       this.currentLanguage = language;
       this.currentImages = this.imagePaths[this.currentLanguage];
       this.updateVideoSource();
+      this.isMenuOpen = false;
     }
-  
+    
     updateVideoSource() {
       const video: HTMLVideoElement = this.videoElement.nativeElement;
       const videoMobile: HTMLVideoElement = this.videoElementMobile.nativeElement;
