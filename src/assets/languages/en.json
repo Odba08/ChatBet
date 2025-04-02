@@ -12,7 +12,7 @@
             "security": "Security",
             "compliance": "Compliance",
             "integration": "Integration",
-            "contactUs": "ContactUs",
+            "contactUs": "Contact Us",
             "spotlight": "Spotlight",
             "aboutUs": "About Us"
           }
@@ -20,7 +20,7 @@
         "heroSection": {
           "title": "ChatBet is the #1 AI-powered betting assistant",
           "secondtitle":"AI-powered betting via chat with NLP",
-          "description": "ChatBet is the #1 AI-powered betting assistant-Transforming messaging apps into powerful revenue channels for operators.",
+          "description": "ChatBet is the #1 AI-powered betting assistant-transforming messaging apps into powerful revenue channels for operators.",
           "secondDescription":"Players can bet instantly via WhatsApp, Telegram, Discord, and more. No apps, no friction — just seamless chat-based betting.",
           "thirdDescription":"Built for operators, enjoyed by players.",
           "keyPoints": [
@@ -102,7 +102,8 @@
         "benefits": {
           "operators": {
             "descriptionHeader": "Benefits",
-            "title": "Why ChatBet? Smarter Betting, Bigger Results",
+            "title": "Why ChatBet? ",
+            "secondtitle": "Smarter Betting, Bigger Results",
             "button": "Operators",
             "description": "Seamless for operators, effortless for players—ChatBet drives engagement, retention, and revenue.", 
             "items": [
@@ -209,7 +210,8 @@
           ]
         },
         "howItWorks": {
-          "title": "As Easy as 1, 2, 3… For Operators & Players",
+          "title": "As Easy as 1, 2, 3… ",
+          "titlescond": "For Operators & Players",
           "titleheader":"How Does it Work",
           "secondtitle": "Seamless Integration",
           "operators": {
@@ -229,7 +231,7 @@
                 "description": "More bets, higher retention, and increased turnover."
               }
             ],
-            "footer": "A frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps."
+            "footer": "A frictionless solution that enhances user experience, drives profitability, and future-proofs your betting operation."
           },
           "players": {
             "title": "Players",
@@ -256,7 +258,7 @@
                 "description": "Secure payouts, no complications."
               }
             ],
-            "footer": "A frictionless solution that enhances user experience, drives profitability, and future-proofs your betting operation."
+            "footer": "This frictionless process keeps players engaged, making betting fast, intuitive, and accessible from their favorite messaging apps."
           }
         },
         "provenSuccess": {
@@ -298,15 +300,15 @@
           "secondDescription":"While ChatBet introduces a new way to monetize—through messaging apps—it functions purely as a communication channel.",
           "items": [
             {
-              "title": "No direct fund handling:",
+              "title": "No Direct Fund Handling:",
               "description": "All transactions go through the operator’s wallet."
             },
             {
-              "title": "No player data storage:",
+              "title": "No Player Data Storage:",
               "description": "ChatBet relays information but does not retain user data."
             },
             {
-              "title": "Operator-controlled markets:",
+              "title": "Operator-Controlled Markets:",
               "description": "ChatBet mirrors the sportsbook’s existing offerings."
             },
             {
@@ -358,7 +360,7 @@
               "part1": "ChatBet was built to ",
               "highlight1": "redefine the way licensed iGaming operators engage players",
               "part2": "—offering a ",
-              "highlight2": "frictionless betting experience through messaging apps"
+              "highlight2": "frictionless betting experience through messaging apps."
             },
             "description2": {
               "highlight1": "ChatBet is NOT a consumer-facing betting app",
@@ -394,7 +396,7 @@
               "description": "Our team brings together experts in AI, gaming, and technology, united by a passion for innovation.",
               "members": [
                 {
-                  "name": "Mauricio Lince",
+                  "name": "Josh Swerdlow",
                   "position": "CEO",
                   "description": "Visionary leader with extensive experience in the gaming industry, driving ChatBet's strategic growth and innovation."
                 },

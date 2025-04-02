@@ -355,6 +355,9 @@ h3{
     .TitleBoldMobile{
         font-family: "Poppins", sans-serif;
         font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        
         @media screen and (max-width: 900px){
             font-size: 1.5rem;
         }
@@ -1067,7 +1070,7 @@ h3{
     }
     
 
-    .image-carousel {
+  /*   .image-carousel {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row: 1fr 1fr;
@@ -1116,7 +1119,64 @@ h3{
             }
         }
     }
+ */
 
+ .image-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr; /* Alturas iguales */
+    gap: 10px;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        min-height: 300px; /* Altura mínima */
+        scroll-snap-align: start;
+        border: 1px solid #eee; /* Opcional: para visualizar límites */
+
+        @media (max-width: 900px) {
+            flex: 0 0 auto;
+            width: 80%;
+            min-width: 250px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            min-height: 3rem; /* Espacio reservado */
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        p {
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            min-height: 4rem; /* Espacio reservado */
+            margin-top: 10px;
+        }
+
+        img {
+            width: 80px;
+            height: auto;
+            object-fit: cover;
+            margin-top: 24px;
+        }
+    }
+}
      
   /* Fifth Section */
 

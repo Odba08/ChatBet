@@ -102,7 +102,8 @@
   "benefits": {
     "operators": {
       "descriptionHeader": "Benefits",
-      "title": "¿Por Qué ChatBet? Apuestas Más Inteligentes, Resultados Mayores",
+      "title": "¿Por Qué ChatBet? ",
+      "secondtitle": "Apuestas Más Inteligentes, Resultados Mayores",
       "button": "Operators",
       "description": "Fluido para operadores, sencillo para jugadores—ChatBet impulsa el engagement, retención e ingresos.",
       "items": [
@@ -209,7 +210,8 @@
     ]
   },
   "howItWorks": {
-    "title": "Tan Fácil como 1, 2, 3… Para Operadores y Jugadores",
+    "title": "Tan Fácil como 1, 2, 3… ",
+    "titlescond": "Para Operadores y Jugadores",
     "titleheader": "How Does it Work",
     "secondtitle": "Seamless Integration",
     "operators": {
@@ -229,7 +231,7 @@
           "description": "Más apuestas, mayor retención y aumento en volumen."
         }
       ],
-      "footer": "Un proceso sin fricciones mantiene a los jugadores comprometidos, haciendo las apuestas rápidas, intuitivas y accesibles desde sus apps de mensajería favoritas."
+      "footer": "Una solución sin fricciones que mejora la experiencia del usuario, impulsa la rentabilidad y prepara tu operación de apuestas para el futuro."
     },
     "players": {
       "title": "Players",
@@ -256,7 +258,7 @@
           "description": "Pagos seguros, sin complicaciones."
         }
       ],
-      "footer": "Una solución sin fricciones que mejora la experiencia del usuario, impulsa la rentabilidad y prepara tu operación de apuestas para el futuro."
+      "footer": "Un proceso sin fricciones mantiene a los jugadores comprometidos, haciendo las apuestas rápidas, intuitivas y accesibles desde sus apps de mensajería favoritas."
     }
   },
   "provenSuccess": {
@@ -298,15 +300,15 @@
     "secondDescription": "Aunque ChatBet introduce una nueva forma de monetizar—a través de apps de mensajería—funciona puramente como un canal de comunicación.",
     "items": [
       {
-        "title": "No manejo directo de fondos:",
+        "title": "No Manejo Directo de Fondos:",
         "description": "Todas las transacciones pasan por la billetera del operador."
       },
       {
-        "title": "No almacenamiento de datos de jugadores:",
+        "title": "No Almacenamiento de Datos de Jugadores:",
         "description": "ChatBet transmite información pero no retiene datos de usuarios."
       },
       {
-        "title": "Mercados controlados por operadores:",
+        "title": "Mercados Controlados por Operadores:",
         "description": "ChatBet refleja las ofertas existentes de la casa de apuestas."
       },
       {
@@ -360,7 +362,7 @@
     "part1": "ChatBet fue creado para ",
     "highlight1": "redefinir cómo los operadores de iGaming interactúan con los jugadores",
     "part2": ", ofreciendo una ",
-    "highlight2": "experiencia de apuestas sin fricciones a través de apps de mensajería"
+    "highlight2": "experiencia de apuestas sin fricciones a través de apps de mensajería."
   },
   "description2": {
     "highlight1": "ChatBet NO es una aplicación de apuestas para consumidores finales",
@@ -396,7 +398,7 @@
     "description": "Nuestro equipo reúne a expertos en IA, gaming y tecnología, unidos por una pasión por la innovación.",
     "members": [
       {
-        "name": "Mauricio Lince",
+        "name": "Josh Swerdlow",
         "position": "CEO",
         "description": "Líder visionario con amplia experiencia en la industria del gaming, impulsando el crecimiento estratégico e innovación de ChatBet."
       },

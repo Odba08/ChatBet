@@ -25,7 +25,7 @@ constructor(
       second: './assets/img/second-phone.png',
       video: 'https://landing-page-chatbet.s3.us-east-1.amazonaws.com/assets/video/vid-es.mp4',
       footer: '../../../../assets/Background/footer.svg',
-      footer2: '../../../../assets/Background/2footer.svg',
+      footer2: '../../../../assets/Background/2footer.png',
       phoneimage: '../../../../assets/img/phone-es.png',
       Frame4: '../../../../assets/img/Frame4-es.png',
       reviewphone: '../../../../assets/Background/review-tlf2.svg'

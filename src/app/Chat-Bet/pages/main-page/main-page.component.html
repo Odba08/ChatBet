@@ -246,7 +246,9 @@
       </div>
       <div class="text">
         <span class="TitleTag" id="benefits">{{ 'benefits.operators.descriptionHeader' | translate }}</span>
-        <h1>{{ 'benefits.operators.title' | translate }}</h1>
+        <h1>{{ 'benefits.operators.title' | translate }} <br>
+          {{ 'benefits.operators.secondtitle' | translate }}</h1>
+        
        <!--  <p>{{ 'benefits.operators.description' | translate }}</p> -->
 
         <div class="top-buttons">
@@ -391,7 +393,8 @@
     <div class="third-flex">
       <div class="text">
         <span class="TitleTag" id="HowDoesitWork">{{ 'howItWorks.titleheader' | translate }}</span>
-        <h1>{{ 'howItWorks.title' | translate }}</h1>
+        <h1>{{ 'howItWorks.title' | translate }} <br>
+          {{ 'howItWorks.titlescond' | translate }}</h1>
 
         <div class="top-buttons">
           <button [class.active]="NewOperatorsType === 'operators'" (click)="NewOperatorsType = 'operators'">
@@ -576,13 +579,13 @@
 
 <!-- 6. Integracion-->
 <div id="beneficios" class="section">
-  <div class="third-section">
+  <div class="third-section" id="integration">
     <div class="third-flex">
       <div class="image-section" style="display: flex">
         <img src="../../../../assets/integration.png" alt="" />
       </div>
       <div class="text">
-        <span class="TitleTag" id="integration">{{ 'integration.titleheader' | translate }}</span>
+        <span class="TitleTag" >{{ 'integration.titleheader' | translate }}</span>
         <h1>{{ 'integration.title' | translate }}</h1>
         <p>{{ 'integration.description' | translate }}</p>
         <div class="secondlist">
