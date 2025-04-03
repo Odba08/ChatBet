@@ -149,60 +149,60 @@
     },
     "cta": "Obtén una Demo Gratis"
   },
-  "comparisonTable": {
+ "comparisonTable": {
     "title": "¡Descubre Por Qué Somos los Mejores!",
     "titleheader": "Tabla Comparativa",
     "headers": [
-      "Feature",
+      "Característica",
       "ChatBet",
-      "Other Chat-Based Platforms",
-      "Traditional Sportbooks"
+      "Otras Plataformas Basadas en Chat",
+      "Casas de Apuestas Tradicionales"
     ],
     "rows": [
       {
-        "feature": "True Chat-Based Betting",
+        "feature": "Apuestas Basadas en Chat Verdadero",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "AI-Powered Personalization",
+        "feature": "Personalización Potenciada por IA",
         "chatbet": true,
-        "otherPlatforms": "Basic",
+        "otherPlatforms": "Básica",
         "traditional": false
       },
       {
-        "feature": "Real-time Bet Optimization",
-        "chatbet": true,
-        "otherPlatforms": false,
-        "traditional": false
-      },
-      {
-        "feature": "Instant Betting & Results",
+        "feature": "Optimización de Apuestas en Tiempo Real",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Multi-Platform Access",
+        "feature": "Apuestas y Resultados Instantáneos",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Custom Mid-Game & High-Payout Bets",
+        "feature": "Acceso Multiplataforma",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Seamless Operator Integration",
+        "feature": "Apuestas Personalizadas Durante el Juego y de Alto Pago",
         "chatbet": true,
-        "otherPlatforms": "Requires Custom Integration",
+        "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Higher Revenue & Retention",
+        "feature": "Integración Fluida para Operadores",
+        "chatbet": true,
+        "otherPlatforms": "Requiere Integración Personalizada",
+        "traditional": false
+      },
+      {
+        "feature": "Mayores Ingresos y Retención",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
@@ -399,7 +399,7 @@
     "description": "Nuestro equipo reúne a expertos en IA, gaming y tecnología, unidos por una pasión por la innovación.",
     "members": [
       {
-        "name": "Wifi Plata",
+        "name": "Josh Swerdlow",
         "position": "CEO",
         "description": "Líder visionario con amplia experiencia en la industria del gaming, impulsando el crecimiento estratégico e innovación de ChatBet."
       },
@@ -414,7 +414,7 @@
         "description": "Lidera el crecimiento y expansión en LatAm, asegurando alianzas clave e impulsando los ingresos en la región."
       },
       {
-        "name": "Josh Swerdlow",
+        "name": "Wifi Plata",
         "position": "CGO",
         "description": "Impulsa la expansión global más allá de LatAm, liderando negociaciones con inversionistas y ejecutando estrategias de crecimiento de alto impacto."
       },
