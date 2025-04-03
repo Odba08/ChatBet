@@ -11,10 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatBetModule } from './Chat-Bet/chat-bet.module';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,

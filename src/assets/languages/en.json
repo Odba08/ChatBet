@@ -235,26 +235,27 @@
           },
           "players": {
             "title": "Players",
+            "secondtitle": "Effortless Betting - Just Chat & Play",
             "description": "With ChatBet, placing a bet is as easy as sending a message. No complex sites, no lengthy registrations—just a seamless chat experience.",
             "items": [
               {
-                "title": "Just Chat -",
+                "title": "Just Chat: ",
                 "description": "Type your bet like a message—no apps, no forms."
               },
               {
-                "title": "Instant AI Assistance –",
+                "title": "Instant AI Assistance: ",
                 "description": "Real-time odds, smart recommendations, and confirmations."
               },
               {
-                "title": "Enter Your Amount –",
+                "title": "Enter Your Amount: ",
                 "description": "No searching or manual input."
               },
               {
-                "title": "Confirm & Bet Instantly 🤙 –",
+                "title": "Confirm & Bet Instantly 🤙: ",
                 "description": "Quick confirmation, instant action."
               },
               {
-                "title": "Win & Withdraw –",
+                "title": "Win & Withdraw: ",
                 "description": "Secure payouts, no complications."
               }
             ],
@@ -359,14 +360,14 @@
             "description1": {
               "part1": "ChatBet was built to ",
               "highlight1": "redefine the way licensed iGaming operators engage players",
-              "part2": "—offering a ",
+              "part2": "— offering a ",
               "highlight2": "frictionless betting experience through messaging apps."
             },
             "description2": {
               "highlight1": "ChatBet is NOT a consumer-facing betting app",
-              "part1": ". Instead,",
+              "part1": ".Instead,",
               "highlight2": "we power leading iGaming operators",
-              "part2": ", enabling them to enhance player engagement and revenue with",
+              "part2": ",enabling them to enhance player engagement and revenue with",
               "highlight3": "AI-driven, chat-based betting."
             },
             "changingGame": {
@@ -374,12 +375,12 @@
               "paragraph1": {
                 "part1": "ChatBet was born from a bold vision: ",
                 "highlight1": "to make betting as easy as chatting with a friend",
-                "part2": ". In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat."
+                "part2": ".In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat."
               },
               "paragraph2": {
                 "part1": "From a startup idea to becoming a",
                 "highlight1": "trusted partner of industry leaders like AWS, OpenAI, and Meta",
-                "part2": ", ChatBet is revolutionizing the way players and operators experience betting."
+                "part2": ",ChatBet is revolutionizing the way players and operators experience betting."
               }
             },
             "mission": {
@@ -396,7 +397,7 @@
               "description": "Our team brings together experts in AI, gaming, and technology, united by a passion for innovation.",
               "members": [
                 {
-                  "name": "Josh Swerdlow",
+                  "name": "Wifi Plata",
                   "position": "CEO",
                   "description": "Visionary leader with extensive experience in the gaming industry, driving ChatBet's strategic growth and innovation."
                 },

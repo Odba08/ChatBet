@@ -1147,7 +1147,6 @@ h3{
         padding: 10px;
         min-height: 300px; /* Altura mínima */
         scroll-snap-align: start;
-        border: 1px solid #eee; /* Opcional: para visualizar límites */
 
         @media (max-width: 900px) {
             flex: 0 0 auto;
@@ -1157,7 +1156,7 @@ h3{
 
         h2 {
             font-size: 1.2rem;
-            min-height: 3rem; /* Espacio reservado */
+            min-height: 3rem; 
             margin: 10px 0;
             width: 100%;
         }
