@@ -463,6 +463,61 @@
       }
     ],
     "cta": "Contáctenos"
+  },
+
+  "accordion": {
+    "section1": {
+      "title": "¿Qué hace que ChatBet sea difícil de replicar?",
+      "content": "Según ChatGPT, es extremadamente difícil por varias razones estructurales: A simple vista, ChatBet puede parecer un chatbot. En realidad, es una plataforma de apuestas inteligente y robusta construida específicamente para ecosistemas conversacionales. Por eso es extremadamente difícil de replicar."
+    },
+    "section1_5": {
+      "title": "¿Qué problema está resolviendo ChatBet?",
+      "content1": "Las apuestas basadas en web están obsoletas. Los usuarios están migrando a plataformas de mensajería e interfaces conversacionales.",
+      "content2": "ChatBet lleva las apuestas a donde los usuarios ya pasan su tiempo y a cómo quieren interactuar.",
+      "list1": "4.5 mil millones de personas usan aplicaciones de mensajería mensualmente (Statista, 2024)",
+      "list2": "Las personas pasan 3 veces más tiempo en aplicaciones de chat que en la web (Data.ai, 2023)",
+      "list3": "El 48% de los usuarios ahora prefiere interactuar con asistentes de IA (Gartner, 2024)",
+      "list4": "El 70% de la Generación Z prefiere chat o voz sobre sitios web o aplicaciones (Deloitte, 2024)",
+      "content3": "Los bots impulsados por IA están ganando tracción rápidamente, demostrando un apetito global por la IA conversacional."
+    },
+    "section2": {
+      "title": "¿Cuál es el mercado total adressable (TAM)?",
+      "content": "Se proyecta que el mercado global de iGaming supere los $90 mil millones para 2026. Las apuestas basadas en mensajería aún son un océano azul, especialmente en mercados emergentes (LatAm, África, Asia)."
+    },
+    "section3": {
+      "title": "¿Cómo está funcionando ChatBet hasta ahora?",
+      "list1": "+20% de facturación mensual por operador",
+      "list2": "+35% de aumento en nuevos usuarios de la Generación Z",
+      "list3": "+30% de mejora en la retención a 90 días",
+      "list4": "+30% de aumento en el valor promedio de las apuestas"
+    },
+    "section4": {
+      "title": "¿Quién está detrás de ChatBet?",
+      "content": "Somos un equipo distribuido globalmente, listos para apoyar a los operadores 24/7 en cualquier zona horaria. Nuestra ventaja radica en nuestra estructura:",
+      "list1": "Desarrolladores – Profundo conocimiento en IA, infraestructura y ejecución",
+      "list2": "Emprendedores – Sabemos cómo construir y escalar startups rápidamente",
+      "list3": "Talento ex-multinacional – Aportan disciplina, estructura y cumplimiento",
+      "list4": "Expertos de la industria del juego – Conocen las palancas de engagement, riesgo y rentabilidad",
+      "list5": "Especialistas interdisciplinarios – Aportan pensamiento fresco, nuevos paradigmas de UX y creatividad operativa",
+      "content2": "No estamos adivinando, estamos construyendo con intención y experiencia."
+    },
+    "section5": {
+      "title": "¿Cuál es la hoja de ruta a futuro?",
+      "list1": "Expansión a nuevos verticales: Casino, Fantasía, Lotería",
+      "list2": "Personalización impulsada por IA y cuotas predictivas",
+      "list3": "Integraciones más profundas con CRMs y billeteras de operadores",
+      "list4": "Comandos de voz e interfaces de apuestas basadas en voz",
+      "list5": "Lanzamiento multilingüe global a gran escala"
+    },
+    "section6": {
+      "title": "¿Cómo monetiza ChatBet?",
+      "content": "Modelo de reparto de ingresos con operadores. Más engagement → mejor retención → más apuestas. ChatBet crece a medida que crecen nuestros socios."
+    },
+    "faq": {
+      "tag": "Preguntas Frecuentes",
+      "title": "Preguntas Frecuentes",
+      "intro": "Estas son las preguntas más comunes sobre ChatBet"
+    }
   }
 
 }

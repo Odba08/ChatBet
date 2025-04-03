@@ -463,5 +463,60 @@
       }
     ],
     "cta": "Contact Us"
+  },
+
+  "accordion": {
+    "section1": {
+      "title": "What makes ChatBet hard to replicate?",
+      "content": "According to ChatGPT—it's extremely difficult, for several structural reasons: At surface level, ChatBet may seem like a chatbot. In reality, it’s a robust, intelligent betting platform built specifically for conversational ecosystems. That's why replication is extremely difficult."
+    },
+    "section1_5": {
+      "title": "What problem is ChatBet solving?",
+      "content1": "Web-based betting is outdated. Users are shifting to messaging platforms and conversational interfaces.",
+      "content2": "ChatBet brings betting where users already spend their time—and how they want to interact.",
+      "list1": "4.5B people use messaging apps monthly (Statista, 2024)",
+      "list2": "People spend 3x more time in chat apps than on the web (Data.ai, 2023)",
+      "list3": "48% of users now prefer to interact with AI assistants (Gartner, 2024)",
+      "list4": "70% of Gen Z prefers chat or voice over websites or apps (Deloitte, 2024)",
+      "content3": "AI-driven bots are rapidly gaining traction—demonstrating global appetite for conversational AI."
+    },
+    "section2": {
+      "title": "What’s the total addressable market (TAM)?",
+      "content": "The global iGaming market is projected to surpass $90B by 2026. Messaging-based betting is still a blue ocean, especially in emerging markets (LatAm, Africa, Asia)."
+    },
+    "section3": {
+      "title": "How is ChatBet performing so far?",
+      "list1": "+20% monthly turnover per operator",
+      "list2": "+35% increase in new Gen-Z users",
+      "list3": "+30% retention improvement at 90 days",
+      "list4": "+30% increase in average wager value"
+    },
+    "section4": {
+      "title": "Who’s behind ChatBet?",
+      "content": "We’re a globally distributed team, ready to support operators 24/7 in any timezone. Our edge lies in our structure:",
+      "list1": "Developers – Deep knowledge of AI, infra, and execution",
+      "list2": "Entrepreneurs – We know how to build and scale startups fast",
+      "list3": "Former Multinational Talent – Bring discipline, structure, and compliance",
+      "list4": "Gaming Industry Experts – Know the levers of engagement, risk, and profitability",
+      "list5": "Cross-industry Specialists – Bring fresh thinking, new UX paradigms, and operational creativity",
+      "content2": "We’re not guessing—we’re building with intention and expertise."
+    },
+    "section5": {
+      "title": "What’s the roadmap ahead?",
+      "list1": "Expansion to new verticals: Casino, Fantasy, Lottery",
+      "list2": "AI-powered personalization & predictive odds",
+      "list3": "Deeper integrations with operator CRMs and wallets",
+      "list4": "Voice commands and voice-based betting interfaces",
+      "list5": "Global multilingual rollout at scale"
+    },
+    "section6": {
+      "title": "How does ChatBet monetize?",
+      "content": "Rev-share model with operators. More engagement → better retention → more wagers. ChatBet grows as our partners grow."
+    },
+    "faq": {
+      "tag": "FAQs",
+      "title": "Frequently Asked Questions",
+      "intro": "These are the most commonly asked questions about ChatBet"
+    }
   }
       }

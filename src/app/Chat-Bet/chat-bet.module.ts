@@ -6,6 +6,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LottieComponent, provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { CustomSelectComponent } from './custom-select/custom-select.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { SpotlightComponent } from './pages/spotlight/spotlight.component';
@@ -22,6 +23,7 @@ export function playerFactory() {
     SpotlightComponent
   ],
   imports: [
+    MatExpansionModule,
     CommonModule,
     TranslateModule,
     SlickCarouselModule,
