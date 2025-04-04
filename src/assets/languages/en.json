@@ -345,12 +345,12 @@
           "titleheader":"Contact Us",
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
           "form": {
-            "name": "Your Name*",
-            "contactNumber": "Your Contact Number*",
-            "email": "Your Company Email*",
-            "company": "Your Company Name*",
+            "name": "Name*",
+            "contactNumber": "Contact Number*",
+            "email": "Company Email*",
+            "company": "Company Name*",
             "message": "How Can Our Team Help?",
-            "submit": "Send info"
+            "submit": "Send Info"
           }
         },
 
@@ -412,7 +412,7 @@
                   "description": "Leading LatAm growth and expansion, securing key partnerships, and driving revenue in the region."
                 },
                 {
-                  "name": "Wifi Plata",
+                  "name": "Wify Plata",
                   "position": "CGO",
                   "description": "Driving global expansion beyond LatAm, leading investor negotiations, and executing high-impact growth strategies."
                 },

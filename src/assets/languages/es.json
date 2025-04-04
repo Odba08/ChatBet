@@ -12,7 +12,7 @@
       "security": "Seguridad",
       "compliance": "Cumplimiento",
       "integration": "Integración",
-      "contactUs": "Contáctenos",
+      "contactUs": "Contáctanos",
       "spotlight": "Destacados",
       "aboutUs": "Sobre Nosotros"
     }
@@ -32,7 +32,7 @@
   },
   "trustedBy": {
     "title": "Confiado por los principales operadores de igaming",
-    "subtitle": "Ahora Integrando Con"
+    "subtitle": "Ahora integrando con"
   },
   "whatIsChatBet": {
     "title": "¿Qué es ChatBet?",
@@ -60,7 +60,7 @@
     "cta": "Ver Cómo Funciona"
   },
   "features": {
-    "title": "Potencia Tu Operación Con ChatBet",
+    "title": "Potencia tu operación con ChatBet",
     "descriptionHeader": "Características",
     "description": "ChatBet está diseñado para que los operadores aumenten el engagement, simplifiquen transacciones y mejoren experiencias.",
     "items": [
@@ -102,8 +102,8 @@
   "benefits": {
     "operators": {
       "descriptionHeader": "Beneficios",
-      "title": "¿Por Qué ChatBet? ",
-      "secondtitle": "Apuestas Más Inteligentes, Resultados Mayores",
+      "title": "¿Por qué ChatBet? ",
+      "secondtitle": "Apuestas más inteligentes, resultados mayores",
       "button": "Operadores",
       "description": "Fluido para operadores, sencillo para jugadores—ChatBet impulsa el engagement, retención e ingresos.",
       "items": [
@@ -210,8 +210,8 @@
     ]
   },
   "howItWorks": {
-    "title": "Tan Fácil como 1, 2, 3… ",
-    "titlescond": "Para Operadores y Jugadores",
+    "title": "Tan fácil como 1, 2, 3… ",
+    "titlescond": "Para operadores y jugadores",
     "titleheader": "Cómo Funciona",
     "secondtitle": "Integración perfecta",
     "operators": {
@@ -263,7 +263,7 @@
     }
   },
   "provenSuccess": {
-    "title": "Éxito Comprobado",
+    "title": "Éxito comprobado",
     "subtitle": "Crecimiento Impulsado por IA. Impacto Medible.",
     "description": "ChatBet no solo es fácil—es rentable. Nuestra plataforma con IA ofrece resultados reales.",
     "secondDescription": "ChatBet ayuda a los operadores manteniendo a los usuarios comprometidos, maximizando el valor de las apuestas y optimizando operaciones en múltiples canales.",
@@ -271,7 +271,7 @@
     "cta": "Únete a los Operadores Ganadores"
   },
   "security": {
-    "title": "Protección de Alto Nivel para Operadores y Jugadores",
+    "title": "Protección de alto nivel para operadores y jugadores",
     "titleheader": "Seguridad",
     "description": "ChatBet está construido sobre infraestructura empresarial, garantizando máxima protección para jugadores y operadores.",
     "items": [
@@ -295,7 +295,7 @@
     "cta": "Aprende Más Sobre Seguridad"
   },
   "compliance": {
-    "title": "Apuestas con IA en Cumplimiento Normativo",
+    "title": "Apuestas con IA en cumplimiento normativo",
     "titleheader": "Cumplimiento Normativo",
     "description": "ChatBet está diseñado para operar exclusivamente a través de operadores de apuestas deportivas con licencia, garantizando pleno cumplimiento legal y regulatorio.",
     "secondDescription": "Aunque ChatBet introduce una nueva forma de monetizar—a través de apps de mensajería—funciona puramente como un canal de comunicación.",
@@ -321,7 +321,7 @@
     "cta": "Obtén Detalles de Cumplimiento"
   },
   "integration": {
-    "title": "Integración Rápida y sin Complicaciones",
+    "title": "Integración rápida y sin complicaciones",
     "titleheader": "Integración",
     "description": "Los operadores pueden integrar ChatBet sin esfuerzo—lanzando apuestas por chat en semanas.",
     "items": [
@@ -341,16 +341,16 @@
     "cta": "Comienza a Integrar Hoy"
   },
   "contactUs": {
-    "title": "¡Únete al Futuro de las Apuestas con IA de ChatBet!",
-    "titleheader": "Contáctenos",
+    "title": "¡Únete al futuro de las apuestas con IA de ChatBet!",
+    "titleheader": "Contáctanos",
     "subtitle": "¡Experimenta la emoción! Agenda una demo hoy y descubre cómo la IA de ChatBet revoluciona la experiencia del usuario.",
     "form": {
-      "name": "Tu Nombre*",
-      "contactNumber": "Tu Número de Contacto*",
-      "email": "Tu Correo Corporativo*",
+      "name": "Nombre*",
+      "contactNumber": "Número de Contacto*",
+      "email": "Correo Corporativo*",
       "company": "El Nombre de Tu Empresa*",
       "message": "¿Cómo Puede Ayudarte Nuestro Equipo?",
-      "submit": "Enviar info"
+      "submit": "Enviar Info"
     }
   },
 
@@ -414,7 +414,7 @@
         "description": "Lidera el crecimiento y expansión en LatAm, asegurando alianzas clave e impulsando los ingresos en la región."
       },
       {
-        "name": "Wifi Plata",
+        "name": "Wify Plata",
         "position": "CGO",
         "description": "Impulsa la expansión global más allá de LatAm, liderando negociaciones con inversionistas y ejecutando estrategias de crecimiento de alto impacto."
       },
@@ -425,7 +425,7 @@
       }
     ]
   },
-  "cta": "Contáctenos"
+  "cta": "Contáctanos"
 },
 
   "spotlight": {
