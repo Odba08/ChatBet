@@ -873,6 +873,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   /* Estilos para el Accordion */
+
   .accordion-section {
     padding: 0 7%;
     margin-bottom: 64px;
@@ -884,97 +885,129 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     mat-expansion-panel {
-      border-radius: 20px !important; /* Más redondeado */
+      border-radius: 20px;
+    }
+    padding: 0 7%;
+    margin-bottom: 64px;
+  
+    mat-accordion {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  
+    mat-expansion-panel {
+      border-radius: 20px !important; 
       margin-bottom: 16px;
       background-color: #fff;
-      box-shadow: 0 4px 10px rgba(149, 149, 255, 0.5); /* Sombra con tono #9595ff */
+      box-shadow: 0 4px 10px rgba(149, 149, 255, 0.5); 
       padding: 20px; /* Más grande */
       transition: all 0.3s ease;
-  
-      &:hover {
-        box-shadow: 0 6px 15px rgba(85, 84, 243, 0.4); /* Sombra más pronunciada al pasar el mouse */
+        &:hover {
+        box-shadow: 0 6px 15px rgba(85, 84, 243, 0.4); 
+        border: 2px solid #5554F3; 
       }
+    }
   
       mat-expansion-panel-header {
         border-radius: 20px;
         padding: 0 24px;
         height: auto;
-        min-height: 60px; /* Más grande */
-        /* background-color: #f3f2ff */; /* Fondo claro basado en tus colores */
-  
+        min-height: 60px; 
+        
         mat-panel-title {
+          display: flex;
+          align-items: center;
+  
+          .iconimage {
+            width: 24px;
+            height: auto;
+            margin-right: 10px; 
+          }
+  
           h1, h2, h3, h4, h5, h6 {
             margin: 0;
-             /* Color principal */
+            color: black;
             font-family: "Poppins-Bold", sans-serif;
             font-size: 1.2rem; /* Tamaño más grande */
             @media (max-width: 900px) { font-size: 1.2rem; }
           }
         }
-  
-        &:hover {
-          background-color: #9595ff; /* Color secundario al pasar el mouse */
-          mat-panel-title {
-            h1, h2, h3, h4, h5, h6 {
-              color: #fff; /* Texto blanco al hover */
-            }
-          }
-        }
       }
   
       &[expanded] {
-        border: 2px solid #5554F3; /* Borde al expandirse */
+        border: 2px solid #5554F3;
         mat-expansion-panel-header {
           background-color: #5554F3;
           mat-panel-title {
             h1, h2, h3, h4, h5, h6 {
-              color: #fff; /* Blanco cuando está expandido */
+              color: #fff; 
+            }
+            .iconimage {
+              filter: brightness(0) invert(1); 
             }
           }
         }
       }
   
-      p {
-        font-family: "Poppins", sans-serif;
-        color: black;
-        font-size: 1.1rem; /* Un poco más grande */
+      .panel-content {
         padding: 16px 24px;
-        text-align: justify;
-      }
   
-      ul.lista {
-        padding: 16px 24px;
-        li {
-          font-family: "Poppins", sans-serif;
-          color: black;
-          font-size: 1.1rem;
-          text-align: justify;
-        }
-      }
-
-      img {
-        width: 100%;
-         /* Ajusta según el tamaño deseado */
-        height: auto;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-      }
-
-      /* Mostrar solo en mobile (texto) */
-      .mobile-only {
-        display: block;
-        @media (min-width: 901px) {
-          display: none;
-        }
-      }
-
-      /* Mostrar solo en desktop (imagen) */
-      .desktop-only {
-        display: none;
-        @media (min-width: 901px) {
-          display: block;
+        .content-with-icon {
+          display: flex;
+          align-items: flex-start;
+  
+          .iconimage {
+            width: 24px; 
+            height: auto;
+            margin-right: 15px;
+            flex-shrink: 0; 
+          }
+  
+          .content-text {
+            flex-grow: 1; 
+  
+            p {
+              font-family: "Poppins", sans-serif;
+              color: black;
+              font-size: 1.1rem;
+              text-align: justify;
+              margin: 0 0 10px 0; 
+            }
+  
+            ul.lista {
+              padding: 0;
+              margin: 0 0 10px 0; 
+              li {
+                font-family: "Poppins", sans-serif;
+                color: black;
+                font-size: 1.1rem;
+                text-align: justify;
+              }
+            }
+  
+            .mobile-only {
+              display: block;
+              @media (min-width: 901px) {
+                display: none;
+              }
+            }
+  
+            .desktop-only {
+              display: none;
+              @media (min-width: 901px) {
+                display: block;
+                img {
+                  width: 70%;
+                  height: auto;
+                  object-fit: cover;
+                  display: block;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
         }
       }
     }
-  }
+  

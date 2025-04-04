@@ -130,7 +130,7 @@
     <div class="tag">
       <span class="TitleTag">{{ 'accordion.faq.tag' | translate }}</span>
     </div>
-    <h1>{{ 'accordion.faq.title' | translate }}</h1>
+    <h1>{{ 'accordion.faq.title' | translate }}</h1> <br />
     <div class="text">
       <p>{{ 'accordion.faq.intro' | translate }} <br /><br /></p>
     </div>
@@ -138,103 +138,157 @@
 
   <mat-accordion>
     <!-- Panel 1 -->
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      <h1>{{ 'accordion.section1.title' | translate }}</h1>
-    </mat-panel-title>
-  </mat-expansion-panel-header>
-  <div class="panel-content">
-    <p class="mobile-only">{{ 'accordion.section1.content' | translate }}</p>
-    <img class="desktop-only" src="../../../../assets/AboutUs/AboutUs.png" alt="ChatBet Illustration">
-  </div>
-</mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
+          <h1>{{ 'accordion.section1.title' | translate }}</h1>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <p class="mobile-only">{{ 'accordion.section1.content' | translate }}</p>
+            <img class="desktop-only" src="../../../../assets/AboutUs/AboutUs.png" alt="ChatBet Illustration">
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
 
     <!-- Panel 1.5 -->
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
           <h2>{{ 'accordion.section1_5.title' | translate }}</h2>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>{{ 'accordion.section1_5.content1' | translate }}</p>
-      <p>{{ 'accordion.section1_5.content2' | translate }}</p>
-      <ul class="lista">
-        <li>{{ 'accordion.section1_5.list1' | translate }}</li>
-        <li>{{ 'accordion.section1_5.list2' | translate }}</li>
-        <li>{{ 'accordion.section1_5.list3' | translate }}</li>
-        <li>{{ 'accordion.section1_5.list4' | translate }}</li>
-      </ul>
-      <p>{{ 'accordion.section1_5.content3' | translate }}</p>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <p>{{ 'accordion.section1_5.content1' | translate }}</p>
+            <p>{{ 'accordion.section1_5.content2' | translate }}</p>
+            <ul class="lista">
+              <li>{{ 'accordion.section1_5.list1' | translate }}</li>
+              <li>{{ 'accordion.section1_5.list2' | translate }}</li>
+              <li>{{ 'accordion.section1_5.list3' | translate }}</li>
+              <li>{{ 'accordion.section1_5.list4' | translate }}</li>
+            </ul>
+            <p>{{ 'accordion.section1_5.content3' | translate }}</p>
+          </div>
+        </div>
+      </div>
     </mat-expansion-panel>
 
     <!-- Panel 2 -->
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
           <h2>{{ 'accordion.section2.title' | translate }}</h2>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>{{ 'accordion.section2.content' | translate }}</p>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <p>{{ 'accordion.section2.content' | translate }}</p>
+          </div>
+        </div>
+      </div>
     </mat-expansion-panel>
 
     <!-- Panel 3 -->
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
           <h3>{{ 'accordion.section3.title' | translate }}</h3>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <ul class="lista">
-        <li>{{ 'accordion.section3.list1' | translate }}</li>
-        <li>{{ 'accordion.section3.list2' | translate }}</li>
-        <li>{{ 'accordion.section3.list3' | translate }}</li>
-        <li>{{ 'accordion.section3.list4' | translate }}</li>
-      </ul>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <ul class="lista">
+              <li>{{ 'accordion.section3.list1' | translate }}</li>
+              <li>{{ 'accordion.section3.list2' | translate }}</li>
+              <li>{{ 'accordion.section3.list3' | translate }}</li>
+              <li>{{ 'accordion.section3.list4' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </mat-expansion-panel>
 
     <!-- Panel 4 -->
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
           <h4>{{ 'accordion.section4.title' | translate }}</h4>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>{{ 'accordion.section4.content' | translate }}</p>
-      <ul class="lista">
-        <li>{{ 'accordion.section4.list1' | translate }}</li>
-        <li>{{ 'accordion.section4.list2' | translate }}</li>
-        <li>{{ 'accordion.section4.list3' | translate }}</li>
-        <li>{{ 'accordion.section4.list4' | translate }}</li>
-        <li>{{ 'accordion.section4.list5' | translate }}</li>
-      </ul>
-      <p>{{ 'accordion.section4.content2' | translate }}</p>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <p>{{ 'accordion.section4.content' | translate }}</p>
+            <ul class="lista">
+              <li>{{ 'accordion.section4.list1' | translate }}</li>
+              <li>{{ 'accordion.section4.list2' | translate }}</li>
+              <li>{{ 'accordion.section4.list3' | translate }}</li>
+              <li>{{ 'accordion.section4.list4' | translate }}</li>
+              <li>{{ 'accordion.section4.list5' | translate }}</li>
+            </ul>
+            <p>{{ 'accordion.section4.content2' | translate }}</p>
+          </div>
+        </div>
+      </div>
     </mat-expansion-panel>
 
     <!-- Panel 5 -->
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
           <h5>{{ 'accordion.section5.title' | translate }}</h5>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <ul class="lista">
-        <li>{{ 'accordion.section5.list1' | translate }}</li>
-        <li>{{ 'accordion.section5.list2' | translate }}</li>
-        <li>{{ 'accordion.section5.list3' | translate }}</li>
-        <li>{{ 'accordion.section5.list4' | translate }}</li>
-        <li>{{ 'accordion.section5.list5' | translate }}</li>
-      </ul>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <ul class="lista">
+              <li>{{ 'accordion.section5.list1' | translate }}</li>
+              <li>{{ 'accordion.section5.list2' | translate }}</li>
+              <li>{{ 'accordion.section5.list3' | translate }}</li>
+              <li>{{ 'accordion.section5.list4' | translate }}</li>
+              <li>{{ 'accordion.section5.list5' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </mat-expansion-panel>
 
     <!-- Panel 6 -->
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <img src="../../../../assets/Icon/icon-mat.png" class="iconimage" alt="Icon">
           <h6>{{ 'accordion.section6.title' | translate }}</h6>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>{{ 'accordion.section6.content' | translate }}</p>
+      <div class="panel-content">
+        <div class="content-with-icon">
+          <img src="../../../../assets/Icon/chat-bet-mat.png" class="iconimage" alt="Icon">
+          <div class="content-text">
+            <p>{{ 'accordion.section6.content' | translate }}</p>
+          </div>
+        </div>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
 </div>
