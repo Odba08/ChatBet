@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
@@ -20,7 +20,13 @@ export class MainPageComponent {
   public operatorsType: 'operators' | 'players' = 'operators';
   public NewOperatorsType: 'operators' | 'players' = 'operators';
   isMenuOpen: boolean = false;
+  isScrolled = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    this.isScrolled = scrollPosition > 50; // Cambia el valor según cuándo quieras que se active
+  }
   @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
   @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
 

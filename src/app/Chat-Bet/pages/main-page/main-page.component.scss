@@ -149,6 +149,26 @@ h3{
         margin-bottom: 100px;
         
     }
+
+    header {
+        position: static;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &.scrolled {
+          position: fixed;
+          transform: translateY(0);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+          // Ajustamos el margen cuando el header es fixed
+          .section-header:first-child {
+            margin-right: 7%; // Cambia de -7% a 7%
+            margin-left: -7%; // Mantenemos el izquierdo si es necesario
+          }
+        }
+      }
     .section{
         position: relative;
         /* max-width: 1280px; */
