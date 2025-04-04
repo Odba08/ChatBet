@@ -81,7 +81,7 @@
       </div>
 
       <div class="image-first-container">
-        <img src="../../../../assets/imagen-inicial.png" alt="" />
+        <img [src]="currentImages['homepage']" alt="" />
         <img class="lastimage" [src]="currentImages['img2']" alt="" />
       </div>
 
@@ -157,7 +157,8 @@
         </div>
       </div>
       <div class="chatbetimage" style="display: flex">
-        <img src="../../../../assets/prueba.png" alt="" />
+        <img class="lastimage" [src]="currentImages['whatischatbet']" alt="" />
+
       </div>
     </div>
   </div>
@@ -184,49 +185,49 @@
     <div class="image-carousel">
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon1.png" alt="" />
-        <h2>{{ 'features.items.0.title' | translate }}</h2>
+        <h3>{{ 'features.items.0.title' | translate }}</h3>
         <p>{{ 'features.items.0.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/ia.png" alt="" />
-        <h2>{{ 'features.items.1.title' | translate }}</h2>
+        <h3>{{ 'features.items.1.title' | translate }}</h3>
         <p>{{ 'features.items.1.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/moneda.png" alt="" />
-        <h2>{{ 'features.items.2.title' | translate }}</h2>
+        <h3>{{ 'features.items.2.title' | translate }}</h3>
         <p>{{ 'features.items.2.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon3.png" alt="" />
-        <h2>{{ 'features.items.3.title' | translate }}</h2>
+        <h3>{{ 'features.items.3.title' | translate }}</h3>
         <p>{{ 'features.items.3.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/icon2.png" alt="" />
-        <h2>{{ 'features.items.4.title' | translate }}</h2>
+        <h3>{{ 'features.items.4.title' | translate }}</h3>
         <p>{{ 'features.items.4.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/tuerca.png" alt="" />
-        <h2>{{ 'features.items.5.title' | translate }}</h2>
+        <h3>{{ 'features.items.5.title' | translate }}</h3>
         <p>{{ 'features.items.5.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/balon.png" alt="" />
-        <h2>{{ 'features.items.6.title' | translate }}</h2>
+        <h3>{{ 'features.items.6.title' | translate }}</h3>
         <p>{{ 'features.items.6.description' | translate }}</p>
       </div>
 
       <div class="carousel-item">
         <img src="../../../../assets/Icon/dosmonedas.png" alt="" />
-        <h2>{{ 'features.items.7.title' | translate }}</h2>
+        <h3>{{ 'features.items.7.title' | translate }}</h3>
         <p>{{ 'features.items.7.description' | translate }}</p>
       </div>
     </div>
@@ -242,7 +243,7 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="image-section" style="display: flex">
-        <img src="../../../../assets/img/Frame2.png" alt="" />
+        <img [src]="currentImages['beneficios']" alt="" />
       </div>
       <div class="text">
         <span class="TitleTag" id="benefits">{{ 'benefits.operators.descriptionHeader' | translate }}</span>
@@ -462,7 +463,9 @@
         </div>
       </div>
       <div class="image-section" style="display: flex">
-        <img src="../../../../assets/comofunciona.png" alt="" />
+     <!--    <img src="../../../../assets/comofunciona.png" alt="" /> -->
+        <img [src]="currentImages['howitswork']" alt="" />
+
       </div>
     </div>
   </div>
@@ -480,14 +483,16 @@
         <div class="texto">
           <p>{{ 'provenSuccess.description' | translate }}</p>
         </div>
+        <br>
         <p>{{ 'provenSuccess.secondDescription' | translate }}</p>
+        <br>
         <p>{{ 'provenSuccess.thirdDescription' | translate }}</p>
         <div class="completebutton">
           <a href="#contactanos">{{ 'provenSuccess.cta' | translate }}</a>
         </div>
       </div>
       <div class="image-provensection" style="display: flex">
-        <img [src]="currentImages['img1']" alt="" />
+        <img [src]="currentImages['provensucces']" alt="" />
       </div>
     </div>
   </div>

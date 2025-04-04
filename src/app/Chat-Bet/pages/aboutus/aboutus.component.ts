@@ -32,7 +32,9 @@ constructor(
       footer2: '../../../../assets/Background/2footer-es.png',
       phoneimage: '../../../../assets/img/phone-es.png',
       Frame4: '../../../../assets/img/Frame4-es.png',
-      reviewphone: '../../../../assets/Background/review-tlf2.svg'
+      reviewphone: '../../../../assets/Background/review-tlf2.svg',
+      whatischatbet: '../../../../assets/HomePage/whatischatbet-es.png',
+
 
     },
     en: {
@@ -48,7 +50,9 @@ constructor(
       footer2: 'assets/Background/2footer-en.png',
       phoneimage: '../../../../assets/img/phone-en.png',
       Frame4: '../../../../assets/img/Frame4.png',
-      reviewphone: '../../../../assets/Background/review-en-tlf2.svg'
+      reviewphone: '../../../../assets/Background/review-en-tlf2.svg',
+      whatischatbet: '../../../../assets/HomePage/whatischatbet-en.png',
+
 
     }
   };

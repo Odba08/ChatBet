@@ -56,7 +56,7 @@ export class MainPageComponent {
       img1: '../../../../assets/img/NEnEsp.png',
       img2: './assets/img/incremento.png',
       img3: '../../../../assets/Icon/video.png',
-      img4: '../../../../assets/Background/en-carrusel.png',
+      img4: '../../../../assets/Background/carrusel-es.png',
       img5: './assets/img/Frame1-es.svg',
       third: './assets/img/Frame5.png',
       second: './assets/img/second-phone.png',
@@ -66,6 +66,11 @@ export class MainPageComponent {
       phoneimage: '../../../../assets/img/phone-es.png',
       Frame4: '../../../../assets/img/Frame4-es.png',
       reviewphone: '../../../../assets/Background/review-tlf2.svg',
+      homepage: '../../../../assets/HomePage/imagen-inicial-es.gif',
+      whatischatbet: '../../../../assets/HomePage/whatischatbet-es.png',
+      beneficios: '../../../../assets/HomePage/beneficios-es.png',
+      howitswork: '../../../../assets/HomePage/howitswork-es.png',
+      provensucces: '../../../../assets/HomePage/provensucces-es.png',
     },
     en: {
       img1: '../../../../assets/img/NEnEsp.png',
@@ -81,6 +86,15 @@ export class MainPageComponent {
       phoneimage: '../../../../assets/img/phone-en.png',
       Frame4: '../../../../assets/img/Frame4.png',
       reviewphone: '../../../../assets/Background/review-en-tlf2.svg',
+      homepage: '../../../../assets/HomePage/imagen-inicial-en.gif',
+      whatischatbet: '../../../../assets/HomePage/whatischatbet-en.png',
+      beneficios: '../../../../assets/HomePage/beneficios-en.png',
+      howitswork: '../../../../assets/HomePage/howitswork-en.png',
+      provensucces: '../../../../assets/HomePage/provensucces-en.png',
+
+
+    
+
     },
   };
 
