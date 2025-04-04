@@ -8,7 +8,16 @@ h1,h2,h3,h4,h5,h6{
     color:#5554F3;
   }
   
-  
+  .TitleBoldul{
+    font-family: "Poppins-Medium", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    span{
+        color: black
+    
+    }
+  }
   .TitleBold3{
     font-family: "Poppins-Medium", sans-serif;
     font-weight: 700;

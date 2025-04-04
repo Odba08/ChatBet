@@ -72,7 +72,7 @@
         <p>{{ notice.date }}</p>
         <ul *ngIf="notice.details">
           <li *ngFor="let detail of notice.details" class="list-item">
-            <span class="TitleBold3">{{ detail.label | translate }}</span>
+            <span class="TitleBoldul">{{ detail.label | translate }}</span>
             {{ detail.text }}
           </li>
         </ul>
