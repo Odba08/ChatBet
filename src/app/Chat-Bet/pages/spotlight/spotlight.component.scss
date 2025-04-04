@@ -10,9 +10,13 @@ h1,h2,h3,h4,h5,h6{
   
   
   .TitleBold3{
-    font-family: "Poppins-Bold", sans-serif;
+    font-family: "Poppins-Medium", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
     span{
         color: black
+    
     }
   }
   
@@ -80,9 +84,22 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Poppins-Bold", sans-serif;
     margin-top: 24px;
     line-height: 1.6; /* Mejora la legibilidad y evita superposiciones */
-    margin-bottom: 1.7rem;
     @media (max-width: 900px){
         font-size: 2rem;
+        align-items: center;
+        font-weight: 900;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+
+    }
+  }
+
+  .titlebold5{
+    font-family: "Poppins", sans-serif;
+    font-weight:200;
+    font-size: 3.5rem;
+
+    @media (max-width: 900px){
         align-items: center;
         font-weight: 900;
         width: 100%;
@@ -127,6 +144,7 @@ h1,h2,h3,h4,h5,h6{
         .section-header:first-child {
             margin-left: -7%;
             margin-right: -7%;
+            
 
           }
         .background{
@@ -1218,5 +1236,9 @@ h1,h2,h3,h4,h5,h6{
     .infonotice{
        margin-left: 2rem;
         width: 75%;
+
+       ul{
+            flex-direction: column;
+        }
     }    
 }

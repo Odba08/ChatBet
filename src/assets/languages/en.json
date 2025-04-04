@@ -109,19 +109,19 @@
             "items": [
               {
                 "title": "Boost Player Retention:",
-                "description": "+30% improvement in 90-day retention"
+                "description": "+30% improvement in 90-day retention."
               },
               {
                 "title": "Increase Betting Volume:",
-                "description": "Players bet more frequently with AI-driven prompts"
+                "description": "Players bet more frequently with AI-driven prompts."
               },
               {
                 "title": "Drive-up GGR:",
-                "description": "+20% monthly increase in GGR"
+                "description": "+20% monthly increase in GGR."
               },
               {
                 "title": "Effortless Integration:",
-                "description": "Plug & play setup with minimal effort"
+                "description": "Plug & play setup with minimal effort."
               }
             ]
           },
@@ -131,19 +131,19 @@
             "items": [
               {
                 "title": "Bet as Easily as Chatting:",
-                "description": "No apps or websites, just type and play"
+                "description": "No apps or websites, just type and play."
               },
               {
                 "title": "Hyper-Personalized Bets:",
-                "description": "AI tailors recommendations for a unique experience"
+                "description": "AI tailors recommendations for a unique experience."
               },
               {
                 "title": "Real-Time Optimization:",
-                "description": "AI refines bets on the fly, driving higher engagement"
+                "description": "AI refines bets on the fly, driving higher engagement."
               },
               {
                 "title": "Faster Transactions:",
-                "description": "Place bets and withdraw winnings instantly"
+                "description": "Place bets and withdraw winnings instantly."
               }
             ]
           },
@@ -364,23 +364,23 @@
               "highlight2": "frictionless betting experience through messaging apps."
             },
             "description2": {
-              "highlight1": "ChatBet is NOT a consumer-facing betting app",
-              "part1": ".Instead,",
-              "highlight2": "we power leading iGaming operators",
-              "part2": ",enabling them to enhance player engagement and revenue with",
+              "highlight1": "ChatBet is NOT a consumer-facing betting app.",
+              "part1": "Instead,",
+              "highlight2": "we power leading iGaming operators,",
+              "part2": "enabling them to enhance player engagement and revenue with",
               "highlight3": "AI-driven, chat-based betting."
             },
             "changingGame": {
               "title": "How ChatBet is Changing the Game",
               "paragraph1": {
                 "part1": "ChatBet was born from a bold vision: ",
-                "highlight1": "to make betting as easy as chatting with a friend",
-                "part2": ".In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat."
+                "highlight1": "to make betting as easy as chatting with a friend.",
+                "part2": "In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat."
               },
               "paragraph2": {
                 "part1": "From a startup idea to becoming a",
-                "highlight1": "trusted partner of industry leaders like AWS, OpenAI, and Meta",
-                "part2": ",ChatBet is revolutionizing the way players and operators experience betting."
+                "highlight1": "trusted partner of industry leaders like AWS, OpenAI, and Meta,",
+                "part2": "ChatBet is revolutionizing the way players and operators experience betting."
               }
             },
             "mission": {

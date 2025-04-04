@@ -109,19 +109,19 @@
       "items": [
         {
           "title": "Aumenta la Retención de Jugadores: ",
-          "description": "+30% de mejora en retención a 90 días"
+          "description": "+30% de mejora en retención a 90 días."
         },
         {
           "title": "Incrementa el Volumen de Apuestas: ",
-          "description": "Los jugadores apuestan más frecuentemente con sugerencias de IA"
+          "description": "Los jugadores apuestan más frecuentemente con sugerencias de IA."
         },
         {
           "title": "Impulsa el GGR: ",
-          "description": "+20% de aumento mensual en GGR"
+          "description": "+20% de aumento mensual en GGR."
         },
         {
           "title": "Integración sin Esfuerzo: ",
-          "description": "Configuración plug & play con mínimo esfuerzo"
+          "description": "Configuración plug & play con mínimo esfuerzo."
         }
       ]
     },
@@ -131,19 +131,19 @@
       "items": [
         {
           "title": "Apuesta Tan Fácil Como Chatear: ",
-          "description": "Sin apps o sitios web, solo escribe y juega"
+          "description": "Sin apps o sitios web, solo escribe y juega."
         },
         {
           "title": "Apuestas Hiper-Personalizadas: ",
-          "description": "La IA adapta recomendaciones para una experiencia única"
+          "description": "La IA adapta recomendaciones para una experiencia única."
         },
         {
           "title": "Optimización en Tiempo Real: ",
-          "description": "La IA ajusta apuestas sobre la marcha, aumentando el engagement"
+          "description": "La IA ajusta apuestas sobre la marcha, aumentando el engagement."
         },
         {
           "title": "Transacciones Más Rápidas: ",
-          "description": "Realiza apuestas y retira ganancias al instante"
+          "description": "Realiza apuestas y retira ganancias al instante."
         }
       ]
     },
@@ -361,27 +361,27 @@
   "subtitle": "Una solución B2B para operadores de iGaming",
   "description1": {
     "part1": "ChatBet fue creado para ",
-    "highlight1": "redefinir cómo los operadores de iGaming interactúan con los jugadores",
-    "part2": ", ofreciendo una ",
+    "highlight1": "redefinir cómo los operadores de iGaming interactúan con los jugadores,",
+    "part2": "ofreciendo una ",
     "highlight2": "experiencia de apuestas sin fricciones a través de apps de mensajería."
   },
   "description2": {
-    "highlight1": "ChatBet NO es una aplicación de apuestas para consumidores finales",
-    "part1": ". En cambio, ",
-    "highlight2": "potenciamos a los principales operadores de iGaming",
-    "part2": ", permitiéndoles mejorar el engagement de los jugadores y sus ingresos con ",
+    "highlight1": "ChatBet NO es una aplicación de apuestas para consumidores finales.",
+    "part1": "En cambio, ",
+    "highlight2": "potenciamos a los principales operadores de iGaming, ",
+    "part2": "permitiéndoles mejorar el engagement de los jugadores y sus ingresos con ",
     "highlight3": "apuestas basadas en chat impulsadas por IA."
   },
   "changingGame": {
     "title": "Cómo ChatBet está cambiando el juego",
     "paragraph1": {
       "part1": "ChatBet nació de una visión audaz: ",
-      "highlight1": "hacer que apostar sea tan fácil como chatear con un amigo",
-      "part2": ". En un mundo donde los usuarios interactúan más que nunca a través de mensajes, vimos la oportunidad de eliminar las fricciones en las apuestas. Sin apps, sin sitios web, solo apuestas simples mediante chat con tecnología de IA."
+      "highlight1": "hacer que apostar sea tan fácil como chatear con un amigo.",
+      "part2": "En un mundo donde los usuarios interactúan más que nunca a través de mensajes, vimos la oportunidad de eliminar las fricciones en las apuestas. Sin apps, sin sitios web, solo apuestas simples mediante chat con tecnología de IA."
     },
     "paragraph2": {
       "part1": "De una idea de startup a convertirnos en ",
-      "highlight1": "socio estratégico de líderes de la industria como AWS, OpenAI y Meta",
+      "highlight1": "socio estratégico de líderes de la industria como AWS, OpenAI y Meta, ",
       "part2": ", ChatBet está revolucionando la forma en que jugadores y operadores experimentan las apuestas."
     }
   },

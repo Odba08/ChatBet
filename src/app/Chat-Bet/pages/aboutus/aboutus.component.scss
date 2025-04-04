@@ -7,7 +7,28 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins-Bold", sans-serif;
     color: #5554F3;
   }
+
+  .titlebold5{
+    font-family: "Poppins", sans-serif;
+    font-weight:100;
+    font-size: 3.5rem;
+    @media (max-width: 900px){
+        align-items: center;
+        font-weight: 900;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+
+    }
+  }
   
+ 
+  .TitleBold7{
+    font-family: "Poppins-Medium", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: -10px;
+    font-size: 1.2rem;
+    }
   .TitleBold3 {
     font-family: "Poppins-Bold", sans-serif;
     margin-bottom: -4px;
@@ -99,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins-Bold", sans-serif;
     margin-top: 24px;
     line-height: 1.6; /* Mejora la legibilidad y evita superposiciones */
-    margin-bottom: 1.7rem;
+    /* margin-bottom: 1.7rem; */
     @media (max-width: 900px) {
       font-size: 2rem;
       align-items: center;
@@ -334,6 +355,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     width: 40%;
+    @media screen and (max-width: 900px) { width: 100%; }
+
     img {
       width: 100%;
       height: 100%;
@@ -892,6 +915,7 @@ h1, h2, h3, h4, h5, h6 {
   
     mat-expansion-panel {
       border-radius: 20px;
+ 
     }
     padding: 0 7%;
     margin-bottom: 64px;
@@ -957,7 +981,7 @@ h1, h2, h3, h4, h5, h6 {
       }
   
       .panel-content {
-        padding: 16px 24px;
+        padding: 16px 5px;
   
         .content-with-icon {
           display: flex;
@@ -979,6 +1003,11 @@ h1, h2, h3, h4, h5, h6 {
               font-size: 1.1rem;
               text-align: justify;
               margin: 0 0 10px 0; 
+
+              @media (max-width: 900px) {
+                font-size: 0.9rem; 
+                
+              }
             }
   
             ul.lista {

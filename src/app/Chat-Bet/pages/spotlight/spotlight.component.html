@@ -49,9 +49,11 @@
     <div class="first-section-container">
       <div class="text">
         <br>
-        <h1>{{ 'spotlight.title' | translate }}</h1>
+        
+        <h1 class="titlebold5">{{ 'spotlight.title' | translate }}</h1>
         <br>
         <span class="TitleBold3">{{ 'spotlight.subtitle' | translate }}</span>
+        <br><br>
         <p>{{ 'spotlight.description' | translate }}</p>
       </div>
     </div>
@@ -69,7 +71,7 @@
         <h2>{{ notice.title }}</h2>
         <p>{{ notice.date }}</p>
         <ul *ngIf="notice.details">
-          <li *ngFor="let detail of notice.details">
+          <li *ngFor="let detail of notice.details" class="list-item">
             <span class="TitleBold3">{{ detail.label | translate }}</span>
             {{ detail.text }}
           </li>

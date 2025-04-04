@@ -55,7 +55,7 @@ export class MainPageComponent {
     es: {
       img1: '../../../../assets/img/NEnEsp.png',
       img2: './assets/img/incremento.png',
-      img3: '../../../../assets/Icon/video.png',
+      img3: '../../../../assets/HomePage/miraen.png',
       img4: '../../../../assets/Background/carrusel-es.png',
       img5: './assets/img/Frame1-es.svg',
       third: './assets/img/Frame5.png',
@@ -71,6 +71,7 @@ export class MainPageComponent {
       beneficios: '../../../../assets/HomePage/beneficios-es.png',
       howitswork: '../../../../assets/HomePage/howitswork-es.png',
       provensucces: '../../../../assets/HomePage/provensucces-es.png',
+      inversionitas:'../../../../assets/HomePage/line.png',
     },
     en: {
       img1: '../../../../assets/img/NEnEsp.png',
@@ -91,9 +92,7 @@ export class MainPageComponent {
       beneficios: '../../../../assets/HomePage/beneficios-en.png',
       howitswork: '../../../../assets/HomePage/howitswork-en.png',
       provensucces: '../../../../assets/HomePage/provensucces-en.png',
-
-
-    
+      inversionitas:'../../../../assets/inversionistas.png',
 
     },
   };
