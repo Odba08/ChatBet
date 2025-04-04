@@ -3,7 +3,7 @@
     <!-- <img src="./assets/Background/nuevoheader.png" alt="" /> -->
   </div>
 
-  <header>
+  <header [class.scrolled]="isScrolled">
     <div class="section-header">
 
       <div class="mobileheader">
@@ -69,7 +69,7 @@
         </p>
         
         <br>
-       
+        <br><br>
         <div class="completebutton">
           <a href="#contactanos">{{ 'aboutUs.cta' | translate }}</a>
         </div>
@@ -84,13 +84,13 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
-        <h1>{{ 'aboutUs.changingGame.title' | translate }}</h1>
+        <h1>{{ 'aboutUs.changingGame.title' | translate }}</h1><br>
         <div>
           <p>
             {{ 'aboutUs.changingGame.paragraph1.part1' | translate }}
             <span class="TitleBold3">{{ 'aboutUs.changingGame.paragraph1.highlight1' | translate }}</span>
             {{ 'aboutUs.changingGame.paragraph1.part2' | translate }}
-          </p>
+          </p><br>
           <p>
             {{ 'aboutUs.changingGame.paragraph2.part1' | translate }}
             <span class="TitleBold3">{{ 'aboutUs.changingGame.paragraph2.highlight1' | translate }}</span>

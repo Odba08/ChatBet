@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { AnimationOptions } from 'ngx-lottie';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../../lenguage/language.service';
@@ -12,6 +12,13 @@ import { LanguageService } from '../../../lenguage/language.service';
 export class SpotlightComponent implements OnInit {
   isMenuOpen: boolean = false;
 currentImages: any;
+isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    this.isScrolled = scrollPosition > 50; // Cambia el valor según cuándo quieras que se active
+  }
 
 constructor(
       private translate: TranslateService, 
