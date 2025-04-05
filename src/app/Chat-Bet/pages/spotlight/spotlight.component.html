@@ -38,8 +38,23 @@
         <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <a (click)="switchLanguage('en'); false">En</a>
-          <a (click)="switchLanguage('es'); false">Es</a>
+          <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
+          <img 
+            (click)="switchLanguage('en')"
+            [src]="currentLanguage === 'en' 
+              ? '../../../../assets/header/en-on.png' 
+              : '../../../../assets/header/en-off.png'" 
+            alt="English"
+          >
+                  
+                  <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
+                  <img 
+                  (click)="switchLanguage('es')"
+                  [src]="currentLanguage === 'es' 
+                    ? '../../../../assets/header/es-on.png' 
+                    : '../../../../assets/header/es-off.png'" 
+                  alt="Español"
+        >
         </div>
       </div>
     </div>
