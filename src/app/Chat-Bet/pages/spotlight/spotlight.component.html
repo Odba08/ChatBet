@@ -38,7 +38,7 @@
         <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
+          <a (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
           <img 
             (click)="switchLanguage('en')"
             [src]="currentLanguage === 'en' 
@@ -47,7 +47,7 @@
             alt="English"
           >
                   
-                  <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
+                  <a (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
                   <img 
                   (click)="switchLanguage('es')"
                   [src]="currentLanguage === 'es' 
@@ -99,15 +99,3 @@
    
   </div>
 </div>
-
-
-
-<!-- <div class="backgroundline">
-  <div class="fotter1">
-    <img [src]="currentImages['footer']" alt="" />
-  </div>
-
-  <div class="fotter2">
-    <img [src]="currentImages['footer2']" alt="" />
-  </div>
-</div> -->

@@ -39,16 +39,16 @@
         <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
         <span class="divisor">|</span>
         <div class="idioma">
-          <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
+          <a (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
           <img 
-            (click)="switchLanguage('en')"
-            [src]="currentLanguage === 'en' 
-              ? '../../../../assets/header/en-on.png' 
-              : '../../../../assets/header/en-off.png'" 
-            alt="English"
-          >
+              (click)="switchLanguage('en')"
+              [src]="currentLanguage === 'en' 
+                ? '../../../../assets/header/en-on.png'  
+                : '../../../../assets/header/en-off.png'" 
+              alt="English"
+            >
                   
-                  <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
+                  <a (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
                   <img 
                   (click)="switchLanguage('es')"
                   [src]="currentLanguage === 'es' 

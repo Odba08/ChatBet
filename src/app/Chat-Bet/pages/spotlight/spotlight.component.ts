@@ -63,6 +63,7 @@ constructor(
 
   ngOnInit(): void {
     this.languageService.getCurrentLang().subscribe(lang => {
+      this.currentLanguage = lang;
       this.currentImages = this.imagePaths[lang];
     });
   }
@@ -91,6 +92,7 @@ constructor(
       switchLanguage(language: string) {
         this.translate.use(language);
         this.languageService.setLanguage(language); // Esto notificará a todos los componentes
+        this.currentLanguage = language;
         this.isMenuOpen = false;
         // Eliminar this.currentLanguage y this.currentImages ya que se manejan en la suscripción
       }

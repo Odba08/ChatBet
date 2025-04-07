@@ -434,7 +434,26 @@
     "description": "Stay up to date with ChatBet's latest achievements, industry recognitions, and global expansion. From exclusive event invitations to game-changing partnerships, this is where we showcase our journey as we redefine the future of betting.",
     "notices": [
       {
-        "image": "../../../../assets/notice/notice1.png",
+        "image": "assets/notice/notice3.png",
+        "title": "ChatBet at BIS Sigma Brazil – All In on LATAM",
+        "date": "10-jan-2025",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": "April 7-10, 2025"
+          },
+          {
+            "label": "Location:",
+            "text": " BIS Sigma Brazil, Sao Paulo"
+          }
+        ],
+        "content": [
+          "We’re excited to be on the ground at BIS Sigma Brazil, happening April 7–10, 2025 in São Paulo. While we won’t have a booth, our sales and growth team will be actively networking, scheduling demos, and showcasing the latest updates that are transforming the chat betting industry.",
+          "This marks a strategic step in our commitment to Brazil and the broader LATAM market. If you're attending, make sure to connect with us — let's build the future of betting together."
+        ]
+      },
+      {
+        "image": "assets/notice/notice1.png",
         "title": "ChatBet Takes the Stage at ICE 2025 in Barcelona!",
         "date": "10-jan-2025",
         "details": [
@@ -453,7 +472,7 @@
         ]
       },
       {
-        "image": "../../../../assets/notice/notice2.png",
+        "image": "assets/notice/notice2.png",
         "title": "ChatBet Named Finalist in the ICE 2025 Startup Pitch!",
         "date": "22-jan-2025",
         "content": [

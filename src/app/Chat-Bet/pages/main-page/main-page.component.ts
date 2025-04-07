@@ -25,7 +25,7 @@ export class MainPageComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    this.isScrolled = scrollPosition > 50; // Cambia el valor según cuándo quieras que se active
+    this.isScrolled = scrollPosition > 50;
   }
   @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
   @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
