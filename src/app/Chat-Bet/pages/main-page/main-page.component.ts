@@ -242,6 +242,7 @@ export class MainPageComponent {
         }
       }
     }
+    
     playVideo() {
       const gifImage = document.getElementById('gifImage');
       const video: HTMLVideoElement = this.videoElement.nativeElement;
