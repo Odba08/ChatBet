@@ -6,7 +6,6 @@ import { ToastrService } from 'ngx-toastr';
 import { AnimationOptions } from 'ngx-lottie';
 import { countries } from '../../../model/contry-data.store';
 import { LanguageService } from '../../../lenguage/language.service';
-import { data, error } from 'jquery';
 
 @Component({
   selector: 'app-chatbet-main-page',
@@ -180,29 +179,40 @@ export class MainPageComponent {
     }
 
     async send() {
-      if (this.form.invalid || !this.dialCode ) {
+      // Verifica primero si el dialCode está establecido
+      if (!this.dialCode) {
         if (this.currentLanguage === 'es') {
-          this.toastr.error('Por favor, complete todos los campos antes de enviar');
-          console.log('Formulario inválido:', this.form);
-          console.log(data);
-          console.error('Error:',Response );
-          console.log('Dial Code:', this.dialCode);
-          console.log(error);
+          this.toastr.error('Por favor, seleccione un país');
         } else {
-          this.toastr.error('Please fill in all fields before submitting');
+          this.toastr.error('Please select a country');
         }
         return;
       }
-
-      if (this.form.value.contact.length < this.minLength || this.form.value.contact.length > this.maxLength) {
+    
+      // Marca todos los campos como "touched" para mostrar errores
+      this.form.markAllAsTouched();
+    
+      // Verifica la validez del formulario
+      if (this.form.invalid) {
         if (this.currentLanguage === 'es') {
-          this.toastr.error('Por favor, introduzca un número de contacto válido');
+          this.toastr.error('Por favor, complete todos los campos requeridos');
         } else {
-          this.toastr.error('Please enter a valid contact number');
+          this.toastr.error('Please fill all required fields');
         }
         return;
       }
-  
+    
+      // Verifica la longitud del número de contacto
+      if (this.form.value.contact.length < this.minLength || 
+          this.form.value.contact.length > this.maxLength) {
+        if (this.currentLanguage === 'es') {
+          this.toastr.error(`El número debe tener entre ${this.minLength} y ${this.maxLength} dígitos`);
+        } else {
+          this.toastr.error(`Number must be between ${this.minLength} and ${this.maxLength} digits`);
+        }
+        return;
+      }
+    
       try {
         emailjs.init('OGARtyjIOA2WPHZfL');
         
@@ -211,26 +221,19 @@ export class MainPageComponent {
           from_email: this.form.value.email,
           from_contact: `${this.dialCode} ${this.form.value.contact}`,
           from_empresa: this.form.value.empresa,
-        /*   from_cargo: this.form.value.cargo,
-          from_country: this.form.value.country, */
           message: this.form.value.message,
         });
-
-        /* Cargo: {{from_cargo}}
-          Pais: {{from_country}} */
-  
+    
         if (this.currentLanguage === 'es') {
           this.toastr.success('Mensaje enviado con éxito');
-          console.log('Response:', response);
-          
         } else {
           this.toastr.success('Message sent successfully');
-          console.log('Response:', response);
         }
-  
+    
         this.form.reset();
         this.dialCode = null;
       } catch (error) {
+        console.error('Error al enviar:', error);
         if (this.currentLanguage === 'es') {
           this.toastr.error('Error al enviar el mensaje');
         } else {
@@ -238,7 +241,7 @@ export class MainPageComponent {
         }
       }
     }
-  
+    
     playVideo() {
       const gifImage = document.getElementById('gifImage');
       const video: HTMLVideoElement = this.videoElement.nativeElement;
