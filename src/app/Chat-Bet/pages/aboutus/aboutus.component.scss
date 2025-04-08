@@ -702,7 +702,14 @@ h1, h2, h3, h4, h5, h6 {
     .navigation-buttons button:active { transform: scale(0.95); }
     .navigation-buttons button.hidden { visibility: hidden; }
     .image-section {
-      width: 55%;    
+      width: 55%;   
+      img{
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+        margin-left: 2rem;
+        @media (max-width: 900px) { width: 100%; }
+      }
       @media screen and (max-width: 900px) { width: 100%; }
     }
     img { width: 100%; height: auto; object-fit: cover; }
