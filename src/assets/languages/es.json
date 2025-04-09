@@ -537,6 +537,11 @@
       "title": "Preguntas Frecuentes",
       "intro": "Estas son las preguntas más comunes sobre ChatBet"
     }
+  },
+
+  "footer": {
+    "redes": "Nuestras Redes",
+    "info":"No dude en ponerse en contacto con nosotros"
   }
 
 }
