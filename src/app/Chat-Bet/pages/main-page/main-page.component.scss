@@ -306,7 +306,8 @@ h3{
       }
     .navbar{
         display: flex;
-       
+        cursor: pointer;
+        
         @media (max-width: 900px) {
             position: fixed;
             top: 0;

@@ -24,13 +24,13 @@
       <div class="menu-overlay" [class.active]="isMenuOpen" (click)="toggleMenu()"></div>
 
       <div class="navbar" [class.active]="isMenuOpen">
-        <a href="#feature">{{ 'header.navigation.features' | translate }}</a>
-        <a href="#benefits">{{ 'header.navigation.benefits' | translate }}</a>
-        <a href="#HowDoesitWork">{{ 'header.navigation.howItWorks' | translate }}</a>
-        <a href="#security">{{ 'header.navigation.security' | translate }}</a>
-        <a href="#compliance">{{ 'header.navigation.compliance' | translate }}</a>
-        <a href="#integration">{{ 'header.navigation.integration' | translate }}</a>
-        <a href="#contactus">{{ 'header.navigation.contactUs' | translate }}</a>
+        <a  (click)="scrollToSection($event, 'feature')">{{ 'header.navigation.features' | translate }}</a>
+        <a (click)="scrollToSection($event, 'benefits')">{{ 'header.navigation.benefits' | translate }}</a>
+        <a  (click)="scrollToSection($event, 'HowDoesitWork')">{{ 'header.navigation.howItWorks' | translate }}</a>
+        <a  (click)="scrollToSection($event, 'security')">{{ 'header.navigation.security' | translate }}</a>
+        <a  (click)="scrollToSection($event, 'compliance')">{{ 'header.navigation.compliance' | translate }}</a>
+        <a  (click)="scrollToSection($event, 'integration')">{{ 'header.navigation.integration' | translate }}</a>
+        <a  (click)="scrollToSection($event, 'contactus')">{{ 'header.navigation.contactUs' | translate }}</a>
         <span class="divisor">|</span>
         <a routerLink="/spotlight">{{ 'header.navigation.spotlight' | translate }}</a>
         <span class="divisor">|</span>
@@ -39,12 +39,12 @@
         <div class="idioma">
           <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
           <img 
-    (click)="switchLanguage('en')"
-    [src]="currentLanguage === 'en' 
-      ? '../../../../assets/header/en-on.png' 
-      : '../../../../assets/header/en-off.png'" 
-    alt="English"
-  >
+        (click)="switchLanguage('en')"
+        [src]="currentLanguage === 'en' 
+          ? '../../../../assets/header/en-on.png' 
+          : '../../../../assets/header/en-off.png'" 
+        alt="English"
+      >
           
           <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
           <img 

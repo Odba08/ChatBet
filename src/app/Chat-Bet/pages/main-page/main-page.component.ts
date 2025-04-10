@@ -27,6 +27,9 @@ export class MainPageComponent {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
     this.isScrolled = scrollPosition > 50;
   }
+
+  
+  
   @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
   @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
 
@@ -129,6 +132,22 @@ export class MainPageComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault(); 
+    const targetElement = document.getElementById(sectionId);
+  
+    if (targetElement) {
+      const headerOffset = 150; 
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth', // Desplazamiento suave
+      });
+    }
+  }
+  
   switchLanguage(language: string) {
     this.translate.use(language);
     this.languageService.setLanguage(language); // Propagar el cambio al LanguageService
