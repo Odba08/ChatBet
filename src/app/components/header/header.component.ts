@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../lenguage/language.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class HeaderComponent {
     @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
 
   constructor(
+      private router: Router,
       private translate: TranslateService,
 /*       private toastr: ToastrService, */
       private languageService: LanguageService // Inyectar LanguageService
@@ -65,17 +67,29 @@ export class HeaderComponent {
 
 
   scrollToSection(event: Event, sectionId: string) {
-    event.preventDefault(); 
-    const targetElement = document.getElementById(sectionId);
+    event.preventDefault();
+
+    if (this.router.url !== '/') {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          this.scrollToAnchor(sectionId);
+        }, 100); 
+      });
+    } else {
+      this.scrollToAnchor(sectionId);
+    }
+  }
   
+  private scrollToAnchor(sectionId: string) {
+    const targetElement = document.getElementById(sectionId);
     if (targetElement) {
-      const headerOffset = 150; 
+      const headerOffset = 150;
       const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - headerOffset;
   
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth', // Desplazamiento suave
+        behavior: 'smooth',
       });
     }
   }
