@@ -235,14 +235,14 @@ export class MainPageComponent {
       try {
         emailjs.init('OGARtyjIOA2WPHZfL');
         
-        let response = await emailjs.send("service_amkqz0p", "template_worpfzp", {
+        await emailjs.send("service_amkqz0p", "template_worpfzp", {
           from_name: this.form.value.name,
           from_email: this.form.value.email,
           from_contact: `${this.dialCode} ${this.form.value.contact}`,
           from_empresa: this.form.value.empresa,
           message: this.form.value.message,
         });
-    
+
         if (this.currentLanguage === 'es') {
           this.toastr.success('Mensaje enviado con éxito');
         } else {

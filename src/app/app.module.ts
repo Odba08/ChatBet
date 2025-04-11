@@ -14,11 +14,13 @@ import { ChatBetModule } from './Chat-Bet/chat-bet.module';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
