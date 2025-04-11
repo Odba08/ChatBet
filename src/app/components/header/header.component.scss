@@ -1,22 +1,23 @@
+body {
+  padding-top: 80px; 
+}
+
 header {
-  position: static;
+  position: fixed;  
   top: 0;
-  width: 99%;
+  width: 100%;
   z-index: 1000;
-  margin-left: 0.5%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white; 
+  transition: box-shadow 0.3s ease;
   
   &.scrolled {
-    position: fixed;
-    transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-    // Ajustamos el margen cuando el header es fixed
-   /*  .section-header:first-child {
-      margin-right: 7%; // Cambia de -7% a 7%
-      margin-left: -7%; // Mantenemos el izquierdo si es necesario
-    } */
   }
+}
+
+#feature, #benefits, #HowDoesitWork, #security, 
+#compliance, #integration, #contactus {
+  scroll-margin-top: 100px; 
 }
 .section{
   position: relative;

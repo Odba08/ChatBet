@@ -68,30 +68,32 @@ export class HeaderComponent {
 
   scrollToSection(event: Event, sectionId: string) {
     event.preventDefault();
-
+    
     if (this.router.url !== '/') {
       this.router.navigate(['/']).then(() => {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           this.scrollToAnchor(sectionId);
-        }, 100); 
+        });
       });
-    } else {
-      this.scrollToAnchor(sectionId);
+      return;
     }
+    this.scrollToAnchor(sectionId);
   }
   
   private scrollToAnchor(sectionId: string) {
     const targetElement = document.getElementById(sectionId);
-    if (targetElement) {
-      const headerOffset = 150;
-      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - headerOffset;
+    if (!targetElement) return;
   
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
+    const header = document.querySelector('header');
+    const headerHeight = header?.clientHeight || 0;
+    
+    const extraSpace = 15;
+    const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - (headerHeight + extraSpace);
+  
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
   }
 
   toggleMenu() {
