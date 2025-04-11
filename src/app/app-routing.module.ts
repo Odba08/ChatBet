@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './Chat-Bet/pages/main-page/main-page.component';
 
 const routes: Routes = [
@@ -14,8 +14,14 @@ const routes: Routes = [
 
 ];
 
+const RouterOptions: ExtraOptions = {
+ scrollPositionRestoration: 'top', 
+ anchorScrolling: 'enabled',
+
+}
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, RouterOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

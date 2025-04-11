@@ -242,7 +242,7 @@ export class MainPageComponent {
           from_empresa: this.form.value.empresa,
           message: this.form.value.message,
         });
-
+  
         if (this.currentLanguage === 'es') {
           this.toastr.success('Mensaje enviado con éxito');
         } else {
