@@ -24,9 +24,9 @@
     "secondDescription": "Los jugadores pueden apostar al instante a través de WhatsApp, Telegram, Discord y más. Sin aplicaciones, sin fricción, solo apuestas fluidas basadas en chat.",
     "thirdDescription": "Creado para operadores, disfrutado por jugadores.",
     "keyPoints": [
-      "Aumenta la Retención de Jugadores",
-      "Incrementa el GGR y Volumen de Apuestas",
-      "Integración Perfecta"
+      "Aumenta la retención de jugadores",
+      "Incrementa el GGR y volumen de apuestas",
+      "Integración perfecta"
     ],
     "cta": "Reserva una Demo en Vivo"
   },
@@ -39,19 +39,19 @@
     "description": "ChatBet es el primer asistente de apuestas con IA, ofreciendo a los operadores apuestas en tiempo real totalmente automatizadas a través del chat, desbloqueando un nuevo canal de ingresos mediante plataformas de mensajería.",
     "features": [
       {
-        "title": "Aumenta el Engagement:",
+        "title": "Aumenta el engagement:",
         "description": "Los jugadores apuestan tan naturalmente como chatear con un amigo."
       },
       {
-        "title": "Mejora la Retención:",
+        "title": "Mejora la retención:",
         "description": "La personalización impulsada por IA hace que los jugadores regresen."
       },
       {
-        "title": "Maximiza los Ingresos:",
+        "title": "Maximiza los ingresos:",
         "description": "Los operadores reportan un aumento del +30% en retención y frecuencia de apuestas."
       },
       {
-        "title": "Apuestas sin Fricción:",
+        "title": "Apuestas sin fricción:",
         "description": "Sin apps, sin sitios web—solo chatea y juega."
       }
     ],
@@ -108,11 +108,11 @@
       "description": "Fluido para operadores, sencillo para jugadores—ChatBet impulsa el engagement, retención e ingresos.",
       "items": [
         {
-          "title": "Aumenta la Retención de Jugadores: ",
+          "title": "Aumenta la retención de jugadores: ",
           "description": "+30% de mejora en retención a 90 días."
         },
         {
-          "title": "Incrementa el Volumen de Apuestas: ",
+          "title": "Incrementa el volumen de apuestas: ",
           "description": "Los jugadores apuestan más frecuentemente con sugerencias de IA."
         },
         {
@@ -120,7 +120,7 @@
           "description": "+20% de aumento mensual en GGR."
         },
         {
-          "title": "Integración sin Esfuerzo: ",
+          "title": "Integración sin esfuerzo: ",
           "description": "Configuración plug & play con mínimo esfuerzo."
         }
       ]
@@ -130,19 +130,19 @@
       "button": "Jugadores",
       "items": [
         {
-          "title": "Apuesta Tan Fácil Como Chatear: ",
+          "title": "Apuesta tan fácil como chatear: ",
           "description": "Sin apps o sitios web, solo escribe y juega."
         },
         {
-          "title": "Apuestas Hiper-Personalizadas: ",
+          "title": "Apuestas hiper-personalizadas: ",
           "description": "La IA adapta recomendaciones para una experiencia única."
         },
         {
-          "title": "Optimización en Tiempo Real: ",
+          "title": "Optimización en tiempo real: ",
           "description": "La IA ajusta apuestas sobre la marcha, aumentando el engagement."
         },
         {
-          "title": "Transacciones Más Rápidas: ",
+          "title": "Transacciones más rápidas: ",
           "description": "Realiza apuestas y retira ganancias al instante."
         }
       ]
@@ -219,15 +219,15 @@
       "description": "Integrar ChatBet es tan simple como usarlo—mejorando plataformas con mínimo esfuerzo mientras maximizas ingresos.",
       "items": [
         {
-          "title": "Integración Rápida por API:",
+          "title": "Integración rápida por API:",
           "description": "Funciona con plataformas existentes en semanas."
         },
         {
-          "title": "Manejo Automatizado por IA:",
+          "title": "Manejo automatizado por IA:",
           "description": "No se necesita procesamiento manual de apuestas."
         },
         {
-          "title": "Aumenta Ingresos y Engagement:",
+          "title": "Aumenta ingresos y engagement:",
           "description": "Más apuestas, mayor retención y aumento en volumen."
         }
       ],
@@ -239,23 +239,23 @@
       "description": "Con ChatBet, apostar es tan fácil como enviar un mensaje. Sin sitios complejos, sin registros largos—solo una experiencia de chat fluida.",
       "items": [
         {
-          "title": "Solo Chatea: ",
+          "title": "Solo chatea: ",
           "description": "Escribe tu apuesta como un mensaje—sin apps, sin formularios."
         },
         {
-          "title": "Asistencia Instantánea de IA: ",
+          "title": "Asistencia instantánea de IA: ",
           "description": "Cuotas en tiempo real, recomendaciones inteligentes y confirmaciones."
         },
         {
-          "title": "Ingresa Tu Monto: ",
+          "title": "Ingresa tu monto: ",
           "description": "Sin búsquedas o entradas manuales."
         },
         {
-          "title": "Confirma y Apuesta al Instante 🤙: ",
+          "title": "Confirma y apuesta al instante 🤙: ",
           "description": "Confirmación rápida, acción instantánea."
         },
         {
-          "title": "Gana y Retira: ",
+          "title": "Gana y retira: ",
           "description": "Pagos seguros, sin complicaciones."
         }
       ],
@@ -276,7 +276,7 @@
     "description": "ChatBet está construido sobre infraestructura empresarial, garantizando máxima protección para jugadores y operadores.",
     "items": [
       {
-        "title": "Encriptación de Extremo a Extremo:",
+        "title": "Encriptación de extremo a extremo:",
         "description": "Transacciones 100% seguras y protección de datos."
       },
       {
@@ -288,32 +288,32 @@
         "description": "Seguridad y escalabilidad en la nube líderes en la industria."
       },
       {
-        "title": "Detección de Fraude y Gestión de Riesgos:",
+        "title": "Detección de fraude y gestión de riesgos:",
         "description": "Protecciones impulsadas por IA contra accesos no autorizados."
       }
     ],
     "cta": "Aprende Más Sobre Seguridad"
   },
   "compliance": {
-    "title": "Apuestas con IA en cumplimiento normativo",
+    "title": "Apuestas con IA en cumplimiento",
     "titleheader": "Cumplimiento Normativo",
     "description": "ChatBet está diseñado para operar exclusivamente a través de operadores de apuestas deportivas con licencia, garantizando pleno cumplimiento legal y regulatorio.",
     "secondDescription": "Aunque ChatBet introduce una nueva forma de monetizar—a través de apps de mensajería—funciona puramente como un canal de comunicación.",
     "items": [
       {
-        "title": "No Manejo Directo de Fondos:",
+        "title": "No manejo directo de fondos:",
         "description": "Todas las transacciones pasan por la billetera del operador."
       },
       {
-        "title": "No Almacenamiento de Datos de Jugadores:",
+        "title": "No almacenamiento de datos de jugadores:",
         "description": "ChatBet transmite información pero no retiene datos de usuarios."
       },
       {
-        "title": "Mercados Controlados por Operadores:",
+        "title": "Mercados controlados por operadores:",
         "description": "ChatBet refleja las ofertas existentes de la casa de apuestas."
       },
       {
-        "title": "Cumple con Regulaciones Globales:",
+        "title": "Cumple con regulaciones globales:",
         "description": "Conformidad con iGaming, GDPR y leyes financieras."
       }
     ],
@@ -326,15 +326,15 @@
     "description": "Los operadores pueden integrar ChatBet sin esfuerzo—lanzando apuestas por chat en semanas.",
     "items": [
       {
-        "title": "Mínimo Esfuerzo Técnico:",
+        "title": "Mínimo esfuerzo técnico:",
         "description": "Funciona con sistemas existentes."
       },
       {
-        "title": "Configuraciones Personalizables:",
+        "title": "Configuraciones personalizables:",
         "description": "Adaptado a tus necesidades."
       },
       {
-        "title": "Soporte Técnico Completo:",
+        "title": "Soporte técnico completo:",
         "description": "Asistencia dedicada para un lanzamiento fluido."
       }
     ],
@@ -382,7 +382,7 @@
     "paragraph2": {
       "part1": "De una idea de startup a convertirnos en ",
       "highlight1": "socio estratégico de líderes de la industria como AWS, OpenAI y Meta, ",
-      "part2": ", ChatBet está revolucionando la forma en que jugadores y operadores experimentan las apuestas."
+      "part2": "ChatBet está revolucionando la forma en que jugadores y operadores experimentan las apuestas."
     }
   },
   "mission": {

@@ -77,7 +77,7 @@
               "description": "Bet in seconds with fast responses and no waiting."
             },
             {
-              "title": "Seamless Multi-platform Integration",
+              "title": "Seamless Multi-Platform Integration",
               "description": "WhatsApp, Telegram, web, or app—wherever your players are."
             },
             {
@@ -116,7 +116,7 @@
                 "description": "Players bet more frequently with AI-driven prompts."
               },
               {
-                "title": "Drive-up GGR:",
+                "title": "Drive-Up GGR:",
                 "description": "+20% monthly increase in GGR."
               },
               {
@@ -172,7 +172,7 @@
               "traditional": false
             },
             {
-              "feature": "Real-time Bet Optimization",
+              "feature": "Real-Time Bet Optimization",
               "chatbet": true,
               "otherPlatforms": false,
               "traditional": false
@@ -251,7 +251,7 @@
                 "description": "No searching or manual input."
               },
               {
-                "title": "Confirm & Bet Instantly 🤙: ",
+                "title": "Confirm & Bet Instantly: ",
                 "description": "Quick confirmation, instant action."
               },
               {
@@ -373,12 +373,12 @@
             "changingGame": {
               "title": "How ChatBet is Changing the Game",
               "paragraph1": {
-                "part1": "ChatBet was born from a bold vision: ",
+                "part1": "ChatBet was born from a bold vision: to make betting as easy as chatting with a friend. ",
                 "highlight1": "to make betting as easy as chatting with a friend.",
                 "part2": "In a world where users interact through messaging more than ever, we saw an opportunity to eliminate friction in betting. No apps, no websites—just simple, AI-powered betting via chat."
               },
               "paragraph2": {
-                "part1": "From a startup idea to becoming a",
+                "part1": "From a startup idea to becoming a trusted partner of industry leaders like AWS, OpenAI, and Meta,",
                 "highlight1": "trusted partner of industry leaders like AWS, OpenAI, and Meta,",
                 "part2": "ChatBet is revolutionizing the way players and operators experience betting."
               }
