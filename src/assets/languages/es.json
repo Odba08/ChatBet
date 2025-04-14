@@ -57,7 +57,7 @@
     ],
     "footerText": "ChatBet convierte WhatsApp, Telegram y otras apps de mensajería en canales de apuestas de alto rendimiento, ayudando a los operadores a crecer sin añadir complejidad.",
     "disclaimer": "Disponible exclusivamente a través de operadores de apuestas deportivas con licencia para una integración segura y totalmente compatible.",
-    "cta": "Ver Cómo Funciona"
+    "cta": "Ver cómo funciona"
   },
   "features": {
     "title": "Potencia tu operación con ChatBet",
@@ -65,7 +65,7 @@
     "description": "ChatBet está diseñado para que los operadores aumenten el engagement, simplifiquen transacciones y mejoren experiencias.",
     "items": [
       {
-        "title": "Apuestas en Lenguaje Natural",
+        "title": "Apuestas en lenguaje natural",
         "description": "Los jugadores apuestan tan fácil como enviar un mensaje a un amigo."
       },
       {
@@ -73,31 +73,31 @@
         "description": "Disponible en web, app móvil y más con fácil integración."
       },
       {
-        "title": "Apuestas Instantáneas",
+        "title": "Apuestas instantáneas",
         "description": "Apuesta en segundos con respuestas rápidas y sin esperas."
       },
       {
-        "title": "Integración Multiplataforma Perfecta",
+        "title": "Integración multiplataforma perfecta",
         "description": "WhatsApp, Telegram, web o app—donde sea que estén tus jugadores."
       },
       {
-        "title": "Transacciones Seguras y Confiables",
+        "title": "Transacciones seguras y confiables",
         "description": "Encriptación total y cumplimiento de estándares industriales."
       },
       {
-        "title": "Integración Sencilla para Operadores",
+        "title": "Integración sencilla para operadores",
         "description": "Tus transacciones y datos siempre protegidos."
       },
       {
-        "title": "Apuestas Durante el Juego y de Alto Pago",
+        "title": "Apuestas durante el juego y de alto pago",
         "description": "Apuestas personalizadas sobre la marcha, incluso durante el partido."
       },
       {
-        "title": "Juego Cruzado",
+        "title": "Juego cruzado",
         "description": "Cambia entre deportes, casino y juegos sin salir del chat."
       }
     ],
-    "cta": "Aprende Más Sobre ChatBet"
+    "cta": "Aprende más sobre chatBet"
   },
   "benefits": {
     "operators": {
@@ -147,62 +147,62 @@
         }
       ]
     },
-    "cta": "Obtén una Demo Gratis"
+    "cta": "Obtén una demo gratis"
   },
  "comparisonTable": {
     "title": "¡Descubre por qué somos los mejores!",
-    "titleheader": "Tabla Comparativa",
+    "titleheader": "Tabla comparativa",
     "headers": [
       "Característica",
       "ChatBet",
-      "Otras Plataformas Basadas en Chat",
-      "Casas de Apuestas Tradicionales"
+      "Otras plataformas basadas en Chat",
+      "Casas de apuestas tradicionales"
     ],
     "rows": [
       {
-        "feature": "Apuestas Basadas en Chat Verdadero",
+        "feature": "Apuestas basadas en chat verdadero",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Personalización Potenciada por IA",
+        "feature": "Personalización potenciada por IA",
         "chatbet": true,
         "otherPlatforms": "Básica",
         "traditional": false
       },
       {
-        "feature": "Optimización de Apuestas en Tiempo Real",
+        "feature": "Optimización de apuestas en tiempo real",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Apuestas y Resultados Instantáneos",
+        "feature": "Apuestas y resultados instantáneos",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Acceso Multiplataforma",
+        "feature": "Acceso multiplataforma",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Apuestas Personalizadas Durante el Juego y de Alto Pago",
+        "feature": "Apuestas personalizadas durante el juego y de alto pago",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
       },
       {
-        "feature": "Integración Fluida para Operadores",
+        "feature": "Integración fluida para operadores",
         "chatbet": true,
-        "otherPlatforms": "Requiere Integración Personalizada",
+        "otherPlatforms": "Requiere integración personalizada",
         "traditional": false
       },
       {
-        "feature": "Mayores Ingresos y Retención",
+        "feature": "Mayores ingresos y retención",
         "chatbet": true,
         "otherPlatforms": false,
         "traditional": false
@@ -212,7 +212,7 @@
   "howItWorks": {
     "title": "Tan fácil como 1, 2, 3… ",
     "titlescond": "Para operadores y jugadores",
-    "titleheader": "Cómo Funciona",
+    "titleheader": "Cómo funciona",
     "secondtitle": "Integración perfecta",
     "operators": {
       "title": "Operadores",
@@ -268,7 +268,7 @@
     "description": "ChatBet no solo es fácil—es rentable. Nuestra plataforma con IA ofrece resultados reales.",
     "secondDescription": "ChatBet ayuda a los operadores manteniendo a los usuarios comprometidos, maximizando el valor de las apuestas y optimizando operaciones en múltiples canales.",
     "thirdDescription": "Aumenta ingresos sin esfuerzo, atrae nuevos apostadores y retiene jugadores—de forma segura y eficiente.",
-    "cta": "Únete a los Operadores Ganadores"
+    "cta": "Únete a los operadores ganadores"
   },
   "security": {
     "title": "Protección de alto nivel para operadores y jugadores",
@@ -292,11 +292,11 @@
         "description": "Protecciones impulsadas por IA contra accesos no autorizados."
       }
     ],
-    "cta": "Aprende Más Sobre Seguridad"
+    "cta": "Aprende más sobre seguridad"
   },
   "compliance": {
     "title": "Apuestas con IA en cumplimiento",
-    "titleheader": "Cumplimiento Normativo",
+    "titleheader": "Cumplimiento cormativo",
     "description": "ChatBet está diseñado para operar exclusivamente a través de operadores de apuestas deportivas con licencia, garantizando pleno cumplimiento legal y regulatorio.",
     "secondDescription": "Aunque ChatBet introduce una nueva forma de monetizar—a través de apps de mensajería—funciona puramente como un canal de comunicación.",
     "items": [
@@ -318,7 +318,7 @@
       }
     ],
     "footer": "ChatBet no es una nueva plataforma—es una interfaz más inteligente sobre el sistema del operador, simplificando las apuestas mientras mantiene alineación regulatoria total.",
-    "cta": "Obtén Detalles de Cumplimiento"
+    "cta": "Obtén detalles de cumplimiento"
   },
   "integration": {
     "title": "Integración rápida y sin complicaciones",
@@ -338,7 +338,7 @@
         "description": "Asistencia dedicada para un lanzamiento fluido."
       }
     ],
-    "cta": "Comienza a Integrar Hoy"
+    "cta": "Comienza a integrar hoy"
   },
   "contactUs": {
     "title": "¡Únete al futuro de las apuestas con IA de ChatBet!",
@@ -350,7 +350,7 @@
       "email": "Correo Corporativo*",
       "company": "El Nombre de Tu Empresa*",
       "message": "¿Cómo Puede Ayudarte Nuestro Equipo?",
-      "submit": "Enviar Info"
+      "submit": "Enviar info"
     }
   },
 
