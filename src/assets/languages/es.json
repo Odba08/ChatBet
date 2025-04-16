@@ -348,7 +348,7 @@
       "name": "Nombre*",
       "contactNumber": "Número de contacto*",
       "email": "Correo corporativo*",
-      "company": "El Nombre de empresa*",
+      "company": "Nombre de empresa*",
       "message": "¿Cómo Puede cyudarte nuestro equipo?",
       "submit": "Enviar info"
     }
