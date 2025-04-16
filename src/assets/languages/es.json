@@ -8,13 +8,13 @@
     "navigation": {
       "features": "Características",
       "benefits": "Beneficios",
-      "howItWorks": "Cómo Funciona",
+      "howItWorks": "Cómo funciona",
       "security": "Seguridad",
       "compliance": "Cumplimiento",
       "integration": "Integración",
       "contactUs": "Contáctanos",
       "spotlight": "Destacados",
-      "aboutUs": "Sobre Nosotros"
+      "aboutUs": "Sobre nosotros"
     }
   },
   "heroSection": {
@@ -28,10 +28,10 @@
       "Incrementa el GGR y volumen de apuestas",
       "Integración perfecta"
     ],
-    "cta": "Reserva una Demo en Vivo"
+    "cta": "Reserva una demo en vivo"
   },
   "trustedBy": {
-    "title": "Confiado por los principales operadores de igaming",
+    "title": "Confiado por los principales operadores de iGaming",
     "subtitle": "Ahora integrando con"
   },
   "whatIsChatBet": {
@@ -97,7 +97,7 @@
         "description": "Cambia entre deportes, casino y juegos sin salir del chat."
       }
     ],
-    "cta": "Aprende más sobre chatBet"
+    "cta": "Aprende más sobre ChatBet"
   },
   "benefits": {
     "operators": {
@@ -264,7 +264,7 @@
   },
   "provenSuccess": {
     "title": "Éxito comprobado",
-    "subtitle": "Crecimiento Impulsado por IA. Impacto Medible.",
+    "subtitle": "Crecimiento Impulsado por IA. Impacto medible.",
     "description": "ChatBet no solo es fácil—es rentable. Nuestra plataforma con IA ofrece resultados reales.",
     "secondDescription": "ChatBet ayuda a los operadores manteniendo a los usuarios comprometidos, maximizando el valor de las apuestas y optimizando operaciones en múltiples canales.",
     "thirdDescription": "Aumenta ingresos sin esfuerzo, atrae nuevos apostadores y retiene jugadores—de forma segura y eficiente.",
@@ -296,7 +296,7 @@
   },
   "compliance": {
     "title": "Apuestas con IA en cumplimiento",
-    "titleheader": "Cumplimiento cormativo",
+    "titleheader": "Cumplimiento",
     "description": "ChatBet está diseñado para operar exclusivamente a través de operadores de apuestas deportivas con licencia, garantizando pleno cumplimiento legal y regulatorio.",
     "secondDescription": "Aunque ChatBet introduce una nueva forma de monetizar—a través de apps de mensajería—funciona puramente como un canal de comunicación.",
     "items": [
@@ -346,10 +346,10 @@
     "subtitle": "¡Experimenta la emoción! Agenda una demo hoy y descubre cómo la IA de ChatBet revoluciona la experiencia del usuario.",
     "form": {
       "name": "Nombre*",
-      "contactNumber": "Número de Contacto*",
-      "email": "Correo Corporativo*",
-      "company": "El Nombre de Tu Empresa*",
-      "message": "¿Cómo Puede Ayudarte Nuestro Equipo?",
+      "contactNumber": "Número de contacto*",
+      "email": "Correo corporativo*",
+      "company": "El Nombre de empresa*",
+      "message": "¿Cómo Puede cyudarte nuestro equipo?",
       "submit": "Enviar info"
     }
   },
@@ -533,14 +533,14 @@
       "content": "Modelo de reparto de ingresos con operadores. Más engagement → mejor retención → más apuestas. ChatBet crece a medida que crecen nuestros socios."
     },
     "faq": {
-      "tag": "Preguntas Frecuentes",
-      "title": "Preguntas Frecuentes",
+      "tag": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes",
       "intro": "Estas son las preguntas más comunes sobre ChatBet"
     }
   },
 
   "footer": {
-    "redes": "Nuestras Redes",
+    "redes": "Nuestras redes",
     "info":"No dude en ponerse en contacto con nosotros"
   }
 
