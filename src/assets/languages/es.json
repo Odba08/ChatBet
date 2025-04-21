@@ -103,7 +103,7 @@
     "operators": {
       "descriptionHeader": "Beneficios",
       "title": "¿Por qué ChatBet? ",
-      "secondtitle": "Apuestas más inteligentes, resultados mayores",
+      "secondtitle": "Apuestas más inteligentes, mejores resultados",
       "button": "Operadores",
       "description": "Fluido para operadores, sencillo para jugadores—ChatBet impulsa el engagement, retención e ingresos.",
       "items": [
@@ -349,7 +349,7 @@
       "contactNumber": "Número de contacto*",
       "email": "Correo corporativo*",
       "company": "Nombre de empresa*",
-      "message": "¿Cómo Puede cyudarte nuestro equipo?",
+      "message": "¿Cómo puede ayudarte nuestro equipo?",
       "submit": "Enviar info"
     }
   },
@@ -541,7 +541,7 @@
 
   "footer": {
     "redes": "Nuestras redes",
-    "info":"No dude en ponerse en contacto con nosotros"
+    "info":"No dudes en contactarnos"
   }
 
 }
