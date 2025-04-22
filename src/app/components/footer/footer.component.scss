@@ -14,9 +14,7 @@
       margin: 0;
     }
   
-    /* ---------------------- */
-    /* FOOTER DESKTOP (footer1) */
-    /* ---------------------- */
+
     .footer1 {
       position: relative;
       margin: 0;
@@ -84,13 +82,10 @@
         display: none;
       }
     }
-  
-    /* ---------------------- */
-    /* FOOTER MOBILE (footer2) */
-    /* ---------------------- */
+
     .footer2 {
       position: relative;
-      display: none; /* Oculto por defecto */
+      display: none; 
   
       .contenido-mobile {
         position: absolute;
@@ -102,16 +97,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
   
         .logo-mobile {
-          width: 80%;
+          width: 55%;
           height: auto;
           margin-bottom: 10px;
         }
   
         .titulo-redes-mobile {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
   
         .redes-sociales-mobile {
@@ -119,20 +114,20 @@
           gap: 15px;
             cursor: pointer;
           img {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
           }
         }
   
         .titulo-contacto-mobile {
-          font-size: 2rem;
+          font-size: 1.5rem;
           margin-top: 10px;
           text-align: center;
         line-height: 2;
         }
   
         .email-mobile {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
   

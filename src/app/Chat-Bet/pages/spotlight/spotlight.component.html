@@ -79,7 +79,9 @@
 <div id="beneficios" class="section">
   <div class="notice-section">
     <div class="notice" *ngFor="let notice of 'spotlight.notices' | translate; let i = index">
-      <img [src]="notice.image" alt="">
+      <div class="imagen">
+        <img [src]="notice.image" alt="">
+      </div>
 
       <div class="infonotice">
         <h2>{{ notice.title }}</h2>
