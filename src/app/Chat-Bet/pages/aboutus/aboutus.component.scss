@@ -615,7 +615,22 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     width: 100%;
     position: relative;
-    @media (max-width: 900px) { display: block; }
+    @media (max-width: 900px) { 
+      display: flex;
+      flex-direction: column;
+      
+      .text {
+          order: 2; 
+          width: 100%;
+          margin: 40px 0;
+      }
+
+      .chatbetimage{
+        order: 1;
+        width: 100%;
+      }
+
+    }
     .text {
       font-family: 'Poppins', sans-serif;
       color: black;
