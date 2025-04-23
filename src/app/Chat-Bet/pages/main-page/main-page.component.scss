@@ -483,6 +483,7 @@ h3{
         @media (max-width: 900px) {
           display: flex;
           overflow-x: auto;
+          overscroll-behavior-x: contain;
           scroll-snap-type: x mandatory;
           margin: 0; /* Quita margen en móvil */
           padding: 0 30px; /* Añade padding para no tapar contenido */
@@ -1187,6 +1188,10 @@ h3{
             box-sizing: border-box;
             @media (max-width:900px) {
                 margin-top: -20px;
+                overflow-x: auto; /* Permite scroll horizontal */
+                -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+                scrollbar-width: thin; /* Firefox */
+                scrollbar-color: #888 transparent;
             }
       
             & > div {
