@@ -641,12 +641,13 @@
 
 <!--7. Carrusel -->
 <div class="backgroundline">
-  <div class="review">
-    <img [src]="currentImages['img4']" alt="" />
+  <div class="backgroundcarousel">
+    <img  class="desktop-back" [src]="currentImages['img4']" alt="" />
+    <img  class="mobile-back" [src]="currentImages['reviewphone']" alt="" />
+
+    <app-carousel-slider [gallery]="gallerySlider" ></app-carousel-slider>
   </div>
-  <div class="reviewphone">
-    <img [src]="currentImages['reviewphone']" alt="" />
-  </div>
+
 </div>
 
 <hr class="hr" />
@@ -709,5 +710,4 @@
     </div>
   </div>
 </div>
-
 

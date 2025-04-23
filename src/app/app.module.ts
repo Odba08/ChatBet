@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './components/header/header.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -7,6 +7,19 @@ import { AnimationOptions } from 'ngx-lottie';
 import { countries } from '../../../model/contry-data.store';
 import { LanguageService } from '../../../lenguage/language.service';
 
+interface BestGradesSlider {
+  description: string;
+  imageUrl: string;
+  title: string;
+  url?: string;
+  gallery?: GalleryModel[];
+}
+
+interface GalleryModel {
+  img: string;
+}
+
+
 @Component({
   selector: 'app-chatbet-main-page',
   templateUrl: './main-page.component.html',
@@ -27,9 +40,6 @@ export class MainPageComponent {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
     this.isScrolled = scrollPosition > 50;
   }
-
-  
-  
   @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
   @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
 
@@ -65,7 +75,7 @@ export class MainPageComponent {
       img1: '../../../../assets/img/NEnEsp.png',
       img2: './assets/img/incremento.png',
       img3: '../../../../assets/HomePage/miraen.png',
-      img4: '../../../../assets/Background/carrusel-es.png',
+      img4: '../../../../assets/slider/background.png',
       img5: './assets/img/Frame1-es.svg',
       third: './assets/img/Frame5.png',
       second: './assets/img/second-phone.png',
@@ -74,7 +84,7 @@ export class MainPageComponent {
       footer2: '../../../../assets/Background/2footer.png',
       phoneimage: '../../../../assets/img/phone-es.png',
       Frame4: '../../../../assets/img/Frame4-es.png',
-      reviewphone: '../../../../assets/Background/review-tlf2.svg',
+      reviewphone: '../../../../assets/slider/background.mobile.png',
       homepage: '../../../../assets/HomePage/imagen-inicial-es.gif',
       whatischatbet: '../../../../assets/HomePage/whatischatbet-es.png',
       beneficios: '../../../../assets/HomePage/beneficios-es.png',
@@ -86,7 +96,7 @@ export class MainPageComponent {
       img1: '../../../../assets/img/NEnEsp.png',
       img2: './assets/img/increase.png',
       img3: '../../../../assets/Icon/video.png',
-      img4: '../../../../assets/Background/en-carrusel.png',
+      img4: '../../../../assets/slider/background-en.png',
       img5: './assets/img/Frame1.svg',
       third: './assets/img/Frame5.2.png',
       second: './assets/img/guardar/second-phone.png',
@@ -95,7 +105,7 @@ export class MainPageComponent {
       footer2: '../../../../assets/Background/2footer-en.png',
       phoneimage: '../../../../assets/img/phone-en.png',
       Frame4: '../../../../assets/img/Frame4.png',
-      reviewphone: '../../../../assets/Background/review-en-tlf2.svg',
+      reviewphone: '../../../../assets/slider/background.mobile-en.png',
       homepage: '../../../../assets/HomePage/imagen-inicial-en.gif',
       whatischatbet: '../../../../assets/HomePage/whatischatbet-en.png',
       beneficios: '../../../../assets/HomePage/beneficios-en.png',
@@ -310,5 +320,19 @@ export class MainPageComponent {
         }
       });
     }
+
+
+    public gallerySlider: Array<BestGradesSlider> = [
+      {
+        description: 'Acto de Grado',
+        imageUrl: '../../../../assets/slider/rev-es.png',
+        title: 'Acto de Grado',
+      },
+      {
+        description: 'Feria de Emprendimiento',
+        imageUrl: '../../../../assets/slider/rev-2-es.png',
+        title: 'Feria de Emprendimiento',
+      },
+    ]
   
   }

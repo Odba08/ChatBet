@@ -1,0 +1,21 @@
+
+
+
+<div class="keen-slider slider" #sliderRef>
+  <figure *ngFor="let card of gallery" class="keen-slider__slide slide">
+    <img [src]="card.imageUrl" alt="a" loading="lazy" (click)="card.gallery && selectGallery(card.gallery)" />
+    <!-- <p>{{ card.title }}</p> -->
+  </figure>
+</div>
+
+<div class="dots">
+  <button
+    (click)="slider.moveToIdx(i)"
+    *ngFor="let slide of dotHelper; let i = index"
+    [class]="'dot ' + (i === currentSlide ? 'active' : '')"></button>
+</div>
+
+
+
+
+

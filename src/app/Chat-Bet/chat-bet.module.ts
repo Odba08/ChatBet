@@ -11,6 +11,8 @@ import { CustomSelectComponent } from './custom-select/custom-select.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { SpotlightComponent } from './pages/spotlight/spotlight.component';
 import { ChatBetRoutingModule } from './chat-bet-routing.module';
+import { CarouselSliderComponent } from '../components/carousel-slider/carousel-slider.component';
+
 export function playerFactory() {
   return player;
 }
@@ -20,7 +22,7 @@ export function playerFactory() {
     MainPageComponent,
     CustomSelectComponent,
     AboutusComponent,
-    SpotlightComponent
+    SpotlightComponent,
   ],
   imports: [
     MatExpansionModule,
@@ -29,7 +31,8 @@ export function playerFactory() {
     SlickCarouselModule,
     LottieComponent,
     ReactiveFormsModule,
-    ChatBetRoutingModule
+    ChatBetRoutingModule,
+    CarouselSliderComponent,
    
   ],
   exports: [
