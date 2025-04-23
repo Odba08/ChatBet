@@ -817,8 +817,10 @@ h3{
         .tdtitle {
           text-align: left;
           font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+
           @media (max-width: 600px) {
             font-size: 0.5rem;
+            text-align: center;
           }
         }
       }
