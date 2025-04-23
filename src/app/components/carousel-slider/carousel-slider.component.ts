@@ -1,5 +1,5 @@
 import { isPlatformBrowser, NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, inject, Input, OnDestroy, PLATFORM_ID, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, Input, OnChanges, OnDestroy, PLATFORM_ID, SimpleChanges, ViewChild } from '@angular/core';
 import KeenSlider, { KeenSliderInstance } from 'keen-slider';
 
 interface bestGradesSlider {
@@ -20,7 +20,7 @@ interface galleryModel {
   templateUrl: './carousel-slider.component.html',
   styleUrl: './carousel-slider.component.scss'
 })
-export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
+export class CarouselSliderComponent implements AfterViewInit, OnDestroy, OnChanges {
   public showModal = false;
   public selectedImageUrle: string | null = null;
   private platformId = inject(PLATFORM_ID);
@@ -30,7 +30,6 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
   public gallery: Array<bestGradesSlider> = [];
   public selectedGallery: Array<galleryModel> = [];
 
-  
   @ViewChild('sliderRef')
   public sliderRef!: ElementRef<HTMLElement>;
 
@@ -49,24 +48,41 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
   public slider!: KeenSliderInstance;
   public thumbnailSlider!: KeenSliderInstance;
 
-  ngAfterViewInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-        loop: true,
-        renderMode: 'precision',
-        initial: 0,
-        breakpoints: {
-          '(min-width: 900px)': { slides: { perView: 1, spacing: 5 } },
-          '(min-width: 901px)': { slides: { perView: 3, spacing: 5 } },
-        },
-        slideChanged: (s) => {
-          this.currentSlide = s.track.details.rel;
-        },
-      });
-      this.dotHelper = [...Array(this.slider.track.details.slides.length).keys()];
+  ngOnChanges(changes: SimpleChanges): void {
+    // Detectar cambios en el @Input gallery
+    if (changes['gallery'] && this.slider && isPlatformBrowser(this.platformId)) {
+      this.slider.destroy(); // Destruir el slider actual
+      this.initSlider(); // Reinicializar el slider
     }
   }
 
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.initSlider(); // Inicializar el slider por primera vez
+    }
+  }
+  private initSlider(): void {
+    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+      loop: true,
+      renderMode: 'precision',
+      initial: 0,
+      slides: {
+        perView: 1,
+        spacing: 5
+      },
+      breakpoints: {
+        '(min-width: 900px)': { slides: { perView: 1, spacing: 5 } },
+        '(min-width: 901px)': { slides: { perView: 3, spacing: 5 } },
+      },
+      slideChanged: (s) => {
+        this.currentSlide = s.track.details.rel;
+      },
+    });
+    this.dotHelper = [...Array(this.slider.track.details.slides.length).keys()];
+    setTimeout(() => {
+      this.slider.update(); // Forzar actualización de KeenSlider
+    }, 0);
+  }
   selectGallery(gallery: galleryModel[]) {
     this.selectedGallery = gallery;
     this.showModal = true;
@@ -77,6 +93,10 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
           loop: true,
           renderMode: 'precision',
           initial: 0,
+          slides: {
+            perView: 1, // Por defecto, 1 slide en móvil
+            spacing: 10
+          },
           breakpoints: {
             '(min-width: 300px)': { slides: { perView: 1, spacing: 10 } },
             '(min-width: 700px)': { slides: { perView: 2, spacing: 10 } },
@@ -89,7 +109,7 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
         });
 
         this.thumbnailDotHelper = [...Array(this.thumbnailSlider.track.details.slides.length).keys()];
-      });
+      }, 0);
     }
   }
 

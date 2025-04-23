@@ -341,5 +341,13 @@ export class MainPageComponent {
           title: this.currentImages['slider2_title']
         }
       ];
+      // Forzar actualización del carrusel
+      setTimeout(() => {
+        const carousel = document.querySelector('.keen-slider') as HTMLElement;
+        if (carousel) {
+          const event = new Event('resize');
+          window.dispatchEvent(event); // Simula un cambio de tamaño para que KeenSlider recalcule
+        }
+      }, 0);
     }
   }
