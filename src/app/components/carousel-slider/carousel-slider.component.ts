@@ -26,20 +26,9 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
   private platformId = inject(PLATFORM_ID);
   public currentThumbnailSlide!: number;
 
-  @Input() 
-  set gallery(value: Array<bestGradesSlider>) {
-    if (this._gallery !== value) {
-      this._gallery = value;
-      this.initializeSlider();
-    }
-  }
-  get gallery(): Array<bestGradesSlider> {
-    return this._gallery;
-  }
-  private _gallery: Array<bestGradesSlider> = [];
-
+  @Input()
+  public gallery: Array<bestGradesSlider> = [];
   public selectedGallery: Array<galleryModel> = [];
-
 
   
   @ViewChild('sliderRef')
@@ -62,39 +51,20 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      this.initializeSlider();
-    }
-  }
-  
-  private initializeSlider(): void {
-    // Destruye el slider existente
-    if (this.slider) {
-      this.slider.destroy();
-    }
-  
-    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-      loop: false, // Mejor rendimiento en mobile
-      dragSpeed: 0.5, // Más suave en mobile
-      rubberband: false, // Evita rebote excesivo
-      mode: 'snap', // Mejor comportamiento en mobile
-      slides: {
-        perView: 1, // Por defecto 1 en mobile
-        spacing: 5, // Espacio mínimo
-      },
-      breakpoints: {
-        '(min-width: 600px)': { 
-          slides: { perView: 2, spacing: 10 } 
+      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+        loop: true,
+        renderMode: 'precision',
+        initial: 0,
+        breakpoints: {
+          '(min-width: 900px)': { slides: { perView: 4, spacing: 10 } },
+          '(min-width: 901px)': { slides: { perView: 4, spacing: 5 } },
         },
-        '(min-width: 900px)': { 
-          slides: { perView: 4, spacing: 15 } 
+        slideChanged: (s) => {
+          this.currentSlide = s.track.details.rel;
         },
-      },
-      slideChanged: (s) => {
-        this.currentSlide = s.track.details.rel;
-      },
-    });
-    
-    this.dotHelper = [...Array(this.slider.track.details.slides.length).keys()];
+      });
+      this.dotHelper = [...Array(this.slider.track.details.slides.length).keys()];
+    }
   }
 
   selectGallery(gallery: galleryModel[]) {
