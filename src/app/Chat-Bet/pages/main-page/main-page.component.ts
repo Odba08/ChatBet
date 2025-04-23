@@ -33,6 +33,7 @@ export class MainPageComponent {
   public operatorsType: 'operators' | 'players' = 'operators';
   public NewOperatorsType: 'operators' | 'players' = 'operators';
   public gallerySlider: Array<BestGradesSlider> = [];
+  public showCarousel: boolean = true;
   isMenuOpen: boolean = false;
   isScrolled = false;
 
@@ -331,15 +332,21 @@ export class MainPageComponent {
     private updateGallerySlider(): void {
       this.gallerySlider = [
         {
-          description: this.currentImages['slider1_desc'],
+          description: this.currentImages['slider1_desc'] || 'Default description 1',
           imageUrl: this.currentImages['rev1'],
-          title: this.currentImages['slider1_title']
+          title: this.currentImages['slider1_title'] || 'Default title 1'
         },
         {
-          description: this.currentImages['slider2_desc'],
+          description: this.currentImages['slider2_desc'] || 'Default description 2',
           imageUrl: this.currentImages['rev2'],
-          title: this.currentImages['slider2_title']
+          title: this.currentImages['slider2_title'] || 'Default title 2'
         }
       ];
+      // Forzar recreación del componente
+      this.showCarousel = false;
+      setTimeout(() => {
+        this.showCarousel = true;
+        window.dispatchEvent(new Event('resize'));
+      }, 200);
     }
   }

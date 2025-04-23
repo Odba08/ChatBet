@@ -645,8 +645,10 @@
     <img  class="desktop-back" [src]="currentImages['img4']" alt="" />
     <img  class="mobile-back" [src]="currentImages['reviewphone']" alt="" />
 
-    <app-carousel-slider [gallery]="gallerySlider" ></app-carousel-slider>
-  </div>
+<!--     <app-carousel-slider [gallery]="gallerySlider" ></app-carousel-slider>
+ -->  
+ <app-carousel-slider *ngIf="showCarousel" [gallery]="gallerySlider"></app-carousel-slider>
+</div>
 
 </div>
 
