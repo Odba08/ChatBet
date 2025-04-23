@@ -32,6 +32,7 @@ export class MainPageComponent {
   public minLength: number = 0;
   public operatorsType: 'operators' | 'players' = 'operators';
   public NewOperatorsType: 'operators' | 'players' = 'operators';
+  public gallerySlider: Array<BestGradesSlider> = [];
   isMenuOpen: boolean = false;
   isScrolled = false;
 
@@ -91,6 +92,8 @@ export class MainPageComponent {
       howitswork: '../../../../assets/HomePage/howitswork-es.png',
       provensucces: '../../../../assets/HomePage/provensucces-es.png',
       inversionitas:'../../../../assets/HomePage/line.png',
+      rev1: '../../../../assets/slider/rev-es.png',
+      rev2: '../../../../assets/slider/rev-2-es.png',
     },
     en: {
       img1: '../../../../assets/img/NEnEsp.png',
@@ -112,6 +115,8 @@ export class MainPageComponent {
       howitswork: '../../../../assets/HomePage/howitswork-en.png',
       provensucces: '../../../../assets/HomePage/provensucces-en.png',
       inversionitas:'../../../../assets/inversionistas.png',
+      rev1: '../../../../assets/slider/rev-en.png',
+      rev2: '../../../../assets/slider/rev-2-en.png',
 
     },
   };
@@ -134,6 +139,7 @@ export class MainPageComponent {
     this.languageService.getCurrentLang().subscribe(lang => {
       this.currentLanguage = lang;
       this.currentImages = this.imagePaths[lang];
+      this.updateGallerySlider();
       this.updateVideoSource();
     });
   }
@@ -164,6 +170,7 @@ export class MainPageComponent {
     this.currentLanguage = language;
     this.currentImages = this.imagePaths[language];
     this.updateVideoSource();
+    this.updateGallerySlider();
     this.isMenuOpen = false;
   }
     
@@ -321,18 +328,18 @@ export class MainPageComponent {
       });
     }
 
-
-    public gallerySlider: Array<BestGradesSlider> = [
-      {
-        description: 'Acto de Grado',
-        imageUrl: '../../../../assets/slider/rev-es.png',
-        title: 'Acto de Grado',
-      },
-      {
-        description: 'Feria de Emprendimiento',
-        imageUrl: '../../../../assets/slider/rev-2-es.png',
-        title: 'Feria de Emprendimiento',
-      },
-    ]
-  
+    private updateGallerySlider(): void {
+      this.gallerySlider = [
+        {
+          description: this.currentImages['slider1_desc'],
+          imageUrl: this.currentImages['rev1'],
+          title: this.currentImages['slider1_title']
+        },
+        {
+          description: this.currentImages['slider2_desc'],
+          imageUrl: this.currentImages['rev2'],
+          title: this.currentImages['slider2_title']
+        }
+      ];
+    }
   }
