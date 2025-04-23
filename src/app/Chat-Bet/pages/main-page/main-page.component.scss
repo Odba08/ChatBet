@@ -780,7 +780,7 @@ h3{
         }
       
         @media (max-width: 600px) {
-          font-size: 0.5rem;
+          font-size: 0.6rem;
           padding: 0.2rem;
           border-radius: 20px;
         }
@@ -825,7 +825,9 @@ h3{
           font-size: clamp(0.8rem, 1.5vw, 1.1rem);
 
           @media (max-width: 600px) {
-            font-size: 0.5rem;
+            font-size: 0.6rem;
+            padding: 0 0 0 1.2rem;
+            text-align: center;
           }
         }
       }
