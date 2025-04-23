@@ -56,8 +56,8 @@ export class CarouselSliderComponent implements AfterViewInit, OnDestroy {
         renderMode: 'precision',
         initial: 0,
         breakpoints: {
-          '(min-width: 900px)': { slides: { perView: 4, spacing: 10 } },
-          '(min-width: 901px)': { slides: { perView: 4, spacing: 5 } },
+          '(min-width: 900px)': { slides: { perView: 1, spacing: 5 } },
+          '(min-width: 901px)': { slides: { perView: 3, spacing: 5 } },
         },
         slideChanged: (s) => {
           this.currentSlide = s.track.details.rel;
