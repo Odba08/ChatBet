@@ -49,7 +49,11 @@ align-items: center;
     margin: 0 auto; 
 }
 
-
+.iframetitle{
+    @media (max-width: 900px){
+        margin-bottom: 2rem;
+    }
+}
 .backgroundline{
     
     .backgroundcarousel {
