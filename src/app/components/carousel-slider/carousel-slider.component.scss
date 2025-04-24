@@ -112,10 +112,10 @@
   overflow: hidden;
   position: relative;
   justify-content: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 
   @media (max-width: 900px) {
-    margin-top: 15rem;
+    margin-top: 2rem;
     justify-content: start;
     margin-left: -2rem;
     

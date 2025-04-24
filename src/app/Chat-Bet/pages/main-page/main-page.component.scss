@@ -49,6 +49,7 @@ align-items: center;
     margin: 0 auto; 
 }
 
+
 .iframetitle{
     @media (max-width: 900px){
         margin-bottom: 2rem;
@@ -88,6 +89,48 @@ align-items: center;
             position: relative;
             z-index: 1;
             width: 100%; 
+        }
+        .informationcarrusel{  
+        width: 100%;
+        z-index: 99;
+
+        .content-wrapper {
+            /* width: 100%; */
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            margin-left: 50%; 
+            transform: translateX(-10%); 
+            @media (max-width: 900px) {
+                margin-left: 30%; 
+                transform: translateX(-20%); 
+                
+            }
+
+            h1{
+            margin-bottom: 2rem;
+            @media (max-width: 900px) {
+               text-align: center;
+            }
+        }
+        .aaa{
+            font-family: "Poppins-Bold", sans-serif;
+            text-align: center;
+            display: inline-flex;
+            justify-content: start;
+            border: solid 1px;
+            border-color: #9595ff;
+            border-radius: 50px;
+            padding: 0.5rem 3rem;
+            color: #5554F3;
+            margin: 0 auto; 
+            @media (min-width: 901px) {
+                margin: 0;
+                width: 12%;
+                
+            }
+        }
+          }
         }
     }
     img{

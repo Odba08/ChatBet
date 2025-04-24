@@ -542,7 +542,10 @@
       "intro": "These are the most commonly asked questions about ChatBet"
     }
   },
-
+  "carousel": {
+  "title":"Testimonials",  
+  "description": "What industry leaders say about ChatBet"
+},
 
   "footer": {
     "redes": "Our Networks",

@@ -647,7 +647,13 @@
 
 <!--     <app-carousel-slider [gallery]="gallerySlider" ></app-carousel-slider>
  -->  
- <app-carousel-slider *ngIf="showCarousel" [gallery]="gallerySlider"></app-carousel-slider>
+ <div class="informationcarrusel">
+  <div class="content-wrapper">
+    <span class="aaa" >{{ 'carousel.title' | translate }}</span>
+     <h1>{{ 'carousel.description' | translate }}</h1>
+  </div>
+   <app-carousel-slider *ngIf="showCarousel" [gallery]="gallerySlider"></app-carousel-slider>
+ </div>
 </div>
 
 </div>

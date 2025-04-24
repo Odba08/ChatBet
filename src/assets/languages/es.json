@@ -540,6 +540,10 @@
       "intro": "Estas son las preguntas más comunes sobre ChatBet"
     }
   },
+  "carousel": {
+  "title":"Integración",  
+  "description": "Integración rápida y sin complicaciones"
+},
 
   "footer": {
     "redes": "Nuestras redes",
