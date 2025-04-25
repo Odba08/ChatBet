@@ -341,7 +341,7 @@
           "cta": "Start Integrating Today"
         },
         "calender":{
-        "pick": "Pick a time that works for you",
+        "pick": "Pick a time that works for you.",
         "notReady": "Not ready to book just yet? Send us a message and we'll get back to you"
         },
         "contactUs": {
