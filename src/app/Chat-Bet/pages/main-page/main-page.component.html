@@ -4,63 +4,6 @@
     <!-- <img src="./assets/Background/nuevoheader.png" alt="" /> -->
   </div>
   
-  <!-- <header  [class.scrolled]="isScrolled">
-    <div class="section-header">
-      <div class="mobileheader">
-        <img class="chatbetone" src="./assets/Icon/Layer_1.png" alt="{{ 'header.logoAlt' | translate }}" />
-        <div class="newidioma">
-          <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
-          <a href="">|</a>
-          <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
-        </div>
-        <button class="menu-toggle" aria-label="Toggle menu" (click)="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        
-      </div>
-
-
-      <div class="menu-overlay" [class.active]="isMenuOpen" (click)="toggleMenu()"></div>
-
-      <div class="navbar" [class.active]="isMenuOpen">
-        <a  (click)="scrollToSection($event, 'feature')">{{ 'header.navigation.features' | translate }}</a>
-        <a (click)="scrollToSection($event, 'benefits')">{{ 'header.navigation.benefits' | translate }}</a>
-        <a  (click)="scrollToSection($event, 'HowDoesitWork')">{{ 'header.navigation.howItWorks' | translate }}</a>
-        <a  (click)="scrollToSection($event, 'security')">{{ 'header.navigation.security' | translate }}</a>
-        <a  (click)="scrollToSection($event, 'compliance')">{{ 'header.navigation.compliance' | translate }}</a>
-        <a  (click)="scrollToSection($event, 'integration')">{{ 'header.navigation.integration' | translate }}</a>
-        <a  (click)="scrollToSection($event, 'contactus')">{{ 'header.navigation.contactUs' | translate }}</a>
-        <span class="divisor">|</span>
-        <a routerLink="/spotlight">{{ 'header.navigation.spotlight' | translate }}</a>
-        <span class="divisor">|</span>
-        <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
-        <span class="divisor">|</span>
-        <div class="idioma">
-          <a href="" (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
-          <img 
-        (click)="switchLanguage('en')"
-        [src]="currentLanguage === 'en' 
-          ? '../../../../assets/header/en-on.png' 
-          : '../../../../assets/header/en-off.png'" 
-        alt="English"
-      >
-          
-          <a href="" (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
-          <img 
-          (click)="switchLanguage('es')"
-          [src]="currentLanguage === 'es' 
-            ? '../../../../assets/header/es-on.png' 
-            : '../../../../assets/header/es-off.png'" 
-          alt="Español"
-        >
-        </div>
-      </div>
-    </div>
-  </header>
- -->
-  
  <div class="first-section">
     <div class="gif2">
       <img [src]="currentImages['phone']" alt="" style="margin-top: 0" />
@@ -124,8 +67,10 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
+        <div class="contentcenter">
         <span class="TitleBold">{{ 'trustedBy.title' | translate }}</span>
         <h1>{{ 'trustedBy.subtitle' | translate }}</h1>
+      </div>
       </div>
       <div class="merch">
         <img src="../../../../assets/betvip.png" alt="" />
@@ -141,7 +86,9 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
+        <div class="contentcenter">
         <h1>{{ 'whatIsChatBet.title' | translate }}</h1>
+      </div>
         <div>
           <p>{{ 'whatIsChatBet.description' | translate }}</p>
 
@@ -266,7 +213,7 @@
       <div class="text">
         <div class="contentcenter">
         <span class="TitleTag" id="benefits">{{ 'benefits.operators.descriptionHeader' | translate }}</span>
-        </div>
+        
         <h1>{{ 'benefits.operators.title' | translate }} <br>
           {{ 'benefits.operators.secondtitle' | translate }}</h1>
         
@@ -280,6 +227,7 @@
             {{ 'benefits.players.button' | translate }}
           </button>
         </div>
+      </div>
 
         <div class="texto" *ngIf="operatorsType === 'operators'">
           <div class="secondlist">
@@ -415,7 +363,7 @@
       <div class="text">
         <div class="contentcenter">
         <span class="TitleTag" id="HowDoesitWork">{{ 'howItWorks.titleheader' | translate }}</span>
-        </div>
+        
         <h1>{{ 'howItWorks.title' | translate }} <br>
           {{ 'howItWorks.titlescond' | translate }}</h1>
 
@@ -427,6 +375,8 @@
             {{ 'howItWorks.players.title' | translate }}
           </button>
         </div>
+
+      </div>
 
         <div class="texto" *ngIf="NewOperatorsType === 'operators'">
           <div class="secondlist">
@@ -500,8 +450,10 @@
   <div class="third-section">
     <div class="third-flex">
       <div class="text">
+        <div class="contentcenter">
         <h1>{{ 'provenSuccess.title' | translate }}</h1>
         <span class="TitleBold3">{{ 'provenSuccess.subtitle' | translate }}</span>
+      </div>
         <div class="texto">
           <p>{{ 'provenSuccess.description' | translate }}</p>
         </div>
@@ -532,9 +484,10 @@
       <div class="text">
         <div class="contentcenter">
         <span class="TitleTag" id="security">{{ 'security.titleheader' | translate }}</span>
-        </div>
+        
         <h1>{{ 'security.title' | translate }}</h1>
         <p>{{ 'security.description' | translate }}</p>
+      </div>
         <div class="secondlist">
           <ul>
             <li>
@@ -571,11 +524,13 @@
       <div class="text">
         <div class="contentcenter">
         <span class="TitleTag" id="compliance">{{ 'compliance.titleheader' | translate }}</span>
-        </div>
+        
         <h1>{{ 'compliance.title' | translate }}</h1>
         <br />
         <p>{{ 'compliance.description' | translate }}</p>
         <p>{{ 'compliance.secondDescription' | translate }}</p>
+
+      </div>
         <div class="secondlist">
           <ul>
             <li>
@@ -620,8 +575,9 @@
       <div class="text">
         <div class="contentcenter">
         <span class="TitleTag" >{{ 'integration.titleheader' | translate }}</span>
-        </div>
+       
         <h1>{{ 'integration.title' | translate }}</h1>
+      </div>
         <p>{{ 'integration.description' | translate }}</p>
         <div class="secondlist">
           <ul>
