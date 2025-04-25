@@ -36,6 +36,15 @@ justify-content: center;
 align-items: center;
 
 }  
+.contentcenter{
+    @media (max-width:900px) {  
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 .TitleTag{
     font-family: "Poppins-Bold", sans-serif;
     text-align: center;
