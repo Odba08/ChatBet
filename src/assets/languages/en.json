@@ -484,6 +484,26 @@
           "This recognition reinforces our vision: chat-based betting is the future. We are honored to pitch in front of top investors, operators, and industry experts who recognize the impact of our technology."
         ]
       }
+      ,
+      {
+        "image": "../../../../assets/notice/expo.jpg",
+        "title": " ChatBet Will Be at GAT Expo Gaming & Technology 2025!",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": " April 28–30, 2025"
+          },
+          {
+            "label": "Location:",
+            "text": "Cartagena, Colombia"
+          }
+        ],
+        "content": [
+          "From April 28 to 30, you will find us in Cartagena, Colombia, participating in one of the most important gaming and technology events in Latin America.",
+          "GAT Expo is the meeting point for innovation leaders in iGaming, and ChatBet wouldn't miss it. We will be showcasing how we are transforming the betting experience through artificial intelligence and conversational betting, directly via WhatsApp and Telegram.",
+          "If you're planning to attend, we would love for you to stop by, get to know our project, and have a chat about how we are building the future of betting."
+        ]
+      }
     ],
     "cta": "Contact Us"
   },

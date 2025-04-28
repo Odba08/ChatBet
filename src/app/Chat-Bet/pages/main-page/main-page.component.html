@@ -35,7 +35,7 @@
         </div>
 
         <div class="video">
-          <a href="#contactanos">{{ 'heroSection.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'heroSection.cta' | translate }}</a>
           <img [src]="currentImages['img3']" alt="" (click)="playVideo()" />
         </div>
       </div>
@@ -118,7 +118,7 @@
         </div>
 
         <div class="completebutton">
-          <a href="#contactanos">{{ 'whatIsChatBet.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'whatIsChatBet.cta' | translate }}</a>
         </div>
       </div>
       <div class="chatbetimage" style="display: flex">
@@ -197,7 +197,7 @@
       </div>
     </div>
     <div class="completebutton">
-      <a href="#contactanos">{{ 'features.cta' | translate }}</a>
+      <a (click)="scrollToSection($event, 'contactus')">{{ 'features.cta' | translate }}</a>
     </div>
   </div>
 </div>
@@ -275,7 +275,7 @@
           </div>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ 'benefits.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'benefits.cta' | translate }}</a>
         </div>
       </div>
     </div>
@@ -462,7 +462,7 @@
         <br>
         <p>{{ 'provenSuccess.thirdDescription' | translate }}</p>
         <div class="completebutton">
-          <a href="#contactanos">{{ 'provenSuccess.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'provenSuccess.cta' | translate }}</a>
         </div>
       </div>
       <div class="image-provensection" style="display: flex">
@@ -509,7 +509,7 @@
           </ul>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ 'security.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'security.cta' | translate }}</a>
         </div>
       </div>
     </div>
@@ -553,7 +553,7 @@
         </div>
         <p>{{ 'compliance.footer' | translate }}</p>
         <div class="completebutton">
-          <a href="#contactanos">{{ 'compliance.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'compliance.cta' | translate }}</a>
         </div>
       </div>
       <div class="image-section" style="display: flex">
@@ -596,7 +596,7 @@
           </ul>
         </div>
         <div class="completebutton">
-          <a href="#contactanos">{{ 'integration.cta' | translate }}</a>
+          <a (click)="scrollToSection($event, 'contactus')">{{ 'integration.cta' | translate }}</a>
         </div>
       </div>
     </div>
