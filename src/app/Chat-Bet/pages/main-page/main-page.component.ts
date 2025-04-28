@@ -1,10 +1,23 @@
-import { Component, ElementRef, ViewChild} from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { ToastrService } from 'ngx-toastr';
 import { AnimationOptions } from 'ngx-lottie';
 import { countries } from '../../../model/contry-data.store';
+import { LanguageService } from '../../../lenguage/language.service';
+
+interface BestGradesSlider {
+  description: string;
+  imageUrl: string;
+  title: string;
+  url?: string;
+  gallery?: GalleryModel[];
+}
+
+interface GalleryModel {
+  img: string;
+}
 
 
 @Component({
@@ -13,97 +26,155 @@ import { countries } from '../../../model/contry-data.store';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
-  public countries:any = countries
+  public countries: any = countries;
   public dialCode: string | null = null;
   public maxLength: number = 0;
   public minLength: number = 0;
+  public operatorsType: 'operators' | 'players' = 'operators';
+  public NewOperatorsType: 'operators' | 'players' = 'operators';
+  public gallerySlider: Array<BestGradesSlider> = [];
+  public showCarousel: boolean = true;
+  isMenuOpen: boolean = false;
+  isScrolled = false;
 
- 
-    @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
-    @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    this.isScrolled = scrollPosition > 50;
+  }
+  @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
+  @ViewChild('videoElementMobile') videoElementMobile!: ElementRef<HTMLVideoElement>;
 
-    
-    options: AnimationOptions = {
-      path: '../../../../assets/animation/lottieesp.json',
-      renderer: 'svg',
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-      }
-    };
+  options: AnimationOptions = {
+    path: '../../../../assets/animation/lottieesp.json',
+    renderer: 'svg',
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
 
-    secondoptions: AnimationOptions = {
-      path: '../../../../assets/animation/Title_AnimationV2.json',
-      renderer: 'svg',
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-      }
-    }
-  
-    form: FormGroup = this.fb.group({
-      name: ['', Validators.required], 
-      tname: 'ChatBet',
-      email: ['', [Validators.required, Validators.email]], 
-      contact: ['', Validators.required], 
-      empresa: ['', Validators.required], 
-      cargo: ['', Validators.required], 
-      country: ['', Validators.required],
-      message: ['', Validators.required] 
-    });
-  
-    imagePaths: { [key: string]: { [key: string]: string } } = {
-      es: {
-        img1: '../../../../assets/img/Enespañol.png',
-        img2: './assets/img/Frame7.png',
-        img3: '../../../../assets/Icon/video.png',
-        img4: '../../../../assets/Background/review2.svg',
-        img5: './assets/img/Frame1-es.svg',
-        third: './assets/img/Frame5.png',
-        second: './assets/img/second-phone.png',
-        video: 'https://landing-page-chatbet.s3.us-east-1.amazonaws.com/assets/video/vid-es.mp4',
-        footer: '../../../../assets/Background/footer.svg',
-        footer2: '../../../../assets/Background/2footer.svg',
-        phoneimage: '../../../../assets/img/phone-es.png',
-        Frame4: '../../../../assets/img/Frame4-es.png',
-        reviewphone: '../../../../assets/Background/review-tlf2.svg'
+  secondoptions: AnimationOptions = {
+    path: '../../../../assets/animation/Title_AnimationV2.json',
+    renderer: 'svg',
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
 
-      },
-      en: {
-        img1: '../../../../assets/img/Eningles.png',
-        img2: './assets/img/Frame7.en.png',
-        img3: '../../../../assets/Icon/video-en.png',
-        img4: '../../../../assets/Background/review-en2.svg',
-        img5: './assets/img/Frame1.svg',
-        third: './assets/img/Frame5.2.png',
-        second: './assets/img/guardar/second-phone.png',
-        video: 'https://landing-page-chatbet.s3.us-east-1.amazonaws.com/assets/video/vid-es.mp4',
-        footer: '../../../../assets/Background/footer.svg',
-        footer2: '../../../../assets/Background/2footer.svg',
-        phoneimage: '../../../../assets/img/phone-en.png',
-        Frame4: '../../../../assets/img/Frame4.png',
-        reviewphone: '../../../../assets/Background/review-en-tlf2.svg'
+  form: FormGroup = this.fb.group({
+    name: ['', Validators.required],
+    tname: 'ChatBet',
+    email: ['', [Validators.required, Validators.email]],
+    contact: ['', Validators.required],
+    empresa: ['', Validators.required],
+    /* cargo: ['', Validators.required],
+    country: ['', Validators.required], */
+    message: ['', Validators.required],
+  });
 
-      }
-    };
-  
-    currentLanguage: string = 'es';
-    currentImages = this.imagePaths[this.currentLanguage];
-  
-    currentIndex: number = 0;
-    currentIndextwo: number = 0;
-  
-    constructor(
-      private translate: TranslateService, 
-      private fb: FormBuilder, 
-      private toastr: ToastrService
-    ) {}
+  imagePaths: { [key: string]: { [key: string]: string } } = {
+    es: {
+      img1: '../../../../assets/img/NEnEsp.png',
+      img2: './assets/img/incremento.png',
+      img3: '../../../../assets/HomePage/miraen.png',
+      img4: '../../../../assets/slider/sinfondo.png',
+      img5: './assets/img/Frame1-es.svg',
+      third: './assets/img/Frame5.png',
+      second: './assets/img/second-phone.png',
+      video: 'https://landing-page-chatbet.s3.us-east-1.amazonaws.com/assets/video/vid-es.mp4',
+      footer: '../../../../assets/Background/footer.svg',
+      footer2: '../../../../assets/Background/2footer.png',
+      phoneimage: '../../../../assets/img/phone-es.png',
+      Frame4: '../../../../assets/img/Frame4-es.png',
+      reviewphone: 'j../../../../assets/slider/sinfondo-mob.png',
+      homepage: '../../../../assets/HomePage/imagen-inicial-es.gif',
+      whatischatbet: '../../../../assets/HomePage/whatischatbet-es.png',
+      beneficios: '../../../../assets/HomePage/beneficios-es.png',
+      howitswork: '../../../../assets/HomePage/howitswork-es.png',
+      provensucces: '../../../../assets/HomePage/provensucces-es.png',
+      inversionitas:'../../../../assets/HomePage/line.png',
+      rev1: '../../../../assets/slider/rev-es.png',
+      rev2: '../../../../assets/slider/rev-2-es.png',
+    },
+    en: {
+      img1: '../../../../assets/img/NEnEsp.png',
+      img2: './assets/img/increase.png',
+      img3: '../../../../assets/Icon/video.png',
+      img4: '../../../../assets/slider/sinfondo.png',
+      img5: './assets/img/Frame1.svg',
+      third: './assets/img/Frame5.2.png',
+      second: './assets/img/guardar/second-phone.png',
+      video: 'https://landing-page-chatbet.s3.us-east-1.amazonaws.com/assets/video/vid-es.mp4', // Corregir a vid-en.mp4 si existe
+      footer: '../../../../assets/Background/footer-en.png',
+      footer2: '../../../../assets/Background/2footer-en.png',
+      phoneimage: '../../../../assets/img/phone-en.png',
+      Frame4: '../../../../assets/img/Frame4.png',
+      reviewphone: '../../../../assets/slider/sinfondo-mob.png',
+      homepage: '../../../../assets/HomePage/imagen-inicial-en.gif',
+      whatischatbet: '../../../../assets/HomePage/whatischatbet-en.png',
+      beneficios: '../../../../assets/HomePage/beneficios-en.png',
+      howitswork: '../../../../assets/HomePage/howitswork-en.png',
+      provensucces: '../../../../assets/HomePage/provensucces-en.png',
+      inversionitas:'../../../../assets/inversionistas.png',
+      rev1: '../../../../assets/slider/rev-en.png',
+      rev2: '../../../../assets/slider/rev-2-en.png',
 
-    switchLanguage(language: string) {
-      this.translate.use(language);
-      this.currentLanguage = language;
-      this.currentImages = this.imagePaths[this.currentLanguage];
+    },
+  };
+
+  currentLanguage: string = 'es';
+  currentImages = this.imagePaths[this.currentLanguage];
+
+  currentIndex: number = 0;
+  currentIndextwo: number = 0;
+
+  constructor(
+    private translate: TranslateService,
+    private fb: FormBuilder,
+    private toastr: ToastrService,
+    private languageService: LanguageService // Inyectar LanguageService
+  ) {}
+
+  ngOnInit() {
+    // Suscribirse al idioma actual y actualizar imágenes
+    this.languageService.getCurrentLang().subscribe(lang => {
+      this.currentLanguage = lang;
+      this.currentImages = this.imagePaths[lang];
+      this.updateGallerySlider();
       this.updateVideoSource();
-    }
+    });
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault(); 
+    const targetElement = document.getElementById(sectionId);
   
+    if (targetElement) {
+      const headerOffset = 150; 
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth', // Desplazamiento suave
+      });
+    }
+  }
+  
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    this.languageService.setLanguage(language); // Propagar el cambio al LanguageService
+    this.currentLanguage = language;
+    this.currentImages = this.imagePaths[language];
+    this.updateVideoSource();
+    this.updateGallerySlider();
+    this.isMenuOpen = false;
+  }
+    
     updateVideoSource() {
       const video: HTMLVideoElement = this.videoElement.nativeElement;
       const videoMobile: HTMLVideoElement = this.videoElementMobile.nativeElement;
@@ -120,73 +191,86 @@ export class MainPageComponent {
     }
 
     onCountrySelected(country: any) {
+      if (!country) {
+        console.error('No country selected');
+        return;
+      }
+      
       console.log('Selected Country:', country);
       this.dialCode = country.dialCode;
       this.maxLength = country.maxLength;
       this.minLength = country.minLength;
     
-    const contactControl = this.form.get('contact');
-
-    if(contactControl) {
-      contactControl.clearValidators();
-
-      contactControl.setValidators([
-        Validators.required,
-        Validators.minLength(country.minLength),
-        Validators.maxLength(country.maxLength)
-      ]);
-
-      contactControl.updateValueAndValidity();
-    }
-    
-    console.log('Max Length:', country.maxLength, 'Min Length:', country.minLength);
-
+      const contactControl = this.form.get('contact');
+      if(contactControl) {
+        contactControl.clearValidators();
+        contactControl.setValidators([
+          Validators.required,
+          Validators.minLength(country.minLength),
+          Validators.maxLength(country.maxLength)
+        ]);
+        contactControl.updateValueAndValidity();
+      }
+      
+      console.log('Max Length:', country.maxLength, 'Min Length:', country.minLength);
     }
 
     async send() {
-      if (this.form.invalid || !this.dialCode ) {
+      // Verifica primero si el dialCode está establecido
+      if (!this.dialCode) {
         if (this.currentLanguage === 'es') {
-          this.toastr.error('Por favor, complete todos los campos antes de enviar');
+          this.toastr.error('Por favor, seleccione un país');
         } else {
-          this.toastr.error('Please fill in all fields before submitting');
+          this.toastr.error('Please select a country');
         }
         return;
       }
-
-      if (this.form.value.contact.length < this.minLength || this.form.value.contact.length > this.maxLength) {
+    
+      // Marca todos los campos como "touched" para mostrar errores
+      this.form.markAllAsTouched();
+    
+      // Verifica la validez del formulario
+      if (this.form.invalid) {
         if (this.currentLanguage === 'es') {
-          this.toastr.error('Por favor, introduzca un número de contacto válido');
+          this.toastr.error('Por favor, complete todos los campos requeridos');
         } else {
-          this.toastr.error('Please enter a valid contact number');
+          this.toastr.error('Please fill all required fields');
         }
         return;
       }
-  
+    
+      // Verifica la longitud del número de contacto
+      if (this.form.value.contact.length < this.minLength || 
+          this.form.value.contact.length > this.maxLength) {
+        if (this.currentLanguage === 'es') {
+          this.toastr.error(`El número debe tener entre ${this.minLength} y ${this.maxLength} dígitos`);
+        } else {
+          this.toastr.error(`Number must be between ${this.minLength} and ${this.maxLength} digits`);
+        }
+        return;
+      }
+    
       try {
         emailjs.init('OGARtyjIOA2WPHZfL');
         
-        let response = await emailjs.send("service_c895d9m", "template_worpfzp", {
+        await emailjs.send("service_amkqz0p", "template_worpfzp", {
           from_name: this.form.value.name,
           from_email: this.form.value.email,
           from_contact: `${this.dialCode} ${this.form.value.contact}`,
           from_empresa: this.form.value.empresa,
-          from_cargo: this.form.value.cargo,
-          from_country: this.form.value.country,
           message: this.form.value.message,
         });
   
         if (this.currentLanguage === 'es') {
           this.toastr.success('Mensaje enviado con éxito');
-          console.log('Response:', response);
-          
         } else {
           this.toastr.success('Message sent successfully');
-          console.log('Response:', response);
         }
-  
+    
         this.form.reset();
         this.dialCode = null;
       } catch (error) {
+        console.error('Error al enviar:', error);
         if (this.currentLanguage === 'es') {
           this.toastr.error('Error al enviar el mensaje');
         } else {
@@ -194,7 +278,7 @@ export class MainPageComponent {
         }
       }
     }
-  
+    
     playVideo() {
       const gifImage = document.getElementById('gifImage');
       const video: HTMLVideoElement = this.videoElement.nativeElement;
@@ -244,5 +328,25 @@ export class MainPageComponent {
         }
       });
     }
-  
+
+    private updateGallerySlider(): void {
+      this.gallerySlider = [
+        {
+          description: this.currentImages['slider1_desc'] || 'Default description 1',
+          imageUrl: this.currentImages['rev1'],
+          title: this.currentImages['slider1_title'] || 'Default title 1'
+        },
+        {
+          description: this.currentImages['slider2_desc'] || 'Default description 2',
+          imageUrl: this.currentImages['rev2'],
+          title: this.currentImages['slider2_title'] || 'Default title 2'
+        }
+      ];
+      // Forzar recreación del componente
+      this.showCarousel = false;
+      setTimeout(() => {
+        this.showCarousel = true;
+        window.dispatchEvent(new Event('resize'));
+      }, 200);
+    }
   }

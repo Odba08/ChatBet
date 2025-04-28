@@ -1,0 +1,44 @@
+<div class="backgroundline">
+  <!-- Footer Desktop -->
+  <div class="footer1" *ngIf="currentImages?.footer">
+    <img src="../../../assets/footer/background.png" alt="Footer Background" />
+    <div class="contenido">
+      <!-- Parte 1 (Logo) -->
+      <div class="parte1">
+        <img class="logo" src="../../../assets/footer/logo.png" alt="Logo" />
+      </div>
+      
+      <!-- Parte 2 (Redes sociales) -->
+      <div class="parte2">
+        <p class="titulo-redes">{{ 'footer.redes' | translate }}</p>
+        <div class="redes-sociales">
+          <a href="#"><img src="../../../assets/footer/facebook.png" alt="Facebook" /></a>
+          <a href="https://www.instagram.com/chatbetai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../../../assets/footer/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="../../../assets/footer/x.png" alt="Twitter" /></a>
+        </div>
+      </div>
+      
+      <!-- Parte 3 (Contacto) -->
+      <div class="parte3">
+        <p class="titulo-contacto">{{ 'footer.info' | translate }}</p>
+        <p class="email" href="mailto:marketing@chatbet.gg">marketing&#64;chatbet.gg</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Mobile -->
+  <div class="footer2" *ngIf="currentImages?.footer2">
+    <img src="../../../assets/footer/mobile.png" alt="Mobile Footer" />
+    <div class="contenido-mobile">
+      <img class="logo-mobile" src="../../../assets/footer/logo.png" alt="Logo" />
+      <p class="titulo-redes-mobile">{{ 'footer.redes' | translate }}</p>
+      <div class="redes-sociales-mobile">
+        <a href="#"><img src="../../../assets/footer/facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/chatbetai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../../../assets/footer/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="../../../assets/footer/x.png" alt="Twitter" /></a>
+      </div>
+      <p class="titulo-contacto-mobile">{{ 'footer.info' | translate }}</p>
+      <p class="email-mobile" href="mailto:marketing@chatbet.gg">marketing&#64;chatbet.gg</p>
+    </div>
+  </div>
+</div>

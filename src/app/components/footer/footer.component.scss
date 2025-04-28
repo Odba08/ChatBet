@@ -1,0 +1,138 @@
+.backgroundline {
+    /* Estilos generales */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  
+    /* Tipografía */
+    p {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+  
+
+    .footer1 {
+      position: relative;
+      margin: 0;
+  
+      .contenido {
+        position: absolute;
+        top: 0;
+        margin-top: 30px;
+        left: 5%;  /* 90% de ancho (100% - 5% a cada lado) */
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        /* Parte 1 - Logo */
+        .parte1 .logo {
+          width: 100%; /* Ajusta según necesites */
+        }
+  
+        /* Parte 2 - Redes sociales */
+        .parte2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          .titulo-redes {
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+  
+          .redes-sociales {
+            display: flex;
+            gap: 15px;
+            cursor: pointer;
+  
+            img {
+              width: 35px; 
+              height: 35px;
+              transition: transform 0.3s;
+  
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+  
+        /* Parte 3 - Contacto */
+        .parte3 {
+          text-align: right;
+  
+          .titulo-contacto {
+            font-size: 1rem;
+            margin-bottom: 5px;
+          }
+  
+          .email {
+            font-size: 12px;
+          }
+        }
+      }
+  
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .footer2 {
+      position: relative;
+      display: none; 
+  
+      .contenido-mobile {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+  
+        .logo-mobile {
+          width: 55%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+  
+        .titulo-redes-mobile {
+          font-size: 1.2rem;
+        }
+  
+        .redes-sociales-mobile {
+          display: flex;
+          gap: 15px;
+            cursor: pointer;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+  
+        .titulo-contacto-mobile {
+          font-size: 1.2rem;
+          margin-top: 10px;
+          text-align: center;
+        line-height: 2;
+        }
+  
+        .email-mobile {
+          font-size: 1.2rem;
+        }
+      }
+  
+      @media (max-width: 900px) {
+        display: block;
+      }
+    }
+  }

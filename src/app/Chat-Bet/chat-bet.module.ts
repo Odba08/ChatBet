@@ -6,7 +6,13 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LottieComponent, provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { CustomSelectComponent } from './custom-select/custom-select.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { SpotlightComponent } from './pages/spotlight/spotlight.component';
+import { ChatBetRoutingModule } from './chat-bet-routing.module';
+import { CarouselSliderComponent } from '../components/carousel-slider/carousel-slider.component';
+
 export function playerFactory() {
   return player;
 }
@@ -14,14 +20,19 @@ export function playerFactory() {
 @NgModule({
   declarations: [
     MainPageComponent,
-    CustomSelectComponent
+    CustomSelectComponent,
+    AboutusComponent,
+    SpotlightComponent,
   ],
   imports: [
+    MatExpansionModule,
     CommonModule,
     TranslateModule,
     SlickCarouselModule,
     LottieComponent,
     ReactiveFormsModule,
+    ChatBetRoutingModule,
+    CarouselSliderComponent,
    
   ],
   exports: [

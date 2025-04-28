@@ -1,0 +1,103 @@
+<div class="section">
+  <div class="background">
+    <!-- <img src="./assets/Background/nuevoheader.png" alt="" /> -->
+  </div>
+
+<!--   <header [class.scrolled]="isScrolled">
+    <div class="section-header">
+      <div class="mobileheader">
+        <img class="chatbetone" src="./assets/Icon/Layer_1.png" routerLink="/" />
+        <div class="newidioma">
+          <div class="newidioma">
+            <a (click)="switchLanguage('en'); false">En</a>
+            <a>|</a>
+            <a (click)="switchLanguage('es'); false">Es</a>
+          </div>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu" (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+      </div>
+
+      <div class="menu-overlay" [class.active]="isMenuOpen" (click)="toggleMenu()"></div>
+      <div class="navbar" [class.active]="isMenuOpen">
+        <a href="#feature">{{ 'header.navigation.features' | translate }}</a>
+        <a href="#benefits">{{ 'header.navigation.benefits' | translate }}</a>
+        <a href="#HowDoesitWork">{{ 'header.navigation.howItWorks' | translate }}</a>
+        <a href="#security">{{ 'header.navigation.security' | translate }}</a>
+        <a href="#compliance">{{ 'header.navigation.compliance' | translate }}</a>
+        <a href="#integration">{{ 'header.navigation.integration' | translate }}</a>
+        <a href="#contactus">{{ 'header.navigation.contactUs' | translate }}</a>
+        <span class="divisor">|</span>
+        <a routerLink="/spotlight">{{ 'header.navigation.spotlight' | translate }}</a>
+        <span class="divisor">|</span>
+        <a routerLink="/aboutus" href="">{{ 'header.navigation.aboutUs' | translate }}</a>
+        <span class="divisor">|</span>
+        <div class="idioma">
+          <a (click)="switchLanguage('en')"> {{ 'header.languageSwitch.english' | translate }} </a>
+          <img 
+            (click)="switchLanguage('en')"
+            [src]="currentLanguage === 'en' 
+              ? '../../../../assets/header/en-on.png' 
+              : '../../../../assets/header/en-off.png'" 
+            alt="English"
+          >
+                  
+                  <a (click)="switchLanguage('es')"> {{ 'header.languageSwitch.spanish' | translate }} </a>
+                  <img 
+                  (click)="switchLanguage('es')"
+                  [src]="currentLanguage === 'es' 
+                    ? '../../../../assets/header/es-on.png' 
+                    : '../../../../assets/header/es-off.png'" 
+                  alt="Español"
+        >
+        </div>
+      </div>
+    </div>
+  </header>
+ -->
+  <div class="first-section">
+    <div class="first-section-container">
+      <div class="text">
+        <br>
+        
+        <h1 class="titlebold5">{{ 'spotlight.title' | translate }}</h1>
+        <br>
+        <span class="TitleBold3">{{ 'spotlight.subtitle' | translate }}</span>
+        <br><br>
+        <p>{{ 'spotlight.description' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<div id="beneficios" class="section">
+  <div class="notice-section">
+    <div class="notice" *ngFor="let notice of 'spotlight.notices' | translate; let i = index">
+      <div class="imagen">
+        <img [src]="notice.image" alt="">
+      </div>
+
+      <div class="infonotice">
+        <h2>{{ notice.title }}</h2>
+        <p>{{ notice.date }}</p>
+        <ul *ngIf="notice.details">
+          <li *ngFor="let detail of notice.details" class="list-item">
+            <span class="TitleBoldul">{{ detail.label | translate }}</span>
+            {{ detail.text }}
+          </li>
+        </ul>
+        
+        <p *ngFor="let paragraph of notice.content">{{ paragraph }}</p>
+        <br>
+      </div>
+    </div>
+    
+   
+  </div>
+</div>
