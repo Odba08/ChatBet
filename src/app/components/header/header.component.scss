@@ -55,6 +55,7 @@ header {
   box-shadow: 0 10px 15px -5px rgba(85, 84, 243, 0.4);
 
   .mobileheader {
+    width: 15%;
     @media (max-width: 900px) {
       width: 100%;   
     }
@@ -62,7 +63,11 @@ header {
     justify-content: space-between;
     align-items: center;
     .chatbetone {
+      width: 100%;
       cursor: pointer;
+      @media (max-width: 900px) {
+        width: 25%;   
+      }
     }
   }        
   .phonediv {
