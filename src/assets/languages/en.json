@@ -438,6 +438,26 @@
     "description": "Stay up to date with ChatBet's latest achievements, industry recognitions, and global expansion. From exclusive event invitations to game-changing partnerships, this is where we showcase our journey as we redefine the future of betting.",
     "notices": [
       {
+        "image": "../../../../assets/notice/chatbet.png",
+        "title": " ChatBet Shortlisted as Rising Star in Sports Betting at SBC Awards Europe 2025",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": "June 12th, 2025 "
+          },
+          {
+            "label": "Location:",
+            "text": "Hilton Hotel, San Ġiljan, Malta"
+          }
+        ],
+        "content": [
+          "ChatBet has been shortlisted for the Rising Star in Sports Betting award at SBC Awards Europe 2025!",
+          "This nomination recognizes our disruptive approach to betting—bringing AI-powered, conversational experiences directly into WhatsApp and Telegram.",
+          "We're honored to stand among Europe’s top innovators in gaming.",
+          "See you in Malta!"
+        ]
+      },
+      {
         "image": "../../../../assets/notice/expo.png",
         "title": " ChatBet Will Be at GAT Expo Gaming & Technology 2025!",
         "details": [
