@@ -349,11 +349,15 @@
     "titleheader": "Contáctanos",
     "subtitle": "¡Experimenta la emoción! Agenda una demo hoy y descubre cómo la IA de ChatBet revoluciona la experiencia del usuario.",
     "form": {
-      "name": "Nombre*",
+      "name": "Nombre Completo*",
+      "monthlyGgr": "Ingresos brutos mensuales por apuestas(GGR)?",
       "contactNumber": "Número de contacto*",
       "email": "Correo corporativo*",
       "company": "Nombre de empresa*",
-      "message": "¿Cómo puede ayudarte nuestro equipo?",
+      "message": "¿Comentarios adicionales?",
+      "select": "Selecciona",
+      "thanksmessage": "Gracias por contactarnos. Estamos construyendo algo poderoso y trabajamos con una lista curada de socios. Si tu perfil se alinea con nuestras prioridades actuales, alguien de nuestro equipo se pondrà en contacto contigo pronto.",
+
       "submit": "Enviar info"
     }
   },

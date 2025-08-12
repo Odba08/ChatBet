@@ -349,11 +349,14 @@
           "titleheader":"Contact Us",
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
           "form": {
-            "name": "Name*",
+            "name": "Full Name*",
+            "monthlyGgr": "Monthly GGR (Gross Gaming Revenue)*",
             "contactNumber": "Contact Number*",
-            "email": "Company Email*",
+            "email": "Corporate Email*",
             "company": "Company Name*",
-            "message": "How Can Our Team Help?",
+            "message": "Any additional comments?",
+            "select": "Select",
+            "thanksmessage": "Thanks for reaching out. We're building something powerful, and working with a curated list of partners. If your profile aligns with our current priorities, someone from our team will be in touch shortly.",
             "submit": "Send Info"
           }
         },

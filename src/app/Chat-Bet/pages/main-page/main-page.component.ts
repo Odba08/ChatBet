@@ -37,6 +37,14 @@ export class MainPageComponent {
   isMenuOpen: boolean = false;
   isScrolled = false;
 
+  public monthlyGgrOptions: string[] = [
+  '<$250K',
+  '>$250K – <$1M',
+  '>$1M – $5mm',
+  '$5mm – $10mm',
+  '$10mm+'
+];
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
@@ -65,7 +73,8 @@ export class MainPageComponent {
     name: ['', Validators.required],
     tname: 'ChatBet',
     email: ['', [Validators.required, Validators.email]],
-    contact: ['', Validators.required],
+    /* contact: ['', Validators.required], */
+   monthlyGgr: ['', Validators.required],
     empresa: ['', Validators.required],
     /* cargo: ['', Validators.required],
     country: ['', Validators.required], */
@@ -215,7 +224,7 @@ export class MainPageComponent {
       console.log('Max Length:', country.maxLength, 'Min Length:', country.minLength);
     }
 
-    async send() {
+  /*   async send() {
       // Verifica primero si el dialCode está establecido
       if (!this.dialCode) {
         if (this.currentLanguage === 'es') {
@@ -277,8 +286,46 @@ export class MainPageComponent {
           this.toastr.error('Error sending message');
         }
       }
-    }
-    
+    } */
+  
+      
+   async send() {
+  this.form.markAllAsTouched();
+
+  if (this.form.invalid) {
+    this.toastr.error(this.currentLanguage === 'es' ? 
+      'Por favor, complete todos los campos requeridos' : 
+      'Please fill all required fields');
+    return;
+  }
+
+  try {
+    emailjs.init('OGARtyjIOA2WPHZfL');
+
+    // Obtener el valor seleccionado de monthlyGgr (ej: ">$1M – $5mm")
+    const monthlyGgrValue = this.form.value.monthlyGgr;
+
+    await emailjs.send("service_amkqz0p", "template_worpfzp", {
+      from_name: this.form.value.name,
+      from_email: this.form.value.email,
+      from_contact: monthlyGgrValue, // Enviamos solo el valor de monthlyGgr como contacto
+      from_empresa: this.form.value.empresa,
+      message: this.form.value.message,
+    });
+
+    this.toastr.success(this.currentLanguage === 'es' ? 
+      'Mensaje enviado con éxito' : 
+      'Message sent successfully');
+
+    this.form.reset();
+  } catch (error) {
+    console.error('Error al enviar:', error);
+    this.toastr.error(this.currentLanguage === 'es' ? 
+      'Error al enviar el mensaje' : 
+      'Error sending message');
+  }
+}
+
     playVideo() {
       const gifImage = document.getElementById('gifImage');
       const video: HTMLVideoElement = this.videoElement.nativeElement;
