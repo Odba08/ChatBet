@@ -1354,8 +1354,13 @@ h3{
 
 }
 .form-input{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    display: block;
+    width: 95%;
+    /* margin: 0 auto; */
+    align-items: center;
+    justify-content: center;
+   /*  grid-template-columns: 1fr 1fr; */
     @media (max-width: 900px){
         display: block;
     }
@@ -1404,9 +1409,10 @@ select:focus {
     .countries{
     display: flex;
     justify-content: space-between;
-    margin-top: -20px;
+    /* margin-top: -20px; */
+    width: 92%;
     .num-selector{
-        width: 20%;
+        width: 100%;
         padding: 1rem;
         border-bottom: solid 1px;
         border-color: #E4EBEE;
@@ -1418,7 +1424,7 @@ select:focus {
 }
 
 .form-send{
-    margin-top: 4%;
+    /* margin-top: 4%; */
     label{
         color: black;
         font-family: 'Poppins', sans-serif;

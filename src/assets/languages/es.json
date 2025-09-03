@@ -342,19 +342,19 @@
   },
   "calender":{
         "pick": "Elige la hora que más te convenga.",
-        "notReady": "¿Prefieres que te contactemos primero? Llena el formulario y te escribiremos pronto."
+        "notReady": " Acceso anticipado a apuestas por chat con IA – Construyamos el futuro juntos"
         },
   "contactUs": {
     "title": "¡Únete al futuro de las apuestas con IA de ChatBet!",
     "titleheader": "Contáctanos",
     "subtitle": "¡Experimenta la emoción! Agenda una demo hoy y descubre cómo la IA de ChatBet revoluciona la experiencia del usuario.",
     "form": {
-      "name": "Nombre Completo*",
-      "monthlyGgr": "Ingresos brutos mensuales por apuestas(GGR)?",
-      "contactNumber": "Número de contacto*",
-      "email": "Correo corporativo*",
-      "company": "Nombre de empresa*",
-      "message": "¿Comentarios adicionales?",
+      "name": "Nombre Completo",
+      "monthlyGgr": "Ingresos Brutos Mensuales por Apuestas (GGR)?",
+      "contactNumber": "Número de Contacto",
+      "email": "Correo Corporativo",
+      "company": "Nombre de Empresa",
+      "message": "¿Comentarios Adicionales?",
       "select": "Selecciona",
       "thanksmessage": "Gracias por contactarnos. Estamos construyendo algo poderoso y trabajamos con una lista curada de socios. Si tu perfil se alinea con nuestras prioridades actuales, alguien de nuestro equipo se pondrà en contacto contigo pronto.",
 
