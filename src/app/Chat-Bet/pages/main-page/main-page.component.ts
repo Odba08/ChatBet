@@ -305,7 +305,7 @@ export class MainPageComponent {
     // Obtener el valor seleccionado de monthlyGgr (ej: ">$1M – $5mm")
     const monthlyGgrValue = this.form.value.monthlyGgr;
 
-    await emailjs.send("service_amkqz0p", "template_worpfzp", {
+    await emailjs.send("service_18pzode", "template_worpfzp", {
       from_name: this.form.value.name,
       from_email: this.form.value.email,
       from_contact: monthlyGgrValue, // Enviamos solo el valor de monthlyGgr como contacto
