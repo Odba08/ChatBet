@@ -357,6 +357,7 @@
             "message": "Any additional comments? (Optional)",
             "select": "Select",
             "thanksmessage": "Thanks for reaching out. We're building something powerful, and working with a curated list of partners. If your profile aligns with our current priorities, someone from our team will be in touch shortly.",
+            "error": "Only business emails are allowed.",
             "submit": "Send Info"
           }
         },

@@ -661,6 +661,9 @@
           <div class="form-section">
             <input formControlName="email" type="text" [placeholder]="'contactUs.form.email' | translate" />
           </div>
+          <div *ngIf="form.get('email')?.hasError('forbiddenDomain') && form.get('email')?.touched" style="color: red; font-size: 0.9em;">
+            {{ 'contactUs.form.error' | translate }}
+          </div>
            <div class="form-section">
             <input formControlName="empresa" type="text" [placeholder]="'contactUs.form.company' | translate" />
           </div>

@@ -6,6 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 import { AnimationOptions } from 'ngx-lottie';
 import { countries } from '../../../model/contry-data.store';
 import { LanguageService } from '../../../lenguage/language.service';
+import { validationInstitucional } from '../../../validators/validationInstitucional';
 
 interface BestGradesSlider {
   description: string;
@@ -72,7 +73,9 @@ export class MainPageComponent {
   form: FormGroup = this.fb.group({
     name: ['', Validators.required],
     tname: 'ChatBet',
-    email: ['', [Validators.required, Validators.email]],
+    email: ['', [Validators.required, Validators.email,
+      validationInstitucional(['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com','live.com','icloud.com','aol.com','protonmail.com','zoho.com','gmx.com','mail.com','yandex.com','tutanota.com','fastmail.com','hushmail.com','inbox.com','me.com','mac.com','msn.com','qq.com','naver.com','daum.net'])
+    ]],
     /* contact: ['', Validators.required], */
    monthlyGgr: ['', Validators.required],
     empresa: ['', Validators.required],
