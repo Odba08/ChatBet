@@ -1465,4 +1465,11 @@ button:hover{
     opacity: 0.5;
     cursor: pointer;
 }
+
+.TitleBoldMobile{
+
+    @media screen and (max-width: 900px){
+        font-size: 0.8rem;
+    }
 }
+ }
