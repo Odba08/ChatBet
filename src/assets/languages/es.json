@@ -497,27 +497,6 @@
         ]
       },
       {
-        "image": "../../../../assets/notice/notice5.png",
-        "title": "ChatBet finalista en la competencia SBC First Pitch – SBC Summit Lisboa 2025",
-        "date": "18-sep-2025",
-        "details": [
-          {
-            "label": "Fecha del evento:",
-            "text": "16-18 de septiembre de 2025"
-          },
-          {
-            "label": "Ubicación:",
-            "text": "FIL – Centro de Exposiciones y Congresos de Lisboa, Lisboa, Portugal"
-          }
-        ],
-        "content": [
-          "¡ChatBet fue seleccionada como finalista en la prestigiosa competencia SBC First Pitch durante el SBC Summit Lisboa 2025!",
-          "Este reconocimiento resalta nuestro enfoque innovador en apuestas conversacionales—impulsadas por IA y ofrecidas de forma fluida a través de WhatsApp y Telegram.",
-          "Estamos orgullosos de haber sido reconocidos a nivel global entre las startups más prometedoras de la industria.",
-          "¡Lisboa, fuiste increíble!"
-        ]
-      },
-      {
         "image": "../../../../assets/notice/notice2.png",
         "title": "¡ChatBet finalista en el Startup Pitch de ICE 2025!",
         "date": "22-ene-2025",
@@ -545,6 +524,27 @@
           "En solo 3 minutos en el escenario, presentamos el futuro de las apuestas deportivas conversacionales: un canal de ingresos impulsado por IA para casas de apuestas, a través de WhatsApp y Telegram.",
           "No nos llevamos el trofeo, pero sí algo igual de valioso: conexiones clave, exposición global y la validación de nuestra visión.",
           "Gracias a SiGMA World por la plataforma — nos vemos en SiGMA Central Europe."
+        ]
+      },
+      {
+        "image": "../../../../assets/notice/notice5.png",
+        "title": "ChatBet finalista en la competencia SBC First Pitch – SBC Summit Lisboa 2025",
+        "date": "18-sep-2025",
+        "details": [
+          {
+            "label": "Fecha del evento:",
+            "text": "16-18 de septiembre de 2025"
+          },
+          {
+            "label": "Ubicación:",
+            "text": "FIL – Centro de Exposiciones y Congresos de Lisboa, Lisboa, Portugal"
+          }
+        ],
+        "content": [
+          "¡ChatBet fue seleccionada como finalista en la prestigiosa competencia SBC First Pitch durante el SBC Summit Lisboa 2025!",
+          "Este reconocimiento resalta nuestro enfoque innovador en apuestas conversacionales—impulsadas por IA y ofrecidas de forma fluida a través de WhatsApp y Telegram.",
+          "Estamos orgullosos de haber sido reconocidos a nivel global entre las startups más prometedoras de la industria.",
+          "¡Lisboa, fuiste increíble!"
         ]
       }
     ],
