@@ -349,11 +349,11 @@
           "titleheader":"Contact Us",
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
           "form": {
-            "name": "Full Name (Required)",
+            "name": "Full Name (*)",
             "monthlyGgr": "Monthly GGR (Gross Gaming Revenue)?",
             "contactNumber": "Contact Number",
             "email": "Corporate Email (Generic emails like @gmail.com or @hotmail.com should not be accepted)",
-            "company": "Company Name (Required)",
+            "company": "Company Name (*)",
             "message": "Any additional comments? (Optional)",
             "select": "Select",
             "thanksmessage": "Thanks for reaching out. We're building something powerful, and working with a curated list of partners. If your profile aligns with our current priorities, someone from our team will be in touch shortly.",
@@ -544,7 +544,16 @@
       {
         "image": "assets/notice/notice2.png",
         "title": "ChatBet Named Finalist in the ICE 2025 Startup Pitch!",
-        "date": "22-jan-2025",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": " January 22, 2025"
+          },
+          {
+            "label": "Location:",
+            "text": "Barcelona, Spain"
+          }
+        ],
         "content": [
           "The excitement continues—ChatBet officially made it to the finals of the ICE 2025 Startup Pitch in Barcelona! Out of countless applicants, our AI-powered betting solution stood out as one of the most disruptive innovations in the gaming industry.",
           "This recognition reinforces our vision: chat-based betting is the future. We are honored to pitch in front of top investors, operators, and industry experts who recognize the impact of our technology."
