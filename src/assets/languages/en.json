@@ -442,6 +442,48 @@
     "description": "Stay up to date with ChatBet's latest achievements, industry recognitions, and global expansion. From exclusive event invitations to game-changing partnerships, this is where we showcase our journey as we redefine the future of betting.",
     "notices": [
       {
+        "image": "assets/notice/notice5.png",
+        "title": "ChatBet Finalist at SBC First Pitch Competition – SBC Summit Lisbon 2025",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": "September 16-18, 2025"
+          },
+          {
+            "label": "Location:",
+            "text": ": FIL – Lisbon Exhibition and Congress Centre, Lisbon, Portugal"
+          }
+        ],
+        "content": [
+          "ChatBet was selected as a finalist in the prestigious SBC First Pitch competition at SBC Summit Lisbon 2025!",
+          "This recognition highlights our innovative approach to conversational betting—powered by AI and delivered seamlessly through WhatsApp and Telegram.",
+          "We’re proud to be acknowledged on the global stage among the most promising startups in the industry",
+          "Lisbon, you were incredible!"
+        ]
+      },
+      
+          {
+        "image": "assets/notice/notice4.png",
+        "title": "ChatBet Finalist at SiGMA Pitch – SiGMA Euro-Med 2025",
+        "details": [
+          {
+            "label": "Event Date:",
+            "text": "September 1-4, 2025"
+          },
+          {
+            "label": "Location:",
+            "text": "Malta"
+          }
+        ],
+        "content": [
+          "ChatBet was selected as a finalist in the SiGMA Pitch competition at SiGMA Euro-Med 2025, a summit that once again proved why Europe remains at the forefront of the global iGaming industry.",
+          "In just 3 minutes on stage, we introduced the future of conversational sports betting—an AI-powered revenue channel for sportsbooks via WhatsApp and Telegram.",
+          "We didn’t walk away with the trophy, but we left with something just as valuable: powerful connections, global exposure, and clear validation of our vision.",
+          "Thank you, SiGMA World, for the platform—and see you at SiGMA Central Europe."
+        ]
+      },
+
+      {
         "image": "../../../../assets/notice/chatbet.png",
         "title": " ChatBet Shortlisted as Rising Star in Sports Betting at SBC Awards Europe 2025",
         "details": [
@@ -507,49 +549,8 @@
           "The excitement continues—ChatBet officially made it to the finals of the ICE 2025 Startup Pitch in Barcelona! Out of countless applicants, our AI-powered betting solution stood out as one of the most disruptive innovations in the gaming industry.",
           "This recognition reinforces our vision: chat-based betting is the future. We are honored to pitch in front of top investors, operators, and industry experts who recognize the impact of our technology."
         ]
-      },
-          {
-        "image": "assets/notice/notice4.png",
-        "title": "ChatBet Finalist at SiGMA Pitch – SiGMA Euro-Med 2025",
-        "date": "1-4, 2025",
-        "details": [
-          {
-            "label": "Event Date:",
-            "text": "September 1-4, 2025"
-          },
-          {
-            "label": "Location:",
-            "text": "Malta"
-          }
-        ],
-        "content": [
-          "ChatBet was selected as a finalist in the SiGMA Pitch competition at SiGMA Euro-Med 2025, a summit that once again proved why Europe remains at the forefront of the global iGaming industry.",
-          "In just 3 minutes on stage, we introduced the future of conversational sports betting—an AI-powered revenue channel for sportsbooks via WhatsApp and Telegram.",
-          "We didn’t walk away with the trophy, but we left with something just as valuable: powerful connections, global exposure, and clear validation of our vision.",
-          "Thank you, SiGMA World, for the platform—and see you at SiGMA Central Europe."
-        ]
-      },
-       {
-        "image": "assets/notice/notice5.png",
-        "title": "ChatBet Finalist at SBC First Pitch Competition – SBC Summit Lisbon 2025",
-        "date": "16-18, 2025",
-        "details": [
-          {
-            "label": "Event Date:",
-            "text": "September 16-18, 2025"
-          },
-          {
-            "label": "Location:",
-            "text": ": FIL – Lisbon Exhibition and Congress Centre, Lisbon, Portugal"
-          }
-        ],
-        "content": [
-          "ChatBet was selected as a finalist in the prestigious SBC First Pitch competition at SBC Summit Lisbon 2025!",
-          "This recognition highlights our innovative approach to conversational betting—powered by AI and delivered seamlessly through WhatsApp and Telegram.",
-          "We’re proud to be acknowledged on the global stage among the most promising startups in the industry",
-          "Lisbon, you were incredible!"
-        ]
       }
+       
       
     ],
     "cta": "Contact Us"
