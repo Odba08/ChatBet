@@ -348,6 +348,7 @@
           "title": "Join the Future of AI-Powered Betting with ChatBet!",
           "titleheader":"Contact Us",
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
+          "leyenda":"(*) Required fields",
           "form": {
             "name": "Full Name (*)",
             "monthlyGgr": "Monthly GGR (USD)?",
