@@ -350,9 +350,9 @@
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
           "form": {
             "name": "Full Name (*)",
-            "monthlyGgr": "Monthly GGR (Gross Gaming Revenue)?",
+            "monthlyGgr": "Monthly GGR (USD)?",
             "contactNumber": "Contact Number",
-            "email": "Corporate Email (Generic emails like @gmail.com or @hotmail.com should not be accepted)",
+            "email": "Generic emails like @gmail.com or @hotmail.com should not be accepted(*)",
             "company": "Company Name (*)",
             "message": "Any additional comments? (Optional)",
             "select": "Select",
