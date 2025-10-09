@@ -353,7 +353,7 @@
       "name": "Nombre completo (*)",
       "monthlyGgr": "¿Ingresos brutos mensuales por apuestas (USD)?",
       "contactNumber": "Número de Contacto",
-      "email": "Algunos correos genéricos como gmail.com o hotmail.com no serán aceptados(*)",
+      "email": "Correo corporativo(*)",
       "company": "Nombre de la compañia (*)",
       "message": "¿Algún comentario adicional? (Opcional)",
       "select": "Selecciona",

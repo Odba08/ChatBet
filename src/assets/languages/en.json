@@ -353,12 +353,12 @@
             "name": "Full Name (*)",
             "monthlyGgr": "Monthly GGR (USD)?",
             "contactNumber": "Contact Number",
-            "email": "Generic emails like @gmail.com or @hotmail.com should not be accepted(*)",
+            "email": "Business Mail(*)",
             "company": "Company Name (*)",
             "message": "Any additional comments? (Optional)",
             "select": "Select",
             "thanksmessage": "Thanks for reaching out. We're building something powerful, and working with a curated list of partners. If your profile aligns with our current priorities, someone from our team will be in touch shortly.",
-            "error": "Only business emails are allowed.",
+            "error": "We only accept corporate emails.",
             "submit": "Send Info"
           }
         },
