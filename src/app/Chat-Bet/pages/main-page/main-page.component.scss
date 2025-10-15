@@ -8,6 +8,12 @@ h1,h2,h3,h4,h5,h6{
     color:#5554F3;
 }
 
+.leyenda{
+    small{
+        font-family: "Poppins", sans-serif;
+        color: gray;
+    }
+}
 
 .TitleBold3{
     font-family: "Poppins-Bold", sans-serif;
@@ -1465,4 +1471,11 @@ button:hover{
     opacity: 0.5;
     cursor: pointer;
 }
+
+.TitleBoldMobile{
+
+    @media screen and (max-width: 900px){
+        font-size: 0.8rem;
+    }
 }
+ }

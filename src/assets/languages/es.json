@@ -348,16 +348,17 @@
     "title": "¡Únete al futuro de las apuestas con IA de ChatBet!",
     "titleheader": "Contáctanos",
     "subtitle": "¡Experimenta la emoción! Agenda una demo hoy y descubre cómo la IA de ChatBet revoluciona la experiencia del usuario.",
+    "leyenda":"(*) Campos obligatorios",
     "form": {
-      "name": "Nombre completo (requerido)",
-      "monthlyGgr": "¿Ingresos brutos mensuales por apuestas (GGR)?",
+      "name": "Nombre completo (*)",
+      "monthlyGgr": "¿Ingresos brutos mensuales por apuestas (USD)?",
       "contactNumber": "Número de Contacto",
-      "email": "Correo corporativo (algunos correos genéricos como gmail.com o hotmail.com no serán aceptados)",
-      "company": "Nombre de la compañia (requerido)",
+      "email": "Correo corporativo(*)",
+      "company": "Nombre de la compañia (*)",
       "message": "¿Algún comentario adicional? (Opcional)",
       "select": "Selecciona",
       "thanksmessage": "Gracias por contactarnos. Estamos construyendo algo poderoso y trabajamos con una lista curada de socios. Si tu perfil se alinea con nuestras prioridades actuales, alguien de nuestro equipo se pondrá en contacto contigo pronto.",
-
+      "error": "Unicamente se permiten correos corporativos",
       "submit": "Enviar info"
     }
   },
@@ -439,6 +440,47 @@
     "subtitle": "Noticias importantes y logros",
     "description": "Mantente al día con los últimos logros de ChatBet, reconocimientos de la industria y expansión global. Desde invitaciones exclusivas a eventos hasta alianzas transformadoras, aquí mostramos nuestro viaje mientras redefinimos el futuro de las apuestas.",
     "notices": [
+      
+      {
+        "image": "../../../../assets/notice/notice5.png",
+        "title": "ChatBet finalista en la competencia SBC First Pitch – SBC Summit Lisboa 2025",
+        "details": [
+          {
+            "label": "Fecha del evento:",
+            "text": "16-18 de septiembre de 2025"
+          },
+          {
+            "label": "Ubicación:",
+            "text": "FIL – Centro de Exposiciones y Congresos de Lisboa, Lisboa, Portugal"
+          }
+        ],
+        "content": [
+          "¡ChatBet fue seleccionada como finalista en la prestigiosa competencia SBC First Pitch durante el SBC Summit Lisboa 2025!",
+          "Este reconocimiento resalta nuestro enfoque innovador en apuestas conversacionales—impulsadas por IA y ofrecidas de forma fluida a través de WhatsApp y Telegram.",
+          "Estamos orgullosos de haber sido reconocidos a nivel global entre las startups más prometedoras de la industria.",
+          "¡Lisboa, fuiste increíble!"
+        ]
+      },
+      {
+        "image": "../../../../assets/notice/notice4.png",
+        "title": "ChatBet finalista en SiGMA Pitch – SiGMA Euro-Med 2025",
+        "details": [
+          {
+            "label": "Fecha del evento:",
+            "text": " 1- 4 de septiembre de 2025"
+          },
+          {
+            "label": "Ubicación:",
+            "text": "Malta"
+          }
+        ],
+        "content": [
+          "ChatBet fue seleccionada como finalista en la competencia SiGMA Pitch durante SiGMA Euro-Med 2025, un evento que una vez más demostró por qué Europa sigue liderando la industria global del iGaming.",
+          "En solo 3 minutos en el escenario, presentamos el futuro de las apuestas deportivas conversacionales: un canal de ingresos impulsado por IA para casas de apuestas, a través de WhatsApp y Telegram.",
+          "No nos llevamos el trofeo, pero sí algo igual de valioso: conexiones clave, exposición global y la validación de nuestra visión.",
+          "Gracias a SiGMA World por la plataforma — nos vemos en SiGMA Central Europe."
+        ]
+      },
       {
         "image": "../../../../assets/notice/chatbet.png",
         "title": " ChatBet nominada como Estrella Emergente en Apuestas Deportivas en los SBC Awards Europe 2025",
@@ -497,33 +539,24 @@
         ]
       },
       {
-        "image": "../../../../assets/notice/notice1.png",
-        "title": "¡ChatBet llega al escenario de ICE 2025 en Barcelona!",
-        "date": "10-ene-2025",
+        "image": "../../../../assets/notice/notice2.png",
+        "title": "¡ChatBet finalista en el Startup Pitch de ICE 2025!",
         "details": [
           {
             "label": "Fecha del evento:",
-            "text": "20-22 de enero, 2025"
+            "text": "22 de enero, 2025"
           },
           {
             "label": "Ubicación:",
-            "text": "ICE 2025, Barcelona"
+            "text": "Barcelona, España"
           }
         ],
-        "content": [
-          "Nos complace anunciar que ChatBet ha sido invitado oficialmente a ICE 2025 en Barcelona, ¡uno de los eventos más prestigiosos de la industria del gaming! No solo tendremos presencia en el evento, sino que también hemos sido seleccionados para participar en el Startup Pitch, donde las empresas más innovadoras del sector muestran su tecnología a inversionistas y líderes de la industria.",
-          "¡Mantente atento a más actualizaciones mientras nos preparamos para mostrar cómo ChatBet está revolucionando las apuestas con tecnología de IA!"
-        ]
-      },
-      {
-        "image": "../../../../assets/notice/notice2.png",
-        "title": "¡ChatBet finalista en el Startup Pitch de ICE 2025!",
-        "date": "22-ene-2025",
         "content": [
           "La emoción continúa: ¡ChatBet llegó oficialmente a la final del Startup Pitch de ICE 2025 en Barcelona! De entre innumerables aplicantes, nuestra solución de apuestas con IA se destacó como una de las innovaciones más disruptivas en la industria del gaming.",
           "Este reconocimiento refuerza nuestra visión: las apuestas por chat son el futuro. Nos sentimos honrados de presentar nuestro proyecto frente a los principales inversionistas, operadores y expertos de la industria que reconocen el impacto de nuestra tecnología."
         ]
       }
+       
     ],
     "cta": "Contáctenos"
   },
