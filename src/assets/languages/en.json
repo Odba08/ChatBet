@@ -350,17 +350,19 @@
           "subtitle": "Experience the thrill! Schedule a demo today and see how ChatBet's AI revolutionizes the user experience.",
           "leyenda":"(*) Required fields",
           "form": {
-            "name": "Full Name (*)",
-            "monthlyGgr": "Monthly GGR (USD)?",
-            "contactNumber": "Contact Number",
-            "email": "Business Mail(*)",
-            "company": "Company Name (*)",
-            "message": "Any additional comments? (Optional)",
-            "select": "Select",
-            "thanksmessage": "Thanks for reaching out. We're building something powerful, and working with a curated list of partners. If your profile aligns with our current priorities, someone from our team will be in touch shortly.",
-            "error": "We only accept corporate emails.",
-            "submit": "Send Info"
-          }
+              "name": "Full Name",
+              "email": "Email Address",
+              "company": "Company",
+              "monthlyGgr": "Monthly GGR",
+              "message": "Message",
+              "submit": "Send Message",
+              "select": "Select one option",
+              "error": "Please enter a valid email",
+              "thanksmessage": "Thank you for contacting us!",
+              "interestLabel": "I’m an operator interested in using ChatBet",
+              "specify": "Please specify here",
+              "regionLabel": "Region of Operation"
+            }
         },
 
           "aboutUs": {

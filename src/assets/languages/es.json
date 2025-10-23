@@ -359,7 +359,10 @@
       "select": "Selecciona",
       "thanksmessage": "Gracias por contactarnos. Estamos construyendo algo poderoso y trabajamos con una lista curada de socios. Si tu perfil se alinea con nuestras prioridades actuales, alguien de nuestro equipo se pondrá en contacto contigo pronto.",
       "error": "Unicamente se permiten correos corporativos",
-      "submit": "Enviar info"
+      "submit": "Enviar info",
+      "interestLabel": "Soy un operador interesado en usar ChatBet",
+      "specify": "Por favor, especifique aquí",
+      "regionLabel": "Región de Operación"
     }
   },
 
