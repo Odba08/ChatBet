@@ -373,7 +373,7 @@
               "name": "Full Name (*)",
               "email": "Email Address (*)",
               "company": "Company (*)",
-              "monthlyGgr": "Monthly GGR USD",
+              "monthlyGgr": "Monthly GGR (USD)",
               "message": "Message",
               "submit": "Send Message",
               "select": "Select one option",
