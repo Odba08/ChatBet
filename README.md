@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Run with Docker
 
-Run `./run.sh` to build and start the container using Docker Compose. The app will be available at `http://localhost:4200/`.
+Run `./run_docker.sh` to build and start the container using Docker Compose. The app will be available at `http://localhost:4200/`.
 
 You can also run `docker compose up --build` directly if you prefer.
 
