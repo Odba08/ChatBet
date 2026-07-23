@@ -68,8 +68,17 @@ export class MainPageComponent {
   form: FormGroup = this.fb.group({
     name: ['', Validators.required],
     tname: 'ChatBet',
-    email: ['', [Validators.required, Validators.email,
-      validationInstitucional(['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com','live.com','icloud.com','aol.com','protonmail.com','zoho.com','gmx.com','mail.com','yandex.com','tutanota.com','fastmail.com','hushmail.com','inbox.com','me.com','mac.com','msn.com','qq.com','naver.com','daum.net'])
+    email: ['', [
+      Validators.required, 
+      Validators.email,
+      validationInstitucional([
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com',
+        'live.com', 'icloud.com', 'aol.com', 'protonmail.com',
+        'zoho.com', 'gmx.com', 'mail.com', 'yandex.com',
+        'tutanota.com', 'fastmail.com', 'hushmail.com',
+        'inbox.com', 'me.com', 'mac.com', 'msn.com',
+        'qq.com', 'naver.com', 'daum.net'
+      ], false) // Mantenido en false para permitir .gg, .io, .net corporativos.
     ]],
     monthlyGgr: ['', Validators.required],
     empresa: ['', Validators.required],
@@ -93,7 +102,7 @@ export class MainPageComponent {
       footer2: '../../../../assets/Background/2footer.png',
       phoneimage: '../../../../assets/img/phone-es.png',
       Frame4: '../../../../assets/img/Frame4-es.png',
-      reviewphone: 'j../../../../assets/slider/sinfondo-mob.png',
+      reviewphone: '../../../../assets/slider/sinfondo-mob.png',
       homepage: '../../../../assets/HomePage/imagen-inicial-es.gif',
       whatischatbet: '../../../../assets/HomePage/whatischatbet-es.png',
       beneficios: '../../../../assets/HomePage/beneficios-es.png',
@@ -249,25 +258,29 @@ export class MainPageComponent {
   updateVideoSource() {
     const video: HTMLVideoElement = this.videoElement.nativeElement;
     const videoMobile: HTMLVideoElement = this.videoElementMobile.nativeElement;
-    const sourceMobile = videoMobile.querySelector('source');
-    const source = video.querySelector('source');
-    if (source) {
-      source.src = this.currentImages['video'];
-      video.load(); 
+    
+    if (video) {
+      const source = video.querySelector('source');
+      if (source) {
+        source.src = this.currentImages['video'];
+        video.load(); 
+      }
     }
-    if (sourceMobile) {
-      sourceMobile.src = this.currentImages['video'];
-      videoMobile.load(); 
+    
+    if (videoMobile) {
+      const sourceMobile = videoMobile.querySelector('source');
+      if (sourceMobile) {
+        sourceMobile.src = this.currentImages['video'];
+        videoMobile.load(); 
+      }
     }
   }
 
   onCountrySelected(country: any) {
     if (!country) {
-      console.error('No country selected');
       return;
     }
     
-    console.log('Selected Country:', country);
     this.dialCode = country.dialCode;
     this.maxLength = country.maxLength;
     this.minLength = country.minLength;
@@ -282,8 +295,6 @@ export class MainPageComponent {
       ]);
       contactControl.updateValueAndValidity();
     }
-    
-    console.log('Max Length:', country.maxLength, 'Min Length:', country.minLength);
   }
 
   async send() {
